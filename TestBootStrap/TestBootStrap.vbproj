@@ -94,9 +94,12 @@
   <ItemGroup>
     <Content Include="AlbumDetails.html" />
     <Content Include="Images\apple.png" />
+    <Content Include="Images\Chronos-2.1-HD.jpg" />
+    <Content Include="Images\Chronos.jpg" />
     <Content Include="Images\client1.png" />
     <Content Include="Images\client2.png" />
     <Content Include="Images\computers.png" />
+    <Content Include="Images\kron-technologies-logo-e1536272661684.png" />
     <Content Include="Images\nuno.png" />
     <Content Include="Styles\bootstrap-grid.css" />
     <Content Include="Styles\bootstrap-grid.min.css" />
