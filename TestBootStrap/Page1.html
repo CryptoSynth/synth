@@ -7,56 +7,69 @@
     <!--Bootstrap CSS-->
     <title>Page1 Test</title>
     <link rel="stylesheet" href="Styles/bootstrap.min.css" />
-    <link rel="stylesheet" href="Styles/Page1Style.css" />
-    <link rel="stylesheet" href="Styles/fixed.css" />
+    <link rel="stylesheet" href="../Styles/NavBarStyle.css" />
+    <link rel="stylesheet" href="../Styles/Page1Style.css"/>
+    <link rel="stylesheet" href="../Styles/fixed.css" />
 </head>
 
 <body>
-    <!--Start of Header-->
+    
     <header>
-        
-    <!--Start Nav Tab-->
-        <nav>
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
-                </li>
-            </ul>
+        <!--Start Navagation 1-->
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg" fixed-top>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Page1.html">Kron Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Shop Now</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
-
-        <div class="tab-content">
-            <div id="home" class="container tab-pane active">
-                <h3>Home</h3>
-                <p>
-                    TLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-                    including versions of Lorem Ipsum.
-                </p>
-            </div>
-            <div id="menu1" class="container tab-pane fade">
-                <h3>Menu 1</h3>
-                <p>
-                    TLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-                    including versions of Lorem Ipsum.
-                </p>
-            </div>
-            <div id="menu2" class="container tab-pane fade">
-                <h3>Menu 2</h3>
-                <p>
-                    TLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
-                    including versions of Lorem Ipsum.
-                </p>
-            </div>
-        </div>
-        <!--End Nav Tab-->
-
+        <!--End Navagation 1-->
     </header>
-    <!--Start of Header-->
+
+    <div class="tab-content">
+        <div id="home" class="container tab-pane active">
+            <h3>Home</h3>
+            <p>
+                TLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                including versions of Lorem Ipsum.
+            </p>
+        </div>
+        <div id="menu1" class="container tab-pane fade">
+            <h3>Menu 1</h3>
+            <p>
+                TLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                including versions of Lorem Ipsum.
+            </p>
+        </div>
+        <div id="menu2" class="container tab-pane fade">
+            <h3>Menu 2</h3>
+            <p>
+                TLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker
+                including versions of Lorem Ipsum.
+            </p>
+        </div>
+    </div>
+    <!--End Nav Tab-->
+
 
     <div class="jumbotron jumbotron-fluid">
         <div class="row">

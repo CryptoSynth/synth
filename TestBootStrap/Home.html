@@ -3,20 +3,48 @@
 <head>
     <!--Required Meta tag-->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1", shrink-to-fit="no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" , shrink-to-fit="no">
     <!--Bootstrap CSS-->
     <title>Kron Technologies</title>
     <link rel="stylesheet" href="Styles/bootstrap.min.css" />
-    <link rel="stylesheet" href="../Styles/KronStyle.css" />
+    <link rel="stylesheet" href="../Styles/NavBarStyle.css" />
+    <link rel="stylesheet" href="../Styles/HomeStyle.css" />
     <link rel="stylesheet" href="../Styles/fixed.css" />
 </head>
 
 
 <body>
+    <!--Start Navagation 1-->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/Page1.html">Kron Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Shop Now</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--End Navagation 1-->
 
     <!--Start Home Section-->
     <div id="Home">
-
         <div class="video-background">
             <div id="video">
                 <video id="bgvid" autoplay playsinline muted loop>
@@ -24,70 +52,18 @@
                 </video>
             </div>
         </div>
-
-        <!--Start Navagation 1-->
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg" fixed-top>
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Kron Products">Kron Products</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/Page1.html">Shop Now</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Support">Support</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#About Us">About Us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!--End Navagation 1-->
-
-        <!--Start Navagation 2-->
-        <nav class="navbar navbar-dark bg-dark fixed-bottom">
-            <a class="navbar-brand" href="#"><img src="Images/kron-technologies-logo-e1536272661684.png" alt="" />Kron Tech.</a>
-               <h5>Starting At <strong>$2,999</strong></h5>
-            <button class="btn btn-outline-light btn-sm btn-block">Shop Now</button>
-        </nav>
-        <!--End Navagation 2-->
-
     </div>
     <!--End Home Section-->
 
-    <!--Start Kron Products Section-->
-    <div id="kron Products" class="offset">
-
-    </div>
-    <!--End Kron Products Section-->
-
-    <!--Start Shop Now Section-->
-    <div id="Shop Now" class="offset">
-
-    </div>
-    <!--End Shop Now Section-->
-
-    <!--Start Support Section-->
-    <div id="Support" class="offset">
-
-    </div>
-    <!--End Support Section-->
-
-    <!--Start About Us Section-->
-    <div id="About Us" class="offset">
-
-    </div>
-    <!--End About Us Section-->
+    <footer class="foot">
+        <!--Start Navagation 2-->
+        <nav class="navbar navbar-dark bg-dark fixed-bottom">
+            <a class="navbar-brand" href="#"><img src="Images/kron-technologies-logo-e1536272661684.png" alt="" />Kron Tech.</a>
+            <h5>Starting At <strong>$2,999</strong></h5>
+            <button class="btn btn-outline-light btn-sm btn-block">Shop Now</button>
+        </nav>
+        <!--End Navagation 2-->
+    </footer>
 
     <!--Script Source Files-->
     <script src="Scripts/jquery-3.4.1.min.js"></script>

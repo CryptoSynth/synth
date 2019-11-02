@@ -198,8 +198,9 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Styles\fixed.css" />
-    <Content Include="Styles\KronStyle.css" />
+    <Content Include="Styles\HomeStyle.css" />
     <Content Include="Styles\Page1Style.css" />
+    <Content Include="Styles\NavBarStyle.css" />
     <Content Include="video\Chronos Promo v1.mp4" />
     <Content Include="Web.config" />
   </ItemGroup>

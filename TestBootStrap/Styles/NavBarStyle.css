@@ -1,0 +1,87 @@
+﻿/*============= COURSE SECTION =============*/
+@import url('https://fonts.googleapis.com/css?family=Enriqueta:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
+/*--Menu Navagation--*/
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border: solid 2px;
+    color: white;
+    padding: .2rem 1rem .2rem 1rem;
+    border-radius: 10px;
+}
+
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        border: solid 1px white;
+        background-color: rgba(255,255,255,1);
+        color: black;
+        padding: .2rem 1rem .2rem 1rem;
+        border-radius: 10px;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link:active {
+        border: solid 1px white;
+    }
+
+/*--Footer Navagation--*/
+.navbar-brand img {
+    width: 14%;
+    height: auto;
+    margin-right: 10px;
+}
+
+a.navbar-brand {
+    font-size: 1.8rem;
+}
+
+.navbar h5 {
+    margin: auto;
+    letter-spacing: .2rem;
+    word-spacing: .5rem;
+    color: gray;
+}
+
+.navbar strong {
+    font-size: 2rem;
+}
+
+.foot .navbar .btn {
+    width: 20%;
+    border-radius: 30px;
+    border-width: 2px;
+    font-size: 1.2rem;
+}
+
+.foot .navbar h5, .btn {
+    margin: auto;
+    margin-right: 0px;
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+@media(min-width: 900px) {
+}
