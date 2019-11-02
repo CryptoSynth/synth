@@ -6,13 +6,13 @@ body {
     overflow-x: hidden;
     font-family: 'Orbitron', serif;
     color: #505962;
-    height: auto;
 }
 
 /*--Video--*/
 .video-background {
     position: absolute;
     width: 100%;
+    height: 100vh;
 }
 
 /*--Navagation--*/
@@ -61,14 +61,15 @@ body {
     font-size: 20px;
 }
 
-h3 {
+h5 {
     margin: auto;
     letter-spacing: .4rem;
-    color: mediumspringgreen;
+    color: lightgray;
+    padding-bottom: .4rem;
 }
 
-h3 strong {
-    font-size: 2.3rem;
+h5 strong {
+    font-size: 2.2rem;
 }
 
 
