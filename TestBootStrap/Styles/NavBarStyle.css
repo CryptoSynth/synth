@@ -12,23 +12,17 @@
     margin-right: 5rem;
     font-size: 1.1rem;
     text-transform: uppercase;
-    border: solid 1.5px;
     color: white;
     padding: .2rem 1rem .2rem 1rem;
-    border-radius: 10px;
 }
 
-    .navbar-expand-lg .navbar-nav .nav-link:hover {
-        border: solid 1px white;
-        background-color: rgba(255,255,255,1);
-        color: black;
-        padding: .2rem 1rem .2rem 1rem;
-        border-radius: 10px;
+    .navbar-expand-lg .navbar-nav .nav-link:hover,
+    .navbar-expand-lg .navbar-nav .nav-link:focus,
+    {
+        border-bottom: solid 2px white;
     }
 
-    .navbar-expand-lg .navbar-nav .nav-link:active {
-        border: solid 1px white;
-    }
+
 
 /*--Footer Navagation--*/
 .navbar-brand img {
@@ -64,6 +58,38 @@ a.navbar-brand {
     margin-right: 0px;
 }
 
+/*--Hover Menu--*/
+.hvrcenter {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+    .hvrcenter:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        background-color: white;
+        height: 2.5px;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+    .hvrcenter:hover:before, .hvrcenter:focus:before, .hvrcenter:active:before {
+        left: 0;
+        right: 0;
+    }
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
