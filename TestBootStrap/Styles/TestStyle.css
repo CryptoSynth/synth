@@ -1,8 +1,6 @@
 /*============= COURSE SECTION =============*/
 @import url('https://fonts.googleapis.com/css?family=Enriqueta:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
-@import url('/Styles/TestStyle.css');
-
 
 body {
     overflow-x: hidden;
@@ -19,30 +17,28 @@ body {
 
 /*--Navagation--*/
 .navbar {
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-bottom: .9rem;
     text-transform: uppercase;
     font-weight: 700;
     font-size: .9rem;
     letter-spacing: .2rem;
-    background: rgba(0, 0, 0, 0.6) !important;
+    background: rgba(0, 0, 0, .4) !important;
 }
 
-li {
-    margin: 0px 60px 0px 60px;
+.nav-item {
+    padding: .5rem 0rem .5rem 0rem;
 }
 
-.navbar-brand img {
-    height: 2.5rem;
-}
+    .navbar-brand img {
+        height: 2.5rem;
+        margin-right: 10px;
+        padding-left: 15rem;
+    }
 
-.navbar-nav navbar-dark {
-    padding-right: .7rem;
-}
+
 
 .navbar-dark .navbar-nav .nav-link {
     color: white;
-    padding-top: .8rem;
 }
 
     .navbar-dark .navbar-nav .nav-link:active,
@@ -52,45 +48,15 @@ li {
 
 /*--Landing Page--*/
 
-.caption {
-    width: 100%;
-    max-width: 100%;
-    position: absolute;
-    top: 5%;
-    z-index: 1;
-    color: black;
-}
-
-    .caption h1 {
-        font-size: 5rem;
-        letter-spacing: .2rem;
-    }
-
-    .caption h3 {
-        margin-top: 130px;
-        font-weight: 200;
-        letter-spacing: .2rem;
-    }
-
 .btn {
-    margin-top: 70px;
-    width: 20%;
-    border-radius: 40px;
-    border-width: 2.5px;
-    padding: 3px;
-    font-size: 1.2rem;
-    letter-spacing: .2rem;
-}
-
-/*--Another Page--*/
-
-.jumbotron img {
     width: 100%;
-    height: 100%;
-    width: 600px;
-    height: 600px;
+    border-radius: 30px;
+    border-width: 2.5px;
+    letter-spacing: .2rem;
+    margin: auto;
+    padding: 9px;
+    font-size: 20px;
 }
-
 
 
 /*============ BOOTSTRAP BREAK POINTS:
@@ -111,3 +77,32 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
 =============*/
+
+@media(min-width: 800px) {
+    .navbar-brand img {
+        margin-right: 10px;
+        padding: 0px;
+    }
+
+    .nav-item {
+        margin: 0px 60px 0px 60px;
+        padding: .7rem 0rem .7rem 0rem;
+    }
+
+    .btn {
+        padding: 4px;
+        width: 25%;
+        margin-right: 10px;
+        font-size: large;
+    }
+
+    .navbar {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: .9rem;
+        letter-spacing: .2rem;
+        background: rgba(0, 0, 0, .4) !important;
+    }
+}
