@@ -12,10 +12,9 @@ body {
 
 /*--Video--*/
 .video-background {
-    background: url('/video/Chronos Promo v1.mp4');
-    background-position: center center;
-    background-size: cover;
-
+    position: absolute;
+    top: 0 0 0 0;
+    overflow: hidden;
 }
 
 /*--Navagation--*/
