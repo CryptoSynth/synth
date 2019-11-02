@@ -58,6 +58,10 @@ a.navbar-brand {
     margin-right: 0px;
 }
 
+.foot strong{
+    color: white;
+}
+
 /*--Hover Menu--*/
 .hvrcenter {
     display: inline-block;
