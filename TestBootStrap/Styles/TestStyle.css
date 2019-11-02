@@ -5,14 +5,14 @@
 body {
     overflow-x: hidden;
     font-family: 'Orbitron', serif;
-    color: #505962
+    color: #505962;
+    height: auto;
 }
 
 /*--Video--*/
 .video-background {
     position: absolute;
     width: 100%;
-    height: auto;
 }
 
 /*--Navagation--*/
@@ -34,7 +34,10 @@ body {
         margin-right: 10px;
         padding-left: 15rem;
     }
-
+    
+    a.navbar-brand {
+        margin-right: 150px;
+    }
 
 
 .navbar-dark .navbar-nav .nav-link {
@@ -56,6 +59,16 @@ body {
     margin: auto;
     padding: 9px;
     font-size: 20px;
+}
+
+h3 {
+    margin: auto;
+    letter-spacing: .4rem;
+    color: mediumspringgreen;
+}
+
+h3 strong {
+    font-size: 2.3rem;
 }
 
 

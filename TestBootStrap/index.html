@@ -3,7 +3,7 @@
 <head>
     <!--Required Meta tag-->
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1", shrink-to-fit="no">
     <!--Bootstrap CSS-->
     <title>Kron Technologies</title>
     <link rel="stylesheet" href="Styles/bootstrap.min.css" />
@@ -12,21 +12,21 @@
 </head>
 
 
-<body data-spy="scroll" data-target="#navbarResponsive">
+<body>
 
     <!--Start Home Section-->
     <div id="Home">
 
         <div class="video-background">
             <div id="video">
-                <video id="bgvid" playsinline="playsinline" autoplay="autoplay" loop="loop" muted="mute">
+                <video id="bgvid" autoplay playsinline muted loop>
                     <source src="/video/Chronos Promo v1.mp4" type="video/mp4" />
                 </video>
             </div>
         </div>
 
         <!--Start Navagation 1-->
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg" fixed-top>
             <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
@@ -53,35 +53,42 @@
             </div>
         </nav>
         <!--End Navagation 1-->
+
         <!--Start Navagation 2-->
         <nav class="navbar navbar-dark bg-dark fixed-bottom">
             <a class="navbar-brand" href="#"><img src="Images/kron-technologies-logo-e1536272661684.png" alt="" />Kron Tech.</a>
+               <h3>Starting At <strong>$2,999</strong></h3>
             <button class="btn btn-outline-light btn-sm btn-block">Shop Now</button>
         </nav>
         <!--End Navagation 2-->
 
     </div>
     <!--End Home Section-->
+
     <!--Start Kron Products Section-->
     <div id="kron Products" class="offset">
 
     </div>
     <!--End Kron Products Section-->
+
     <!--Start Shop Now Section-->
     <div id="Shop Now" class="offset">
 
     </div>
     <!--End Shop Now Section-->
+
     <!--Start Support Section-->
     <div id="Support" class="offset">
 
     </div>
     <!--End Support Section-->
+
     <!--Start About Us Section-->
     <div id="About Us" class="offset">
 
     </div>
     <!--End About Us Section-->
+
     <!--Script Source Files-->
     <script src="Scripts/jquery-3.4.1.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
