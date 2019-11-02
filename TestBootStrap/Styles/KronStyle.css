@@ -8,15 +8,11 @@ body {
     color: #505962;
 }
 
-    body > div {
-        max-height: 33.3vh;
-        overflow-x: auto;
-    }
 
 /*--Video--*/
 .video-background {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
 }
 
@@ -37,11 +33,10 @@ body {
 .navbar-brand img {
     height: 2.5rem;
     margin-right: 10px;
-    padding-left: 15rem;
 }
 
 a.navbar-brand {
-    margin-right: 150px;
+    margin: auto;
 }
 
 
@@ -100,7 +95,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 =============*/
 
-@media(min-width: 800px) {
+@media(min-width: 900px) {
     .navbar-brand img {
         margin-right: 10px;
         padding: 0px;
@@ -108,7 +103,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
     .nav-item {
         margin: 0px 60px 0px 60px;
-        padding: .7rem 0rem .7rem 0rem;
+        padding: .5rem 0rem .5rem 0rem;
     }
 
     .btn {

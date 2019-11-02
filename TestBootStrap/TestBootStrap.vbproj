@@ -101,6 +101,7 @@
     <Content Include="Images\computers.png" />
     <Content Include="Images\kron-technologies-logo-e1536272661684.png" />
     <Content Include="Images\nuno.png" />
+    <Content Include="Page1.html" />
     <Content Include="Styles\bootstrap-grid.css" />
     <Content Include="Styles\bootstrap-grid.min.css" />
     <Content Include="Styles\bootstrap-reboot.css" />
@@ -142,7 +143,7 @@
     <Content Include="font-awesome\webfonts\fa-regular-400.svg" />
     <Content Include="font-awesome\webfonts\fa-solid-900.svg" />
     <Content Include="Images\Album.gif.png" />
-    <Content Include="index.html" />
+    <Content Include="Home.html" />
     <Content Include="lib\jquery\core.js" />
     <Content Include="lib\jquery\jquery.js" />
     <Content Include="lib\jquery\jquery.min.js" />
@@ -197,7 +198,8 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Styles\fixed.css" />
-    <Content Include="Styles\TestStyle.css" />
+    <Content Include="Styles\KronStyle.css" />
+    <Content Include="Styles\Page1Style.css" />
     <Content Include="video\Chronos Promo v1.mp4" />
     <Content Include="Web.config" />
   </ItemGroup>
