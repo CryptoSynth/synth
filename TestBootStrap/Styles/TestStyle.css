@@ -13,6 +13,7 @@ body {
 /*--Video--*/
 .video-background {
     position: absolute;
+    height: auto;
     width: 100%;
     background-color: rgba(0, 0, 0, 1);
 }
@@ -111,3 +112,17 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
 =============*/
+
+@media (min-aspect-ratio: 16/9){
+    .video-background {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video-background {
+        width: auto;
+        height: 100%;
+    }
+}
