@@ -29,15 +29,15 @@ body {
     padding: .5rem 0rem .5rem 0rem;
 }
 
-    .navbar-brand img {
-        height: 2.5rem;
-        margin-right: 10px;
-        padding-left: 15rem;
-    }
-    
-    a.navbar-brand {
-        margin-right: 150px;
-    }
+.navbar-brand img {
+    height: 2.5rem;
+    margin-right: 10px;
+    padding-left: 15rem;
+}
+
+a.navbar-brand {
+    margin-right: 150px;
+}
 
 
 .navbar-dark .navbar-nav .nav-link {
@@ -64,13 +64,16 @@ body {
 h5 {
     margin: auto;
     letter-spacing: .4rem;
-    color: lightgray;
+    color: dimgray;
     padding-bottom: .4rem;
 }
 
-h5 strong {
-    font-size: 2.2rem;
-}
+    h5 strong {
+        font-size: 1.9rem;
+        color: lightgray;
+    }
+
+
 
 
 /*============ BOOTSTRAP BREAK POINTS:
