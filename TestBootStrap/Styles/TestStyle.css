@@ -3,10 +3,15 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
 
 body {
-    overflow-x: hidden;
+    overflow: hidden;
     font-family: 'Orbitron', serif;
     color: #505962;
 }
+
+    body > div {
+        max-height: 33.3vh;
+        overflow-x: auto;
+    }
 
 /*--Video--*/
 .video-background {
