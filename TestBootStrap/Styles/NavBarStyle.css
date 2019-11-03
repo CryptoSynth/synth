@@ -7,32 +7,18 @@
     background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-.imgheader {
-    width: 16%;
-    height: auto;
-    margin-right: 10px;
-}
-
 .navbar-expand-lg .navbar-nav .nav-link {
-    font-size: 1.1rem;
-    text-transform: uppercase;
+    font-size: 1.2rem;
     color: white;
-    padding: .2rem 1rem .2rem 1rem;
 }
-    .menu1, .menu2, .menu3 {
-        margin-right: 2rem;
-    }
 
-    .menu4 {
-        margin-left: 20rem;
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        color: white;
     }
-
 
 /*--Footer Navagation--*/
-.imgfooter {
-    width: 14%;
-    height: auto;
-    margin-right: 10px;
+.mr-4 {
+    width: 16%;
 }
 
 a.navbar-brand {
@@ -40,29 +26,22 @@ a.navbar-brand {
 }
 
 .navbar h5 {
-    margin: auto;
     letter-spacing: .2rem;
     word-spacing: .5rem;
     color: gray;
 }
 
 .navbar strong {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 .foot .navbar .btn {
-    width: 20%;
     border-radius: 30px;
     border-width: 2px;
     font-size: 1.2rem;
 }
 
-.foot .navbar h5, .btn {
-    margin: auto;
-    margin-right: 0px;
-}
-
-.foot strong{
+.foot strong {
     color: white;
 }
 
@@ -84,7 +63,7 @@ a.navbar-brand {
         left: 50%;
         right: 50%;
         bottom: 0;
-        background-color: white;
+        background-color: aquamarine;
         height: 2.5px;
         -webkit-transition-property: left, right;
         transition-property: left, right;
@@ -118,4 +97,23 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media(min-width: 900px) {
+    .menu1 {
+        margin-left: -4rem;
+    }
+
+    .menu2, .menu3, .menu5 {
+        margin-left: 3rem;
+    }
+
+    .menu4 {
+        margin-left: 22rem;
+    }
+
+    .foot .navbar .btn {
+        width: 20%;
+        border-radius: 30px;
+        border-width: 2px;
+        font-size: 1.2rem;
+    }
 }
+

@@ -4,27 +4,36 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 
 body {
-    overflow: hidden;
     font-family: 'Titillium Web', sans-serif;
     color: #505962;
 }
 
 
+
 /*--Video--*/
-.home video{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+header {
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
 }
+
+    header video {
+        position: absolute;
+        top: -30%;
+        left: 15%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-15%) translateY(-5%);
+        -moz-transform: translateX(-15%) translateY(-5%);
+        -webkit-transform: translateX(-15%) translateY(-5%);
+        transform: translateX(-15%) translateY(5%);
+    }
 
 /*--Landing Page--*/
 
@@ -50,3 +59,4 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
 =============*/
+
