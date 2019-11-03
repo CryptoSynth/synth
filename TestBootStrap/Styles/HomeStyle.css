@@ -24,15 +24,15 @@ header {
         position: absolute;
         top: -30%;
         left: 15%;
-        min-width: 100%;
-        min-height: 100%;
+        min-width: 5%;
+        min-height: 5%;
         width: auto;
         height: auto;
         z-index: 0;
         -ms-transform: translateX(-15%) translateY(-5%);
         -moz-transform: translateX(-15%) translateY(-5%);
         -webkit-transform: translateX(-15%) translateY(-5%);
-        transform: translateX(-15%) translateY(5%);
+        transform: translateX(-30%) translateY(5%);
     }
 
 /*--Landing Page--*/
@@ -60,3 +60,19 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 =============*/
 
+@media (min-width: 800px) {
+    header video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
