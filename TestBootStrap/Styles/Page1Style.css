@@ -4,9 +4,56 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 
 body {
-    overflow: hidden;
-    font-family: font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     color: #505962;
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+    header video {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        z-index: 0;
+        -ms-transform: translateX(-50%) translateY(-50%);
+        -moz-transform: translateX(-50%) translateY(-50%);
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    header .container {
+        position: relative;
+        z-index: 2;
+    }
+
+    header .overlay {
+        z-index: 1;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.5;
+    }
+
+.container h1 {
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+}
+
+.container .learn p {
+    font-size: 1.3rem;
+    color: white;
 }
 
 /*--Landing Page--*/
