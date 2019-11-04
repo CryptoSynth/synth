@@ -61,6 +61,10 @@ Extra (xl) large devices (large desktops, 1200px and up)
         overflow: hidden;
     }
 
+    .video-container{
+        overflow: hidden;
+    }
+
     .vid1 {
         filter: blur(0px);
         margin: 0px;
