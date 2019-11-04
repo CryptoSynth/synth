@@ -5,7 +5,6 @@
 
 body{
     font-family: 'Titillium Web', sans-serif;
-    overflow: hidden;
 }
 
 .video-container {
@@ -19,14 +18,26 @@ body{
     z-index: 0;
     filter: blur(2px);
     margin: -10px;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-7%);
 }
 
 .vid2 {
-    position:absolute;
+    position: absolute;
     width: 100%;
     height: 100vh;
     z-index: 1;
     overflow: hidden;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-7%);
 }
 
 
@@ -60,6 +71,14 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 768px) {
 
     body {
+        overflow: hidden;
+    }
+
+    .video-container{
+        overflow: hidden;
+    }
+
+    .vid2 {
         overflow: hidden;
     }
 
