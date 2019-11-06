@@ -26,7 +26,7 @@ body{
 /*--Footer Navagation--*/
 .mr-4 {
     width: 13%;
-    margin-right: 3px !important;
+    margin-right: .5rem !important;
 }
 
 a.navbar-brand {
@@ -39,8 +39,13 @@ a.navbar-brand {
     color: gray;
 }
 
+.navbar .ml-5{
+    text-align: center;
+    margin-bottom: .8rem;
+}
+
 .navbar strong {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
 }
 
 .foot .navbar .btn {
