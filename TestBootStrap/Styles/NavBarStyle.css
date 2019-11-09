@@ -6,10 +6,12 @@
     src: local("/MyFont/CHRONOS.woff") format("woff");
 }
 
+/*Temp Body Font*/
 body{
     font-family: 'CHRONOS';
 }
-/*--Menu Navagation--*/
+
+/*Menu Navagation*/
 .navbar {
     background-color: rgba(0, 0, 0, 0.5) !important;
 }
@@ -91,6 +93,9 @@ a.navbar-brand {
         left: 0;
         right: 0;
     }
+   
+
+
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)

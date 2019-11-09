@@ -99,9 +99,11 @@
     <Content Include="Images\client1.png" />
     <Content Include="Images\client2.png" />
     <Content Include="Images\computers.png" />
+    <Content Include="Images\kron-camera-black_v2.png" />
     <Content Include="Images\kron-technologies-logo-e1536272661684.png" />
     <Content Include="Images\nuno.png" />
     <Content Include="Images\pngtree-white-smoke-effect-background-image_312197.jpg" />
+    <Content Include="Images\Untitled.png" />
     <Content Include="Page1.html" />
     <Content Include="Scripts\ThreeTest.js" />
     <Content Include="Styles\bootstrap-grid.css" />

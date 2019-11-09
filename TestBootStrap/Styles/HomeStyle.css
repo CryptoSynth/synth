@@ -3,10 +3,12 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 
+/*Body Font Temp*/
 body{
     font-family: 'Titillium Web', sans-serif;
 }
 
+/*Video Landing Page*/
 .video-container {
     position: relative;
     background-color: black;
@@ -30,15 +32,6 @@ body{
     height: 100%;
     z-index: 1;
 }
-
-
-/*--Video--*/
-
-/*--Landing Page--*/
-
-
-
-
 
 /*============ BOOTSTRAP BREAK POINTS:
 
