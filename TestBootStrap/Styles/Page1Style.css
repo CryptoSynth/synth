@@ -31,13 +31,8 @@ body, html {
     overflow: hidden;
 }
 
-    .landingpage .image {
-        z-index: 0;
-        height: 100%;
-        background: url('/Images/Chronos_ 1.4_3.png');
-        background-attachment: fixed;
-        background-position: center;
-        background-size: cover;
+    .landingpage .vid1 {
+        width: 100%;
     }
 
     .landingpage .flex-item-h1 {
@@ -143,13 +138,11 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
     .landingpage .flex-item-h1 {
         color: white;
-        background-color: rgba(0,0,0,0.2);
-        top: 35%;
+        top: 10%;
         z-index: 2;
         font-size: 7.5rem;
         color: white;
-        padding: .3rem 1.5rem;
-        margin-left: 1rem;
+        letter-spacing: 1.5rem;
     }
 
     .landingpage .flex-item-a {
