@@ -1,52 +1,46 @@
 ﻿/*============= COURSE SECTION =============*/
 @import url('https://fonts.googleapis.com/css?family=Enriqueta:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
-@font-face {
-    font-family: 'CHRONOS';
-    src: local("/MyFont/CHRONOS.woff") format("woff");
-}
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 
 /*Temp Body Font*/
-body{
-    font-family: 'CHRONOS';
+body {
+    font-family: 'Titillium Web', sans-serif;
 }
 
-/*Menu Navagation*/
-.navbar {
+/*Main Menu Navagation*/
+.mainnav .navbar {
     background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
-    font-size: .9rem;
+.mainnav .navbar-dark .navbar-nav .nav-link {
     color: white;
 }
 
-    .navbar-expand-lg .navbar-nav .nav-link:hover {
-        color: white;
-    }
+/*Center item Links*/
+
+
+.mainnav .navbar-brand {
+    font-size: 1.5rem;
+    margin-right: 0rem;
+    width: 200px;
+}
+.mainnav .navbar-brand img{
+    width: 20%;
+    margin-right: 1rem;
+}
+
+
 
 /*--Footer Navagation--*/
-.mr-4 {
-    width: 13%;
-    margin-right: .5rem !important;
-}
 
-a.navbar-brand {
-    font-size: 1.1rem;
-}
-
-.navbar h5 {
+.foot .navbar h5 {
     letter-spacing: .2rem;
     word-spacing: .5rem;
     color: gray;
 }
 
-.navbar .ml-5{
-    text-align: center;
-    margin-bottom: .8rem;
-}
-
-.navbar strong {
+.foot .navbar strong {
     font-size: 2.0rem;
 }
 
@@ -93,7 +87,7 @@ a.navbar-brand {
         left: 0;
         right: 0;
     }
-   
+
 
 
 /*============ BOOTSTRAP BREAK POINTS:
@@ -115,28 +109,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 =============*/
 
-@media(min-width: 900px) {
-    .menu1 {
-        margin-left: -4rem;
-    }
+@media(min-width: 322px) {
 
-    .menu2, .menu3, .menu5 {
-        margin-left: 3rem;
-    }
-
-    .menu4 {
-        margin-left: 22rem;
-    }
-
-    .foot .navbar .btn {
-        width: 20%;
-        border-radius: 30px;
-        border-width: 2px;
-        font-size: 1.2rem;
-    }
-
-    .mr-4 {
-        width: 16%;
-    }
 }
-

@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html class="scroll-snap-y" lang="en">
 <head>
     <!--Required Meta tag-->
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
@@ -14,90 +14,103 @@
 
 <body>
     <!--Start Main Menu Navagation-->
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top text-uppercase">
+    <header class="mainnav">
+        <nav class="navbar navbar-dark bg-dark fixed-top text-uppercase">
 
-        <!--Brand-Name Menu-->
-        <a class="navbar-brand" href="/Home.html"><img class="mr-4 imgheader" src="/Images/kron-technologies-logo-e1536272661684.png" />Kron Tech</a>
+            <!--Brand-Name Menu-->
+            <a class="navbar-brand" href="/Home.html"><img class="imgheader" src="/Images/kron-technologies-logo-e1536272661684.png" />Kron Tech</a>
 
-        <!--Hamburger Menu-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <!--Hamburger Menu-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!--Collapse all links -->
-        <div class="collapse navbar-collapse text-nowrap" id="navbarResponsive">
-            <ul class="navbar-nav">
-                <li class="nav-item menu1">
-                    <a class="nav-link hvrcenter" href="/Home.html">Home</a>
-                </li>
-                <li class="nav-item menu2">
-                    <a class="nav-link hvrcenter" href="/Page1.html">Chronos 1.4</a>
-                </li>
-                <li class="nav-item menu3">
-                    <a class="nav-link hvrcenter" href="#">Chronos 2.4-HD</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link hvrcenter menu4" href="#">Accessories</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link hvrcenter menu5" href="#">Shop Now</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+            <!--Collapse all links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link hvrcenter" href="/Home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hvrcenter" href="/Page1.html">Chronos 1.4</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hvrcenter" href="#">Chronos 2.4-HD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hvrcenter menu4" href="#">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link hvrcenter menu5" href="#">Shop Now</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     <!--End Main Menu Navagation-->
     <!--Start Landing Page Section-->
-    <header class="landingpage">
-        <div class="container-fluid">
-            <h1>Chronos 1.4</h1>
-            <a class="d-inline-block" href="#">Learn More</a>
+    <section class="landingpage scroll-start">
+        <div class="image p-0"> </div>
+        <div class="container-fluid h-100 p-0">
+            <div class="d-flex flex-column align-items-center h-100">
+                <h1 class="flex-item-h1 position-absolute align-self-start text-uppercase">Chronos 1.4</h1>
+                <a class="flex-item-a d-flex flex-column position-absolute" href="#feature">
+                    Scroll Down
+                    <br />
+                    <i class="fa fa-chevron-down align-self-center"></i>
+                </a>
+            </div>
         </div>
-    </header>
-    <!--Start Landing Page Section-->
+    </section>
+    <!--End Landing Page Section-->
     <!--Start Feature Section-->
-    <section class="features">
-        <div class="container-fluid ">
-            <div class="d-flex">
-                <img src="Images/Untitled.png" />
-                <div class="flex-fill">
-                    <ul class="align-content-end">
-                        <li>Feature 1</li>
-                        <li>Feature 2</li>
-                        <li>Feature 3</li>
-                        <li>Feature 4</li>
-                        <li>Feature 5</li>
-                    </ul>
+    <section class="feature scroll-start">
+        <div class="container-fluid h-100 p-0">
+            <div class="row h-100">
+                <div class="image2 col col-lg-6 d-flex justify-content-center p-0">
+                    <img class="align-self-center" src="Images/Chronos_1.4.png" />
                 </div>
+                <aside class="sidebar col col-lg-6 d-flex flex-column justify-content-center">
+                    <h1 class="listhead align-self-center text-uppercase"><a name="feature">Chronos 1.4 Features</a></h1>
+                    <hr />
+                    <ul class="list1">
+                        <li>
+                            1.4Gpx/s, 1.3megapixel image sensor captures 1280x1024 @ 1057fps, and up to 38500fps at lower
+                            resolution.Available in color and monochrome. The monochrome option has higher effective resolution and
+                            is twice as sensitive as color
+                        </li>
+                        <li>8GB, 16GBand 32GBmemory options for 4,8and 16second record time respectively.</li>
+                        <li>igh sensitivity ofISO320-5120 (Color), 740-11840 (Monochrome) enables shooting with modest lighting. </li>
+                        <li>Completely standalone, untethered operation with 1.5hr internal battery. RunsindefinitelyonAC adapter.</li>
+                        <li>
+                            "Run-n-Gun" record mode allows you to forget about saving. Take bursts of video by holding the shutter
+                            button, and the video is automatically saved to card. You can continue to shoot and view live video while
+                            saving, no waiting for the save to complete as long as buffer is available.
+                        </li>
+                        <li>
+                            Continuous record mode records normal rate video (60fps) continuously to storage devices while simultaneously
+                            recording bursts of high-speed video.
+                        </li>
+                        <li>Focus peaking highlights sharp edges for quick and perfect focus. Zebra lines help you set correct exposure.</li>
+                    </ul>
+                </aside>
             </div>
         </div>
     </section>
     <!--End Feature Section-->
     <!--Start Order Section-->
-    <section class="order">
-        <div class="container-fluid ">
-            <div class="d-flex">
-                <div class="">
-                    <p>
-                        Lorem Ipsum is simply dummy text of the printing
-                        and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the
-                        1500s, when an unknown printer took a galley of
-                        type and scrambled it to make a type specimen
-                        book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting,
-                        remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of
-                        Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software
-                        like Aldus PageMaker including versions of Lorem
-                        Ipsum.
-                    </p>
+    <section class="order scroll-start">
+        <div class="image2 d-flex justify-content-center"></div>
+        <div class="container-fluid h-100 p-0">
+            <div class="row h-100">
+                <div class="d-flex flex-column align-items-center h-100">
+                    <h1 class="flex-item-h1 position-absolute align-self-start text-uppercase">Chronos 1.4</h1>
                 </div>
             </div>
         </div>
     </section>
-    <!--Start Order Section-->
+    <!--End Order Section-->
     <!--Script Source Files-->
     <script src="../Scripts/jquery-3.4.1.js"></script>
     <script src="../Scripts/jquery-3.4.1.slim.min.js"></script>

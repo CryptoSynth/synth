@@ -93,9 +93,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AlbumDetails.html" />
+    <Content Include="Images\Background1.jpg" />
+    <Content Include="Images\Chronos_ 1.4_3.png" />
+    <Content Include="Images\Chronos_1.4.png" />
     <Content Include="Images\apple.png" />
     <Content Include="Images\Chronos-2.1-HD.jpg" />
     <Content Include="Images\Chronos.jpg" />
+    <Content Include="Images\Chronos_1.4_2.png" />
+    <Content Include="Images\Chronos_Side.png" />
     <Content Include="Images\client1.png" />
     <Content Include="Images\client2.png" />
     <Content Include="Images\computers.png" />
@@ -103,7 +108,6 @@
     <Content Include="Images\kron-technologies-logo-e1536272661684.png" />
     <Content Include="Images\nuno.png" />
     <Content Include="Images\pngtree-white-smoke-effect-background-image_312197.jpg" />
-    <Content Include="Images\Untitled.png" />
     <Content Include="Page1.html" />
     <Content Include="Scripts\ThreeTest.js" />
     <Content Include="Styles\bootstrap-grid.css" />
@@ -209,6 +213,7 @@
     <Content Include="Styles\Test.css" />
     <Content Include="Test.html" />
     <Content Include="video\Chronos Promo v1.mp4" />
+    <Content Include="video\DefenselessFrighteningButterfly-mobile.mp4" />
     <Content Include="video\GenerousSophisticatedCoelacanth.mp4" />
     <Content Include="video\RedSmaple.mp4" />
     <Content Include="Web.config" />
