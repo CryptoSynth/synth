@@ -34,7 +34,7 @@ body, html {
     .landingpage .image {
         z-index: 0;
         height: 100%;
-        background: url(/Images/kron-camera-black_v2.png);
+        background: url('/Images/Chronos_ 1.4_3.png');
         background-attachment: fixed;
         background-position: center;
         background-size: cover;
@@ -60,7 +60,7 @@ body, html {
     }
 
         .landingpage .flex-item-a:hover {
-            color: red;
+            color: lightgreen;
         }
 
 /*Feature Page Section*/
@@ -141,16 +141,13 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 @media (min-width: 768px) {
 
-    .landingpage .image {
-        transform: translateX(15%);
-    }
-
     .landingpage .flex-item-h1 {
         color: white;
-        top: 50%;
+        background-color: rgba(0,0,0,0.2);
+        top: 35%;
         z-index: 2;
-        font-size: 4.5rem;
-        color: lightgreen;
+        font-size: 7.5rem;
+        color: white;
         padding: .3rem 1.5rem;
         margin-left: 1rem;
     }
@@ -160,7 +157,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
         bottom: 2%;
         text-decoration: none;
         font-size: 1.5rem;
-        color: lightgreen;
+        color: white;
         z-index: 2;
     }
 
@@ -176,7 +173,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
                 height: 100%;
                 width: 100%;
                 padding: 0;
-                width: 1000px;
+                width: 1200px;
                 height: 600px;
             }
 
