@@ -6,30 +6,28 @@
 /*Body Font Temp*/
 body{
     font-family: 'Titillium Web', sans-serif;
-}
-
-/*Video Landing Page*/
-.video-container {
-    position: relative;
-    background-color: black;
     height: 100vh;
-    min-height: 10rem;
-    width: 100%;
     overflow: hidden;
 }
 
+.container-fluid {
+    border: 2px solid black;
+}
+/*Video Landing Page*/
+.video-container {
+    width: 100%;
+    height: 100%;
+}
+
 .vid1 {
-    position: absolute;
-    width: auto;
     height: 100%;
     z-index: 0;
-    filter: blur(5px);
+    filter: blur(3px);
 }
 
 .vid2 {
-    position: absolute;
-    width: 100%;
     height: 100%;
+    width: 100%;
     z-index: 1;
 }
 

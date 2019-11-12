@@ -53,20 +53,22 @@
     <!--End Main Menu Navagation-->
     <!--Start Video Landing Page-->
     <!--Mobile View-->
-    <div class="video-container d-sm-block d-md-none">
-        <video class="vid1" autoplay="autoplay" playsinline="playsinline" muted="muted" loop="loop">
-            <source src="/video/Chronos Promo v1.mp4" type="video/mp4" />
+    <div class="video-containter container-fluid h-100 p-0 position-relative d-sm-block d-md-none">
+        <video class="vid1 position-absolute" autoplay="autoplay" playsinline="playsinline" muted="muted" loop="loop">
+            <source src="/video/Less_Qual_Chronos_Promo.mp4" type="video/mp4" />
         </video>
-        <video class="vid2" autoplay="autoplay" playsinline="playsinline" muted="muted" loop="loop">
+        <video class="vid2  position-absolute" autoplay="autoplay" playsinline="playsinline" muted="muted" loop="loop">
             <source src="/video/Chronos Promo v1.mp4" type="video/mp4" />
         </video>
     </div>
-    <!--Desktop View-->
-    <video class="d-none d-md-block" autoplay="autoplay" playsinline="playsinline" muted="muted" loop="loop">
-        <source src="/video/Chronos Promo v1.mp4" type="video/mp4" />
-    </video>
-    <!--End Video Landing Page-->
 
+    <!--Desktop View-->
+    <div class="container-fluid p-0 d-none d-md-block">
+        <video autoplay="autoplay" playsinline="playsinline" muted="muted" loop="loop">
+            <source src="/video/Chronos Promo v1.mp4" type="video/mp4" />
+        </video>
+    </div>
+    <!--End Video Landing Page-->
     <!--Start Footer Navagation-->
     <footer class="foot">
         <!--Start Navagation 2-->
@@ -76,7 +78,6 @@
         </nav>
     </footer>
     <!--End Footer Navagation-->
-
     <!--Start Script Source Files-->
     <script src="Scripts/jquery-3.4.1.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>

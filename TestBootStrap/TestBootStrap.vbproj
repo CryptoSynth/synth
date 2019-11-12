@@ -215,6 +215,7 @@
     <Content Include="video\Chronos Promo v1.mp4" />
     <Content Include="video\DefenselessFrighteningButterfly-mobile.mp4" />
     <Content Include="video\GenerousSophisticatedCoelacanth.mp4" />
+    <Content Include="video\Less_Qual_Chronos_Promo.mp4" />
     <Content Include="video\RedSmaple.mp4" />
     <Content Include="Web.config" />
   </ItemGroup>
