@@ -25,19 +25,26 @@ body {
     margin-right: 0rem;
     width: 200px;
 }
-.mainnav .navbar-brand img{
-    width: 20%;
-    margin-right: 1rem;
-}
+
+    .mainnav .navbar-brand img {
+        width: 20%;
+        margin-right: 1rem;
+    }
 
 
 
 /*--Footer Navagation--*/
+.foot .navbar {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
 
 .foot .navbar h5 {
     letter-spacing: .2rem;
     word-spacing: .5rem;
     color: gray;
+    margin: 0;
+    text-align: center;
+    padding-bottom: .6rem;
 }
 
 .foot .navbar strong {
@@ -48,10 +55,15 @@ body {
     border-radius: 30px;
     border-width: 2px;
     font-size: 1.2rem;
+    padding: .4rem;
 }
 
 .foot strong {
     color: white;
+}
+
+.foot .col-md-6 {
+    padding: 0;
 }
 
 
@@ -109,6 +121,15 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 =============*/
 
-@media(min-width: 322px) {
+@media(min-width: 768px) {
 
+    /*--Footer Navagation--*/
+
+        .foot .navbar h5 {
+            padding-bottom: 0rem;
+        }
+
+    .foot .col-md-6 {
+        padding: 0;
+    }
 }

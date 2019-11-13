@@ -213,6 +213,7 @@
     <Content Include="Styles\Test.css" />
     <Content Include="Test.html" />
     <Content Include="video\Chronos Promo v1.mp4" />
+    <Content Include="video\Chronos_Home_Page.mp4" />
     <Content Include="video\DefenselessFrighteningButterfly-mobile.mp4" />
     <Content Include="video\GenerousSophisticatedCoelacanth.mp4" />
     <Content Include="video\Less_Qual_Chronos_Promo.mp4" />

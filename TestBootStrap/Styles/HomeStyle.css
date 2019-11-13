@@ -4,31 +4,25 @@
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 
 /*Body Font Temp*/
-body{
+.body{
     font-family: 'Titillium Web', sans-serif;
-    height: 100vh;
     overflow: hidden;
 }
 
-.container-fluid {
-    border: 2px solid black;
+.mobile-vid {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
-/*Video Landing Page*/
-.video-container {
+.mobile-vid .desktop-vid{
     width: 100%;
     height: 100%;
+    background-color: black;
 }
 
-.vid1 {
-    height: 100%;
-    z-index: 0;
-    filter: blur(3px);
-}
-
-.vid2 {
-    height: 100%;
+.mobile-vid .vid3{
     width: 100%;
-    z-index: 1;
+    height: 94%;
 }
 
 /*============ BOOTSTRAP BREAK POINTS:
@@ -52,16 +46,19 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 @media (min-width: 768px) {
 
-    body {
+    .mobile-vid {
+        position: relative;
+        height: 100vh;
         overflow: hidden;
     }
 
+        .mobile-vid .desktop-vid {
+            height: 100%;
+            background-color: black;
+        }
 
-    .vid1 {
-        filter: blur(0px);
-        margin: 0px;
-        width: 100%;
-        height: auto;
-    }
-
+        .mobile-vid .vid3 {
+            object-fit:cover;
+            height: 100%;
+        }
 }
