@@ -69,6 +69,7 @@ body, html {
 
     .feature .sidebar {
         background-color: #111;
+        height: 0%;
     }
 
     .feature .listhead {
@@ -160,6 +161,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
         color: white;
         z-index: 2;
     }
+
 
 
     .feature .image2 {
