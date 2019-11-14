@@ -108,7 +108,7 @@
     <Content Include="Images\kron-technologies-logo-e1536272661684.png" />
     <Content Include="Images\nuno.png" />
     <Content Include="Images\pngtree-white-smoke-effect-background-image_312197.jpg" />
-    <Content Include="Page1.html" />
+    <Content Include="Chronos1.4.html" />
     <Content Include="Scripts\ThreeTest.js" />
     <Content Include="Styles\bootstrap-grid.css" />
     <Content Include="Styles\bootstrap-grid.min.css" />
@@ -208,7 +208,7 @@
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Styles\fixed.css" />
     <Content Include="Styles\HomeStyle.css" />
-    <Content Include="Styles\Page1Style.css" />
+    <Content Include="Styles\Chronos1.4Style.css" />
     <Content Include="Styles\NavBarStyle.css" />
     <Content Include="Styles\Test.css" />
     <Content Include="Test.html" />
