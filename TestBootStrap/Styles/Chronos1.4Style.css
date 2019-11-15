@@ -67,11 +67,6 @@ body, html {
     background-color: #111;
 }
 
-    .feature .sidebar {
-        background-color: #111;
-        height: 0%;
-    }
-
     .feature .listhead {
         font-size: 2rem;
         font-weight: 700;
@@ -82,18 +77,23 @@ body, html {
     .feature hr {
         border: 1.5px solid lightgreen;
         width: 18rem;
-        margin-top: .5rem;
     }
 
-    .feature .list1 {
-        list-style-type: circle;
-        font-weight: 400;
-        font-size: .7rem;
-        color: white;
+    .feature .card {
+        margin-bottom: .3rem;
+        border: 0;
     }
 
-    .feature li {
-        padding-top: 1rem;
+    .feature .card-header{
+        padding: .2rem;
+    }
+    .feature .table td, .table th{
+        padding: 0;
+    }
+
+    .feature .btn{
+        margin-left: 68%; 
+        padding: .2rem .4rem;
     }
 
 /*Order Page Section*/
@@ -162,37 +162,4 @@ Extra (xl) large devices (large desktops, 1200px and up)
         z-index: 2;
     }
 
-
-
-    .feature .image2 {
-        margin-top: 5rem;
-        height: 100%;
-        width: 100%;
-    }
-
-        .feature .listhead {
-            font-size: 3rem;
-            font-weight: 900;
-            margin-bottom: .4rem;
-
-        }
-
-        .feature hr {
-            border: 2px solid lightgreen;
-            width: 30rem;
-            margin-top: 0;
-            margin-bottom: 3rem;
-        }
-
-    .feature .list1 {
-        list-style-type: circle;
-        text-justify:distribute;
-        padding: 2rem;
-    }
-
-        .feature li {
-            font-size: 1rem;
-            font-weight: 400;
-            padding-top: .8rem;
-        }
 }
