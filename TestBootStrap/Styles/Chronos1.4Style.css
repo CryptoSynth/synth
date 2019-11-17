@@ -62,18 +62,16 @@ body, html {
     height: 100vh;
     background-color: #111;
 }
-.feature .col-12{
- 
-}
-
-.feature .image1{
-    height: 25%;
-}
 
 .feature .comparison-table{
     background-color: white;
-    height: 60%;
 }
+
+    .feature .comparison-table .table th,
+    .feature .comparison-table .table td {
+        vertical-align: middle;
+        text-align: center;
+    }
 
     .feature .listhead {
         font-size: 2rem;
@@ -98,11 +96,14 @@ body, html {
     }
 
     /*Learn More*/
-    .feature .learn-more{
-  
+
+    .feature .learn-more h4{
+        color: lightgreen;
+        letter-spacing: .3rem;
     }
 
     .feature .modal-Init{
+        width: 20%;
         
     } 
 
