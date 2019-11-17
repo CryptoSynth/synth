@@ -5,10 +5,6 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Niramit&display=swap');
 
-/*Temp Border Page Layout*/
-
-/*Temp Light Nav*/
-
 /*Body*/
 body, html {
     font-family: 'Niramit', sans-serif;
@@ -63,22 +59,35 @@ body, html {
 
 /*Feature Page Section*/
 .feature {
-    height: 130vh;
+    height: 100vh;
     background-color: #111;
+}
+.feature .col-12{
+ 
+}
+
+.feature .image1{
+    height: 25%;
+}
+
+.feature .comparison-table{
+    background-color: white;
+    height: 60%;
 }
 
     .feature .listhead {
         font-size: 2rem;
         font-weight: 700;
-        color: white;
+        color: lightgreen;
         text-align: center;
     }
 
     .feature hr {
         border: 1.5px solid lightgreen;
-        width: 18rem;
+        width: 100%;
     }
 
+    /*Accordion Cards*/
     .feature .card {
         margin-bottom: .3rem;
         border: 0;
@@ -87,14 +96,15 @@ body, html {
     .feature .card-header{
         padding: .2rem;
     }
-    .feature .table td, .table th{
-        padding: 0;
+
+    /*Learn More*/
+    .feature .learn-more{
+  
     }
 
-    .feature .btn{
-        margin-left: 68%; 
-        padding: .2rem .4rem;
-    }
+    .feature .modal-Init{
+        
+    } 
 
 /*Order Page Section*/
 

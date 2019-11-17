@@ -10,37 +10,78 @@
     <link rel="stylesheet" href="/Styles/Test.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-    
-
-<div class="no-support">
-  <p>Heads up: It doesn't look like your browser supports scroll snapping! Check <a href="https://caniuse.com/#feat=css-snappoints">Can I use</a> for current browser support. Maybe try opening this CodePen in a different browser, like Chrome?</p>
-</div>
-<div class="example-wrapper">
-  <p>On all examples, scroll slowly to "feel" the snap points.</p>
 
 
-  <p><code>scroll-snap-type: both mandatory;</code></p>
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Username</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
 
-  <div class="container both-scroll both-mandatory">
-    <div class="wrapper">
-      <div class="element">1</div>
-      <div class="element">2</div>
-      <div class="element">3</div>
-      <div class="element">4</div>
-    </div>
-  </div>
-</div>
 
+    <script>
+        let scene;
+
+        function init() {
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0xddddd);
+
+            camera = new THREE.PerspectiveCamera(40, windows.innerWidth / window.innerHeight, 1, 5000);
+
+            hlight = new THREE.AmbientLight(0x404040, 100);
+            scene.add(hlight);
+
+            renderer = new THREE.({ antialias: true });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            document.body.appendChild(renderer.domElement);
+
+            let loader = new THREE.GLTFLoader();
+            loader.load('scene.gltf', function (gltf) {
+                scene.add(gltf.scene);
+                renderer.render(scene, camera);
+            });
+        }
+        init();
+    </script>
 
 
 
     <!--Script Source Files-->
+    <script src="three.js"></script>
+    <script src="GLTFLoader.js"></script>
     <script src="../Scripts/jquery-3.4.1.js"></script>
     <script src="../Scripts/jquery-3.4.1.slim.min.js"></script>
     <script src="../Scripts/bootstrap.bundle.js"></script>
     <script src="../Scripts/bootstrap.bundle.min.js"></script>
     <script src="https://github.com/FortAwesome/Font-Awesome/blob/master/js/all.js"></script>
+
     <!--End of Script Source Files-->
 </body>
 </html>

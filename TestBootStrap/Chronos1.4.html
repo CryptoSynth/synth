@@ -5,10 +5,10 @@
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
     <!--Style Sheets CSS-->
     <title>Chronos 1.4</title>
-    <link rel="stylesheet" href="../Styles/bootstrap.min.css" />
-    <link rel="stylesheet" href="../Styles/NavBarStyle.css" />
-    <link rel="stylesheet" href="../Styles/Chronos1.4Style.css" />
-    <link rel="stylesheet" href="../Styles/fixed.css" />
+    <link rel="stylesheet" href="/Styles/bootstrap.css" />
+    <link rel="stylesheet" href="Styles/NavBarStyle.css" />
+    <link rel="stylesheet" href="Styles/Chronos1.4Style.css" />
+    <link rel="stylesheet" href="Styles/fixed.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -77,404 +77,466 @@
             <div class="row h-100">
 
                 <!--Image-->
-                <div class="image2 col-12">
-                    <img class="align-self-center w-100" src="Images/Chronos_1.4.png" />
+                <div class="image1 col-12">
+                    <img class="h-100" src="Images/Chronos_1.4.png" />
                 </div>
 
-
-
-                <!--Accordion Button Features-->
-                <div id="accordion" class="col-12 h-100">
-                    <!--Title Section-->
-                    <h1 class="listhead align-self-center text-uppercase"><a name="feature">Features</a></h1>
-                    <hr />
-
-                    <!--Card 1-->
-                    y<div class="card">
-                        <div class="card-header" id="headingOne">
-                            <h5 class="mb-0 text-center">
-                                card
-                                <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <i class="fa fa-camera"></i>
-                                </button>
-                            </h5>
-
-
-
-                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                <div class="card-body">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>Heading 1</th>
-                                                <th>Heading 2</th>
-                                                <th>Heading 3</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">text 1</th>
-                                                <td>text 2</td>
-                                                <td>text 3</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">text 2</th>
-                                                <td>text 3</td>
-                                                <td>text 4</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="">text 5</th>
-                                                <td>text 6</td>
-                                                <td>text 7</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
+                <!--Table Comparsion-->
+                <div class="comparison-table col-12">
+                    <table class="table table-hover h-100">
+                        <thead>
+                            <tr>
+                                <th scope="col">Feat</th>
+                                <th scope="col">Chronos 1.4</th>
+                                <th scope="col">Red</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">Fact 1</th>
+                                <td>Text 1</td>
+                                <td>Text 2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Fact 2</th>
+                                <td>Text 1</td>
+                                <td>Text 2</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Fact 3</th>
+                                <td>Text 1</td>
+                                <td>Text 2</td>
+                            </tr>
+                            <tr>
+                                <th>Fact 4</th>
+                                <td>Text 1</td>
+                                <td>Text 2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <!--Init Modal-->
+                <div class="learn-more col-12">
+                    <div class="d-flex justify-content-around align-items-center h-100">
+                        <h4 class="text-white">Learn More</h4>
+                        <button type="button" class="modal-Init btn w-25" data-toggle="modal" data-target="#myModal">
+                            <i class="fa fa-info"></i>
+                        </button>
                     </div>
+                </div>
 
-                    <!--Card 2-->
-                    <div class="card ">
-                        <div class="card-header" id="headingTwo">
-                            <h5 class="mb-0 text-center">
-                                card
-                                <button class="btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                    <i class="fa fa-plus"></i>
-                                </button>
-                            </h5>
+                <!--The Modal-->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
 
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                <div class="card-body">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>Heading 1</th>
-                                                <th>Heading 2</th>
-                                                <th>Heading 3</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">text 1</th>
-                                                <td>text 2</td>
-                                                <td>text 3</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">text 2</th>
-                                                <td>text 3</td>
-                                                <td>text 4</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="">text 5</th>
-                                                <td>text 6</td>
-                                                <td>text 7</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
+                            <!--Modal Body-->
+                            <div class="modal-body">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <!--Accordion Cards-->
+                                <div id="accordion" class="h-100">
+                                    <!--Title Section-->
+                                    <h1 class="listhead align-self-center text-uppercase"><a name="feature">Features</a></h1>
+                                    <hr />
+
+                                    <!--Card 1-->
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne">
+                                            <h5 class="mb-0 text-center">
+                                                card
+                                                <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                    <i class="fa fa-camera"></i>
+                                                </button>
+                                            </h5>
+
+
+
+                                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Heading 1</th>
+                                                                <th>Heading 2</th>
+                                                                <th>Heading 3</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">text 1</th>
+                                                                <td>text 2</td>
+                                                                <td>text 3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">text 2</th>
+                                                                <td>text 3</td>
+                                                                <td>text 4</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="">text 5</th>
+                                                                <td>text 6</td>
+                                                                <td>text 7</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Card 2-->
+                                    <div class="card ">
+                                        <div class="card-header" id="headingTwo">
+                                            <h5 class="mb-0 text-center">
+                                                card
+                                                <button class="btn" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                    <i class="fa fa-plus"></i>
+                                                </button>
+                                            </h5>
+
+                                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Heading 1</th>
+                                                                <th>Heading 2</th>
+                                                                <th>Heading 3</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">text 1</th>
+                                                                <td>text 2</td>
+                                                                <td>text 3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">text 2</th>
+                                                                <td>text 3</td>
+                                                                <td>text 4</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="">text 5</th>
+                                                                <td>text 6</td>
+                                                                <td>text 7</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Card 3-->
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0 text-center">
+                                                card
+                                                <button class="btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                    <i class="fa fa-chevron-down"></i>
+                                                </button>
+                                            </h5>
+
+                                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Heading 1</th>
+                                                                <th>Heading 2</th>
+                                                                <th>Heading 3</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">text 1</th>
+                                                                <td>text 2</td>
+                                                                <td>text 3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">text 2</th>
+                                                                <td>text 3</td>
+                                                                <td>text 4</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="">text 5</th>
+                                                                <td>text 6</td>
+                                                                <td>text 7</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Card 4-->
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0 text-center">
+                                                card
+                                                <button class="btn" data-toggle="collapse" data-target="#c4" aria-expanded="true" aria-controls="c4">
+                                                    <i class="fa fa-chevron-down"></i>
+                                                </button>
+                                            </h5>
+
+                                            <div id="c4" class="collapse" aria-labelledby="h4" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Heading 1</th>
+                                                                <th>Heading 2</th>
+                                                                <th>Heading 3</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">text 1</th>
+                                                                <td>text 2</td>
+                                                                <td>text 3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">text 2</th>
+                                                                <td>text 3</td>
+                                                                <td>text 4</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="">text 5</th>
+                                                                <td>text 6</td>
+                                                                <td>text 7</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Card 5-->
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0 text-center">
+                                                card
+                                                <button class="btn" data-toggle="collapse" data-target="#c5" aria-expanded="true" aria-controls="c5">
+                                                    <i class="fa fa-chevron-down"></i>
+                                                </button>
+                                            </h5>
+
+                                            <div id="c5" class="collapse" aria-labelledby="h5" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Heading 1</th>
+                                                                <th>Heading 2</th>
+                                                                <th>Heading 3</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">text 1</th>
+                                                                <td>text 2</td>
+                                                                <td>text 3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">text 2</th>
+                                                                <td>text 3</td>
+                                                                <td>text 4</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="">text 5</th>
+                                                                <td>text 6</td>
+                                                                <td>text 7</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Card 6-->
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0 text-center">
+                                                card
+                                                <button class="btn" data-toggle="collapse" data-target="#c6" aria-expanded="true" aria-controls="c6">
+                                                    <i class="fa fa-chevron-down"></i>
+                                                </button>
+                                            </h5>
+
+                                            <div id="c6" class="collapse" aria-labelledby="h6" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Heading 1</th>
+                                                                <th>Heading 2</th>
+                                                                <th>Heading 3</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">text 1</th>
+                                                                <td>text 2</td>
+                                                                <td>text 3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">text 2</th>
+                                                                <td>text 3</td>
+                                                                <td>text 4</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="">text 5</th>
+                                                                <td>text 6</td>
+                                                                <td>text 7</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Card 7-->
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0 text-center">
+                                                card
+                                                <button class="btn" data-toggle="collapse" data-target="#c7" aria-expanded="true" aria-controls="c7">
+                                                    <i class="fa fa-chevron-down"></i>
+                                                </button>
+                                            </h5>
+
+                                            <div id="c7" class="collapse" aria-labelledby="h7" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Heading 1</th>
+                                                                <th>Heading 2</th>
+                                                                <th>Heading 3</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">text 1</th>
+                                                                <td>text 2</td>
+                                                                <td>text 3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">text 2</th>
+                                                                <td>text 3</td>
+                                                                <td>text 4</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="">text 5</th>
+                                                                <td>text 6</td>
+                                                                <td>text 7</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Card 8-->
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0 text-center">
+                                                card
+                                                <button class="btn" data-toggle="collapse" data-target="#c8" aria-expanded="true" aria-controls="c8">
+                                                    <i class="fa fa-chevron-down"></i>
+                                                </button>
+                                            </h5>
+
+                                            <div id="c8" class="collapse" aria-labelledby="h8" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Heading 1</th>
+                                                                <th>Heading 2</th>
+                                                                <th>Heading 3</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">text 1</th>
+                                                                <td>text 2</td>
+                                                                <td>text 3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">text 2</th>
+                                                                <td>text 3</td>
+                                                                <td>text 4</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="">text 5</th>
+                                                                <td>text 6</td>
+                                                                <td>text 7</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!--Card 9-->
+                                    <div class="card">
+                                        <div class="card-header" id="headingThree">
+                                            <h5 class="mb-0 text-center">
+                                                card
+                                                <button class="btn" data-toggle="collapse" data-target="#c9" aria-expanded="true" aria-controls="c9">
+                                                    <i class="fa fa-chevron-down"></i>
+                                                </button>
+                                            </h5>
+
+                                            <div id="c9" class="collapse" aria-labelledby="h9" data-parent="#accordion">
+                                                <div class="card-body">
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Heading 1</th>
+                                                                <th>Heading 2</th>
+                                                                <th>Heading 3</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">text 1</th>
+                                                                <td>text 2</td>
+                                                                <td>text 3</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">text 2</th>
+                                                                <td>text 3</td>
+                                                                <td>text 4</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="">text 5</th>
+                                                                <td>text 6</td>
+                                                                <td>text 7</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <!--Card 3-->
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0 text-center">
-                                card
-                                <button class="btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                    <i class="fa fa-chevron-down"></i>
-                                </button>
-                            </h5>
-
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                <div class="card-body">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>Heading 1</th>
-                                                <th>Heading 2</th>
-                                                <th>Heading 3</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">text 1</th>
-                                                <td>text 2</td>
-                                                <td>text 3</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">text 2</th>
-                                                <td>text 3</td>
-                                                <td>text 4</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="">text 5</th>
-                                                <td>text 6</td>
-                                                <td>text 7</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
+                            <!--Modal Footer-->
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                             </div>
-                        </div>
-                    </div>
 
-                    <!--Card 4-->
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0 text-center">
-                                card
-                                <button class="btn" data-toggle="collapse" data-target="#c4" aria-expanded="true" aria-controls="c4">
-                                    <i class="fa fa-chevron-down"></i>
-                                </button>
-                            </h5>
 
-                            <div id="c4" class="collapse" aria-labelledby="h4" data-parent="#accordion">
-                                <div class="card-body">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>Heading 1</th>
-                                                <th>Heading 2</th>
-                                                <th>Heading 3</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">text 1</th>
-                                                <td>text 2</td>
-                                                <td>text 3</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">text 2</th>
-                                                <td>text 3</td>
-                                                <td>text 4</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="">text 5</th>
-                                                <td>text 6</td>
-                                                <td>text 7</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Card 5-->
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0 text-center">
-                                card
-                                <button class="btn" data-toggle="collapse" data-target="#c5" aria-expanded="true" aria-controls="c5">
-                                    <i class="fa fa-chevron-down"></i>
-                                </button>
-                            </h5>
-
-                            <div id="c5" class="collapse" aria-labelledby="h5" data-parent="#accordion">
-                                <div class="card-body">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>Heading 1</th>
-                                                <th>Heading 2</th>
-                                                <th>Heading 3</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">text 1</th>
-                                                <td>text 2</td>
-                                                <td>text 3</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">text 2</th>
-                                                <td>text 3</td>
-                                                <td>text 4</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="">text 5</th>
-                                                <td>text 6</td>
-                                                <td>text 7</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Card 6-->
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0 text-center">
-                                card
-                                <button class="btn" data-toggle="collapse" data-target="#c6" aria-expanded="true" aria-controls="c6">
-                                    <i class="fa fa-chevron-down"></i>
-                                </button>
-                            </h5>
-
-                            <div id="c6" class="collapse" aria-labelledby="h6" data-parent="#accordion">
-                                <div class="card-body">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>Heading 1</th>
-                                                <th>Heading 2</th>
-                                                <th>Heading 3</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">text 1</th>
-                                                <td>text 2</td>
-                                                <td>text 3</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">text 2</th>
-                                                <td>text 3</td>
-                                                <td>text 4</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="">text 5</th>
-                                                <td>text 6</td>
-                                                <td>text 7</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Card 7-->
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0 text-center">
-                                card
-                                <button class="btn" data-toggle="collapse" data-target="#c7" aria-expanded="true" aria-controls="c7">
-                                    <i class="fa fa-chevron-down"></i>
-                                </button>
-                            </h5>
-
-                            <div id="c7" class="collapse" aria-labelledby="h7" data-parent="#accordion">
-                                <div class="card-body">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>Heading 1</th>
-                                                <th>Heading 2</th>
-                                                <th>Heading 3</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">text 1</th>
-                                                <td>text 2</td>
-                                                <td>text 3</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">text 2</th>
-                                                <td>text 3</td>
-                                                <td>text 4</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="">text 5</th>
-                                                <td>text 6</td>
-                                                <td>text 7</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Card 8-->
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0 text-center">
-                                card
-                                <button class="btn" data-toggle="collapse" data-target="#c8" aria-expanded="true" aria-controls="c8">
-                                    <i class="fa fa-chevron-down"></i>
-                                </button>
-                            </h5>
-
-                            <div id="c8" class="collapse" aria-labelledby="h8" data-parent="#accordion">
-                                <div class="card-body">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>Heading 1</th>
-                                                <th>Heading 2</th>
-                                                <th>Heading 3</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">text 1</th>
-                                                <td>text 2</td>
-                                                <td>text 3</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">text 2</th>
-                                                <td>text 3</td>
-                                                <td>text 4</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="">text 5</th>
-                                                <td>text 6</td>
-                                                <td>text 7</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Card 9-->
-                    <div class="card">
-                        <div class="card-header" id="headingThree">
-                            <h5 class="mb-0 text-center">
-                                card
-                                <button class="btn" data-toggle="collapse" data-target="#c9" aria-expanded="true" aria-controls="c9">
-                                    <i class="fa fa-chevron-down"></i>
-                                </button>
-                            </h5>
-
-                            <div id="c9" class="collapse" aria-labelledby="h9" data-parent="#accordion">
-                                <div class="card-body">
-                                    <table class="table table-hover">
-                                        <thead>
-                                            <tr>
-                                                <th>Heading 1</th>
-                                                <th>Heading 2</th>
-                                                <th>Heading 3</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <th scope="row">text 1</th>
-                                                <td>text 2</td>
-                                                <td>text 3</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">text 2</th>
-                                                <td>text 3</td>
-                                                <td>text 4</td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="">text 5</th>
-                                                <td>text 6</td>
-                                                <td>text 7</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -482,11 +544,12 @@
         </div>
     </section>
     <!--End Feature Section-->
+
     <!--Start Order Section-->
     <section class="order scroll-start">
         <div class="container-fluid h-100 p-0">
             <div class="row h-100">
-                <div class="image2 d-flex justify-content-center h-100"></div>
+                <div class="image2 h-100"></div>
                 <div class="col-12 justify-content-center align-items-center h-100 w-100">
                     <button class="order-button position-absolute btn btn-sm btn-outline-light">
                         Order Now
