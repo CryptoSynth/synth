@@ -96,7 +96,6 @@
     <Content Include="3D-Model\Camera\textures\material_metallicRoughness.png" />
     <Content Include="3D-Model\Camera\textures\material_normal.jpeg" />
     <Content Include="AlbumDetails.html" />
-    <Content Include="font-awesome\js\GLTFLoader.js" />
     <Content Include="Images\Background1.jpg" />
     <Content Include="Images\Chronos_ 1.4_3.png" />
     <Content Include="Images\Chronos_1.4.png" />
@@ -113,9 +112,10 @@
     <Content Include="Images\nuno.png" />
     <Content Include="Images\pngtree-white-smoke-effect-background-image_312197.jpg" />
     <Content Include="Chronos1.4.html" />
-    <Content Include="font-awesome\js\three.js" />
-    <Content Include="font-awesome\js\three.min.js" />
-    <Content Include="font-awesome\js\three.module.js" />
+    <Content Include="Scripts\GLTFLoader.js" />
+    <Content Include="Scripts\three.js" />
+    <Content Include="Scripts\three.min.js" />
+    <Content Include="Scripts\three.module.js" />
     <Content Include="Styles\bootstrap-grid.css" />
     <Content Include="Styles\bootstrap-grid.min.css" />
     <Content Include="Styles\bootstrap-reboot.css" />
@@ -200,7 +200,8 @@
     <Content Include="Images\.DS_Store" />
     <Content Include="MyFont\CHRONOS.woff" />
     <Content Include="3D-Model\Camera\scene.bin" />
-    <Content Include="scene.gltf" />
+    <Content Include="3D-Model\Camera\scene.gltf" />
+    <Content Include="jsconfig.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
