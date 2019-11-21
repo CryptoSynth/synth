@@ -97,6 +97,7 @@
     <Content Include="3D-Model\Camera\textures\material_normal.jpeg" />
     <Content Include="AlbumDetails.html" />
     <Content Include="Images\Background1.jpg" />
+    <Content Include="Images\Background_Order.jpg" />
     <Content Include="Images\Chronos_ 1.4_3.png" />
     <Content Include="Images\Chronos_1.4.png" />
     <Content Include="Images\apple.png" />
@@ -106,6 +107,7 @@
     <Content Include="Images\Chronos_Side.png" />
     <Content Include="Images\client1.png" />
     <Content Include="Images\client2.png" />
+    <Content Include="Images\Competitor_Camera.png" />
     <Content Include="Images\computers.png" />
     <Content Include="Images\kron-camera-black_v2.png" />
     <Content Include="Images\kron-technologies-logo-e1536272661684.png" />
@@ -113,9 +115,6 @@
     <Content Include="Images\pngtree-white-smoke-effect-background-image_312197.jpg" />
     <Content Include="Chronos1.4.html" />
     <Content Include="Scripts\GLTFLoader.js" />
-    <Content Include="Scripts\three.js" />
-    <Content Include="Scripts\three.min.js" />
-    <Content Include="Scripts\three.module.js" />
     <Content Include="Styles\bootstrap-grid.css" />
     <Content Include="Styles\bootstrap-grid.min.css" />
     <Content Include="Styles\bootstrap-reboot.css" />

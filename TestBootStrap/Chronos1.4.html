@@ -50,7 +50,7 @@
     </header>
     <!--End Main Menu Navagation-->
     <!--Start Landing Page Section-->
-    <section class="landingpage">
+    <section class="landingpage h-100">
 
         <!--Video-->
         <video class="vid1" autoplay="autoplay" playsinline="playsinline" loop="loop" muted="muted">
@@ -58,12 +58,11 @@
         </video>
 
         <!--Overlay Container-->
-        <div class="container-fluid h-100 p-0">
-            <div class="d-flex flex-column align-items-center h-100">
-                <h1 class="flex-item-h1 position-absolute align-self-center text-uppercase">Chronos 1.4</h1>
-                <a class="flex-item-a d-flex flex-column position-absolute" href="#feature">
+        <div class="container-fluid">
+            <div class="d-flex flex-column align-items-center">
+                <h1 class="flex-item-h1 position-absolute text-uppercase text-white">Chronos 1.4</h1>
+                <a class="flex-item-a position-absolute d-flex flex-column text-white" href="#feature">
                     Scroll Down
-                    <br />
                     <i class="fa fa-chevron-down align-self-center"></i>
                 </a>
             </div>
@@ -74,13 +73,30 @@
     <!--Start Feature Section-->
     <section class="feature scroll-start">
         <div class="container-fluid h-100">
-            <div class="row h-100">
+            <div class="row align-items-center">
 
-                <!--Image-->
-                <div class="col-12 h-25 pl-0 pr-0">
-                    <img class="d-inline w-100" src="Images/Chronos_1.4.png" />
+                <!--Chronos1.4 Image-->
+                <div class="image2 col-5 col-md-4 p-0">
+
+                    <img class="adjust-image d-block mx-auto" src="Images/Chronos_1.4.png" />
+
                 </div>
 
+                <div class="col-2 p-0 ">
+                    <div class="d-flex  flex-column h-100">
+                        <h3 class="text-center text-white">VS</h3>
+                    </div>
+                </div>
+
+                <!--Competitor Image-->
+                <div class="image2 col-5 col-md-4 p-0">
+
+                    <img class="adjust-image d-block mx-auto " src="Images/Competitor_Camera.png" />
+
+                </div>
+            </div>
+
+            <div class="row justify-content-end">
                 <!--Table Comparsion-->
                 <div class="col-12">
                     <div class="comparison-table d-flex h-100">
@@ -89,7 +105,7 @@
                                 <tr>
                                     <th scope="col">Feat</th>
                                     <th scope="col">Chronos 1.4</th>
-                                    <th scope="col">Red</th>
+                                    <th scope="col">Enemy</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -118,10 +134,11 @@
                     </div>
                 </div>
 
+
                 <!--Init Modal-->
-                <div class="learn-more col-12">
-                    <div class="d-flex justify-content-between align-items-center h-100">
-                        <h4 class="mx-au">Learn More</h4>
+                <div class="learn-more col-12 mt-5">
+                    <div class="d-flex justify-content-md-between justify-content-around align-items-center h-100">
+                        <h4>Learn More</h4>
                         <button type="button" class="modal-Init btn" data-toggle="modal" data-target="#myModal">
                             <i class="fa fa-info"></i>
                         </button>
@@ -140,16 +157,16 @@
                                 <div id="accordion" class="h-100">
                                     <!--Title Section-->
                                     <h1 class="listhead align-self-center text-uppercase"><a name="feature">Features</a></h1>
-                                    <hr />
-                                    
+                                    <hr class="w-100" />
+
                                     <!--Card 3-->
                                     <div class="card">
                                         <div class="card-header" id="headingThree">
                                             <div class="d-flex justify-content-between">
-                                                <h5 class="mb-0">
-                                                    card
+                                                <h5 class="w-100 mb-0 p-1 text-center ">
+                                                    Open Me
                                                 </h5>
-                                                <button class="btn" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                <button class="card-button btn btn-dark" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                                                     <i class="fa fa-chevron-down"></i>
                                                 </button>
                                             </div>
@@ -176,7 +193,7 @@
                                                                 <td>text 4</td>
                                                             </tr>
                                                             <tr>
-                                                                <th scope="">text 5</th>
+                                                                <th scope="row">text 5</th>
                                                                 <td>text 6</td>
                                                                 <td>text 7</td>
                                                             </tr>
@@ -204,17 +221,14 @@
     <section class="order scroll-start">
         <div class="container-fluid h-100 p-0">
             <div class="row h-100">
-                <div class="image2 h-100"></div>
-
                 <div class="col-12">
-
-                    <iframe class="w-100 h-50" title="A 3D model" src="https://sketchfab.com/models/ca72ad4a9b88473b8bd81e715c8503df/embed?autostart=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-                    <div class="d-flex justify-content-around mt-5">
-                        <button class="order-button btn btn-sm btn-outline-light">
+                    <div class="d-flex justify-content-around flex-column h-100">
+                        <iframe class="3D-model w-100 h-75" title="A 3D model" src="https://sketchfab.com/models/ca72ad4a9b88473b8bd81e715c8503df/embed?autostart=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                        <button class="order-button btn btn-sm btn-outline-light align-self-center">
                             Order Now
                         </button>
                     </div>
+
                 </div>
             </div>
         </div>

@@ -8,7 +8,7 @@
 /*Body*/
 body, html {
     font-family: 'Niramit', sans-serif;
-    height: 100%;
+    height: 100vh;
     background-color: black;
     -ms-scroll-snap-type: mandatory;
     scroll-snap-type: mandatory;
@@ -23,34 +23,31 @@ body, html {
 .mainnav .navbar {
     z-index: 3;
 }
+
 /*Landing Page Section*/
 .landingpage {
     font-family: 'Audiowide', cursive;
-    height: 100vh;
     overflow: hidden;
+    height: 100%;
 }
 
     .landingpage .vid1 {
-        height: 100%;
         transform: translateX(-30%);
     }
 
     .landingpage .flex-item-h1 {
-        color: white;
         top: 20%;
-        z-index: 2;
         font-size: 2rem;
-        color: white;
         padding: .3rem 1.5rem;
+        z-index: 2;
     }
 
     .landingpage .flex-item-a {
-        padding: .3rem .8rem .3rem .8rem;
+        bottom: 2%;
         text-decoration: none;
         font-size: 1rem;
-        color: white;
+        padding: .3rem .8rem .3rem .8rem;
         z-index: 2;
-        bottom: 2%;
     }
 
         .landingpage .flex-item-a:hover {
@@ -59,19 +56,23 @@ body, html {
 
 /*Feature Page Section*/
 .feature {
-    height: 100vh;
+    height: 100%;
     background-color: #111;
 }
 
-.feature .comparison-table{
-    background-color: white;
-}
-
-    .feature .comparison-table .table th,
-    .feature .comparison-table .table td {
-        vertical-align: middle;
-        text-align: center;
+    .feature .adjust-image{
+        width: 100%
     }
+
+    .feature .comparison-table {
+        background-color: white;
+    }
+
+        .feature .comparison-table .table th,
+        .feature .comparison-table .table td {
+            vertical-align: middle;
+            text-align: center;
+        }
 
     .feature .listhead {
         font-size: 2rem;
@@ -82,48 +83,46 @@ body, html {
 
     .feature hr {
         border: 1.5px solid lightgreen;
-        width: 100%;
     }
 
     /*Accordion Cards*/
     .feature .card {
-        margin-bottom: .3rem;
-        border: 0;
+        border: 2px solid darkgreen;
     }
 
-    .feature .card-header{
+    .feature .card-button button {
+    }
+
+    .feature .card-header {
         padding: .2rem;
     }
 
     /*Learn More*/
 
-    .feature .learn-more h4{
+    .feature .learn-more h4 {
         color: lightgreen;
         letter-spacing: .3rem;
     }
 
-    .feature .modal-Init{
+    .feature .modal-Init {
         width: 20%;
-        
-    } 
+    }
 
 /*Order Page Section*/
 
 .order {
-    z-index: 0;
-    height: 100%;
-    background: url('/Images/Chronos_ 1.4_3.png');
+    background-image: url(/Images/Background_Order.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+    z-index: 0;
+    height: 100%
 }
 
-    .order .image2 {
-        background: url('/Images/Chronos_ 1.4_3.png');
+    .order .3D-model {
     }
 
     .order .order-button {
-        border: 2px solid white;
         border-radius: 40px;
         width: 80%;
         padding: .3rem;
@@ -150,27 +149,16 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 @media (min-width: 768px) {
 
-    .landingpage .vid1 {
+    .feature .row {
         height: 100%;
+    }
+
+    .landingpage .vid1 {
         width: 100%;
-        object-fit: cover;
         transform: translateX(0%);
     }
-    .landingpage .flex-item-h1 {
-        color: white;
-        top: 10%;
-        z-index: 2;
-        font-size: 7.5rem;
-        letter-spacing: 1.5rem;
-    }
 
-    .landingpage .flex-item-a {
-        padding: .3rem .8rem .3rem .8rem;
-        bottom: 2%;
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: white;
-        z-index: 2;
-    }
+    .feature .image2 {
 
+    }
 }
