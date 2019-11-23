@@ -97,6 +97,7 @@
     <Content Include="3D-Model\Camera\textures\material_normal.jpeg" />
     <Content Include="AlbumDetails.html" />
     <Content Include="County.html" />
+    <Content Include="Creators.html" />
     <Content Include="Images\Background1.jpg" />
     <Content Include="Images\Background_Order.jpg" />
     <Content Include="Images\Chronos_ 1.4_3.png" />
@@ -115,6 +116,7 @@
     <Content Include="Images\nuno.png" />
     <Content Include="Images\pngtree-white-smoke-effect-background-image_312197.jpg" />
     <Content Include="Chronos1.4.html" />
+    <Content Include="Investors.html" />
     <Content Include="Scripts\GLTFLoader.js" />
     <Content Include="Styles\bootstrap-grid.css" />
     <Content Include="Styles\bootstrap-grid.min.css" />
@@ -216,6 +218,7 @@
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Styles\County.css" />
+    <Content Include="Styles\CreatorsStyle.css" />
     <Content Include="Styles\fixed.css" />
     <Content Include="Styles\HomeStyle.css" />
     <Content Include="Styles\Chronos1.4Style.css" />
@@ -228,6 +231,8 @@
     <Content Include="video\GenerousSophisticatedCoelacanth.mp4" />
     <Content Include="video\Less_Qual_Chronos_Promo.mp4" />
     <Content Include="video\RedSmaple.mp4" />
+    <Content Include="video\Signing Of Contract - Stock Footage.mp4" />
+    <Content Include="video\video %281%29.mp4" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
