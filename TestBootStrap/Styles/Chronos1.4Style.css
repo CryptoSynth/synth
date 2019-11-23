@@ -28,7 +28,7 @@ body, html {
 .landingpage {
     font-family: 'Audiowide', cursive;
     overflow: hidden;
-    height: 100%;
+    height: 100vh;
 }
 
     .landingpage .vid1 {
@@ -58,21 +58,45 @@ body, html {
 .feature {
     height: 100%;
     background-color: #111;
+    z-index: 0;
 }
 
-    .feature .adjust-image{
-        width: 100%
+    .feature .adjust-image {
+        height: 100%;
+    }
+
+    .feature .vs-text {
+        font-size: 2rem;
+        color: white;
+        margin: 0;
+    }
+
+    .feature .padding-style {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .feature .table-height {
+        height: 80% !important;
     }
 
     .feature .comparison-table {
+        margin-bottom: 0;
+        vertical-align: middle;
+        text-align: center;
         background-color: white;
     }
 
-        .feature .comparison-table .table th,
-        .feature .comparison-table .table td {
-            vertical-align: middle;
-            text-align: center;
-        }
+    .feature .index-1{
+        z-index: 1;
+    }
+
+    .feature .index-2 {
+        z-index: 2;
+    }
+    .feature .shadow {
+        box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 1), 0rem 0rem 2rem rgba(0, 0, 0, 1) !important;
+    }
 
     .feature .listhead {
         font-size: 2rem;
@@ -100,7 +124,7 @@ body, html {
     /*Learn More*/
 
     .feature .learn-more h4 {
-        color: lightgreen;
+        color: white;
         letter-spacing: .3rem;
     }
 
@@ -116,7 +140,7 @@ body, html {
     background-position: center;
     background-size: cover;
     z-index: 0;
-    height: 100%
+    height: 100vh;
 }
 
     .order .3D-model {
@@ -149,16 +173,21 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 @media (min-width: 768px) {
 
-    .feature .row {
-        height: 100%;
-    }
-
     .landingpage .vid1 {
         width: 100%;
         transform: translateX(0%);
     }
 
-    .feature .image2 {
+    .feature .adjust-image {
+        height: 100%;
+    }
 
+    .feature .vs-text {
+        font-size: 3rem;
+    }
+
+    .feature .padding-style {
+        padding-left: 100px !important;
+        padding-right: 100px !important;
     }
 }

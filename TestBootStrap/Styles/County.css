@@ -1,0 +1,31 @@
+﻿body {
+    font-family:;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.col-6 {
+    overflow: hidden;
+    background-color: white;
+}
+
+.border-style {
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.vid1 {
+    transform: translateX(-30%);
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    opacity: 100;
+    transition: 0.5s ease;
+    background-color: grey;
+}
+
+.overlay:hover .overlay {
+    opacity: 1;
+}

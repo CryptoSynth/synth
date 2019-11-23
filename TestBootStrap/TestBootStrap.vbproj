@@ -96,6 +96,7 @@
     <Content Include="3D-Model\Camera\textures\material_metallicRoughness.png" />
     <Content Include="3D-Model\Camera\textures\material_normal.jpeg" />
     <Content Include="AlbumDetails.html" />
+    <Content Include="County.html" />
     <Content Include="Images\Background1.jpg" />
     <Content Include="Images\Background_Order.jpg" />
     <Content Include="Images\Chronos_ 1.4_3.png" />
@@ -214,6 +215,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Styles\County.css" />
     <Content Include="Styles\fixed.css" />
     <Content Include="Styles\HomeStyle.css" />
     <Content Include="Styles\Chronos1.4Style.css" />
