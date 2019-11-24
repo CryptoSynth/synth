@@ -1,0 +1,64 @@
+/*============= COURSE SECTION =============*/
+@import url('https://fonts.googleapis.com/css?family=Enriqueta:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+/*Body Font Temp*/
+.body{
+    font-family: 'Titillium Web', sans-serif;
+    overflow: hidden;
+}
+
+.mobile-vid {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+.mobile-vid .desktop-vid{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.mobile-vid .vid3{
+    width: 100%;
+    height: 94%;
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+@media (min-width: 768px) {
+
+    .mobile-vid {
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+        .mobile-vid .desktop-vid {
+            height: 100%;
+            background-color: black;
+        }
+
+        .mobile-vid .vid3 {
+            object-fit:cover;
+            height: 100%;
+        }
+}

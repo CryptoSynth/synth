@@ -85,7 +85,7 @@ body {
         left: 50%;
         right: 50%;
         bottom: 0;
-        background-color: aquamarine;
+        background-color: white;
         height: 2.5px;
         -webkit-transition-property: left, right;
         transition-property: left, right;

@@ -76,8 +76,9 @@ body, html {
         padding-right: 15px !important;
     }
 
-    .feature .table-height {
-        height: 80% !important;
+    .feature .table-height td {
+        
+        vertical-align: middle;
     }
 
     .feature .comparison-table {
@@ -85,6 +86,14 @@ body, html {
         vertical-align: middle;
         text-align: center;
         background-color: white;
+    }
+
+    .feature .height-mod-1 {
+        height: 80% !important;
+    }
+
+    .feature .height-mod-2 {
+        height: 10% !important;
     }
 
     .feature .index-1{
@@ -95,7 +104,7 @@ body, html {
         z-index: 2;
     }
     .feature .shadow {
-        box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 1), 0rem 0rem 2rem rgba(0, 0, 0, 1) !important;
+        box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, .3), 0rem 0rem 2rem rgba(0, 0, 0, .3) !important;
     }
 
     .feature .listhead {

@@ -1,0 +1,81 @@
+﻿body,html {
+    overflow: hidden;
+    height: 100vh;
+    margin: 0;
+    p-0
+}
+
+
+
+.vid1 {
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(0,0,0,.6);
+}
+
+.wrapper:hover .overlay {
+    opacity: 1;
+}
+
+.section-1 .btn a {
+    text-decoration: none;
+}
+
+.section-1 .btn {
+    border: 2px solid white;
+    border-radius: 40px;
+    width: 50%;
+}
+
+h1 {
+    letter-spacing: .8rem;
+    font-size: 8vw;
+    font-weight: 300;
+}
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+@media (min-width: 800px) {
+
+    .wrapper {
+        height: 100% !important;
+    }
+
+    h1 {
+        
+    }
+
+    .section-1 .btn {
+        width: 25%;
+    }
+}

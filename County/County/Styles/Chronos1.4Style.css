@@ -1,0 +1,202 @@
+﻿/*============= COURSE SECTION =============*/
+@import url('https://fonts.googleapis.com/css?family=Enriqueta:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Niramit&display=swap');
+
+/*Body*/
+body, html {
+    font-family: 'Niramit', sans-serif;
+    height: 100vh;
+    background-color: black;
+    -ms-scroll-snap-type: mandatory;
+    scroll-snap-type: mandatory;
+    -ms-scroll-snap: y mandatory;
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-start {
+    scroll-snap-align: start;
+}
+
+.mainnav .navbar {
+    z-index: 3;
+}
+
+/*Landing Page Section*/
+.landingpage {
+    font-family: 'Audiowide', cursive;
+    overflow: hidden;
+    height: 100vh;
+}
+
+    .landingpage .vid1 {
+        transform: translateX(-30%);
+    }
+
+    .landingpage .flex-item-h1 {
+        top: 20%;
+        font-size: 2rem;
+        padding: .3rem 1.5rem;
+        z-index: 2;
+    }
+
+    .landingpage .flex-item-a {
+        bottom: 2%;
+        text-decoration: none;
+        font-size: 1rem;
+        padding: .3rem .8rem .3rem .8rem;
+        z-index: 2;
+    }
+
+        .landingpage .flex-item-a:hover {
+            color: lightgreen;
+        }
+
+/*Feature Page Section*/
+.feature {
+    height: 100%;
+    background-color: #111;
+    z-index: 0;
+}
+
+    .feature .adjust-image {
+        height: 100%;
+    }
+
+    .feature .vs-text {
+        font-size: 2rem;
+        color: white;
+        margin: 0;
+    }
+
+    .feature .padding-style {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+
+    .feature .table-height td {
+        
+        vertical-align: middle;
+    }
+
+    .feature .comparison-table {
+        margin-bottom: 0;
+        vertical-align: middle;
+        text-align: center;
+        background-color: white;
+    }
+
+    .feature .height-mod-1 {
+        height: 80% !important;
+    }
+
+    .feature .height-mod-2 {
+        height: 10% !important;
+    }
+
+    .feature .index-1{
+        z-index: 1;
+    }
+
+    .feature .index-2 {
+        z-index: 2;
+    }
+    .feature .shadow {
+        box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, .3), 0rem 0rem 2rem rgba(0, 0, 0, .3) !important;
+    }
+
+    .feature .listhead {
+        font-size: 2rem;
+        font-weight: 700;
+        color: lightgreen;
+        text-align: center;
+    }
+
+    .feature hr {
+        border: 1.5px solid lightgreen;
+    }
+
+    /*Accordion Cards*/
+    .feature .card {
+        border: 2px solid darkgreen;
+    }
+
+    .feature .card-button button {
+    }
+
+    .feature .card-header {
+        padding: .2rem;
+    }
+
+    /*Learn More*/
+
+    .feature .learn-more h4 {
+        color: white;
+        letter-spacing: .3rem;
+    }
+
+    .feature .modal-Init {
+        width: 20%;
+    }
+
+/*Order Page Section*/
+
+.order {
+    background-image: url(/Images/Background_Order.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    height: 100vh;
+}
+
+    .order .3D-model {
+    }
+
+    .order .order-button {
+        border-radius: 40px;
+        width: 80%;
+        padding: .3rem;
+        font-size: 1.2rem;
+    }
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+@media (min-width: 768px) {
+
+    .landingpage .vid1 {
+        width: 100%;
+        transform: translateX(0%);
+    }
+
+    .feature .adjust-image {
+        height: 100%;
+    }
+
+    .feature .vs-text {
+        font-size: 3rem;
+    }
+
+    .feature .padding-style {
+        padding-left: 100px !important;
+        padding-right: 100px !important;
+    }
+}

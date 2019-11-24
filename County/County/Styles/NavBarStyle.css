@@ -1,0 +1,135 @@
+﻿/*============= COURSE SECTION =============*/
+@import url('https://fonts.googleapis.com/css?family=Enriqueta:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+/*Temp Body Font*/
+body {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/*Main Menu Navagation*/
+.mainnav .navbar {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.mainnav .navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+/*Center item Links*/
+
+
+.mainnav .navbar-brand {
+    font-size: 1.5rem;
+    margin-right: 0rem;
+    width: 200px;
+}
+
+    .mainnav .navbar-brand img {
+        width: 20%;
+        margin-right: 1rem;
+    }
+
+
+
+/*--Footer Navagation--*/
+.foot .navbar {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.foot .navbar h5 {
+    letter-spacing: .2rem;
+    word-spacing: .5rem;
+    color: gray;
+    margin: 0;
+    text-align: center;
+    padding-bottom: .6rem;
+}
+
+.foot .navbar strong {
+    font-size: 2.0rem;
+}
+
+.foot .navbar .btn {
+    border-radius: 30px;
+    border-width: 2px;
+    font-size: 1.2rem;
+    padding: .4rem;
+}
+
+.foot strong {
+    color: white;
+}
+
+.foot .col-md-6 {
+    padding: 0;
+}
+
+
+/*--Hover Menu--*/
+.hvrcenter {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+    .hvrcenter:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        background-color: white;
+        height: 2.5px;
+        -webkit-transition-property: left, right;
+        transition-property: left, right;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+
+    .hvrcenter:hover:before, .hvrcenter:focus:before, .hvrcenter:active:before {
+        left: 0;
+        right: 0;
+    }
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+@media(min-width: 768px) {
+
+    /*--Footer Navagation--*/
+
+        .foot .navbar h5 {
+            padding-bottom: 0rem;
+        }
+
+    .foot .col-md-6 {
+        padding: 0;
+    }
+}

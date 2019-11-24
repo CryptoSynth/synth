@@ -6,35 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
     <!--Bootstrap CSS-->
     <title>Page1 Test</title>
-    <link rel="stylesheet" href="Styles/bootstrap.min.css" />
     <link rel="stylesheet" href="Styles/Test.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body class="h-100">
+<body>
+    <div class="nav-bar"></div>
 
-    <div class="container">
-        <h1 class="btn">Title</h1>
-        <p>This is a <br /> sample text</p>
-        <ul>
-            <li>Test 1</li>
-            <li>Test 2</li>
-            <li>Test 3</li>
-            <li>Test 4</li>
-        </ul>
-    </div>
-    <div class="container flex-wrap">
+    <div id="app">
+        <div class="product">
 
-    </div>
-    <div class="container h-100 flex-wrap">
+            <div class="product-image">
+                <img :src="image" />
+            </div>
 
-    </div>
-    <div class="container flex-wrap">
+            <div class="product-info">
+                <h1>{{ product }}</h1>
+                <p v-if="inStock">In Stock</p>
+                <p v-else>Out of Stock</p>
 
+                <ul>
+                    <li v-for="detail in details">{{ detail }}</li>
+                </ul>
+
+
+            </div>
+
+        </div>
     </div>
+
+
     <!--Script Source Files-->
-    <script src="/Scripts/three.js"></script>
-    <script src="/Scripts/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="Scripts/main.js"></script>
     <!--End of Script Source Files-->
 </body>
 </html>
