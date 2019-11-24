@@ -1,0 +1,4 @@
+[Build]
+base = "County/"
+publish = "County/build/"
+command = "npm build"
