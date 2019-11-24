@@ -1,7 +1,0 @@
-﻿{
-    "typeAcquisition": {
-        "include": [
-            "three"
-        ]
-    }
-}
