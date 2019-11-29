@@ -1,0 +1,52 @@
+/*Main*/
+
+body,
+html {
+    font-family: ;
+    height: 100vh;
+}
+
+
+/*Products*/
+
+.landing-picture .accessories-image {
+    background-image: url(/Images/Chronos_1.4_3.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    height: 100vh;
+}
+
+.landing-picture h1 {
+    text-shadow: 5px 8px rgba(0, 0, 0, 0.8);
+    ;
+}
+
+.accessories h1 {
+    border: 1px solid black;
+    width: 25%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: .2rem;
+    box-shadow: 5px 5px 4px 1px rgba(0, 0, 0, 0.3);
+}
+
+hr {
+    border-top: 1px solid black !important;
+}
+
+.accessories .btn {
+    border: 2px solid black;
+    width: 20%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.accessories .btn:hover {
+    border: 2px solid black;
+    width: 20%;
+    background-color: black;
+    color: white;
+}

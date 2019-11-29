@@ -1,13 +1,16 @@
 ﻿/*============= COURSE SECTION =============*/
-@import url('https://fonts.googleapis.com/css?family=Enriqueta:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Audiowide&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Niramit&display=swap');
+
+@import url("https://fonts.googleapis.com/css?family=Enriqueta:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Niramit&display=swap");
 
 /*Body*/
-body, html {
-    font-family: 'Niramit', sans-serif;
+
+body,
+html {
+    font-family: "Niramit", sans-serif;
     height: 100vh;
     background-color: black;
     -ms-scroll-snap-type: mandatory;
@@ -24,122 +27,148 @@ body, html {
     z-index: 3;
 }
 
+
 /*Landing Page Section*/
+
 .landingpage {
-    font-family: 'Audiowide', cursive;
+    font-family: "Audiowide", cursive;
     overflow: hidden;
     height: 100vh;
 }
 
-    .landingpage .vid1 {
-        transform: translateX(-30%);
-    }
+.landingpage .vid1 {
+    transform: translateX(-30%);
+}
 
-    .landingpage .flex-item-h1 {
-        top: 20%;
-        font-size: 2rem;
-        padding: .3rem 1.5rem;
-        z-index: 2;
-    }
+.landingpage .flex-item-h1 {
+    top: 20%;
+    font-size: 3rem;
+    text-align: center;
+    padding: 0.3rem 1.5rem;
+    z-index: 2;
+}
 
-    .landingpage .flex-item-a {
-        bottom: 2%;
-        text-decoration: none;
-        font-size: 1rem;
-        padding: .3rem .8rem .3rem .8rem;
-        z-index: 2;
-    }
+.landingpage strong {
+    text-shadow: 1vw 1vw black;
+    color: aqua;
+}
 
-        .landingpage .flex-item-a:hover {
-            color: lightgreen;
-        }
+.landingpage .flex-item-a {
+    bottom: 2%;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+    z-index: 2;
+}
+
+.landingpage .flex-item-a:hover {
+    color: aqua;
+}
+
 
 /*Feature Page Section*/
+
 .feature {
     height: 100%;
     background-color: #111;
     z-index: 0;
 }
 
-    .feature .adjust-image {
-        height: 100%;
-    }
+.feature .adjust-image {
+    width: 100%;
+    padding: 0 1rem;
+}
 
-    .feature .vs-text {
-        font-size: 2rem;
-        color: white;
-        margin: 0;
-    }
+.feature .vs-text {
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+}
 
-    .feature .padding-style {
-        padding-left: 15px !important;
-        padding-right: 15px !important;
-    }
+.feature .padding-style {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
 
-    .feature .table-height td {
-        
-        vertical-align: middle;
-    }
+.feature .table-height td {
+    vertical-align: middle;
+}
 
-    .feature .comparison-table {
-        margin-bottom: 0;
-        vertical-align: middle;
-        text-align: center;
-        background-color: white;
-    }
+.feature .comparison-table {
+    margin-bottom: 0;
+    vertical-align: middle;
+    text-align: center;
+    background-color: white;
+}
 
-    .feature .height-mod-1 {
-        height: 80% !important;
-    }
+.feature .height-mod-1 {}
 
-    .feature .height-mod-2 {
-        height: 10% !important;
-    }
+.feature .height-mod-2 {
+    height: 10% !important;
+}
 
-    .feature .index-1{
-        z-index: 1;
-    }
+.feature .index-1 {
+    z-index: 1;
+}
 
-    .feature .index-2 {
-        z-index: 2;
-    }
-    .feature .shadow {
-        box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, .3), 0rem 0rem 2rem rgba(0, 0, 0, .3) !important;
-    }
+.feature .index-2 {
+    z-index: 2;
+}
 
-    .feature .listhead {
-        font-size: 2rem;
-        font-weight: 700;
-        color: lightgreen;
-        text-align: center;
-    }
+.feature .shadow {
+    box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.3), 0rem 0rem 2rem rgba(0, 0, 0, 0.3) !important;
+}
 
-    .feature hr {
-        border: 1.5px solid lightgreen;
-    }
+.feature .listhead {
+    font-size: 2rem;
+    font-weight: 700;
+    color: lightgreen;
+    text-align: center;
+}
 
-    /*Accordion Cards*/
-    .feature .card {
-        border: 2px solid darkgreen;
-    }
+.feature hr {
+    border: 2px solid aqua;
+    width: 10vw;
+    margin-top: .3rem;
+}
 
-    .feature .card-button button {
-    }
+.feature th {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
 
-    .feature .card-header {
-        padding: .2rem;
-    }
+.feature .check-style {
+    font-size: 2rem;
+    color: rgb(0, 255, 0)
+}
 
-    /*Learn More*/
 
-    .feature .learn-more h4 {
-        color: white;
-        letter-spacing: .3rem;
-    }
+/*Accordion Cards*/
 
-    .feature .modal-Init {
-        width: 20%;
-    }
+.feature .card {
+    border: 2px solid darkgreen;
+}
+
+.feature .card-header {
+    padding: 0.2rem;
+}
+
+
+/*Learn More*/
+
+.feature .info-btn {
+    border: 2px solid black;
+}
+
+.feature .info-btn:hover {
+    color: lightgreen;
+}
+
+.feature .modal-Init {
+    width: 20%;
+}
+
 
 /*Order Page Section*/
 
@@ -152,15 +181,19 @@ body, html {
     height: 100vh;
 }
 
-    .order .3D-model {
-    }
+.order .order-button {
+    border-radius: 40px;
+    width: 80%;
+    padding: 0.3rem;
+    font-size: 1.2rem;
+    color: white !important;
+}
 
-    .order .order-button {
-        border-radius: 40px;
-        width: 80%;
-        padding: .3rem;
-        font-size: 1.2rem;
-    }
+.order .order-button:hover {
+    color: black !important;
+}
+
+
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
@@ -181,22 +214,37 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (min-width: 768px) {
-
+    /*Landing Page*/
     .landingpage .vid1 {
         width: 100%;
         transform: translateX(0%);
     }
-
+    .landingpage .flex-item-h1 {
+        top: 10%;
+        font-size: 9.5vw;
+        text-align: unset;
+    }
     .feature .adjust-image {
-        height: 100%;
+        width: unset;
+        height: 250px;
+        padding: 0;
     }
-
     .feature .vs-text {
-        font-size: 3rem;
+        font-size: 5vw;
     }
-
     .feature .padding-style {
-        padding-left: 100px !important;
-        padding-right: 100px !important;
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
+    /*Learn More*/
+    .feature .padding-style-2 {
+        padding-right: 2rem !important;
+    }
+    .feature .info-btn {
+        width: 5%;
+    }
+    /*Order Page*/
+    .order .order-button {
+        width: 400px;
     }
 }

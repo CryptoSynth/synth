@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--Required Meta tag-->
     <meta charset="utf-8" />
@@ -14,25 +15,12 @@
     <div class="nav-bar"></div>
 
     <div id="app">
-        <div class="product">
 
-            <div class="product-image">
-                <img :src="image" />
-            </div>
-
-            <div class="product-info">
-                <h1>{{ product }}</h1>
-                <p v-if="inStock">In Stock</p>
-                <p v-else>Out of Stock</p>
-
-                <ul>
-                    <li v-for="detail in details">{{ detail }}</li>
-                </ul>
-
-
-            </div>
-
+        <div class="cart">
+            <p>Cart ( {{ cart.length }} )</p>
         </div>
+
+        <product :premium="premium" @add-to-cart="updateCart" @remove-from-cart="removeItem"></product>
     </div>
 
 
@@ -40,5 +28,7 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="Scripts/main.js"></script>
     <!--End of Script Source Files-->
+
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html class="scroll-snap-y" lang="en">
+
 <head>
     <!--Required Meta tag-->
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="Styles/Chronos1.4Style.css" />
     <link rel="stylesheet" href="Styles/fixed.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
 </head>
 
 <body>
@@ -21,8 +23,7 @@
             <a class="navbar-brand" href="/Home.html"><img class="imgheader" src="/Images/kron-technologies-logo-e1536272661684.png" />Kron Tech</a>
 
             <!--Hamburger Menu-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#collapsibleNavbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -33,10 +34,10 @@
                         <a class="nav-link hvrcenter" href="/Home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hvrcenter" href="/Chronos1.4.html">Chronos 1.4</a>
+                        <a class="nav-link hvrcenter" href="/Chronos1.4.html">Chronos 1.4-HD</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hvrcenter" href="#">Chronos 2.4-HD</a>
+                        <a class="nav-link hvrcenter" href="#">Chronos 2.4-FHD</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link hvrcenter menu4" href="#">Accessories</a>
@@ -60,8 +61,8 @@
         <!--Overlay Container-->
         <div class="container-fluid">
             <div class="d-flex flex-column align-items-center">
-                <h1 class="flex-item-h1 position-absolute text-uppercase text-white">Chronos 1.4</h1>
-                <a class="flex-item-a position-absolute d-flex flex-column text-white" href="#feature">
+                <h1 class="flex-item-h1 position-absolute text-uppercase text-white">Chronos 1.4-<strong>HD</strong></h1>
+                <a class="flex-item-a position-absolute d-flex flex-column animated delay-1s bounce" href="#feature">
                     Scroll Down
                     <i class="fa fa-chevron-down align-self-center"></i>
                 </a>
@@ -70,205 +71,219 @@
 
     </section>
     <!--End Landing Page Section-->
+
     <!--Start Feature Section-->
     <section class="feature scroll-start ">
 
-        <div class="image-section row align-items-center justify-content-around h-25">
+        <div class="image-section row align-items-center justify-content-around">
 
             <!--Chronos1.4 Image-->
-            <div class="image2 col-5 col-md-4 p-0 h-75">
-                <div class="container h-100">
-                    <img class="adjust-image d-block mx-auto" src="Images/Chronos_1.4.png" />
-                </div>
+            <div class="col-5 col-md-4 p-0">
+
+                <img class="adjust-image d-block mx-auto" src="Images/Chronos_1.4.png" />
+
             </div>
 
             <!--VS Text-->
-            <div class="col-2 p-0 h-75">
-                <div class="d-flex flex-column justify-content-center h-100">
-                    <h3 class="vs-text text-center ">VS</h3>
-                </div>
+            <div class="col-2 p-0 pt-5 pb-5">
+                <h3 class="vs-text text-center align-self-center">
+                    VS
+                </h3>
+                <hr/>
+
             </div>
 
             <!--Competitor Image-->
-            <div class="image2 col-5 col-md-4 p-0 h-75">
-                <div class="container h-100">
-                    <img class="adjust-image d-block mx-auto" src="Images/Competitor_Camera.png" />
+            <div class="col-5 col-md-4 p-0">
+
+                <img class="adjust-image d-block mx-auto" src="Images/Competitor_Camera.png" />
+
+            </div>
+        </div>
+
+        <!--Table Comparsion-->
+        <div class="padding-style table-height col-12 height-mod-1">
+            <div class="row justify-content-center h-100">
+                <div class="col-4 col-sm-5 p-0 m-0 index-1">
+                    <table class="comparison-table table table-borderless table-hover h-100">
+                        <thead>
+                            <tr>
+                                <th>Chronos 1.4-HD</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td><i class="check-style fa fa-check"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Text 1</td>
+                            </tr>
+                            <tr>
+                                <td>Text 1</td>
+                            </tr>
+                            <tr>
+                                <td>Text 1</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <div class="col-4 col-sm-2 p-0 m-0 shadow index-2">
+                    <table class="comparison-table table table-borderless table-hover h-100">
+                        <thead>
+                            <tr>
+
+                                <th>Features</th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Standard HD</td>
+                            </tr>
+                            <tr>
+                                <td>Max Resolution</td>
+                            </tr>
+                            <tr>
+                                <td>Max Framerate</td>
+                            </tr>
+                            <tr>
+                                <td>Video Format</td>
+                            </tr>
+                            <tr>
+                                <td>Throughput</td>
+                            </tr>
+                            <tr>
+                                <td>Runtime</td>
+                            </tr>
+                            <tr>
+                                <td>Charge Time</td>
+                            </tr>
+                            <tr>
+                                <td>Run-n-Gun</td>
+                            </tr>
+                            <tr>
+                                <td>Focus Peaking</td>
+                            </tr>
+                            <tr>
+                                <td>Zebras</td>
+                            </tr>
+                            <tr>
+                                <td>Focus Aid</td>
+                            </tr>
+                            <tr>
+                                <td>Price</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+                <div class="col-4 col-sm-5 p-0 m-0 index-1">
+                    <table class="comparison-table table table-borderless table-hover h-100">
+                        <thead>
+                            <tr>
+                                <th>Enemy</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Text 1</td>
+                            </tr>
+                            <tr>
+                                <td>Text 1</td>
+                            </tr>
+                            <tr>
+                                <td>Text 1</td>
+                            </tr>
+                            <tr>
+                                <td>Text 1</td>
+                            </tr>
+                        </tbody>
+
+                    </table>
                 </div>
             </div>
         </div>
 
-
-        <div class="row h-75">
-            <!--Table Comparsion-->
-            <div class="padding-style table-height col-12 height-mod-1">
-                <div class="row justify-content-center h-100">
-                    <div class="col-4 col-sm-5 p-0 m-0 index-1">
-                        <table class="comparison-table table table-borderless table-hover h-100">
-                            <thead>
-                                <tr>
-
-                                    <th style="width: 20%">Chronos 1.4</th>
-
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                <tr>
-                                    <td>Text 1</td>
-                                </tr>
-                                <tr>
-                                    <td>Text 1</td>
-                                </tr>
-                                <tr>
-                                    <td>Text 1</td>
-                                </tr>
-                                <tr>
-                                    <td>Text 1</td>
-                                </tr>
-                            </tbody>
-
-                        </table>
-                    </div>
-
-                    <div class="col-4 col-sm-2 p-0 m-0 shadow index-2">
-                        <table class="comparison-table table table-borderless table-hover h-100">
-                            <thead>
-                                <tr>
-
-                                    <th style="width: 20%">Chronos 1.4</th>
-
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                <tr>
-                                    <td>Text 1</td>
-                                </tr>
-                                <tr>
-                                    <td>Text 1</td>
-                                </tr>
-                                <tr>
-                                    <td>Text 1</td>
-                                </tr>
-                                <tr>
-                                    <td>Text 1</td>
-                                </tr>
-                            </tbody>
-
-                        </table>
-                    </div>
-
-                    <div class="col-4 col-sm-5 p-0 m-0 index-1">
-                        <table class="comparison-table table table-borderless table-hover h-100">
-                            <thead>
-                                <tr>
-
-                                    <th style="width: 20%">Chronos 1.4</th>
-
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                <tr>
-                                    <td>Text 1</td>
-                                </tr>
-                                <tr>
-                                    <td>Text 1</td>
-                                </tr>
-                                <tr>
-                                    <td>Text 1</td>
-                                </tr>
-                                <tr>
-                                    <td>Text 1</td>
-                                </tr>
-                            </tbody>
-
-                        </table>
-                    </div>
-                </div>
+        <div class="col-12 height-mod-2">
+            <!--Init Modal-->
+            <div class="learn-more row justify-content-end padding-style-2 h-100">
+                <button type="button" class="modal-Init info-btn btn p-0" data-toggle="modal" data-target="#myModal">
+                    <i class="fa fa-info"></i>
+                </button>
             </div>
-
-            <div class="col-12 height-mod-2">
-                <!--Init Modal-->
-                <div class="learn-more row h-100">
-                    <div class="offset-4 col-4">
-                        <h4 class="align-self-center">Learn More</h4>
-                    </div>
-
-                    <div class="col-4">
-                        <button type="button" class="modal-Init btn align-self-center" data-toggle="modal" data-target="#myModal">
-                            <i class="fa fa-info"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
+        </div>
 
 
 
-            <!--The Modal-->
-            <div class="modal fade" id="myModal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
+        <!--The Modal-->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
 
-                        <!--Modal Body-->
-                        <div class="modal-body">
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <!--Accordion Cards-->
-                            <div id="accordion" class="h-100">
-                                <!--Title Section-->
-                                <h1 class="listhead align-self-center text-uppercase"><a name="feature">Features</a></h1>
-                                <hr class="w-100" />
+                    <!--Modal Body-->
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <!--Accordion Cards-->
+                        <div id="accordion" class="h-100">
+                            <!--Title Section-->
+                            <h1 class="listhead align-self-center text-uppercase"><a name="feature">Features</a></h1>
+                            <hr class="w-100" />
 
-                                <!--Card 3-->
-                                <div class="card">
-                                    <div class="card-header" id="headingThree">
-                                        <div class="d-flex justify-content-between">
-                                            <h5 class="w-100 mb-0 p-1 text-center ">
-                                                Open Me
-                                            </h5>
-                                            <button class="card-button btn btn-dark" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            <!--Card 3-->
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <div class="d-flex justify-content-between">
+                                        <h5 class="w-100 mb-0 p-1 text-center ">
+                                            Open Me
+                                        </h5>
+                                        <button class="card-button btn btn-dark" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                                                 <i class="fa fa-chevron-down"></i>
                                             </button>
-                                        </div>
+                                    </div>
 
-                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                            <div class="card-body p-0">
-                                                <table class="table table-hover">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Heading 1</th>
-                                                            <th>Heading 2</th>
-                                                            <th>Heading 3</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row">text 1</th>
-                                                            <td>text 2</td>
-                                                            <td>text 3</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">text 2</th>
-                                                            <td>text 3</td>
-                                                            <td>text 4</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">text 5</th>
-                                                            <td>text 6</td>
-                                                            <td>text 7</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                        <div class="card-body p-0">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Heading 1</th>
+                                                        <th>Heading 2</th>
+                                                        <th>Heading 3</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">text 1</th>
+                                                        <td>text 2</td>
+                                                        <td>text 3</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">text 2</th>
+                                                        <td>text 3</td>
+                                                        <td>text 4</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">text 5</th>
+                                                        <td>text 6</td>
+                                                        <td>text 7</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--Modal Footer-->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger mx-auto" data-dismiss="modal">Close</button>
-                        </div>
+                    </div>
+                    <!--Modal Footer-->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger mx-auto" data-dismiss="modal">Close</button>
                     </div>
                 </div>
             </div>
@@ -288,7 +303,7 @@
                         <div class="sketchfab-embed-wrapper">
                             <iframe class="w-100" height="500" title="A 3D model" src="https://sketchfab.com/models/ab31676851cc49ef8cc26aac0f2297e5/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                         </div>
-                        <a class="order-button btn btn-sm btn-outline-light align-self-center">
+                        <a class="order-button btn btn-outline-light align-self-center">
                             Order Now
                         </a>
                     </div>
@@ -300,10 +315,9 @@
     <!--Script Source Files-->
 
     <script src="../Scripts/jquery-3.4.1.js"></script>
-    <script src="../Scripts/jquery-3.4.1.slim.min.js"></script>
     <script src="../Scripts/bootstrap.bundle.js"></script>
-    <script src="../Scripts/bootstrap.bundle.min.js"></script>
     <script src="https://github.com/FortAwesome/Font-Awesome/blob/master/js/all.js"></script>
     <!--End Script Source Files-->
 </body>
+
 </html>
