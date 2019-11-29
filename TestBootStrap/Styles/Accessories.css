@@ -19,18 +19,24 @@ html {
 }
 
 .landing-picture h1 {
-    text-shadow: 5px 8px rgba(0, 0, 0, 0.8);
-    ;
+    text-shadow: .5vw .5vw rgba(0, 0, 0, 0.8);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 4.5rem;
 }
 
 .accessories h1 {
     border: 1px solid black;
-    width: 25%;
+    width: 100%;
     text-align: center;
     background-color: black;
     color: white;
-    padding: .2rem;
+    padding: 0.2rem;
     box-shadow: 5px 5px 4px 1px rgba(0, 0, 0, 0.3);
+}
+
+.accessories .adjust-image {
+    height: 200px;
 }
 
 hr {
@@ -39,14 +45,56 @@ hr {
 
 .accessories .btn {
     border: 2px solid black;
-    width: 20%;
+    width: 75%;
     background-color: white;
     border-radius: 20px;
 }
 
 .accessories .btn:hover {
     border: 2px solid black;
-    width: 20%;
+    width: 75%;
     background-color: black;
     color: white;
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+@media(min-width: 768px) {
+    .landing-picture h1 {
+        text-shadow: 5px 8px rgba(0, 0, 0, 0.8);
+        font-size: 5vw;
+    }
+    .accessories h1 {
+        width: 30%;
+    }
+    .accessories .btn {
+        border: 2px solid black;
+        width: 25%;
+        background-color: white;
+        border-radius: 20px;
+    }
+    .accessories .btn:hover {
+        border: 2px solid black;
+        width: 25%;
+        background-color: black;
+        color: white;
+    }
 }
