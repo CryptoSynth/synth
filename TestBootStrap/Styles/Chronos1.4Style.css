@@ -72,12 +72,6 @@ html {
 .feature {
     height: 100%;
     background-color: #111;
-    z-index: 0;
-}
-
-.feature .padding-style {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
 }
 
 
@@ -146,17 +140,17 @@ html {
 
 .feature .th-style {
     vertical-align: middle;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .feature th {
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
 }
 
 .feature td {
     vertical-align: middle;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
 }
 
 .feature .fa-check {
@@ -191,7 +185,7 @@ html {
 /*Learn More*/
 
 .feature .info-btn {
-    border: 2px solid black;
+    border: 0px solid white;
 }
 
 .feature .info-btn:hover {
