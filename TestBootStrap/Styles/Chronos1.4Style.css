@@ -75,6 +75,14 @@ html {
     z-index: 0;
 }
 
+.feature .padding-style {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+
+/*Feature Images and VS text*/
+
 .feature .adjust-image {
     width: 100%;
     padding: 0 1rem;
@@ -86,61 +94,79 @@ html {
     margin: 0;
 }
 
-.feature .padding-style {
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+.feature hr {
+    border: 2px solid aqua;
+    width: 10vw;
+    margin-top: 0.3rem;
 }
 
-.feature .table-height td {
-    vertical-align: middle;
-}
 
-.feature .comparison-table {
+/*Feature Table*/
+
+.feature .table-style {
     margin-bottom: 0;
     vertical-align: middle;
     text-align: center;
     background-color: white;
 }
 
-.feature .height-mod-1 {}
-
-.feature .height-mod-2 {
-    height: 10% !important;
+.feature .outside-col-style {
+    width: 40%;
 }
 
-.feature .index-1 {
-    z-index: 1;
+.feature .inside-col-style {
+    width: 20%;
 }
 
-.feature .index-2 {
-    z-index: 2;
+.feature .shadow-column:before {
+    box-shadow: -15px 0 15px -15px inset;
+    content: " ";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -15px;
+    width: 15px;
 }
 
-.feature .shadow {
-    box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.3), 0rem 0rem 2rem rgba(0, 0, 0, 0.3) !important;
+.feature .shadow-column:after {
+    box-shadow: 15px 0 15px -15px inset;
+    content: " ";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -15px;
+    width: 15px;
 }
 
-.feature .listhead {
-    font-size: 2rem;
-    font-weight: 700;
-    color: lightgreen;
-    text-align: center;
+.feature .shadow-column {
+    position: relative;
+    text-transform: uppercase;
+    vertical-align: middle;
 }
 
-.feature hr {
-    border: 2px solid aqua;
-    width: 10vw;
-    margin-top: .3rem;
+.feature .th-style {
+    vertical-align: middle;
+    font-size: 0.8rem;
 }
 
 .feature th {
-    font-size: 2rem;
     text-transform: uppercase;
+    font-size: 0.8rem;
 }
 
-.feature .check-style {
-    font-size: 2rem;
-    color: rgb(0, 255, 0)
+.feature td {
+    vertical-align: middle;
+    font-size: 0.8rem;
+}
+
+.feature .fa-check {
+    color: rgb(0, 255, 0);
+    font-size: 1.5rem;
+}
+
+.feature .fa-times {
+    color: rgb(255, 0, 0);
+    font-size: 1.5rem;
 }
 
 
@@ -152,6 +178,13 @@ html {
 
 .feature .card-header {
     padding: 0.2rem;
+}
+
+.feature .listhead {
+    font-size: 2rem;
+    font-weight: 700;
+    color: lightgreen;
+    text-align: center;
 }
 
 
@@ -224,6 +257,11 @@ Extra (xl) large devices (large desktops, 1200px and up)
         font-size: 9.5vw;
         text-align: unset;
     }
+    /*Feature Section*/
+    .feature .padding-style {
+        padding-left: 3rem !important;
+        padding-right: 3rem !important;
+    }
     .feature .adjust-image {
         width: unset;
         height: 250px;
@@ -232,9 +270,32 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .feature .vs-text {
         font-size: 5vw;
     }
-    .feature .padding-style {
-        padding-left: 3rem !important;
-        padding-right: 3rem !important;
+    /*Table*/
+    .feature .outside-col-style {
+        width: 40%;
+    }
+    .feature .inside-col-style {
+        width: 20%;
+    }
+    .feature .shadow-column {
+        position: relative;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+    }
+    .feature .th-style {
+        font-size: 1.5rem;
+    }
+    .feature .fa-check {
+        font-size: 2rem;
+    }
+    .feature .fa-times {
+        font-size: 2rem;
+    }
+    .feature th {
+        font-size: 1.8rem;
+    }
+    .feature td {
+        font-size: 0.8rem;
     }
     /*Learn More*/
     .feature .padding-style-2 {
