@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../Styles/NavBarStyle.css" />
     <link rel="stylesheet" href="../Styles/HomeStyle.css" />
     <link rel="stylesheet" href="../Styles/fixed.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
 </head>
 
 
@@ -66,10 +67,20 @@
     <footer class="foot">
         <!--Start Navagation 2-->
         <nav class="navbar navbar-dark bg-dark fixed-bottom text-uppercase">
-            <div class="container-fluid w-100">
-                <div class="row w-100">
-                    <h5 class="col-md-6 col-lg-4">Starting At <strong>$2,999</strong></h5>
-                    <button class="btn btn-outline-light btn-sm col-md-6 col-lg-4 offset-lg-4">Shop Now</button>
+            <div class="container-fluid p-0">
+                <div class="row align-items-center w-100">
+                    <div class="col-md-4 col-12 text-center">
+                        <h5>Starting At</h5>
+                        <div class="animated fadeInRight">
+                            <strong>$2,999</strong>
+                        </div>
+                    </div>
+
+                    <div class="offset-md-4 col-md-4 col-12 animated pulse">
+                        <button class="btn">
+                            Shop Now
+                        </button>
+                    </div>
                 </div>
             </div>
         </nav>
