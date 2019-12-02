@@ -1,0 +1,51 @@
+/*Body*/
+
+body,
+html {
+    font-family: ;
+    overflow-x: hidden;
+    height: 100vh;
+}
+
+.landing-picture .accessories-image {
+    background-image: url(/Images/Chronos_1.4_3.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+    position: relative;
+}
+
+header {
+    background: black;
+}
+
+
+/*Product Page*/
+
+.ec-size .ec-store {
+    color: white;
+}
+
+.ecwid-productBrowser {
+    background-color: #111 !important;
+}
+
+.ec-size.ec-size--m .ec-store .product-details--layout-sidebar-right .product-details__gallery {
+    width: 30% !important;
+    margin-left: 5rem !important;
+}
+
+.ec-size.ec-size--m .ec-store .product-details--layout-sidebar-right .product-details__sidebar {
+    margin-top: 10rem !important;
+    margin-right: 5rem !important;
+}
+
+
+/*Image Frame Size*/
+
+
+/*Card background*/
+
+
+/*Buttons*/

@@ -1,14 +1,18 @@
 ﻿/*============= COURSE SECTION =============*/
+
 @import url('https://fonts.googleapis.com/css?family=Enriqueta:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 
 /*Temp Body Font*/
+
 body {
     font-family: 'Titillium Web', sans-serif;
 }
 
+
 /*Main Menu Navagation*/
+
 .mainnav .navbar {
     background-color: rgba(0, 0, 0, 0.5) !important;
 }
@@ -17,8 +21,8 @@ body {
     color: white;
 }
 
-/*Center item Links*/
 
+/*Center item Links*/
 
 .mainnav .navbar-brand {
     font-size: 1.5rem;
@@ -26,14 +30,14 @@ body {
     width: 200px;
 }
 
-    .mainnav .navbar-brand img {
-        width: 20%;
-        margin-right: 1rem;
-    }
-
+.mainnav .navbar-brand img {
+    width: 20%;
+    margin-right: 1rem;
+}
 
 
 /*--Footer Navagation--*/
+
 .foot .navbar {
     background-color: rgba(0, 0, 0, 0.5) !important;
 }
@@ -68,6 +72,7 @@ body {
 
 
 /*--Hover Menu--*/
+
 .hvrcenter {
     display: inline-block;
     vertical-align: middle;
@@ -78,28 +83,29 @@ body {
     overflow: hidden;
 }
 
-    .hvrcenter:before {
-        content: "";
-        position: absolute;
-        z-index: -1;
-        left: 50%;
-        right: 50%;
-        bottom: 0;
-        background-color: white;
-        height: 2.5px;
-        -webkit-transition-property: left, right;
-        transition-property: left, right;
-        -webkit-transition-duration: 0.3s;
-        transition-duration: 0.3s;
-        -webkit-transition-timing-function: ease-out;
-        transition-timing-function: ease-out;
-    }
+.hvrcenter:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background-color: white;
+    height: 2.5px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
 
-    .hvrcenter:hover:before, .hvrcenter:focus:before, .hvrcenter:active:before {
-        left: 0;
-        right: 0;
-    }
-
+.hvrcenter:hover:before,
+.hvrcenter:focus:before,
+.hvrcenter:active:before {
+    left: 0;
+    right: 0;
+}
 
 
 /*============ BOOTSTRAP BREAK POINTS:
@@ -122,13 +128,10 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media(min-width: 768px) {
-
     /*--Footer Navagation--*/
-
-        .foot .navbar h5 {
-            padding-bottom: 0rem;
-        }
-
+    .foot .navbar h5 {
+        padding-bottom: 0rem;
+    }
     .foot .col-md-6 {
         padding: 0;
     }

@@ -209,6 +209,7 @@ html {
 }
 
 .order .order-button {
+    text-decoration: none;
     border-radius: 40px;
     width: 80%;
     padding: 0.3rem;
@@ -300,6 +301,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
     }
     /*Order Page*/
     .order .order-button {
-        width: 400px;
+        width: 30%;
     }
 }

@@ -16,34 +16,31 @@
 
 <body>
     <!--Start Main Menu Navagation-->
-    <header class="mainnav scroll-start">
-        <nav class="navbar navbar-dark bg-dark text-uppercase position-absolute w-100">
+    <header class="mainnav">
+        <nav class="navbar navbar-dark bg-dark fixed-top text-uppercase">
 
             <!--Brand-Name Menu-->
             <a class="navbar-brand" href="/Home.html"><img class="imgheader" src="/Images/kron-technologies-logo-e1536272661684.png" />Kron Tech</a>
 
             <!--Hamburger Menu-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
             <!--Collapse all links -->
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav align-items-end">
                     <li class="nav-item">
                         <a class="nav-link hvrcenter" href="/Home.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hvrcenter" href="/Chronos1.4.html">Chronos 1.4-HD</a>
+                        <a class="nav-link hvrcenter" href="/Chronos1.4.html">Chronos 1.4</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hvrcenter" href="#">Chronos 2.4-FHD</a>
+                        <a class="nav-link hvrcenter" href="/Chronos1.4.html">Chronos 2.4-HD</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link hvrcenter" href="/Accessories.html">Accessories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link hvrcenter" href="#">Shop Now</a>
+                        <a class="nav-link hvrcenter menu4" href="/Accessories.html">Components & Accessories</a>
                     </li>
                 </ul>
             </div>
@@ -51,7 +48,7 @@
     </header>
     <!--End Main Menu Navagation-->
     <!--Start Landing Page Section-->
-    <section class="landingpage h-100">
+    <section class="landingpage scroll-start h-100">
 
         <!--Video-->
         <video class="vid1" autoplay="autoplay" playsinline="playsinline" loop="loop" muted="muted">
@@ -229,12 +226,13 @@
         <div class="container-fluid h-100 p-0">
             <div class="row h-100">
                 <div class="col-12">
-                    <div class="d-flex justify-content-around flex-column h-100">
-                        <div class="sketchfab-embed-wrapper">
-                            <iframe class="w-100" height="500" title="A 3D model" src="https://sketchfab.com/models/ab31676851cc49ef8cc26aac0f2297e5/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+                    <div class="d-flex justify-content-around align-items-center flex-column h-100">
+                        <div class="sketchfab-embed-wrapper w-75 h-75">
+                            <iframe class="w-100 h-100" height="" title="A 3D model" src="https://sketchfab.com/models/ab31676851cc49ef8cc26aac0f2297e5/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
                         </div>
-                        <a class="order-button btn btn-outline-light align-self-center">
-                            Order Now
+
+                        <a id="btnFetch" class="order-button btn btn-outline-light align-self-center" href="KronStore.html#!/Chronos-1-4-HD/p/161263018/category=0">
+                            Buy Now
                         </a>
                     </div>
                 </div>
@@ -242,8 +240,9 @@
         </div>
     </section>
     <!--End Order Section-->
-    <!--Script Source Files-->
 
+    <!--Script Source Files-->
+    <script src="Scripts/home.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
