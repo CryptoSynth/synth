@@ -6,15 +6,17 @@
 
 /*Body Font Temp*/
 
-.body {
+body {
     font-family: "Titillium Web", sans-serif;
     overflow: hidden;
+    height: 100vh;
 }
 
 .mobile-vid {
     position: relative;
-    height: 100vh;
+    height: 100%;
     overflow: hidden;
+    z-index: 0;
 }
 
 .mobile-vid .desktop-vid {

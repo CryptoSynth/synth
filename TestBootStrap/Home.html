@@ -5,6 +5,7 @@
     <!--Required Meta tag-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" shrink-to-fit="no">
+
     <!--Style Sheets CSS-->
     <title>Kron Technologies</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -12,41 +13,84 @@
     <link rel="stylesheet" href="Styles/HomeStyle.css" />
     <link rel="stylesheet" href="Styles/fixed.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
 <body>
-
     <!--Start Main Menu Navagation-->
-    <header class="mainnav">
-        <nav class="navbar navbar-dark bg-dark fixed-top text-uppercase">
-
-            <!--Brand-Name Menu-->
-            <a class="navbar-brand" href="/Home.html"><img class="imgheader" src="/Images/kron-technologies-logo-e1536272661684.png" />Kron Tech</a>
-
-            <!--Hamburger Menu-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-            <!--Collapse all links -->
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav align-items-end">
-                    <li class="nav-item">
-                        <a class="nav-link hvrcenter" href="/Home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link hvrcenter" href="/Chronos1.4.html">Chronos 1.4</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link hvrcenter" href="/Chronos1.4.html">Chronos 2.4-HD</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link hvrcenter menu4" href="/Accessories.html">Components & Accessories</a>
-                    </li>
-                </ul>
+    <header>
+        <!--Sidebar Menu-->
+        <!--SideBar-->
+        <nav id="sidebar">
+            <!--Exit sideBar Menu Icon-->
+            <div class="d-flex justify-content-around sidebar-header align-self-center w-100">
+                <!--Sidebar Header-->
+                <h3 class="ml-5">Welcome!</h3>
+                <div class="align-self-center" id="dismiss">
+                    <i class="fa fa-times"></i>
+                </div>
             </div>
+
+            <!--Sidebar List-->
+            <ul class="list-unstyled d-flex flex-column justify-content-around text-center h-75">
+                <li class="active ">
+                    <a href="#">
+                        <p class="hvrcenter">Home</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <div class="d-flex justify-content-around align-items-center">
+                            <p class="hvrcenter">Chronos-1.4
+                                <div class="hd animated pulse infinite">HD</div>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <div class="d-flex justify-content-around align-items-center">
+                            <p class="hvrcenter">Chronos-2.1
+                                <div class="fhd animated pulse infinite">FHD</div>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <p class="hvrcenter">Accessories</p>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="#">
+                        <p class="hvrcenter">Abous Us</p>
+                    </a>
+                </li>
+            </ul>
         </nav>
+
+        <div class="mainnav">
+            <!--Sidebar Menu In Page-->
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                <!--Logo and Name-->
+                <div class=" d-flex justify-content-between w-100">
+                    <a class="navbar-brand d-flex" href="#">
+                        <img src="/Images/Master_Logo.png" class="w-25" alt="">
+                        <h3 class="align-self-center m-0 ml-3">Kron Technologies Inc.</h3>
+                    </a>
+
+                    <!--Sidebar Menu Button-->
+                    <button class="btn align-self-center" type="button" id="sidebarCollapse">
+                        <span><i class="fa fa-bars"></i></span>
+                     </button>
+                </div>
+            </nav>
+
+            <!--Dark Overlay-->
+            <div class="overlay"></div>
+        </div>
     </header>
     <!--End Main Menu Navagation-->
     <!--Start Video Landing Page-->
@@ -89,6 +133,8 @@
     <script src="Scripts/home.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://github.com/FortAwesome/Font-Awesome/blob/master/js/all.js"></script>
+    <script src="Scripts/LeosPlayGround.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <!--End Script Source Files-->
 
 </body>

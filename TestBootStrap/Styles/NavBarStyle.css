@@ -1,45 +1,144 @@
-﻿/*============= COURSE SECTION =============*/
+﻿/* ---------------------------------------------------
+    FONT STYLE
+----------------------------------------------------- */
 
 @import url('https://fonts.googleapis.com/css?family=Enriqueta:400,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 
-/*Temp Body Font*/
-
-body {
-    font-family: 'Titillium Web', sans-serif;
-}
-
-
-/*Main Menu Navagation*/
+/* ---------------------------------------------------
+    MAIN MENU NAV STYLE
+----------------------------------------------------- */
 
 .mainnav .navbar {
     background-color: rgba(0, 0, 0, 0.5) !important;
+    z-index: 1;
 }
 
-.mainnav .navbar-dark .navbar-nav .nav-link {
+.mainnav .btn {
+    background-color: darkred;
+    border: 1px solid white;
+}
+
+.mainnav i {
     color: white;
-}
-
-
-/*Center item Links*/
-
-.mainnav .navbar-brand {
     font-size: 1.5rem;
-    margin-right: 0rem;
-    width: 200px;
-}
-
-.mainnav .navbar-brand img {
-    width: 20%;
-    margin-right: 1rem;
 }
 
 
-/*--Footer Navagation--*/
+/* ---------------------------------------------------
+    SIDEBAR MAIN STYLE
+----------------------------------------------------- */
+
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    z-index: 999;
+    background-color: black;
+    color: white;
+    transition: all 0.5s;
+    box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, .8);
+}
+
+#sidebar.active {
+    right: 0;
+}
+
+#dismiss {
+    height: 50%;
+    padding: .2rem .4rem;
+    text-align: center;
+    background: white;
+    color: lightcoral;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+#dismiss:hover {
+    box-shadow: 0px 0px 3px 2px rgba(0, 0, 0, 0.4);
+}
+
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 998;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+.mCSB_container {
+    height: 100% !important;
+}
+
+.sidebar-header i {
+    font-size: 1.5rem;
+}
+
+.list-unstyled .hd {
+    color: aqua;
+    font-size: 1.6rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0rem .4rem;
+    box-shadow: 1px 1px 5px 2px red;
+}
+
+.list-unstyled .fhd {
+    color: magenta;
+    font-size: 1.7rem;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 0px .4rem;
+    box-shadow: 1px 1px 5px 2px red;
+}
+
+.list-unstyled p {
+    margin: 0;
+}
+
+#sidebar .sidebar-header {
+    padding: 5px;
+    background: white;
+    color: black;
+    text-align: center;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.5em;
+    display: block;
+    height: 100%;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+
+/* ---------------------------------------------------
+    FOOTER NAV
+----------------------------------------------------- */
 
 .foot .navbar {
     background-color: rgba(0, 0, 0, 0.5) !important;
+    z-index: 1;
 }
 
 .foot .navbar h5 {
@@ -71,7 +170,9 @@ body {
 }
 
 
-/*--Hover Menu--*/
+/* ---------------------------------------------------
+    HOVER PROTOTYPE
+----------------------------------------------------- */
 
 .hvrcenter {
     display: inline-block;
@@ -90,10 +191,10 @@ body {
     left: 50%;
     right: 50%;
     bottom: 0;
-    background-color: white;
+    background-color: darkred;
     height: 2.5px;
     -webkit-transition-property: left, right;
-    transition-property: left, right;
+    transition-property: left, right, top, bottom;
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-timing-function: ease-out;
