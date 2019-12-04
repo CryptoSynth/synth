@@ -36,7 +36,7 @@
     right: -250px;
     height: 100%;
     z-index: 999;
-    background-color: rgba(160, 160, 160, 0.9);
+    background-color: rgba(211, 204, 204, 0.9);
     color: black;
     transition: all 0.5s;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
@@ -108,7 +108,8 @@
 
 #sidebar ul li a {
     padding: 10px;
-    font-size: 1.5em;
+    font-size: 2rem;
+    font-weight: 800;
     display: block;
     height: 100%;
 }
