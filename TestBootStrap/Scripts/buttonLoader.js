@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $("#btnFetch").click(function() {
+    $("#btnLoader").click(function() {
         // disable button
         $(this).prop("disabled", true);
         // add spinner to button
