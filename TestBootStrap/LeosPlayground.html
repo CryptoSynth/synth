@@ -8,69 +8,33 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" tyle="text/css" href="Styles/LeosPlayGroundStyle.css">
+    <link rel="stylesheet" tyle="text/css" href="Styles/pageLoader.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
+
     <title>Hello, world!</title>
 </head>
 
-<body>
-    <!--Sidebar Menu-->
-    <div class="wrapper">
-        <!--SideBar-->
-        <nav id="sidebar">
+<body onload="pageLoader()">
 
-            <!--Exit sideBar Menu Icon-->
-            <div id="dismiss">
-                <i class="fa fa-times"></i>
-            </div>
-
-            <!--Sidebar Header-->
-            <div class="sidebar-header">
-                <h3>BootStrap Sidebar</h3>
-            </div>
-
-            <!--Sidebar List-->
-            <ul class="list-unstyled">
-                <p>Dummy Heading</p>
-                <li class="active">
-                    <a href="#">Home</a>
-                </li>
-                <li class="">
-                    <a href="#">Chronos-1.4HD</a>
-                </li>
-                <li class="">
-                    <a href="#">Chronos-2.1FHD</a>
-                </li>
-                <li>
-                    <a href="#">Accessories</a>
-                </li>
-                <li class="">
-                    <a href="#">About Us</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div id="content">
-            <!--Sidebar Menu In Page-->
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <!--Sidebar Menu Button-->
-                    <button class="btn btn-info" type="button" id="sidebarCollapse">
-                        <span>Toggle Sidebar</span>
-                    </button>
-                </div>
-            </nav>
-        </div>
-        <!--Dark Overlay-->
-        <div class="overlay"></div>
+    <div id="loader-background">
+        <div id="loader-line"></div>
+        <div id="loader-icon"></div>
     </div>
 
+    <div style="display:none;" id="preload-target" class="animate-bottom">
+        <h2>Tada!</h2>
+        <p>Some text in my newly loaded page..</p>
+    </div>
+
+
     <!-- Optional JavaScript -->
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="Scripts/LeosPlayGround.js"></script>
+    <script src="Scripts/pageLoader.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
 </body>
 

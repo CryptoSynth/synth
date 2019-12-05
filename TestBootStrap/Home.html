@@ -14,17 +14,24 @@
     <link rel="stylesheet" href="Styles/fixed.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Styles/pageLoader.css">
 </head>
 
 
-<body>
+<body onload="pageLoader()">
+    <!--Pre-Loader-->
+    <div id="loader-background">
+        <div id="loader-line"></div>
+        <div id="loader-icon"></div>
+    </div>
+
     <!--Start Main Menu Navagation-->
     <header>
         <!--Sidebar Menu-->
         <!--SideBar-->
         <nav id="sidebar">
             <!--Exit sideBar Menu Icon-->
-            <div class="d-flex justify-content-end sidebar-header align-self-center w-100 position-absolute">
+            <div class="d-flex justify-content-end sidebar-header align-self-center w-100">
                 <!--Sidebar Header-->
                 <div class="align-self-end" id="dismiss">
                     <i class="fa fa-times"></i>
@@ -32,7 +39,7 @@
             </div>
 
             <!--Sidebar List-->
-            <ul class="list-unstyled d-flex flex-column justify-content-around text-center h-100">
+            <ul class="list-unstyled d-flex flex-column  text-center h-100">
                 <li class="active">
                     <a href="/Home.html">
                         <p class="hvrcenter">Home</p>
@@ -98,7 +105,7 @@
     <!--Start Video Landing Page-->
     <section class="mobile-vid">
         <!--Video Container-->
-        <div class="desktop-vid container-fluid p-0">
+        <div id="preload-target" class="desktop-vid container-fluid p-0 animate-bottom" style="display:none;">
             <video class="vid3" autoplay="autoplay" playsinline="playsinline" muted="muted" loop="loop">
                 <source src="/video/Chronos_Home_Page.mp4" type="video/mp4" />
             </video>
@@ -135,7 +142,7 @@
     <script src="Scripts/buttonLoader.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://github.com/FortAwesome/Font-Awesome/blob/master/js/all.js"></script>
-    <script src="Scripts/LeosPlayGround.js"></script>
+    <script src="Scripts/pageLoader.js"></script>
     <!--End Script Source Files-->
 
 </body>
