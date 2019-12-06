@@ -95,6 +95,22 @@ html {
     margin-top: 0.3rem;
 }
 
+.feature .phantom {
+    filter: blur(4px);
+}
+
+.feature .censored {
+    position: absolute;
+    display: flex;
+    width: 70%;
+    height: 30%;
+    justify-content: center;
+    z-index: 1;
+    background-color: red;
+    transform: rotate(30deg);
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.9);
+}
+
 
 /*Feature Table*/
 
@@ -245,8 +261,8 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 768px) {
     /*Landing Page*/
     .landingpage .vid1 {
-        width: 100%;
         transform: translateX(0%);
+        height: 100%;
     }
     .landingpage .flex-item-h1 {
         top: 10%;
@@ -265,6 +281,19 @@ Extra (xl) large devices (large desktops, 1200px and up)
     }
     .feature .vs-text {
         font-size: 5vw;
+    }
+    .feature .censored {
+        position: absolute;
+        display: flex;
+        font-size: .4rem;
+        width: 75%;
+        height: 25%;
+        font-size: 4vw;
+        justify-content: center;
+        z-index: 1;
+        background-color: red;
+        transform: rotate(30deg);
+        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .9);
     }
     /*Table*/
     .feature .outside-col-style {
@@ -303,5 +332,12 @@ Extra (xl) large devices (large desktops, 1200px and up)
     /*Order Page*/
     .order .order-button {
         width: 30%;
+    }
+}
+
+@media (min-width: 1025px) {
+    .landingpage .vid1 {
+        height: unset;
+        width: 100%;
     }
 }
