@@ -105,10 +105,19 @@ html {
     width: 70%;
     height: 30%;
     justify-content: center;
+    padding: .4rem;
     z-index: 1;
-    background-color: red;
+    background-color: black;
     transform: rotate(30deg);
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.9);
+}
+
+.feature .censored i {
+    color: red;
+    z-index: 2;
+    font-size: 4vw;
+    padding: 0 .7rem;
+    align-self: center;
 }
 
 
@@ -203,14 +212,11 @@ html {
 
 .feature .info-btn {
     border: 0px solid white;
+    width: 50%;
 }
 
 .feature .info-btn:hover {
-    color: lightgreen;
-}
-
-.feature .modal-Init {
-    width: 20%;
+    color: magenta;
 }
 
 
@@ -235,7 +241,7 @@ html {
 }
 
 .order .order-button:hover {
-    color: black !important;
+    color: black;
 }
 
 
@@ -282,19 +288,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .feature .vs-text {
         font-size: 5vw;
     }
-    .feature .censored {
-        position: absolute;
-        display: flex;
-        font-size: .4rem;
-        width: 75%;
-        height: 25%;
-        font-size: 4vw;
-        justify-content: center;
-        z-index: 1;
-        background-color: red;
-        transform: rotate(30deg);
-        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .9);
-    }
     /*Table*/
     .feature .outside-col-style {
         width: 40%;
@@ -327,7 +320,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
         padding-right: 2rem !important;
     }
     .feature .info-btn {
-        width: 5%;
+        width: 50%;
     }
     /*Order Page*/
     .order .order-button {
