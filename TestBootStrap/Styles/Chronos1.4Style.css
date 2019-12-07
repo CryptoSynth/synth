@@ -71,8 +71,16 @@ html {
 /*Feature Page Section*/
 
 .feature {
-    height: 100%;
+    height: 100vh;
     background-color: #111;
+}
+
+.feature .image-section {
+    height: 30%;
+}
+
+.feature .table-section {
+    height: 70%;
 }
 
 
@@ -105,7 +113,7 @@ html {
     width: 70%;
     height: 30%;
     justify-content: center;
-    padding: .4rem;
+    padding: 0.4rem;
     z-index: 1;
     background-color: black;
     transform: rotate(30deg);
@@ -116,7 +124,7 @@ html {
     color: red;
     z-index: 2;
     font-size: 4vw;
-    padding: 0 .7rem;
+    padding: 0 0.7rem;
     align-self: center;
 }
 
@@ -166,17 +174,25 @@ html {
 
 .feature .th-style {
     vertical-align: middle;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
 }
 
-.feature th {
+.feature .table-style th {
     text-transform: uppercase;
-    font-size: 0.6rem;
+    font-size: 0.8rem;
 }
 
-.feature td {
+.feature .table-style td {
     vertical-align: middle;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+}
+
+.feature .table-style th:hover {
+    background-color: rgba(214, 6, 233, 0.5);
+}
+
+.feature .table-style td:hover {
+    background-color: rgba(214, 6, 233, 0.5);
 }
 
 .feature .fa-check {
@@ -190,29 +206,48 @@ html {
 }
 
 
-/*Accordion Cards*/
+/*Modal Table*/
 
-.feature .card {
-    border: 2px solid darkgreen;
-}
-
-.feature .card-header {
-    padding: 0.2rem;
+.feature .modal-content {
+    border: 2px solid magenta;
 }
 
 .feature .listhead {
     font-size: 2rem;
-    font-weight: 700;
-    color: lightgreen;
+    color: magenta;
     text-align: center;
+}
+
+.feature .modal-table th {
+    font-size: 1rem;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.feature .modal-table td {
+    font-size: 0.9rem;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.feature .modal-table .btn {
+    border: 2px solid black;
+    border-radius: 10px;
+    color: magenta;
+    width: 60px;
+}
+
+.feature .modal-table .modal-subtable {
+    padding: 0rem !important;
 }
 
 
 /*Learn More*/
 
 .feature .info-btn {
-    border: 0px solid white;
-    width: 50%;
+    background-color: white;
+    width: 40%;
+    color: black;
 }
 
 .feature .info-btn:hover {
@@ -282,8 +317,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
     }
     .feature .adjust-image {
         width: unset;
-        height: 250px;
-        padding: 0;
+        height: 25vh;
     }
     .feature .vs-text {
         font-size: 5vw;
@@ -315,12 +349,13 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .feature td {
         font-size: 0.8rem;
     }
+    /*Modal Table*/
     /*Learn More*/
     .feature .padding-style-2 {
         padding-right: 2rem !important;
     }
     .feature .info-btn {
-        width: 50%;
+        width: 20%;
     }
     /*Order Page*/
     .order .order-button {
