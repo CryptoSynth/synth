@@ -39,13 +39,13 @@
             </div>
 
             <!--Sidebar List-->
-            <ul class="list-unstyled d-flex flex-column  text-center h-100">
-                <li class="active">
+            <ul class="navbar-nav d-flex flex-column text-center h-100">
+                <li class="nav-item active">
                     <a href="/Home.html">
                         <p class="hvrcenter">Home</p>
                     </a>
                 </li>
-                <li>
+                <li class=" nav-item">
                     <a href="/Chronos1.4.html">
                         <div class="d-flex justify-content-around align-items-center">
                             <p class="hvrcenter">Chronos-1.4
@@ -54,7 +54,7 @@
                         </div>
                     </a>
                 </li>
-                <li class="">
+                <li class=" nav-item">
                     <a href="#">
                         <div class="d-flex justify-content-around align-items-center">
                             <p class="hvrcenter">Chronos-2.1
@@ -63,20 +63,45 @@
                         </div>
                     </a>
                 </li>
-                <li>
+                <li class=" nav-item">
                     <a href="/Accessories.html">
                         <p class="hvrcenter">Accessories</p>
                     </a>
                 </li>
-                <li>
+                <li class="nav-item">
                     <a href="#">
                         <p class="hvrcenter">About Us</p>
                     </a>
                 </li>
-                <li>
-                    <a href="#">
-                        <p class="hvrcenter">Kron Playground</p>
-                    </a>
+                <li class=" nav-item">
+                    <div class="hvrcenter" id=accordion>
+                        <div id="resources-dropdown">
+                            <a href="#" data-toggle="collapse" data-target="#resource-collapse" aria-expanded="true" aria-controls="resource-collapse">
+                                <p>Resources </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="resource-collapse" class="collapse" aria-labelledby="resources-dropdown" data-parent="#accordion">
+                        <div class="resources-dropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="/Tutorial.html">
+                                        Tutorials
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">
+                                        Downloads
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">
+                                        Documents
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </li>
             </ul>
         </nav>
@@ -92,8 +117,8 @@
 
                     <!--Sidebar Menu Button-->
                     <button class="btn align-self-center" type="button" id="sidebarCollapse">
-                        <span><i class="fa fa-bars"></i></span>
-                     </button>
+                            <span><i class="fa fa-bars"></i></span>
+                         </button>
                 </div>
             </nav>
 

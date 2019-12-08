@@ -82,18 +82,31 @@
     color: red;
 }
 
-.list-unstyled .hd {
+.navbar-nav .hd {
     color: aqua;
     font-size: 1.6rem;
 }
 
-.list-unstyled .fhd {
+.navbar-nav .fhd {
     color: magenta;
     font-size: 1.7rem;
 }
 
-.list-unstyled p {
+.navbar-nav p {
     margin: 0;
+}
+
+.navbar-nav .resources-dropdown ul {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20%, rgba(104, 93, 93, .5) 70%);
+}
+
+.navbar-nav .resources-dropdown a {
+    font-size: 1.2rem !important;
+    color: aqua
+}
+
+.navbar-nav .resources-dropdown a:hover {
+    color: white !important;
 }
 
 #sidebar .sidebar-header {
@@ -177,7 +190,7 @@ a:focus {
     left: 50%;
     right: 50%;
     bottom: 0;
-    background-color: darkred;
+    background-color: magenta;
     height: 2.5px;
     -webkit-transition-property: left, right;
     transition-property: left, right, top, bottom;

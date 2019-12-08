@@ -15,86 +15,110 @@
 </head>
 
 <body>
+    <!--Start Main Menu Navagation-->
+    <header>
+        <!--Sidebar Menu-->
+        <!--SideBar-->
+        <nav id="sidebar">
+            <!--Exit sideBar Menu Icon-->
+            <div class="d-flex justify-content-end sidebar-header align-self-center w-100">
+                <!--Sidebar Header-->
+                <div class="align-self-end" id="dismiss">
+                    <i class="fa fa-times"></i>
+                </div>
+            </div>
 
+            <!--Sidebar List-->
+            <ul class="navbar-nav d-flex flex-column text-center h-100">
+                <li class="nav-item active">
+                    <a href="/Home.html">
+                        <p class="hvrcenter">Home</p>
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <a href="/Chronos1.4.html">
+                        <div class="d-flex justify-content-around align-items-center">
+                            <p class="hvrcenter">Chronos-1.4
+                                <strong class="hd">HD</strong>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <a href="#">
+                        <div class="d-flex justify-content-around align-items-center">
+                            <p class="hvrcenter">Chronos-2.1
+                                <strong class="fhd">FHD</strong>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <a href="/Accessories.html">
+                        <p class="hvrcenter">Accessories</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#">
+                        <p class="hvrcenter">About Us</p>
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <div class="hvrcenter" id=accordion>
+                        <div id="resources-dropdown">
+                            <a href="#" data-toggle="collapse" data-target="#resource-collapse" aria-expanded="true" aria-controls="resource-collapse">
+                                <p>Resources </p>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="resource-collapse" class="collapse" aria-labelledby="resources-dropdown" data-parent="#accordion">
+                        <div class="resources-dropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a href="/Tutorial.html">
+                                        Tutorials
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">
+                                        Downloads
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">
+                                        Documents
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="mainnav">
+            <!--Sidebar Menu In Page-->
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                <!--Logo and Name-->
+                <div class=" d-flex justify-content-between w-100">
+                    <a class="navbar-brand d-flex" href="/Home.html">
+                        <img src="/Images/Master_Logo.png" class="w-25" alt="">
+                    </a>
+
+                    <!--Sidebar Menu Button-->
+                    <button class="btn align-self-center" type="button" id="sidebarCollapse">
+                            <span><i class="fa fa-bars"></i></span>
+                         </button>
+                </div>
+            </nav>
+
+            <!--Dark Overlay-->
+            <div class="overlay"></div>
+        </div>
+    </header>
     <!--End Main Menu Navagation-->
     <!--Start Landing Page Section-->
     <section class="landingpage scroll-start h-100">
-        <!--Start Main Menu Navagation-->
-        <header>
-            <!--Sidebar Menu-->
-            <!--SideBar-->
-            <nav id="sidebar">
-                <!--Exit sideBar Menu Icon-->
-                <div class="d-flex justify-content-end sidebar-header align-self-center w-100">
-                    <!--Sidebar Header-->
-                    <div class="align-self-end" id="dismiss">
-                        <i class="fa fa-times"></i>
-                    </div>
-                </div>
-
-                <!--Sidebar List-->
-                <ul class="list-unstyled d-flex flex-column text-center h-100">
-                    <li class="active">
-                        <a href="/Home.html">
-                            <p class="hvrcenter">Home</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/Chronos1.4.html">
-                            <div class="d-flex justify-content-around align-items-center">
-                                <p class="hvrcenter">Chronos-1.4
-                                    <strong class="hd">HD</strong>
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="">
-                        <a href="#">
-                            <div class="d-flex justify-content-around align-items-center">
-                                <p class="hvrcenter">Chronos-2.1
-                                    <strong class="fhd">FHD</strong>
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/Accessories.html">
-                            <p class="hvrcenter">Accessories</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <p class="hvrcenter">About Us</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <p class="hvrcenter">Kron Playground</p>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-
-            <div class="mainnav">
-                <!--Sidebar Menu In Page-->
-                <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
-                    <!--Logo and Name-->
-                    <div class=" d-flex justify-content-between w-100">
-                        <a class="navbar-brand d-flex" href="/Home.html">
-                            <img src="/Images/Master_Logo.png" class="w-25" alt="">
-                        </a>
-
-                        <!--Sidebar Menu Button-->
-                        <button class="btn align-self-center" type="button" id="sidebarCollapse">
-                            <span><i class="fa fa-bars"></i></span>
-                         </button>
-                    </div>
-                </nav>
-
-                <!--Dark Overlay-->
-                <div class="overlay"></div>
-            </div>
-        </header>
         <!--Video-->
         <video class="vid1" autoplay="autoplay" playsinline="playsinline" loop="loop" muted="muted">
             <source src="video/Video_Smoke.mp4" />
@@ -340,23 +364,31 @@
     </section>
     <!--End Feature Section-->
     <!--Start Order Section-->
-    <section class="order scroll-start ">
-        <div class="container-fluid h-100 p-0 ">
-            <div class="row h-100 ">
-                <div class="col-12 ">
-                    <div class="d-flex justify-content-around align-items-center flex-column h-100 ">
-                        <div class="sketchfab-embed-wrapper w-75 h-75 ">
-                            <iframe class="w-100 h-100 " height=" " title="A 3D model " src="https://sketchfab.com/models/ab31676851cc49ef8cc26aac0f2297e5/embed " frameborder="0 " allow="autoplay; fullscreen; vr " mozallowfullscreen="true
-                                " webkitallowfullscreen="true "></iframe>
-                        </div>
+    <section class="order scroll-start">
+        <div class="d-flex position-relative h-100">
 
-                        <a id="btnFetch " class="order-button btn btn-outline-light align-self-center " href="KronStore.html#!/Chronos-1-4-HD/p/161263018/category=0 ">
+            <div class="container-fluid">
+                <babylon extends="">
+                    <model url="/Scripts/3D-Model/Chronos_1.4.glb">
+
+                    </model>
+                    <camera>
+                        <behaviors>
+                            <auto-rotate type="0"></auto-rotate>
+                        </behaviors>
+                    </camera>
+                </babylon>
+            </div>
+            <div class="d-flex bottom-center position-absolute justify-content-center w-100 ">
+                <a id="btnFetch " class="order-button btn" href="KronStore.html#!/Chronos-1-4-HD/p/161263018/category=0 ">
                             Buy Now
                         </a>
-                    </div>
-                </div>
             </div>
-        </div>
+            <div class="d-flex position-absolute top-right">
+                <a id="btnFetch " class="up-button btn" href="#feature">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+            </div>
     </section>
     <!--End Order Section-->
 
@@ -367,6 +399,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
     <script src="https://github.com/FortAwesome/Font-Awesome/blob/master/js/all.js "></script>
     <script src="Scripts/LeosPlayGround.js "></script>
+    <script src="https://cdn.babylonjs.com/viewer/babylon.viewer.js"></script>
     <!--End Script Source Files-->
 
 </body>

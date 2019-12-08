@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css?family=Enriqueta:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Audiowide&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Niramit&display=swap");
+body,
+html {
+    font-family: "Niramit", sans-serif;
+    height: 100vh;
+    -ms-scroll-snap-type: mandatory;
+    scroll-snap-type: mandatory;
+    -ms-scroll-snap: y mandatory;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.scroll-start {
+    scroll-snap-align: start;
+}
+
+
+/*------------------------------------------------------
+    Video Section Row 01 
+--------------------------------------------------------*/
+
+.overlay-1 {
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 999;
+}
+
+.overlay-1:hover {
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 1s ease-out;
+    display: none;
+}
+
+.vid-section-1 {
+    background-color: plum;
+    height: unset;
+}
+
+.vid-section-1 .container-fluid {
+    padding: 2rem 2rem;
+    height: unset;
+}
+
+.row {
+    height: unset;
+    margin: 0.5rem 0rem;
+}
+
+.vid-section-1 .col-md-4 {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 10px;
+    max-width: unset;
+    padding: 0rem;
+    margin: 2rem 0rem;
+}
+
+.vid-section-1 h3 {
+    background-color: lightskyblue;
+    border-radius: 10px;
+    color: black;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    width: 80%;
+    margin: 1rem auto;
+    white-space: nowrap;
+}
+
+
+/*------------------------------------------------------
+    Video Section Row 02 
+--------------------------------------------------------*/
+
+.vid-section-2 {
+    background-color: lightgoldenrodyellow;
+    height: unset;
+}
+
+.vid-section-2 .container-fluid {
+    padding: 2rem 2rem;
+    height: unset;
+}
+
+.vid-section-2 .col-md-4 {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius: 10px;
+    max-width: unset;
+    padding: 0rem;
+    margin: 2rem 0rem;
+}
+
+.vid-section-2 h3 {
+    background-color: lightpink;
+    border-radius: 10px;
+    color: black;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    width: 80%;
+    margin: 1rem auto;
+    white-space: nowrap;
+}
+
+iframe {
+    border: 2px solid black !important;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+@media (min-width: 768px) {
+    /*------------------------------------------------------
+    Video Section Row 01 
+--------------------------------------------------------*/
+    .vid-section-1 .col-md-4 {
+        max-width: 32.5%;
+    }
+    .vid-section-1 {
+        height: 100%;
+    }
+    .vid-section-1 .container-fluid {
+        height: 100%;
+    }
+    .row {
+        height: 50%;
+    }
+    .vid-section-1 .col-md-4 {
+        margin: 0rem 0rem;
+    }
+    /*------------------------------------------------------
+    Video Section Row 02 
+--------------------------------------------------------*/
+    .vid-section-2 .col-md-4 {
+        max-width: 32.5%;
+    }
+    .vid-section-2 {
+        height: 100%;
+    }
+    .vid-section-2 .container-fluid {
+        height: 100%;
+    }
+    .vid-section-2 .col-md-4 {
+        margin: 0rem 0rem;
+    }
+}
