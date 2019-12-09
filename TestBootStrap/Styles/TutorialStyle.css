@@ -3,6 +3,11 @@
 @import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Audiowide&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Niramit&display=swap");
+
+/*------------------------------------------------------
+    Html/Body Section  
+--------------------------------------------------------*/
+
 body,
 html {
     font-family: "Niramit", sans-serif;
