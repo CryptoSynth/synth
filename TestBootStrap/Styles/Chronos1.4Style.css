@@ -268,16 +268,12 @@ html {
 /*Order Page Section*/
 
 .order {
-    background-color: #55565a;
-    background-image: linear-gradient(45deg, gray 20%, transparent 80%);
-    background-size: 100px 100px;
-    z-index: 0;
     height: 100vh;
 }
 
-.myContainer {
+model-viewer {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .order .order-button {
