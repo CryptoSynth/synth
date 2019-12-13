@@ -1,71 +1,99 @@
-(function() {
-    // Vertical Timeline - by CodyHouse.co
-    function VerticalTimeline(element) {
-        this.element = element;
-        this.blocks = this.element.getElementsByClassName("cd-timeline__block");
-        this.images = this.element.getElementsByClassName("cd-timeline__img");
-        this.contents = this.element.getElementsByClassName("cd-timeline__content");
-        this.offset = 0.8;
-        this.hideBlocks();
-    };
+// Globals
+var prefixes = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+var $container = $('.container');
+var $timeline = $('.timeline');
+var $timelineItem = $('.timeline-item');
+var $timelineContent = $('.timeline-content');
+var $dropDown = $('.dropdown');
+var $hasHovered = true;
+var hideOnExit = false;
 
-    VerticalTimeline.prototype.hideBlocks = function() {
-        if (!"classList" in document.documentElement) {
-            return; // no animation on older browsers
-        }
-        //hide timeline blocks which are outside the viewport
-        var self = this;
-        for (var i = 0; i < this.blocks.length; i++) {
-            (function(i) {
-                if (self.blocks[i].getBoundingClientRect().top > window.innerHeight * self.offset) {
-                    self.images[i].classList.add("cd-timeline__img--hidden");
-                    self.contents[i].classList.add("cd-timeline__content--hidden");
-                }
-            })(i);
-        }
-    };
+// mouseenter event handler
+$timelineItem.on('mouseenter', function(e) {
 
-    VerticalTimeline.prototype.showBlocks = function() {
-        if (!"classList" in document.documentElement) {
-            return;
-        }
-        var self = this;
-        for (var i = 0; i < this.blocks.length; i++) {
-            (function(i) {
-                if (self.contents[i].classList.contains("cd-timeline__content--hidden") && self.blocks[i].getBoundingClientRect().top <= window.innerHeight * self.offset) {
-                    // add bounce-in animation
-                    self.images[i].classList.add("cd-timeline__img--bounce-in");
-                    self.contents[i].classList.add("cd-timeline__content--bounce-in");
-                    self.images[i].classList.remove("cd-timeline__img--hidden");
-                    self.contents[i].classList.remove("cd-timeline__content--hidden");
-                }
-            })(i);
-        }
-    };
+    var isSelected = $(this).hasClass('selected');
 
-    var verticalTimelines = document.getElementsByClassName("js-cd-timeline"),
-        verticalTimelinesArray = [],
-        scrolling = false;
-    if (verticalTimelines.length > 0) {
-        for (var i = 0; i < verticalTimelines.length; i++) {
-            (function(i) {
-                verticalTimelinesArray.push(new VerticalTimeline(verticalTimelines[i]));
-            })(i);
-        }
+    if (isSelected === false) {
 
-        //show timeline blocks on scrolling
-        window.addEventListener("scroll", function(event) {
-            if (!scrolling) {
-                scrolling = true;
-                (!window.requestAnimationFrame) ? setTimeout(checkTimelineScroll, 250): window.requestAnimationFrame(checkTimelineScroll);
-            }
-        });
+        var leftPos = $(this).position().left,
+            left = leftPos - 88,
+            $that = $(this);
+
+        $timelineItem.removeClass('selected');
+        $(this).addClass('selected');
+
+        if ($hasHovered === false) {
+            // Show Bounce
+
+            // Set Flag
+            $hasHovered = true;
+
+            // Show DD Bounce
+            showBounce(left);
+
+            // Show DD content Bounce
+            showContentBounce($that);
+
+        } else {
+            // Follow
+
+            // Change pos of DD to follow
+            dropDownFollow(left);
+
+            // Hide previous dd content
+            $timelineContent.removeClass('animated fadeIn bounceIn');
+
+            // Show hovered dd content
+            $that.find($timelineContent).addClass('animated fadeIn');
+        }
     }
 
-    function checkTimelineScroll() {
-        verticalTimelinesArray.forEach(function(timeline) {
-            timeline.showBlocks();
-        });
-        scrolling = false;
-    };
-})();
+});
+
+// mouseleave event handler
+$timeline.on('mouseleave', function(e) {
+
+    if (hideOnExit) {
+
+        //   Set Flag
+        $hasHovered = false;
+
+        // Hide DD
+        hideDropDown();
+
+        // Hide DD content
+        $timelineContent.removeClass('animated fadeIn');
+
+    }
+
+});
+
+// Animation end event listener
+$dropDown.on(prefixes, function(e) {
+
+    if (e.originalEvent.animationName === 'fadeOut') {
+        $dropDown.removeAttr('style');
+    }
+
+});
+
+/**
+ * Private functions that do showing/hiding/animating
+ */
+function showContentBounce(that) {
+    $hasBounced = true;
+    that.find('.timeline-content').addClass('animated bounceIn');
+}
+
+function showBounce(pos) {
+    $dropDown.css('left', pos + 'px').removeClass('fadeOut').addClass('animated bounceIn');
+}
+
+function dropDownFollow(pos) {
+    $dropDown.css('left', pos + 'px');
+}
+
+function hideDropDown() {
+    $timelineItem.removeClass('selected');
+    $dropDown.removeClass('bounceIn').addClass('fadeOut');
+}
