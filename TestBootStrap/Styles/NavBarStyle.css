@@ -1,10 +1,4 @@
-﻿/* ---------------------------------------------------
-    FONT STYLE
------------------------------------------------------ */
-
-@import url('https://fonts.googleapis.com/css?family=Enriqueta:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+﻿@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
 
 /* ---------------------------------------------------
     MAIN MENU NAV STYLE
@@ -35,7 +29,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     transition: all 0.5s;
-    box-shadow: 1px 1px 3px rgba(0, 0, 0, .5);
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 #sidebar.active {
@@ -44,7 +38,7 @@
 
 #dismiss {
     height: 50%;
-    padding: .2rem .4rem;
+    padding: 0.2rem 0.4rem;
     text-align: center;
     color: lightcoral;
     cursor: pointer;
@@ -97,12 +91,12 @@
 }
 
 .navbar-nav .resources-dropdown ul {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 20%, rgba(104, 93, 93, .5) 70%);
+    background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 20%, rgba(104, 93, 93, 0.5) 70%);
 }
 
 .navbar-nav .resources-dropdown a {
     font-size: 1.2rem !important;
-    color: aqua
+    color: aqua;
 }
 
 .navbar-nav .resources-dropdown a:hover {
@@ -141,23 +135,23 @@ a:focus {
 }
 
 .foot .navbar h5 {
-    letter-spacing: .2rem;
-    word-spacing: .5rem;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.5rem;
     color: gray;
     margin: 0;
     text-align: center;
-    padding-bottom: .6rem;
+    padding-bottom: 0.6rem;
 }
 
 .foot .navbar strong {
-    font-size: 2.0rem;
+    font-size: 2rem;
 }
 
 .foot .navbar .btn {
     border-radius: 30px;
     border-width: 2px;
     font-size: 1.2rem;
-    padding: .4rem;
+    padding: 0.4rem;
 }
 
 .foot strong {
@@ -227,8 +221,10 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 =============*/
 
-@media(min-width: 768px) {
-    /*--Footer Navagation--*/
+@media (min-width: 768px) {
+    /* ---------------------------------------------------
+    Footer Navagation Style
+----------------------------------------------------- */
     .foot .navbar h5 {
         padding-bottom: 0rem;
     }

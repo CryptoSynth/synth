@@ -1,13 +1,19 @@
-/*Main*/
+/* ---------------------------------------------------
+    HTML & Body
+----------------------------------------------------- */
 
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
 body,
 html {
-    font-family: ;
+    font-family: "Noto Sans SC", sans-serif;
     height: 100vh;
+    background-color: #bbf2fc;
 }
 
 
-/*Products*/
+/* ---------------------------------------------------
+   Product Picture Header
+----------------------------------------------------- */
 
 .landing-picture .accessories-image {
     background-image: url(/Images/Chronos_1.4_3.png);
@@ -19,11 +25,16 @@ html {
 }
 
 .landing-picture h1 {
-    text-shadow: .5vw .5vw rgba(0, 0, 0, 0.8);
+    text-shadow: 0.5vw 0.5vw rgba(0, 0, 0, 0.8);
     font-size: 2.5rem;
     text-align: center;
     margin-top: 4.5rem;
 }
+
+
+/* ---------------------------------------------------
+   Product Accessories
+----------------------------------------------------- */
 
 .accessories h1 {
     border: 1px solid black;
@@ -77,11 +88,17 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 =============*/
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
+    /* ---------------------------------------------------
+   Product Picture Header
+----------------------------------------------------- */
     .landing-picture h1 {
         text-shadow: 5px 8px rgba(0, 0, 0, 0.8);
         font-size: 5vw;
     }
+    /* ---------------------------------------------------
+   Product Accessories
+----------------------------------------------------- */
     .accessories h1 {
         width: 30%;
     }

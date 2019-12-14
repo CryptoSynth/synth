@@ -1,16 +1,11 @@
-﻿/*============= COURSE SECTION =============*/
+﻿/* ---------------------------------------------------
+    HTML & Body
+----------------------------------------------------- */
 
-@import url("https://fonts.googleapis.com/css?family=Enriqueta:400,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Orbitron&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Audiowide&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Niramit&display=swap");
-
-/*Body*/
-
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
 body,
 html {
-    font-family: "Audiowide", cursive;
+    font-family: "Noto Sans SC", sans-serif;
     height: 100vh;
     background-color: black;
     -ms-scroll-snap-type: mandatory;
@@ -24,15 +19,21 @@ html {
     scroll-snap-align: start;
 }
 
+
+/* ---------------------------------------------------
+    Navbar
+----------------------------------------------------- */
+
 .mainnav .navbar {
     z-index: 3;
 }
 
 
-/*Landing Page Section*/
+/* ---------------------------------------------------
+    Landing Page Section
+----------------------------------------------------- */
 
 .landingpage {
-    font-family: "Audiowide", cursive;
     overflow: hidden;
     height: 100vh;
 }
@@ -68,7 +69,9 @@ html {
 }
 
 
-/*Feature Page Section*/
+/* ---------------------------------------------------
+    Feature Page Section
+----------------------------------------------------- */
 
 .feature {
     height: 100vh;
@@ -84,7 +87,9 @@ html {
 }
 
 
-/*Feature Images and VS text*/
+/* ---------------------------------------------------
+    Feature Images and VS text
+----------------------------------------------------- */
 
 .feature .adjust-image {
     width: 100%;
@@ -98,7 +103,7 @@ html {
 }
 
 .feature hr {
-    border: 2px solid aqua;
+    border: 1.5px solid plum;
     width: 10vw;
     margin-top: 0.3rem;
 }
@@ -110,26 +115,29 @@ html {
 .feature .censored {
     position: absolute;
     display: flex;
-    width: 70%;
-    height: 30%;
+    width: 75%;
+    height: 35%;
     justify-content: center;
-    padding: 0.4rem;
+    padding: 1rem 0rem;
     z-index: 1;
-    background-color: black;
+    background-color: plum;
     transform: rotate(30deg);
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .feature .censored i {
-    color: red;
+    color: white;
     z-index: 2;
     font-size: 4vw;
-    padding: 0 0.7rem;
+    padding: 0 0.3rem;
     align-self: center;
 }
 
 
-/*Feature Table*/
+/* ---------------------------------------------------
+    Feature Table
+----------------------------------------------------- */
 
 .feature .table-style {
     margin-bottom: 0;
@@ -187,6 +195,13 @@ html {
     font-size: 0.8rem;
 }
 
+.feature .table-style .font-size {
+    font-size: 6vw;
+    background: -webkit-linear-gradient(135deg, #43cbff 10%, #9708cc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .feature .table-style th {
     text-transform: uppercase;
     font-size: 0.8rem;
@@ -198,11 +213,11 @@ html {
 }
 
 .feature .table-style th:hover {
-    background-color: rgba(214, 6, 233, 0.5);
+    background-color: plum;
 }
 
 .feature .table-style td:hover {
-    background-color: rgba(214, 6, 233, 0.5);
+    background-color: plum;
 }
 
 .feature .fa-check {
@@ -216,15 +231,28 @@ html {
 }
 
 
-/*Modal Table*/
+/* ---------------------------------------------------
+    Learn More
+----------------------------------------------------- */
 
-.feature .modal-content {
-    border: 2px solid magenta;
+.feature .info-btn {
+    width: 40%;
+    letter-spacing: 0.3rem;
+    color: plum;
 }
+
+.feature .info-btn:hover {
+    color: white;
+}
+
+
+/* ---------------------------------------------------
+    Modal Table
+----------------------------------------------------- */
 
 .feature .listhead {
     font-size: 2rem;
-    color: magenta;
+    color: plum;
     text-align: center;
 }
 
@@ -241,65 +269,83 @@ html {
 }
 
 .feature .modal-table .btn {
-    border: 2px solid black;
-    border-radius: 10px;
-    color: magenta;
-    width: 60px;
+    border: none;
+    color: plum;
+    font-size: 2rem;
+}
+
+.feature .modal-table .btn:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
 }
 
 .feature .modal-table .modal-subtable {
     padding: 0rem !important;
 }
 
-
-/*Learn More*/
-
-.feature .info-btn {
-    width: 40%;
-    letter-spacing: 0.3rem;
-    color: magenta;
-}
-
-.feature .info-btn:hover {
+.feature .modal-footer .btn-footer {
     color: white;
+    background-color: plum;
+    border-radius: 40px;
+    padding: 0.5rem 1.5rem;
 }
 
 
-/*Order Page Section*/
+/* ---------------------------------------------------
+    Order Page Section
+----------------------------------------------------- */
 
 .order {
     height: 100vh;
 }
 
-model-viewer {
+.order model-viewer {
     width: 100%;
     height: 100%;
+}
+
+.order .model-btn {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: black;
+    padding: 0.5rem 1.5rem;
 }
 
 .order .order-button {
     text-decoration: none;
     border-radius: 40px;
-    width: 30%;
+    width: 50%;
     padding: 0.3rem;
     font-size: 1.2rem;
+    background-color: black;
+    color: white;
+    z-index: 2;
+}
+
+.order .order-button:hover {
     background-color: white;
     color: black;
-    z-index: 2;
 }
 
 .order .up-button {
     color: white;
-    font-size: 2.5rem;
+    font-size: 3rem;
     z-index: 2;
+    padding: 0rem 20px;
+}
+
+.order .up-button:hover {
+    color: black;
 }
 
 .top-right {
     top: 10%;
-    right: 2%;
+    right: 47.5%;
 }
 
 .bottom-center {
-    bottom: 5%;
+    bottom: 10%;
 }
 
 
@@ -323,7 +369,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (min-width: 768px) {
-    /*Landing Page*/
+    /* ---------------------------------------------------
+    Landing Page
+----------------------------------------------------- */
     .landingpage .vid1 {
         transform: translateX(0%);
         height: 100%;
@@ -333,21 +381,29 @@ Extra (xl) large devices (large desktops, 1200px and up)
         font-size: 9.5vw;
         text-align: unset;
     }
-    /*Feature Section*/
+    /* ---------------------------------------------------
+    Feature Section
+----------------------------------------------------- */
     .feature .padding-style {
         padding-left: 3rem !important;
         padding-right: 3rem !important;
     }
     .feature .adjust-image {
         width: unset;
-        height: 25vh;
+        height: 20vh;
     }
     .feature .vs-text {
-        font-size: 5vw;
+        font-size: 4vw;
     }
-    /*Table*/
+    .feature .censored i {
+        font-size: 3vw;
+        padding: 0 0.7rem;
+    }
+    /* ---------------------------------------------------
+    Feature Table
+----------------------------------------------------- */
     .feature .outside-col-style {
-        width: 40%;
+        width: 30%;
     }
     .feature .inside-col-style {
         width: 20%;
@@ -360,6 +416,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .feature .th-style {
         font-size: 1.5rem;
     }
+    .feature .table-style .font-size {
+        font-size: 2vw;
+    }
     .feature .fa-check {
         font-size: 2rem;
     }
@@ -367,23 +426,40 @@ Extra (xl) large devices (large desktops, 1200px and up)
         font-size: 2rem;
     }
     .feature th {
-        font-size: 1.8rem;
+        font-size: 2rem;
     }
     .feature td {
-        font-size: 0.8rem;
+        font-size: 1.5rem;
     }
-    /*Modal Table*/
-    /*Learn More*/
+    .feature .censored {
+        width: 50%;
+        height: 35%;
+    }
+    .feature .censored i {
+        font-size: 3vw;
+        padding: 0 0.7rem;
+    }
+    /* ---------------------------------------------------
+    Learn More
+----------------------------------------------------- */
     .feature .padding-style-2 {
         padding-right: 2rem !important;
     }
     .feature .info-btn {
         width: 20%;
     }
-    /*Order Page*/
+    /* ---------------------------------------------------
+    Order Section
+----------------------------------------------------- */
+    .order .order-button {
+        width: 20%;
+    }
 }
 
 @media (min-width: 1025px) {
+    /* ---------------------------------------------------
+    Landing Page Section
+----------------------------------------------------- */
     .landingpage .vid1 {
         height: unset;
         width: 100%;

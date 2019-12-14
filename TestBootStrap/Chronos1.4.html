@@ -4,12 +4,15 @@
 <head>
     <!--Required Meta tag-->
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
-    <!--Style Sheets CSS-->
+
     <title>Chronos 1.4</title>
+
+    <!--Style Sheets CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="Styles/NavBarStyle.css" />
     <link rel="stylesheet" href="Styles/Chronos1.4Style.css" />
     <link rel="stylesheet" href="Styles/fixed.css" />
+    <link rel="stylesheet" href="Styles/pageLoader.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -82,6 +85,11 @@
                                 <li class="nav-item">
                                     <a href="/Downloads.html">
                                         Downloads
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#">
+                                        Contact Us
                                     </a>
                                 </li>
                             </ul>
@@ -177,7 +185,7 @@
                     <thead>
                         <tr>
                             <th class=" th-style outside-col-style" scope="col">Chronos 1.4-HD</th>
-                            <th class=" th-style inside-col-style shadow-column" scope="col">Features</th>
+                            <th class="font-size th-style inside-col-style shadow-column" scope="col">Features</th>
                             <th class=" th-style outside-col-style" scope="col">Enemy</th>
                         </tr>
                     </thead>
@@ -230,13 +238,13 @@
                         <div id="accordion" class="h-100">
                             <!--Title Section-->
                             <h1 class="listhead align-self-center text-uppercase">
-                                <a name="feature">Chronos-1.4HD Data Sheet</a>
+                                <a name="feature">Chronos-1.4HD <br>Data Sheet</a>
                             </h1>
 
                             <table class="table table-hover modal-table">
                                 <thead>
                                     <tr>
-                                        <th scrol="col">Features</th>
+                                        <th scope="col">Features</th>
                                         <th scope="col">Chronos-1.4HD</th>
                                     </tr>
                                 </thead>
@@ -277,7 +285,7 @@
                                                     <div class="card-heading" id="io-heading">
 
                                                         <button class="btn btn-outline-dark" type="button" data-toggle="collapse" data-target="#io-collapse" aria-expanded="true " aria-controls="io-collapse">
-                                                                <i class="fa fa-chevron-down"></i>                                                            
+                                                                <i class="fa fa-plus-square"></i>                                                            
                                                             </button>
                                                     </div>
 
@@ -348,7 +356,7 @@
                     </div>
                     <!--Modal Footer-->
                     <div class="modal-footer align-self-center">
-                        <a id="btnFetch " class="btn btn-success" href="KronStore.html#!/Chronos-1-4-HD/p/161263018/category=0 ">
+                        <a id="btnFetch " class="btn-footer" href="KronStore.html#!/Chronos-1-4-HD/p/161263018/category=0 ">
                             Buy Now
                         </a>
                     </div>
@@ -362,9 +370,18 @@
     <section class="order scroll-start">
         <div class="d-flex position-relative h-100">
 
-            <model-viewer class="grad" src="Scripts/3D-Model/Chronos_1.4.glb" auto-rotate camera-controls alt="" background-color="plume" environment-image="Images\studio_small_07_1k.hdr" shadow-intensity="1" stage-light-intensity="4" environment-intensity="2">
+            <model-viewer reveal="interaction" src="Scripts/3D-Model/Chronos_1.4.glb" poster="Images/Camera-3D.png" auto-rotate camera-controls alt="Camera-3D-Model" background-color="#f5dff4" environment-image="Images/studio_small_07_1k.hdr" shadow-intensity="1"
+                stage-light-intensity="4" environment-intensity="2">
 
-            </model-viewer class="grad">
+                <div class="d-flex justify-content-center align-items-center h-100 w-100" slot="poster">
+                    <img class="h-100" src="/Images/Camera-3D.png">
+                    <div class=" position-absolute d-flex justify-content-center align-items-center w-100 h-100">
+                        <button class="model-btn" id="btnLoader" id="button-load">Load 3D Model</button>
+
+                    </div>
+                </div>
+
+            </model-viewer>
 
             <div class="d-flex bottom-center position-absolute justify-content-center w-100 ">
                 <a id="btnFetch " class="order-button btn" href="KronStore.html#!/Chronos-1-4-HD/p/161263018/category=0 ">
@@ -383,15 +400,11 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
     <script src="Scripts/buttonLoader.js "></script>
+    <script src="Scripts/SideMenu.js "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
     <script src="https://github.com/FortAwesome/Font-Awesome/blob/master/js/all.js "></script>
-    <script src="Scripts/LeosPlayGround.js "></script>
-    <script src="https://cdn.babylonjs.com/viewer/babylon.viewer.js"></script>
-    <!-- Loads <model-viewer> for modern browsers: -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
-    <!-- Loads <model-viewer> for old browsers like IE11: -->
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-
     <!--End Script Source Files-->
 
 </body>

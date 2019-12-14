@@ -3,7 +3,7 @@
 ----------------------------------------------------*/
 
 #loader-background {
-    background-color: black;
+    background-image: linear-gradient(135deg, #81ffef 10%, #f067b4 100%);
     display: flex;
     justify-content: center;
     height: 100vh;
@@ -65,9 +65,9 @@
 .animate-bottom {
     position: relative;
     -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: .5s;
+    -webkit-animation-duration: 0.5s;
     animation-name: animatebottom;
-    animation-duration: .5s;
+    animation-duration: 0.5s;
 }
 
 @-webkit-keyframes animatebottom {
