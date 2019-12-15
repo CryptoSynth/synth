@@ -53,9 +53,11 @@ body {
 
 .foot h5 {
     color: white !important;
+    font-size: 1rem;
 }
 
 .foot strong {
+    font-size: 1.5rem !important;
     color: aqua;
 }
 

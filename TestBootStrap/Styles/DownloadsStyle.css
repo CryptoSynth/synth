@@ -6,7 +6,7 @@
 
 body,
 html {
-    height: unset;
+    height: 100vh;
     -ms-scroll-snap-type: mandatory;
     scroll-snap-type: mandatory;
     -ms-scroll-snap: y mandatory;
@@ -25,12 +25,13 @@ html {
 
 .pill-section-1 {
     background-image: linear-gradient(135deg, #c2ffd8 10%, #465efb 100%);
-    height: 100%;
+    height: unset;
 }
 
-.pill-section-1 .pills-height {
-    height: 100%;
-}
+
+/*------------------------------------------------------
+    Pill Box Content 1  
+--------------------------------------------------------*/
 
 .pill-section-1 .pill-content-1 {
     height: 100%;
@@ -47,7 +48,7 @@ html {
 }
 
 .pill-section-1 .image-1 {
-    width: 30%;
+    width: 50%;
 }
 
 .pill-section-1 h3 {
@@ -61,12 +62,16 @@ html {
     color: cyan;
 }
 
-.pill-section-1 .pill-content-1 {
-    border-radius: 10px;
-    padding: 1rem;
+.pill-section-1 .pill-content-1 h3 {
+    font-size: 4vw;
 }
 
-.pill-section-1 .pill-content-1 h4 {
+
+/*------------------------------------------------------
+    Pill Box Content 2   
+--------------------------------------------------------*/
+
+.pill-section-1 .pill-content-2 h4 {
     background-color: black;
     margin-top: 1rem;
     color: white;
@@ -77,7 +82,6 @@ html {
 }
 
 .pill-section-1 .width-adjust {
-    max-width: 100%;
     margin: 1rem 1rem;
     border-radius: 20px;
     border: 2px solid black;
@@ -105,9 +109,14 @@ html {
 
 .pill-section-1 p {
     font-size: 3vw;
-    padding: 0.3rem 1rem;
+    padding: 5px 10px 5px 0px;
     margin: 0 auto;
 }
+
+
+/*------------------------------------------------------
+    Button Icon Color
+--------------------------------------------------------*/
 
 .pill-section-1 .icon-mod-1 {
     color: white;
@@ -126,9 +135,14 @@ html {
     width: 40px;
 }
 
+
+/*------------------------------------------------------
+    Button Info Icon
+--------------------------------------------------------*/
+
 .pill-section-1 .icon-mod-info {
-    border: 2px solid white;
-    background-color: black;
+    border: 2px solid #5d6d7c;
+    background-color: #5d6d7c;
     border-radius: 100%;
     padding: 5px 10px;
     margin: auto;
@@ -139,12 +153,12 @@ html {
 .pill-section-1 .icon-mod-info:hover {
     border: 2px solid #5d6d7c;
     background-color: white;
-    color: red;
+    color: #5d6d7c;
 }
 
 
 /*------------------------------------------------------
-    Button-previus-dropdown
+    Button-previous-dropdown
 --------------------------------------------------------*/
 
 .pill-section-1 .btn-previous-dropdown {
@@ -175,7 +189,7 @@ html {
     color: white;
 }
 
-.pill-section-1 .btn-mod-dropdown:hover {
+.pill-section-1 .btn-mod-previous:hover {
     background-color: white;
     color: #5d6d7c;
 }
@@ -200,20 +214,10 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 =============*/
 
-@media (min-width: 990px) {
-    .pill-section-1 .image-1 {
-        width: 90%;
-    }
-}
-
 @media (min-width: 768px) {
     /*------------------------------------------------------
-    Pill Box Section 1   
+    Pill Box Section 1 
 --------------------------------------------------------*/
-    body,
-    html {
-        height: 100%;
-    }
     .pill-section-1 {
         height: 100%;
     }
@@ -221,19 +225,22 @@ Extra (xl) large devices (large desktops, 1200px and up)
         border-right: 3px solid lightgreen;
         border-bottom: none;
     }
-    .pill-section-1 .pill-content-1 {
-        height: 100%;
-    }
-    .pill-section-1 .width-adjust {
-        max-width: 30%;
+    /*------------------------------------------------------
+    Pill Box Content 1
+--------------------------------------------------------*/
+    .pill-section-1 .pill-content-1 h3 {
+        font-size: 2vw;
     }
     .pill-section-1 .image-1 {
         width: 100%;
     }
-    .pill-section-1 .pill-content-1 h4 {
-        font-size: 2vw;
+    /*------------------------------------------------------
+    Pill Box Content 2  
+--------------------------------------------------------*/
+    .pill-section-1 .pill-content-2 h4 {
+        font-size: 1.5vw;
     }
     .pill-section-1 p {
-        font-size: 0.9vw;
+        font-size: 1vw;
     }
 }

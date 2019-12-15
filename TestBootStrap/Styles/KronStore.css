@@ -1,51 +1,626 @@
-/*Body*/
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
+
+/* ---------------------------------------------------
+    Body - Html
+----------------------------------------------------- */
 
 body,
 html {
-    overflow-x: hidden;
-    height: 100vh;
-}
-
-.landing-picture .accessories-image {
-    background-image: url(/Images/Chronos_1.4_3.png);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    z-index: 0;
-    position: relative;
-}
-
-header {
-    background: black;
+    font-family: "Noto Sans SC", sans-serif !important;
+    overflow-x: hidden !important;
+    height: 100vh !important;
 }
 
 
-/*Product Page*/
+/* ---------------------------------------------------
+    [XL]-Product Page 
+----------------------------------------------------- */
 
-.ec-size .ec-store {
-    color: white;
-}
+
+/*Background Color*/
 
 .ecwid-productBrowser {
-    background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
-    !important;
+    background-image: linear-gradient(135deg, #5efce8 10%, #736efe 100%);
 }
+
+
+/*Image with sub images*/
 
 .ec-size.ec-size--m .ec-store .product-details--layout-sidebar-right .product-details__gallery {
     width: 30% !important;
-    margin-left: 5rem !important;
+    margin: 5rem 5rem 3rem 5rem !important;
+    padding: 0 !important;
 }
+
+
+/*Buy Window - Width Adjust*/
 
 .ec-size.ec-size--m .ec-store .product-details--layout-sidebar-right .product-details__sidebar {
-    margin-top: 10rem !important;
-    margin-right: 5rem !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 9rem 2rem 0rem 2rem !important;
 }
 
 
-/*Image Frame Size*/
+/*Buy Window - Position*/
+
+.ec-size.ec-size--m .ec-store .product-details--layout-sidebar-right .product-details__sidebar {
+    border: 2px solid rgba(0, 0, 0, 0.7) !important;
+    border-radius: 10px !important;
+    overflow-x: hidden;
+}
 
 
-/*Card background*/
+/*Buy Window - Title*/
+
+.ec-size.ec-size--l .ec-store .product-details__product-title {
+    text-transform: uppercase !important;
+    color: blakc !important;
+    text-align: center;
+    font-size: 2rem !important;
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    color: white !important;
+    padding: 2rem !important;
+}
 
 
-/*Buttons*/
+/*Buy Window - Breadcrumbs*/
+
+.ec-size.ec-size--l .ec-store .product-details .ec-breadcrumbs {
+    padding: 1rem 1rem !important;
+}
+
+.ec-size .ec-store .ec-link--muted {
+    color: rgba(0, 0, 0, 0.7) !important;
+    border-radius: 10px !important;
+    padding: 0.1rem 0.1rem !important;
+}
+
+.ec-size .ec-store .ec-link--muted:hover {
+    color: black !important;
+}
+
+
+/*Buy Window - Price*/
+
+.ec-size.ec-size--l .ec-store .product-details__product-price:last-child {
+    text-align: center !important;
+}
+
+.ec-size .ec-store .details-product-price__value {
+    color: black !important;
+    font-size: 2.5rem !important;
+}
+
+
+/*Buy Window - Item in Bag*/
+
+.ec-size.ec-size--l .ec-store .ec-header-h6 {
+    text-align: center !important;
+    margin-top: 3rem !important;
+}
+
+.ec-size.ec-size--s .ec-store .product-details-module__content--indented {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+
+/*Buy Window - Quantity*/
+
+
+/*Buy Window - Buy Now & Checkout */
+
+.ec-size.ec-size--l .ec-store .form-control--large .form-control__button {
+    width: 100% !important;
+    padding: 0.5rem 5rem !important;
+    border-radius: 20px !important;
+}
+
+
+/*Footer - Text Header*/
+
+.ec-size.ec-size--l .ec-store .ec-header-h4 {
+    color: black !important;
+    text-align: center !important;
+    padding-bottom: 2rem !important;
+}
+
+
+/*Footer - background color*/
+
+.ec-related-products {
+    padding: 2rem 5rem 1rem 5rem !important;
+    border-top: 2px solid rgba(0, 0, 0, 0.5) !important;
+    margin-top: 5rem !important;
+}
+
+.ec-size .ec-store .grid__wrap .grid__products {
+    justify-content: center !important;
+}
+
+.ec-size.ec-size--l .ec-store .ec-grid {
+    background-color: white !important;
+    border-radius: 10px !important;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3) !important;
+}
+
+
+/*============ Next BREAK POINT=======================
+
+======================================================*/
+
+@media (max-width: 1025px) {
+    /* ---------------------------------------------------
+      [L]-Product Page 
+  ----------------------------------------------------- */
+    /*Image with sub images*/
+    .ec-size.ec-size--m .ec-store .product-details--layout-sidebar-right .product-details__gallery {
+        width: 30% !important;
+        margin: 6rem 5rem 0rem 5rem !important;
+        padding: 0 !important;
+    }
+    /*Buy Window - Width Adjust*/
+    .ec-size.ec-size--m .ec-store .product-details--layout-sidebar-right .product-details__sidebar {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 7rem 2rem 0rem 2rem !important;
+    }
+    /*Buy Window - Position*/
+    .ec-size.ec-size--m .ec-store .product-details--layout-sidebar-right .product-details__sidebar {
+        border: 2px solid rgba(0, 0, 0, 0.7) !important;
+        border-radius: 10px !important;
+        overflow-x: hidden;
+    }
+    /*Buy Window - Title*/
+    .ec-size.ec-size--l .ec-store .product-details__product-title {
+        text-transform: uppercase !important;
+        color: blakc !important;
+        text-align: center;
+        font-size: 2rem !important;
+        background-color: rgba(0, 0, 0, 0.7) !important;
+        color: white !important;
+        padding: 2rem !important;
+    }
+    /*Buy Window - Breadcrumbs*/
+    .ec-size.ec-size--l .ec-store .product-details .ec-breadcrumbs {
+        padding: 1rem 1rem !important;
+    }
+    .ec-size .ec-store .ec-link--muted {
+        color: rgba(0, 0, 0, 0.7) !important;
+        border-radius: 10px !important;
+        padding: 0.1rem 0.1rem !important;
+    }
+    .ec-size .ec-store .ec-link--muted:hover {
+        color: black !important;
+    }
+    /*Buy Window - Price*/
+    .ec-size.ec-size--l .ec-store .product-details__product-price:last-child {
+        text-align: center !important;
+    }
+    .ec-size .ec-store .details-product-price__value {
+        color: black !important;
+        font-size: 2.5rem !important;
+    }
+    /*Buy Window - Item in Bag*/
+    .ec-size.ec-size--l .ec-store .ec-header-h6 {
+        text-align: center !important;
+        margin-top: 3rem !important;
+    }
+    .ec-size.ec-size--s .ec-store .product-details-module__content--indented {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    /*Buy Window - Quantity*/
+    /*Buy Window - Buy Now & Checkout */
+    .ec-size.ec-size--l .ec-store .form-control--large .form-control__button {
+        width: 100% !important;
+        padding: 0.5rem 5rem !important;
+        border-radius: 20px !important;
+    }
+    /*Footer - Text Header*/
+    .ec-size.ec-size--l .ec-store .ec-header-h4 {
+        color: black !important;
+        text-align: center !important;
+        padding-bottom: 2rem !important;
+    }
+    /*Footer - background color*/
+    .ec-related-products {
+        padding: 2rem 5rem 1rem 5rem !important;
+        border-top: 2px solid rgba(0, 0, 0, 0.5) !important;
+        margin-top: 7rem !important;
+    }
+    .ec-size .ec-store .grid__wrap .grid__products {
+        justify-content: center !important;
+    }
+    .ec-size.ec-size--l .ec-store .ec-grid {
+        background-color: white !important;
+        border-radius: 10px !important;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3) !important;
+    }
+}
+
+
+/*============ Next BREAK POINT=======================
+
+======================================================*/
+
+@media (max-width: 769px) {
+    /* ---------------------------------------------------
+    [Tablet]-Product Page 
+----------------------------------------------------- */
+    /*Background Color*/
+    .ecwid-productBrowser {
+        background-image: linear-gradient(135deg, #5efce8 10%, #736efe 100%);
+    }
+    /*Image with sub images*/
+    .ec-size.ec-size--m .ec-store .product-details--layout-sidebar-right .product-details__gallery {
+        width: 40% !important;
+        margin: 3rem 0rem 0rem 3rem !important;
+        padding: 0 !important;
+    }
+    /*Buy Window - Width Adjust*/
+    .ec-size.ec-size--m .ec-store .product-details--layout-sidebar-right .product-details__sidebar {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 7rem 2rem 0rem 2rem !important;
+    }
+    /*Buy Window - Position*/
+    .ec-size.ec-size--m .ec-store .product-details--layout-sidebar-right .product-details__sidebar {
+        border: 2px solid rgba(0, 0, 0, 0.7) !important;
+        border-radius: 10px !important;
+        overflow-x: hidden;
+    }
+    /*Buy Window - Title*/
+    .ec-size.ec-size--s .ec-store .product-details__product-title {
+        text-transform: uppercase !important;
+        color: blakc !important;
+        text-align: center;
+        font-size: 1rem !important;
+        background-color: rgba(0, 0, 0, 0.7) !important;
+        color: white !important;
+        padding: 2rem !important;
+    }
+    /*Buy Window - Breadcrumbs*/
+    .ec-size.ec-size--s .ec-store .product-details .ec-breadcrumbs {
+        padding: 1rem 1rem !important;
+    }
+    .ec-size .ec-store .ec-link--muted {
+        color: rgba(0, 0, 0, 0.7) !important;
+        border-radius: 10px !important;
+        padding: 0.1rem 0.1rem !important;
+    }
+    .ec-size .ec-store .ec-link--muted:hover {
+        color: black !important;
+    }
+    /*Buy Window - Price*/
+    .ec-size.ec-size--s .ec-store .product-details__product-price:last-child {
+        text-align: center !important;
+    }
+    .ec-size .ec-store .details-product-price__value {
+        color: black !important;
+        font-size: 2.5rem !important;
+    }
+    /*Buy Window - Item in Bag*/
+    .ec-size.ec-size--s .ec-store .ec-header-h6 {
+        text-align: center !important;
+        margin-top: 2rem !important;
+    }
+    .ec-size.ec-size--s .ec-store .product-details-module__content--indented {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    /*Buy Window - Quantity*/
+    /*Buy Window - Buy Now & Checkout */
+    .ec-size.ec-size--s .ec-store .form-control--large .form-control__button {
+        width: 100% !important;
+        padding: 0.5rem 3rem !important;
+        border-radius: 20px !important;
+        margin-top: 0.5rem !important;
+    }
+    /*Footer - Text Header*/
+    .ec-size.ec-size--s .ec-store .ec-header-h4 {
+        color: black !important;
+        text-align: center !important;
+        padding-bottom: 2rem !important;
+    }
+    /*Footer - background color*/
+    .ec-related-products {
+        padding: 2rem 1rem 1rem 1rem !important;
+        border-top: 2px solid rgba(0, 0, 0, 0.5) !important;
+        margin-top: 5rem !important;
+    }
+    .ec-size .ec-store .grid__wrap .grid__products {
+        justify-content: center !important;
+    }
+    .ec-size.ec-size--s .ec-store .ec-grid {
+        background-color: white !important;
+        border-radius: 10px !important;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3) !important;
+    }
+}
+
+
+/*============ Next BREAK POINT=======================
+
+======================================================*/
+
+@media (max-width: 426px) {
+    /* ---------------------------------------------------
+    [Mobile L]-Product Page 
+----------------------------------------------------- */
+    .ec-store .details-gallery__wrap {
+        margin: 1.5rem 8rem 0rem 8rem !important;
+    }
+    /*Buy Window - Width Adjust*/
+    .ec-size.ec-size .ec-store .product-details--layout-sidebar-right .product-details__sidebar {
+        padding: 0 !important;
+        margin: 0rem 2.5rem 0rem 2rem !important;
+    }
+    /*Buy Window - Position*/
+    .ec-size.ec-size .ec-store .product-details--layout-sidebar-right .product-details__sidebar {
+        border: 2px solid rgba(0, 0, 0, 0.7) !important;
+        border-radius: 10px !important;
+        overflow-x: hidden;
+    }
+    /*Buy Window - Title*/
+    .ec-size.ec-size .ec-store .product-details__product-title {
+        text-transform: uppercase !important;
+        color: blakc !important;
+        text-align: center;
+        font-size: 1.5rem !important;
+        background-color: rgba(0, 0, 0, 0.7) !important;
+        color: white !important;
+        padding: 1rem !important;
+    }
+    /*Buy Window - Breadcrumbs*/
+    .ec-size.ec-size .ec-store .product-details .ec-breadcrumbs {
+        padding: 1rem 1rem !important;
+    }
+    .ec-size .ec-store .ec-link--muted {
+        color: rgba(0, 0, 0, 0.7) !important;
+        border-radius: 10px !important;
+        padding: 0.1rem 0.1rem !important;
+    }
+    .ec-size .ec-store .ec-link--muted:hover {
+        color: black !important;
+    }
+    /*Buy Window - Price*/
+    .ec-size.ec-size .ec-store .product-details__product-price:last-child {
+        text-align: center !important;
+    }
+    .ec-size .ec-store .details-product-price__value {
+        color: black !important;
+        font-size: 2.5rem !important;
+    }
+    /*Buy Window - Item in Bag*/
+    .ec-size.ec-size .ec-store .ec-header-h6 {
+        text-align: center !important;
+        margin-top: 2rem !important;
+    }
+    .ec-size.ec-size .ec-store .product-details-module__content--indented {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    /*Buy Window - Quantity*/
+    /*Buy Window - Buy Now & Checkout */
+    .ec-size.ec-size .ec-store .form-control--large .form-control__button {
+        width: 100% !important;
+        padding: 0.5rem 5rem !important;
+        border-radius: 20px !important;
+        margin-top: 0.5rem !important;
+    }
+    /*Footer - Text Header*/
+    .ec-size.ec-size .ec-store .ec-header-h4 {
+        color: black !important;
+        text-align: center !important;
+        padding-bottom: 2rem !important;
+    }
+    /*Footer - background color*/
+    .ec-related-products {
+        padding: 2rem 1rem 1rem 1rem !important;
+        border-top: 2px solid rgba(0, 0, 0, 0.5) !important;
+    }
+    .ec-size .ec-store .grid__wrap .grid__products {
+        justify-content: center !important;
+    }
+    .ec-size.ec-size .ec-store .ec-grid {
+        background-color: white !important;
+        border-radius: 10px !important;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3) !important;
+    }
+}
+
+
+/*============ Next BREAK POINT=======================
+
+======================================================*/
+
+@media (max-width: 376px) {
+    /* ---------------------------------------------------
+    [Mobile M]-Product Page 
+----------------------------------------------------- */
+    .ec-store .details-gallery__wrap {
+        margin: 2.5rem 7rem 0rem 7rem !important;
+    }
+    /*Buy Window - Width Adjust*/
+    .ec-size.ec-size .ec-store .product-details--layout-sidebar-right .product-details__sidebar {
+        padding: 0 !important;
+        margin: 0rem 0rem 0rem 0rem !important;
+    }
+    /*Buy Window - Position*/
+    .ec-size.ec-size .ec-store .product-details--layout-sidebar-right .product-details__sidebar {
+        border: 2px solid rgba(0, 0, 0, 0.7) !important;
+        border-radius: 10px !important;
+        overflow-x: hidden;
+    }
+    /*Buy Window - Title*/
+    .ec-size.ec-size .ec-store .product-details__product-title {
+        text-transform: uppercase !important;
+        color: blakc !important;
+        text-align: center;
+        font-size: 1.5rem !important;
+        background-color: rgba(0, 0, 0, 0.7) !important;
+        color: white !important;
+        padding: 1rem !important;
+    }
+    /*Buy Window - Breadcrumbs*/
+    .ec-size.ec-size .ec-store .product-details .ec-breadcrumbs {
+        padding: 1rem 1rem !important;
+    }
+    .ec-size .ec-store .ec-link--muted {
+        color: rgba(0, 0, 0, 0.7) !important;
+        border-radius: 10px !important;
+        padding: 0.1rem 0.1rem !important;
+    }
+    .ec-size .ec-store .ec-link--muted:hover {
+        color: black !important;
+    }
+    /*Buy Window - Price*/
+    .ec-size.ec-size .ec-store .product-details__product-price:last-child {
+        text-align: center !important;
+    }
+    .ec-size .ec-store .details-product-price__value {
+        color: black !important;
+        font-size: 2.5rem !important;
+    }
+    /*Buy Window - Item in Bag*/
+    .ec-size.ec-size .ec-store .ec-header-h6 {
+        text-align: center !important;
+        margin-top: 2rem !important;
+    }
+    .ec-size.ec-size .ec-store .product-details-module__content--indented {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    /*Buy Window - Quantity*/
+    /*Buy Window - Buy Now & Checkout */
+    .ec-size.ec-size .ec-store .form-control--large .form-control__button {
+        width: 100% !important;
+        padding: 0.5rem 5rem !important;
+        border-radius: 20px !important;
+        margin-top: 0.5rem !important;
+    }
+    /*Footer - Text Header*/
+    .ec-size.ec-size .ec-store .ec-header-h4 {
+        color: black !important;
+        text-align: center !important;
+        padding-bottom: 2rem !important;
+    }
+    /*Footer - background color*/
+    .ec-related-products {
+        padding: 2rem 1rem 1rem 1rem !important;
+        border-top: 2px solid rgba(0, 0, 0, 0.5) !important;
+    }
+    .ec-size .ec-store .grid__wrap .grid__products {
+        justify-content: center !important;
+    }
+    .ec-size.ec-size .ec-store .ec-grid {
+        background-color: white !important;
+        border-radius: 10px !important;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3) !important;
+    }
+}
+
+
+/*============ Next BREAK POINT=======================
+
+======================================================*/
+
+@media (max-width: 321px) {
+    /* ---------------------------------------------------
+    [Mobile M]-Product Page 
+----------------------------------------------------- */
+    .ec-store .details-gallery__wrap {
+        margin: 2rem 4rem 0rem 4rem !important;
+    }
+    /*Buy Window - Width Adjust*/
+    .ec-size.ec-size .ec-store .product-details--layout-sidebar-right .product-details__sidebar {
+        padding: 0 !important;
+        margin: 0rem 0rem 0rem 0rem !important;
+    }
+    /*Buy Window - Position*/
+    .ec-size.ec-size .ec-store .product-details--layout-sidebar-right .product-details__sidebar {
+        border: 2px solid rgba(0, 0, 0, 0.7) !important;
+        border-radius: 10px !important;
+        overflow-x: hidden;
+    }
+    /*Buy Window - Title*/
+    .ec-size.ec-size .ec-store .product-details__product-title {
+        text-transform: uppercase !important;
+        color: blakc !important;
+        text-align: center;
+        font-size: 1.5rem !important;
+        background-color: rgba(0, 0, 0, 0.7) !important;
+        color: white !important;
+        padding: 1rem !important;
+    }
+    /*Buy Window - Breadcrumbs*/
+    .ec-size.ec-size .ec-store .product-details .ec-breadcrumbs {
+        padding: 1rem 1rem !important;
+    }
+    .ec-size .ec-store .ec-link--muted {
+        color: rgba(0, 0, 0, 0.7) !important;
+        border-radius: 10px !important;
+        padding: 0.1rem 0.1rem !important;
+    }
+    .ec-size .ec-store .ec-link--muted:hover {
+        color: black !important;
+    }
+    /*Buy Window - Price*/
+    .ec-size.ec-size .ec-store .product-details__product-price:last-child {
+        text-align: center !important;
+    }
+    .ec-size .ec-store .details-product-price__value {
+        color: black !important;
+        font-size: 2.5rem !important;
+    }
+    /*Buy Window - Item in Bag*/
+    .ec-size.ec-size .ec-store .ec-header-h6 {
+        text-align: center !important;
+        margin-top: 2rem !important;
+    }
+    .ec-size.ec-size .ec-store .product-details-module__content--indented {
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    /*Buy Window - Quantity*/
+    /*Buy Window - Buy Now & Checkout */
+    .ec-size.ec-size .ec-store .form-control--large .form-control__button {
+        width: 100% !important;
+        padding: 0.5rem 5rem !important;
+        border-radius: 20px !important;
+        margin-top: 0.5rem !important;
+    }
+    /*Footer - Text Header*/
+    .ec-size.ec-size .ec-store .ec-header-h4 {
+        color: black !important;
+        text-align: center !important;
+        padding-bottom: 2rem !important;
+    }
+    /*Footer - background color*/
+    .ec-related-products {
+        padding: 2rem 1rem 1rem 1rem !important;
+        border-top: 2px solid rgba(0, 0, 0, 0.5) !important;
+    }
+    .ec-size .ec-store .grid__wrap .grid__products {
+        justify-content: center !important;
+    }
+    .ec-size.ec-size .ec-store .ec-grid {
+        background-color: white !important;
+        border-radius: 10px !important;
+        box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.3) !important;
+    }
+}
