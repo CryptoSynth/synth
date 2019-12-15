@@ -4,7 +4,7 @@
 
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
 body {
-    font-family: "Titillium Web", sans-serif;
+    font-family: "Noto Sans SC", sans-serif;
     overflow: hidden;
     height: 100vh;
 }
@@ -24,7 +24,7 @@ body {
 .mobile-vid .desktop-vid {
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: white;
 }
 
 .mobile-vid .vid3 {
@@ -42,10 +42,11 @@ body {
     color: black;
     width: 100%;
     font-weight: bold;
+    overflow: hidden;
+    border: 0;
 }
 
 .foot .btn:hover {
-    background-color: aqua;
     color: black;
     width: 100%;
     font-weight: bold;
@@ -96,7 +97,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
     }
     .mobile-vid .desktop-vid {
         height: 100%;
-        background-color: black;
+        background-color: white;
     }
     .mobile-vid .vid3 {
         object-fit: cover;
@@ -111,8 +112,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
         width: 50%;
     }
     .foot .btn:hover {
-        background-color: aqua;
-        color: black;
         width: 50%;
     }
 }

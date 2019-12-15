@@ -368,6 +368,7 @@ html {
         border: 2px solid rgba(0, 0, 0, 0.7) !important;
         border-radius: 10px !important;
         overflow-x: hidden;
+        width: unset !important;
     }
     /*Buy Window - Title*/
     .ec-size.ec-size .ec-store .product-details__product-title {
@@ -461,6 +462,7 @@ html {
         border: 2px solid rgba(0, 0, 0, 0.7) !important;
         border-radius: 10px !important;
         overflow-x: hidden;
+        width: unset !important;
     }
     /*Buy Window - Title*/
     .ec-size.ec-size .ec-store .product-details__product-title {
@@ -554,6 +556,7 @@ html {
         border: 2px solid rgba(0, 0, 0, 0.7) !important;
         border-radius: 10px !important;
         overflow-x: hidden;
+        width: unset !important;
     }
     /*Buy Window - Title*/
     .ec-size.ec-size .ec-store .product-details__product-title {

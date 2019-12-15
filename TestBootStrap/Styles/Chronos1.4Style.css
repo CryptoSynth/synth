@@ -320,7 +320,7 @@ html {
     font-size: 1.2rem;
     background-color: black;
     color: white;
-    z-index: 2;
+    margin-bottom: 3rem;
 }
 
 .order .order-button:hover {
@@ -331,21 +331,24 @@ html {
 .order .up-button {
     color: white;
     font-size: 3rem;
-    z-index: 2;
     padding: 0rem 20px;
+    margin-top: 4rem;
 }
 
 .order .up-button:hover {
     color: black;
 }
 
-.top-right {
-    top: 10%;
-    right: 47.5%;
+.order .to-front {
+    z-index: 1;
 }
 
-.bottom-center {
-    bottom: 10%;
+.order .to-back {
+    z-index: 0;
+}
+
+.order .bottom {
+    bottom: 0%;
 }
 
 

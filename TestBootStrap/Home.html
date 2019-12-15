@@ -10,7 +10,9 @@
 
     <!--Style Sheets CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="Styles/hover-min.css" />
     <link rel="stylesheet" href="Styles/NavBarStyle.css" />
+    <link rel="stylesheet" href="Styles/hamburgers-min.css">
     <link rel="stylesheet" href="Styles/HomeStyle.css" />
     <link rel="stylesheet" href="Styles/fixed.css" />
     <link rel="stylesheet" href="Styles/pageLoader.css" />
@@ -35,49 +37,54 @@
             <div class="d-flex justify-content-end sidebar-header align-self-center w-100">
                 <!--Sidebar Header-->
                 <div class="align-self-end" id="dismiss">
-                    <i class="fa fa-times"></i>
+                    <!--Sidebar Menu Button-->
+                    <button class="btn hamburger hamburger--collapse" type="button" id="sidebarCollapse">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
                 </div>
             </div>
 
             <!--Sidebar List-->
             <ul class="navbar-nav d-flex flex-column text-center h-100">
                 <li class="nav-item active">
-                    <a href="/Home.html">
-                        <p class="hvrcenter">Home</p>
+                    <a id="home" class="hvr-sweep-to-left" href="/Home.html">
+                        <p>Home</p>
                     </a>
                 </li>
                 <li class=" nav-item">
-                    <a href="/Chronos1.4.html">
+                    <a id="chronos-1" class="hvr-sweep-to-left" href="/Chronos1.4.html">
                         <div class="d-flex justify-content-around align-items-center">
-                            <p class="hvrcenter">Chronos-1.4
+                            <p>Chronos-1.4
                                 <strong class="hd">HD</strong>
                             </p>
                         </div>
                     </a>
                 </li>
                 <li class=" nav-item">
-                    <a href="#">
+                    <a id="chronos-2" class="hvr-sweep-to-left" href="#">
                         <div class="d-flex justify-content-around align-items-center">
-                            <p class="hvrcenter">Chronos-2.1
+                            <p>Chronos-2.1
                                 <strong class="fhd">FHD</strong>
                             </p>
                         </div>
                     </a>
                 </li>
                 <li class=" nav-item">
-                    <a href="/Accessories.html">
+                    <a id="accessories" class="hvr-sweep-to-left" href="/Accessories.html">
                         <p class="hvrcenter">Accessories</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/AboutUs.html">
+                    <a id="about-us" class="hvr-sweep-to-left" href="/AboutUs.html">
                         <p class="hvrcenter">About Us</p>
                     </a>
                 </li>
                 <li class=" nav-item">
                     <div class="hvrcenter" id=accordion>
                         <div id="resources-dropdown">
-                            <a href="#" data-toggle="collapse" data-target="#resource-collapse" aria-expanded="true" aria-controls="resource-collapse">
+                            <a id="resources" class="hvr-sweep-to-left" href="#" data-toggle="collapse" data-target="#resource-collapse" aria-expanded="true" aria-controls="resource-collapse">
                                 <p>Resources</p>
                             </a>
                         </div>
@@ -111,15 +118,17 @@
             <!--Sidebar Menu In Page-->
             <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
                 <!--Logo and Name-->
-                <div class=" d-flex justify-content-between w-100">
+                <div id="menu" class="d-flex justify-content-between w-100">
                     <a class="navbar-brand d-flex" href="/Home.html">
                         <img src="/Images/Master_Logo.png" class="w-25" alt="">
                     </a>
 
                     <!--Sidebar Menu Button-->
-                    <button class="btn align-self-center" type="button" id="sidebarCollapse">
-                                <span><i class="fa fa-bars"></i></span>
-                             </button>
+                    <button class="btn hamburger hamburger--collapse" type="button" id="sidebarCollapse">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
                 </div>
             </nav>
 
@@ -153,8 +162,8 @@
                     </div>
 
                     <div class="offset-md-4 col-md-4 col-12 animated infinite pulse delay-1s text-center">
-                        <a class="btn" id="btnLoader" href="KronStore.html#!/Chronos-1-4-HD/p/161263018/category=0">
-                            Shop Now
+                        <a id="shop-now" class="btn hvr-sweep-to-top" id="btnLoader" href="KronStore.html#!/Chronos-1-4-HD/p/161263018/category=0">
+                            Shop Now   
                         </a>
                     </div>
                 </div>
@@ -166,7 +175,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
     <script src="Scripts/buttonLoader.js "></script>
-    <script src="Scripts/SideMenu.js "></script>
+    <script src="Scripts/SideMenu.js"></script>
     <script src="Scripts/pageLoader.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
     <script src="https://github.com/FortAwesome/Font-Awesome/blob/master/js/all.js "></script>
