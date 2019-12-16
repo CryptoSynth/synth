@@ -11,6 +11,11 @@ html {
     height: 100vh !important;
 }
 
+*:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 
 /* ---------------------------------------------------
     [XL]-Product Page 

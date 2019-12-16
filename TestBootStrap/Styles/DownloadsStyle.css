@@ -18,6 +18,11 @@ html {
     scroll-snap-align: start;
 }
 
+*:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 
 /*------------------------------------------------------
     Pill Box Section 1   

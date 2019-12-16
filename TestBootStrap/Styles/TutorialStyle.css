@@ -19,6 +19,11 @@ html {
     scroll-snap-align: start;
 }
 
+*:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
 
 /*------------------------------------------------------
     Video Section Row 01 

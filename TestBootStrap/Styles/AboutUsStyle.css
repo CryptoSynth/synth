@@ -6,11 +6,17 @@
 
 body,
 html {
+    font-family: "Noto Sans SC", sans-serif !important;
     overflow-x: hidden;
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(135deg, #fff886 10%, #f072b6 100%);
+    background-color: lightcyan;
+}
+
+*:focus {
+    outline: none !important;
+    box-shadow: none !important;
 }
 
 
@@ -40,7 +46,7 @@ html {
 
 
 /* ---------------------------------------------------
-    Staff Page
+    Staff Page Sizing
 ----------------------------------------------------- */
 
 .staff-about {
@@ -48,27 +54,130 @@ html {
     height: auto;
 }
 
-.staff-about h1 {
+.staff-about .banner-dep {
     margin: 0;
-    color: rgba(230, 62, 252, 0.425);
+    color: black;
+    margin-left: 2.5rem;
 }
 
 .staff-about .hr-width {
     margin: 0rem 3.5rem;
-    border: 1.5px solid rgba(230, 62, 252, 0.425);
+    border: 1.5px solid black;
 }
 
 .staff-about .row {
     padding: 1rem 0rem;
+    width: 100%;
 }
+
+.staff-about .bio {
+    padding: 0rem 1rem 0rem 1rem;
+    margin: 0;
+    font-size: .8rem;
+}
+
+.staff-about .special-one {
+    font-size: 0.65rem;
+}
+
+
+/* ---------------------------------------------------
+    Engineer Section
+----------------------------------------------------- */
+
+.staff-about .image-1 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/Staff/stefany.jpg);
+}
+
+.staff-about .image-2 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/Staff/simon.jpg);
+}
+
+.staff-about .image-3 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/Staff/stefany.jpg);
+}
+
+.staff-about .image-4 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/Staff/stefany.jpg);
+}
+
+.staff-about .image-5 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/Staff/stefany.jpg);
+}
+
+.staff-about .image-6 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/Staff/stefany.jpg);
+}
+
+.staff-about .image-7 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/Staff/stefany.jpg);
+}
+
+.staff-about .image-8 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/Staff/stefany.jpg);
+}
+
+.staff-about .image-9 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/Staff/stefany.jpg);
+}
+
+
+/* ---------------------------------------------------
+    Flip-Card Template
+----------------------------------------------------- */
 
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 
 .flip-card {
     background-color: transparent;
-    width: 350px;
-    height: 380px;
+    width: 300px;
+    height: 300px;
     perspective: 1000px;
     /* Remove this if you don't want the 3D effect */
 }
@@ -141,50 +250,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 =============*/
 
-@media (max-width: 1350px) {
-    .flip-card {
-        width: 290px;
-        height: 300px;
-    }
-}
-
-@media (max-width: 925px) {
-    .flip-card {
-        width: 250px;
-        height: 300px;
-    }
-}
-
-@media (max-width: 850px) {
-    .flip-card {
-        width: 230px;
-        height: 300px;
-    }
-    p {
-        font-size: 1.5vw;
-        margin: 0;
-    }
-}
-
-@media (max-width: 767px) {
-    .col-12 {
-        margin: 1rem 0rem;
-    }
-    .flip-card {
-        width: 350px;
-        height: 400px;
-    }
-}
-
-@media (max-width: 320px) {
-    .col-12 {
-        margin: 1rem 0rem;
-    }
-    .flip-card {
-        width: 290px;
-        height: 380px;
-    }
-    p {
-        font-size: 4.5vw;
+@media (max-width: 426px) {
+    .staff-about .row {
+        padding: 1rem 0rem;
+        width: unset;
     }
 }
