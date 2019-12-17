@@ -7,15 +7,6 @@
 body,
 html {
     height: 100vh;
-    -ms-scroll-snap-type: mandatory;
-    scroll-snap-type: mandatory;
-    -ms-scroll-snap: y mandatory;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-}
-
-.scroll-start {
-    scroll-snap-align: start;
 }
 
 *:focus {

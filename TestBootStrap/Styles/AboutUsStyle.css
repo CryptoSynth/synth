@@ -11,7 +11,10 @@ html {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-color: lightcyan;
+    background-color: plum;
+    background-image: linear-gradient( 30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient( 150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient( 30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient( 150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient( 60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), linear-gradient( 60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
 }
 
 *:focus {
@@ -42,6 +45,15 @@ html {
 
 .vid-about i {
     font-size: 2rem;
+    color: white;
+    padding: 1rem;
+}
+
+.vid-about .title {
+    margin-top: 4rem;
+    color: white;
+    padding: 1rem 0rem;
+    letter-spacing: .3rem;
 }
 
 
@@ -55,14 +67,15 @@ html {
 }
 
 .staff-about .banner-dep {
-    margin: 0;
     color: black;
-    margin-left: 2.5rem;
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 2rem;
 }
 
 .staff-about .hr-width {
     margin: 0rem 3.5rem;
-    border: 1.5px solid black;
+    border: 1.5px solid white;
 }
 
 .staff-about .row {
@@ -73,7 +86,7 @@ html {
 .staff-about .bio {
     padding: 0rem 1rem 0rem 1rem;
     margin: 0;
-    font-size: .8rem;
+    font-size: 0.8rem;
 }
 
 .staff-about .special-one {
@@ -292,7 +305,7 @@ html {
 .flip-card {
     background-color: transparent;
     width: 300px;
-    height: 350px;
+    height: 300px;
     perspective: 1000px;
     /* Remove this if you don't want the 3D effect */
 }
@@ -369,5 +382,8 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .staff-about .row {
         padding: 1.5rem 0rem;
         width: unset;
+    }
+    .staff-about .banner-dep {
+        margin-left: 0rem;
     }
 }
