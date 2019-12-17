@@ -66,7 +66,7 @@ html {
 }
 
 .staff-about .row {
-    padding: 1rem 0rem;
+    padding: 0;
     width: 100%;
 }
 
@@ -80,90 +80,205 @@ html {
     font-size: 0.65rem;
 }
 
+.staff-about a {
+    text-decoration: none;
+    color: skyblue;
+}
+
 
 /* ---------------------------------------------------
     Engineer Section
 ----------------------------------------------------- */
 
-.staff-about .image-1 {
+.staff-about .eng-1 {
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(/Images/Staff/stefany.jpg);
+    background-image: url(/Images/Staff/Engineers/stefany.jpg);
 }
 
-.staff-about .image-2 {
+.staff-about .eng-2 {
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(/Images/Staff/simon.jpg);
+    background-image: url(/Images/Staff/Engineers/simon.jpg);
 }
 
-.staff-about .image-3 {
+.staff-about .eng-3 {
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(/Images/Staff/stefany.jpg);
+    background-image: url(/Images/Staff/Engineers/nicholas.jpg);
 }
 
-.staff-about .image-4 {
+.staff-about .eng-4 {
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(/Images/Staff/stefany.jpg);
+    background-image: url(/Images/Staff/Engineers/owen.jpg);
 }
 
-.staff-about .image-5 {
+.staff-about .eng-5 {
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(/Images/Staff/stefany.jpg);
+    background-image: url(/Images/Staff/Engineers/kurt.jpg);
 }
 
-.staff-about .image-6 {
+.staff-about .eng-6 {
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(/Images/Staff/stefany.jpg);
+    background-image: url(/Images/Staff/Engineers/ken.jpg);
 }
 
-.staff-about .image-7 {
+.staff-about .eng-7 {
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(/Images/Staff/stefany.jpg);
+    background-image: url(/Images/Staff/Engineers/david.jpg);
 }
 
-.staff-about .image-8 {
+.staff-about .eng-8 {
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(/Images/Staff/stefany.jpg);
+    background-image: url(/Images/Staff/Engineers/sanjay.jpg);
 }
 
-.staff-about .image-9 {
+.staff-about .eng-9 {
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url(/Images/Staff/stefany.jpg);
+    background-image: url(/Images/Staff/Engineers/daniel.jpg);
+}
+
+.staff-about .eng-10 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/Staff/Engineers/pierre.jpg);
+}
+
+
+/* ---------------------------------------------------
+    Operations Section
+----------------------------------------------------- */
+
+.staff-about .op-1 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/Staff/Operations/tabatha.jpg);
+}
+
+.staff-about .op-2 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/Staff/Operations/alex.jpg);
+}
+
+
+/* ---------------------------------------------------
+    Production Section
+----------------------------------------------------- */
+
+.staff-about .pro-1 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/Staff/Production/ryan.jpg);
+}
+
+.staff-about .pro-2 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/Staff/Production/eli.jpg);
+}
+
+.staff-about .pro-3 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/Staff/Production/alex.jpg);
+}
+
+
+/* ---------------------------------------------------
+    Supply Chain
+----------------------------------------------------- */
+
+.staff-about .supply-1 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/Staff/Supply-Chain/chris.jpg);
+}
+
+.staff-about .supply-2 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/Staff/Supply-Chain/kassidy.jpg);
+}
+
+
+/* ---------------------------------------------------
+    Sales and Marketing
+----------------------------------------------------- */
+
+.staff-about .sales-1 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/Staff/Sales-and-Marketing/thomas.jpg);
+}
+
+.staff-about .sales-2 {
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(/Images/Staff/Sales-and-Marketing/michael.jpg);
 }
 
 
@@ -177,7 +292,7 @@ html {
 .flip-card {
     background-color: transparent;
     width: 300px;
-    height: 300px;
+    height: 350px;
     perspective: 1000px;
     /* Remove this if you don't want the 3D effect */
 }
@@ -252,7 +367,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 @media (max-width: 426px) {
     .staff-about .row {
-        padding: 1rem 0rem;
+        padding: 1.5rem 0rem;
         width: unset;
     }
 }
