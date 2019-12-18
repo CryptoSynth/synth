@@ -6,6 +6,8 @@
 
 body,
 html {
+    font-family: "Noto Sans SC", sans-serif;
+    overflow-x: hidden;
     height: 100vh;
 }
 
@@ -27,14 +29,6 @@ html {
 /*------------------------------------------------------
     Pill Box Content 1  
 --------------------------------------------------------*/
-
-.pill-section-1 .pill-content-1 {
-    height: 100%;
-}
-
-.pill-section-1 .row-height {
-    height: 100%;
-}
 
 .pill-section-1 .col-md-3 {
     border-right: none;
@@ -213,12 +207,10 @@ Extra (xl) large devices (large desktops, 1200px and up)
     /*------------------------------------------------------
     Pill Box Section 1 
 --------------------------------------------------------*/
-    .pill-section-1 {
-        height: 100%;
-    }
     .pill-section-1 .col-md-3 {
         border-right: 3px solid lightgreen;
         border-bottom: none;
+        height: 100vh;
     }
     /*------------------------------------------------------
     Pill Box Content 1

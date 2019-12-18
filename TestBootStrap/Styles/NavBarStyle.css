@@ -12,6 +12,7 @@
 .mainnav .navbar {
     background-color: rgba(0, 0, 0, 0.5) !important;
     z-index: 1;
+    font-family: "Noto Sans SC", sans-serif;
 }
 
 .mainnav i {
