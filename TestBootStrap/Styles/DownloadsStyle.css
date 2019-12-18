@@ -124,6 +124,10 @@ html {
     width: 40px;
 }
 
+.pill-section-1 .icon-mod-special {
+    color: red;
+}
+
 
 /*------------------------------------------------------
     Button Info Icon
@@ -181,6 +185,10 @@ html {
 .pill-section-1 .btn-mod-previous:hover {
     background-color: white;
     color: #5d6d7c;
+}
+
+.pill-section-1 .modal-body h3 {
+    color: black;
 }
 
 
