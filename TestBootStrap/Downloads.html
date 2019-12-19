@@ -169,16 +169,15 @@
                             </a>
 
                             <div class="modal fade" id="info-modal" tabindex="-1" role="dialog" aria-labelledby="install-info" aria-hidden="true">
-                                <div class="modal-dialog" role="document">
+                                <div class="modal-dialog modal-lg" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h3 class="modal-title" id="info-title">vX.X.X Installation</h3>
+                                            <h3 class="text-center text-success w-100">Installation Instructions</h3>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="close">
                                                 <span aria-hidden="true">&times;</span>
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <h3>Installation Instructions</h3>
                                             <ol>
                                                 <li>Extract the .zip file into the root directory of a FAT32 formatted USB drive.</li>
                                                 <li>Turn on your camera and insert the USB drive.</li>
@@ -191,51 +190,118 @@
                                                 <li>During the update, the screen will go blank and an Applying Update message will be displayed.</li>
                                                 <li>After approximately 60 seconds, the update will be complete and the camera will restart.</li>
                                             </ol>
-                                            <h3>Notable Changes:</h3>
-                                            <ul>
-                                                <li>Automatic ADC calibration during black calibration, which should reduce column banding across a wider temperature range.</li>
-                                                <li>Add a storage tab to the util menu to view, eject and format the attached storage devices.</li>
-                                                <li>Speed boost at most resolutions, with a top speed of 1069fps at 1280x1024, and 40420fps at 320x96.</li>
-                                                <li>Configurable automated power-on and off depending on the AC adaptor status.</li>
-                                                <li>Option to disable the ring buffer when in segmented recording mode.</li>
-                                            </ul>
-                                            <h3>Minutiae:</h3>
-                                            <ul>
-                                                <li>Factory black calibration is now user accessible from the Factory tab of the util window.</li>
-                                                <li>The software update button has been moved to the storage tab of the util window.</li>
-                                                <li>Shipping mode to disable power-on by battery until an AC adaptor is attached.</li>
-                                                <li>Add a watchdog to reboot the camera in case of a power-on boot failure.</li>
-                                                <li>Display descriptive error strings instead of number on failure.</li>
-                                                <li>End of recording from lack of free space generates a warning dialog.</li>
-                                                <li>Revert to a valid resolution when focus is lost while editing the H/V resolution widgets.</li>
-                                            </ul>
-                                            <h3>Fixed Bugs:</h3>
-                                            <ul>
-                                                <li>Gated burst record mode may lock up after several trigger edges.</li>
-                                                <li>Gated burst record mode unreliable when trigger debounce is enabled</li>
-                                                <li>Memory leak in the M3 video coprocessors which could lead to a crash after lots of H.264 encoding.</li>
-                                                <li>Ignore video which was recorded during zero-time black calibration (which happens after changing resolution).</li>
-                                                <li>Stuttering issue on the playback window on new production LCD modules.</li>
-                                                <li>Fixed deadlock in camera when restoring user settings from external media.</li>
-                                                <li>Corrupted overlay text at narrow resolutions.</li>
-                                                <li>Video stream would remain in playback when starting recording via auto-record.</li>
-                                                <li>Opening and closing the white balance menu can lead to an unexpected change of the custom preset.</li>
-                                                <li>Bug in calculating the trigger delay on boot (segmented mode only).</li>
-                                                <li>Ensure a minimum of 0.25 bits/pixel when encoding h.264 video.</li>
-                                                <li>Crash can occur when saving extremely short videos.</li>
-                                                <li>After rebooting a camera, focus aid and zebras are sometimes not restored even if they were enabled before the reboot.</li>
-                                                <li>Restore white balance correctly after reboot</li>
-                                            </ul>
-                                            <h3>Known Issues:</h3>
-                                            <ul>
-                                                <li>The second frame of videos saved in all formats is not from the correct location in the selected region.</li>
-                                                <li>The first frame of videos saved in formats other than H.264 format is corrupted.</li>
-                                                <li>Very rare crashes of the video system, causing the camera to lock up on the playback/save window; MTBF seems to be somewhere in the 2-5k recordings at present.</li>
-                                                <li>Gated Burst record mode only: Live display does not appear to be buffered correctly when the trigger signal is inactive.</li>
-                                                <li>Speckles in image when recording below 60fps</li>
-                                                <li>Black cal makes the image look very dark at low framerates when recording below about 45fps</li>
-                                                <li>Saved videos will have a date modified of 7 or 8 hours earlier than what is set on the clock in the Util menu.</li>
-                                            </ul>
+                                            <div id="accordion">
+                                                <div class="card">
+                                                    <div class="card-header" id="info-heading-1">
+                                                        <h3>
+                                                            <button class="btn w-100" data-toggle="collapse" data-target="#collapse-info-1" aria-expanded="true" aria-controls="collapse-info-1">
+                                                               <div class="d-flex justify-content-between align-items-center w-100">
+                                                                    Notable Changes
+                                                                     <i class=" fa fa-plus"></i>
+                                                               </div>
+                                                            </button>
+                                                        </h3>
+                                                    </div>
+                                                    <div id="collapse-info-1" class="collapse" aria-labelledby="info-heading-1" data-parent="#accordion">
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>Automatic ADC calibration during black calibration, which should reduce column banding across a wider temperature range.</li>
+                                                                <li>Add a storage tab to the util menu to view, eject and format the attached storage devices.</li>
+                                                                <li>Speed boost at most resolutions, with a top speed of 1069fps at 1280x1024, and 40420fps at 320x96.</li>
+                                                                <li>Configurable automated power-on and off depending on the AC adaptor status.</li>
+                                                                <li>Option to disable the ring buffer when in segmented recording mode.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="card">
+                                                    <div class="card-header" id="info-heading-2">
+                                                        <h3>
+                                                            <button class="btn w-100" data-toggle="collapse" data-target="#collapse-info-2" aria-expanded="false" aria-controls="collapse-info-2">
+                                                               <div class="d-flex justify-content-between align-items-center w-100">
+                                                                Minutiae
+                                                                     <i class=" fa fa-plus"></i>
+                                                               </div>
+                                                            </button>
+                                                        </h3>
+                                                    </div>
+                                                    <div id="collapse-info-2" class="collapse" aria-labelledby="info-heading-2" data-parent="#accordion">
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>Factory black calibration is now user accessible from the Factory tab of the util window.</li>
+                                                                <li>The software update button has been moved to the storage tab of the util window.</li>
+                                                                <li>Shipping mode to disable power-on by battery until an AC adaptor is attached.</li>
+                                                                <li>Add a watchdog to reboot the camera in case of a power-on boot failure.</li>
+                                                                <li>Display descriptive error strings instead of number on failure.</li>
+                                                                <li>End of recording from lack of free space generates a warning dialog.</li>
+                                                                <li>Revert to a valid resolution when focus is lost while editing the H/V resolution widgets.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="card">
+                                                    <div class="card-header" id="info-heading-3">
+                                                        <h3>
+                                                            <button class="btn w-100" data-toggle="collapse" data-target="#collapse-info-3" aria-expanded="false" aria-controls="collapse-info-3">
+                                                               <div class="d-flex justify-content-between align-items-center w-100">
+                                                                Fixed Bugs
+                                                                     <i class=" fa fa-plus"></i>
+                                                               </div>
+                                                            </button>
+                                                        </h3>
+                                                    </div>
+                                                    <div id="collapse-info-3" class="collapse" aria-labelledby="info-heading-3" data-parent="#accordion">
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>Gated burst record mode may lock up after several trigger edges.</li>
+                                                                <li>Gated burst record mode unreliable when trigger debounce is enabled</li>
+                                                                <li>Memory leak in the M3 video coprocessors which could lead to a crash after lots of H.264 encoding.</li>
+                                                                <li>Ignore video which was recorded during zero-time black calibration (which happens after changing resolution).</li>
+                                                                <li>Stuttering issue on the playback window on new production LCD modules.</li>
+                                                                <li>Fixed deadlock in camera when restoring user settings from external media.</li>
+                                                                <li>Corrupted overlay text at narrow resolutions.</li>
+                                                                <li>Video stream would remain in playback when starting recording via auto-record.</li>
+                                                                <li>Opening and closing the white balance menu can lead to an unexpected change of the custom preset.</li>
+                                                                <li>Bug in calculating the trigger delay on boot (segmented mode only).</li>
+                                                                <li>Ensure a minimum of 0.25 bits/pixel when encoding h.264 video.</li>
+                                                                <li>Crash can occur when saving extremely short videos.</li>
+                                                                <li>After rebooting a camera, focus aid and zebras are sometimes not restored even if they were enabled before the reboot.</li>
+                                                                <li>Restore white balance correctly after reboot</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card">
+                                                    <div class="card-header" id="info-heading-4">
+                                                        <h3>
+                                                            <button class="btn w-100" data-toggle="collapse" data-target="#collapse-info-4" aria-expanded="false" aria-controls="collapse-info-4">
+                                                               <div class="d-flex justify-content-between align-items-center w-100">
+                                                                Known Issues
+                                                                     <i class=" fa fa-plus"></i>
+                                                               </div>
+                                                            </button>
+                                                        </h3>
+                                                    </div>
+                                                    <div id="collapse-info-4" class="collapse" aria-labelledby="info-heading-4" data-parent="#accordion">
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>The second frame of videos saved in all formats is not from the correct location in the selected region.</li>
+                                                                <li>The first frame of videos saved in formats other than H.264 format is corrupted.</li>
+                                                                <li>Very rare crashes of the video system, causing the camera to lock up on the playback/save window; MTBF seems to be somewhere in the 2-5k recordings at present.</li>
+                                                                <li>Gated Burst record mode only: Live display does not appear to be buffered correctly when the trigger signal is inactive.</li>
+                                                                <li>Speckles in image when recording below 60fps</li>
+                                                                <li>Black cal makes the image look very dark at low framerates when recording below about 45fps</li>
+                                                                <li>Saved videos will have a date modified of 7 or 8 hours earlier than what is set on the clock in the Util menu.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -273,9 +339,150 @@
                                             Software v0.3.1
                                         </p>
                                     </a>
-                                    <a class="font-mod-2 text-center" href="#">
+                                    <a class="font-mod-2 text-center" data-toggle="modal" data-target="#info-modal">
                                         <i class="icon-mod-info fa fa-info"></i>
                                     </a>
+                                    <div class="modal fade" id="info-modal" tabindex="-1" role="dialog" aria-labelledby="install-info" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h3 class="text-center text-success w-100">Installation Instructions</h3>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <ol>
+                                                        <li>Extract the .zip file into the root directory of a FAT32 formatted USB drive.</li>
+                                                        <li>Turn on your camera and insert the USB drive.</li>
+                                                        <li>From the main window, tap the Util button to open the utility window.</li>
+                                                        <li>As a precaution, tap the Backup Calibration Data button on the utility window before starting the update.</li>
+                                                        <li>When the backup is completed, a pop-up window will be displayed.</li>
+                                                        <li>Tap the Done button to close the pop-up window.</li>
+                                                        <li>From the utility window, tap the Apply Software Update button to begin the software update.</li>
+                                                        <li>A warning message will be displayed, tap the Yes button to confirm and begin the update.</li>
+                                                        <li>During the update, the screen will go blank and an Applying Update message will be displayed.</li>
+                                                        <li>After approximately 60 seconds, the update will be complete and the camera will restart.</li>
+                                                    </ol>
+                                                    <div id="accordion">
+                                                        <div class="card">
+                                                            <div class="card-header" id="info-heading-1">
+                                                                <h3>
+                                                                    <button class="btn w-100" data-toggle="collapse" data-target="#collapse-info-1" aria-expanded="true" aria-controls="collapse-info-1">
+                                                                       <div class="d-flex justify-content-between align-items-center w-100">
+                                                                            Notable Changes
+                                                                             <i class=" fa fa-plus"></i>
+                                                                       </div>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div id="collapse-info-1" class="collapse" aria-labelledby="info-heading-1" data-parent="#accordion">
+                                                                <div class="card-body">
+                                                                    <ul>
+                                                                        <li>Automatic ADC calibration during black calibration, which should reduce column banding across a wider temperature range.</li>
+                                                                        <li>Add a storage tab to the util menu to view, eject and format the attached storage devices.</li>
+                                                                        <li>Speed boost at most resolutions, with a top speed of 1069fps at 1280x1024, and 40420fps at 320x96.</li>
+                                                                        <li>Configurable automated power-on and off depending on the AC adaptor status.</li>
+                                                                        <li>Option to disable the ring buffer when in segmented recording mode.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="card">
+                                                            <div class="card-header" id="info-heading-2">
+                                                                <h3>
+                                                                    <button class="btn w-100" data-toggle="collapse" data-target="#collapse-info-2" aria-expanded="false" aria-controls="collapse-info-2">
+                                                                       <div class="d-flex justify-content-between align-items-center w-100">
+                                                                        Minutiae
+                                                                             <i class=" fa fa-plus"></i>
+                                                                       </div>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div id="collapse-info-2" class="collapse" aria-labelledby="info-heading-2" data-parent="#accordion">
+                                                                <div class="card-body">
+                                                                    <ul>
+                                                                        <li>Factory black calibration is now user accessible from the Factory tab of the util window.</li>
+                                                                        <li>The software update button has been moved to the storage tab of the util window.</li>
+                                                                        <li>Shipping mode to disable power-on by battery until an AC adaptor is attached.</li>
+                                                                        <li>Add a watchdog to reboot the camera in case of a power-on boot failure.</li>
+                                                                        <li>Display descriptive error strings instead of number on failure.</li>
+                                                                        <li>End of recording from lack of free space generates a warning dialog.</li>
+                                                                        <li>Revert to a valid resolution when focus is lost while editing the H/V resolution widgets.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="card">
+                                                            <div class="card-header" id="info-heading-3">
+                                                                <h3>
+                                                                    <button class="btn w-100" data-toggle="collapse" data-target="#collapse-info-3" aria-expanded="false" aria-controls="collapse-info-3">
+                                                                       <div class="d-flex justify-content-between align-items-center w-100">
+                                                                        Fixed Bugs
+                                                                             <i class=" fa fa-plus"></i>
+                                                                       </div>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div id="collapse-info-3" class="collapse" aria-labelledby="info-heading-3" data-parent="#accordion">
+                                                                <div class="card-body">
+                                                                    <ul>
+                                                                        <li>Gated burst record mode may lock up after several trigger edges.</li>
+                                                                        <li>Gated burst record mode unreliable when trigger debounce is enabled</li>
+                                                                        <li>Memory leak in the M3 video coprocessors which could lead to a crash after lots of H.264 encoding.</li>
+                                                                        <li>Ignore video which was recorded during zero-time black calibration (which happens after changing resolution).</li>
+                                                                        <li>Stuttering issue on the playback window on new production LCD modules.</li>
+                                                                        <li>Fixed deadlock in camera when restoring user settings from external media.</li>
+                                                                        <li>Corrupted overlay text at narrow resolutions.</li>
+                                                                        <li>Video stream would remain in playback when starting recording via auto-record.</li>
+                                                                        <li>Opening and closing the white balance menu can lead to an unexpected change of the custom preset.</li>
+                                                                        <li>Bug in calculating the trigger delay on boot (segmented mode only).</li>
+                                                                        <li>Ensure a minimum of 0.25 bits/pixel when encoding h.264 video.</li>
+                                                                        <li>Crash can occur when saving extremely short videos.</li>
+                                                                        <li>After rebooting a camera, focus aid and zebras are sometimes not restored even if they were enabled before the reboot.</li>
+                                                                        <li>Restore white balance correctly after reboot</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card">
+                                                            <div class="card-header" id="info-heading-4">
+                                                                <h3>
+                                                                    <button class="btn w-100" data-toggle="collapse" data-target="#collapse-info-4" aria-expanded="false" aria-controls="collapse-info-4">
+                                                                       <div class="d-flex justify-content-between align-items-center w-100">
+                                                                        Known Issues
+                                                                             <i class=" fa fa-plus"></i>
+                                                                       </div>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div id="collapse-info-4" class="collapse" aria-labelledby="info-heading-4" data-parent="#accordion">
+                                                                <div class="card-body">
+                                                                    <ul>
+                                                                        <li>The second frame of videos saved in all formats is not from the correct location in the selected region.</li>
+                                                                        <li>The first frame of videos saved in formats other than H.264 format is corrupted.</li>
+                                                                        <li>Very rare crashes of the video system, causing the camera to lock up on the playback/save window; MTBF seems to be somewhere in the 2-5k recordings at present.</li>
+                                                                        <li>Gated Burst record mode only: Live display does not appear to be buffered correctly when the trigger signal is inactive.</li>
+                                                                        <li>Speckles in image when recording below 60fps</li>
+                                                                        <li>Black cal makes the image look very dark at low framerates when recording below about 45fps</li>
+                                                                        <li>Saved videos will have a date modified of 7 or 8 hours earlier than what is set on the clock in the Util menu.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <!--End Sub 1 Previous Button Mod-->
 
@@ -289,37 +496,460 @@
                                             Software v0.3.0
                                         </p>
                                     </a>
-                                    <a class="font-mod-2 text-center" href="#">
-                                        <i class="icon-mod-info fa fa-info"></i>
+                                    <a class="font-mod-2 text-center" data-toggle="modal" data-target="#info-modal">
+                                        <i class=" icon-mod-info fa fa-info "></i>
                                     </a>
+                                    <div class="modal fade " id="info-modal " tabindex="-1 " role="dialog " aria-labelledby="install-info " aria-hidden="true ">
+                                        <div class="modal-dialog modal-lg " role="document ">
+                                            <div class="modal-content ">
+                                                <div class="modal-header ">
+                                                    <h3 class="text-center text-success w-100 ">Installation Instructions</h3>
+                                                    <button type="button " class="close " data-dismiss="modal " aria-label="close ">
+                                                        <span aria-hidden="true ">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body ">
+                                                    <ol>
+                                                        <li>Extract the .zip file into the root directory of a FAT32 formatted USB drive.</li>
+                                                        <li>Turn on your camera and insert the USB drive.</li>
+                                                        <li>From the main window, tap the Util button to open the utility window.</li>
+                                                        <li>As a precaution, tap the Backup Calibration Data button on the utility window before starting the update.</li>
+                                                        <li>When the backup is completed, a pop-up window will be displayed.</li>
+                                                        <li>Tap the Done button to close the pop-up window.</li>
+                                                        <li>From the utility window, tap the Apply Software Update button to begin the software update.</li>
+                                                        <li>A warning message will be displayed, tap the Yes button to confirm and begin the update.</li>
+                                                        <li>During the update, the screen will go blank and an Applying Update message will be displayed.</li>
+                                                        <li>After approximately 60 seconds, the update will be complete and the camera will restart.</li>
+                                                    </ol>
+                                                    <div id="accordion ">
+                                                        <div class="card ">
+                                                            <div class="card-header " id="info-heading-1 ">
+                                                                <h3>
+                                                                    <button class="btn w-100 " data-toggle="collapse " data-target="#collapse-info-1 " aria-expanded="true " aria-controls="collapse-info-1 ">
+                                                                       <div class="d-flex justify-content-between align-items-center w-100 ">
+                                                                            Notable Changes
+                                                                             <i class=" fa fa-plus "></i>
+                                                                       </div>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div id="collapse-info-1 " class="collapse " aria-labelledby="info-heading-1 " data-parent="#accordion ">
+                                                                <div class="card-body ">
+                                                                    <ul>
+                                                                        <li>Automatic ADC calibration during black calibration, which should reduce column banding across a wider temperature range.</li>
+                                                                        <li>Add a storage tab to the util menu to view, eject and format the attached storage devices.</li>
+                                                                        <li>Speed boost at most resolutions, with a top speed of 1069fps at 1280x1024, and 40420fps at 320x96.</li>
+                                                                        <li>Configurable automated power-on and off depending on the AC adaptor status.</li>
+                                                                        <li>Option to disable the ring buffer when in segmented recording mode.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="card ">
+                                                            <div class="card-header " id="info-heading-2 ">
+                                                                <h3>
+                                                                    <button class="btn w-100 " data-toggle="collapse " data-target="#collapse-info-2 " aria-expanded="false " aria-controls="collapse-info-2 ">
+                                                                       <div class="d-flex justify-content-between align-items-center w-100 ">
+                                                                        Minutiae
+                                                                             <i class=" fa fa-plus "></i>
+                                                                       </div>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div id="collapse-info-2 " class="collapse " aria-labelledby="info-heading-2 " data-parent="#accordion ">
+                                                                <div class="card-body ">
+                                                                    <ul>
+                                                                        <li>Factory black calibration is now user accessible from the Factory tab of the util window.</li>
+                                                                        <li>The software update button has been moved to the storage tab of the util window.</li>
+                                                                        <li>Shipping mode to disable power-on by battery until an AC adaptor is attached.</li>
+                                                                        <li>Add a watchdog to reboot the camera in case of a power-on boot failure.</li>
+                                                                        <li>Display descriptive error strings instead of number on failure.</li>
+                                                                        <li>End of recording from lack of free space generates a warning dialog.</li>
+                                                                        <li>Revert to a valid resolution when focus is lost while editing the H/V resolution widgets.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="card ">
+                                                            <div class="card-header " id="info-heading-3 ">
+                                                                <h3>
+                                                                    <button class="btn w-100 " data-toggle="collapse " data-target="#collapse-info-3 " aria-expanded="false " aria-controls="collapse-info-3 ">
+                                                                       <div class="d-flex justify-content-between align-items-center w-100 ">
+                                                                        Fixed Bugs
+                                                                             <i class=" fa fa-plus "></i>
+                                                                       </div>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div id="collapse-info-3 " class="collapse " aria-labelledby="info-heading-3 " data-parent="#accordion ">
+                                                                <div class="card-body ">
+                                                                    <ul>
+                                                                        <li>Gated burst record mode may lock up after several trigger edges.</li>
+                                                                        <li>Gated burst record mode unreliable when trigger debounce is enabled</li>
+                                                                        <li>Memory leak in the M3 video coprocessors which could lead to a crash after lots of H.264 encoding.</li>
+                                                                        <li>Ignore video which was recorded during zero-time black calibration (which happens after changing resolution).</li>
+                                                                        <li>Stuttering issue on the playback window on new production LCD modules.</li>
+                                                                        <li>Fixed deadlock in camera when restoring user settings from external media.</li>
+                                                                        <li>Corrupted overlay text at narrow resolutions.</li>
+                                                                        <li>Video stream would remain in playback when starting recording via auto-record.</li>
+                                                                        <li>Opening and closing the white balance menu can lead to an unexpected change of the custom preset.</li>
+                                                                        <li>Bug in calculating the trigger delay on boot (segmented mode only).</li>
+                                                                        <li>Ensure a minimum of 0.25 bits/pixel when encoding h.264 video.</li>
+                                                                        <li>Crash can occur when saving extremely short videos.</li>
+                                                                        <li>After rebooting a camera, focus aid and zebras are sometimes not restored even if they were enabled before the reboot.</li>
+                                                                        <li>Restore white balance correctly after reboot</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card ">
+                                                            <div class="card-header " id="info-heading-4 ">
+                                                                <h3>
+                                                                    <button class="btn w-100 " data-toggle="collapse " data-target="#collapse-info-4 " aria-expanded="false " aria-controls="collapse-info-4 ">
+                                                                       <div class="d-flex justify-content-between align-items-center w-100 ">
+                                                                        Known Issues
+                                                                             <i class=" fa fa-plus "></i>
+                                                                       </div>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div id="collapse-info-4 " class="collapse " aria-labelledby="info-heading-4 " data-parent="#accordion ">
+                                                                <div class="card-body ">
+                                                                    <ul>
+                                                                        <li>The second frame of videos saved in all formats is not from the correct location in the selected region.</li>
+                                                                        <li>The first frame of videos saved in formats other than H.264 format is corrupted.</li>
+                                                                        <li>Very rare crashes of the video system, causing the camera to lock up on the playback/save window; MTBF seems to be somewhere in the 2-5k recordings at present.</li>
+                                                                        <li>Gated Burst record mode only: Live display does not appear to be buffered correctly when the trigger signal is inactive.</li>
+                                                                        <li>Speckles in image when recording below 60fps</li>
+                                                                        <li>Black cal makes the image look very dark at low framerates when recording below about 45fps</li>
+                                                                        <li>Saved videos will have a date modified of 7 or 8 hours earlier than what is set on the clock in the Util menu.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer ">
+                                                    <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <!--End Sub 2 Previous Button Mod-->
 
                                 <!--Start Sub 3 Previous Button Mod-->
                                 <div class="d-flex justify-content-around align-items-center w-100 ">
-                                    <a class="btn-mod-previous d-flex" href="Documents/Chronos_1.4_Doc/chronos_1.4_software_v0.2.zip">
-                                        <div class="font-mod d-flex justify-content-center">
-                                            <i class="icon-mod-1 fa fa-download align-self-center"></i>
+                                    <a class="btn-mod-previous d-flex " href="Documents/Chronos_1.4_Doc/chronos_1.4_software_v0.2.zip ">
+                                        <div class="font-mod d-flex justify-content-center ">
+                                            <i class="icon-mod-1 fa fa-download align-self-center "></i>
                                         </div>
-                                        <p class="align-self-center text-center">
+                                        <p class="align-self-center text-center ">
                                             Software v0.2
                                         </p>
                                     </a>
-                                    <a class="font-mod-2 text-center" href="#">
-                                        <i class="icon-mod-info fa fa-info"></i>
+                                    <a class="font-mod-2 text-center" data-toggle="modal" data-target="#info-modal">
+                                        <i class=" icon-mod-info fa fa-info "></i>
                                     </a>
+                                    <div class="modal fade " id="info-modal " tabindex="-1 " role="dialog " aria-labelledby="install-info " aria-hidden="true ">
+                                        <div class="modal-dialog modal-lg " role="document ">
+                                            <div class="modal-content ">
+                                                <div class="modal-header ">
+                                                    <h3 class="text-center text-success w-100 ">Installation Instructions</h3>
+                                                    <button type="button " class="close " data-dismiss="modal " aria-label="close ">
+                                                        <span aria-hidden="true ">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body ">
+                                                    <ol>
+                                                        <li>Extract the .zip file into the root directory of a FAT32 formatted USB drive.</li>
+                                                        <li>Turn on your camera and insert the USB drive.</li>
+                                                        <li>From the main window, tap the Util button to open the utility window.</li>
+                                                        <li>As a precaution, tap the Backup Calibration Data button on the utility window before starting the update.</li>
+                                                        <li>When the backup is completed, a pop-up window will be displayed.</li>
+                                                        <li>Tap the Done button to close the pop-up window.</li>
+                                                        <li>From the utility window, tap the Apply Software Update button to begin the software update.</li>
+                                                        <li>A warning message will be displayed, tap the Yes button to confirm and begin the update.</li>
+                                                        <li>During the update, the screen will go blank and an Applying Update message will be displayed.</li>
+                                                        <li>After approximately 60 seconds, the update will be complete and the camera will restart.</li>
+                                                    </ol>
+                                                    <div id="accordion ">
+                                                        <div class="card ">
+                                                            <div class="card-header " id="info-heading-1 ">
+                                                                <h3>
+                                                                    <button class="btn w-100 " data-toggle="collapse " data-target="#collapse-info-1 " aria-expanded="true " aria-controls="collapse-info-1 ">
+                                                                       <div class="d-flex justify-content-between align-items-center w-100 ">
+                                                                            Notable Changes
+                                                                             <i class=" fa fa-plus "></i>
+                                                                       </div>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div id="collapse-info-1 " class="collapse " aria-labelledby="info-heading-1 " data-parent="#accordion ">
+                                                                <div class="card-body ">
+                                                                    <ul>
+                                                                        <li>Automatic ADC calibration during black calibration, which should reduce column banding across a wider temperature range.</li>
+                                                                        <li>Add a storage tab to the util menu to view, eject and format the attached storage devices.</li>
+                                                                        <li>Speed boost at most resolutions, with a top speed of 1069fps at 1280x1024, and 40420fps at 320x96.</li>
+                                                                        <li>Configurable automated power-on and off depending on the AC adaptor status.</li>
+                                                                        <li>Option to disable the ring buffer when in segmented recording mode.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="card ">
+                                                            <div class="card-header " id="info-heading-2 ">
+                                                                <h3>
+                                                                    <button class="btn w-100 " data-toggle="collapse " data-target="#collapse-info-2 " aria-expanded="false " aria-controls="collapse-info-2 ">
+                                                                       <div class="d-flex justify-content-between align-items-center w-100 ">
+                                                                        Minutiae
+                                                                             <i class=" fa fa-plus "></i>
+                                                                       </div>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div id="collapse-info-2 " class="collapse " aria-labelledby="info-heading-2 " data-parent="#accordion ">
+                                                                <div class="card-body ">
+                                                                    <ul>
+                                                                        <li>Factory black calibration is now user accessible from the Factory tab of the util window.</li>
+                                                                        <li>The software update button has been moved to the storage tab of the util window.</li>
+                                                                        <li>Shipping mode to disable power-on by battery until an AC adaptor is attached.</li>
+                                                                        <li>Add a watchdog to reboot the camera in case of a power-on boot failure.</li>
+                                                                        <li>Display descriptive error strings instead of number on failure.</li>
+                                                                        <li>End of recording from lack of free space generates a warning dialog.</li>
+                                                                        <li>Revert to a valid resolution when focus is lost while editing the H/V resolution widgets.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+                                                        <div class="card ">
+                                                            <div class="card-header " id="info-heading-3 ">
+                                                                <h3>
+                                                                    <button class="btn w-100 " data-toggle="collapse " data-target="#collapse-info-3 " aria-expanded="false " aria-controls="collapse-info-3 ">
+                                                                       <div class="d-flex justify-content-between align-items-center w-100 ">
+                                                                        Fixed Bugs
+                                                                             <i class=" fa fa-plus "></i>
+                                                                       </div>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div id="collapse-info-3 " class="collapse " aria-labelledby="info-heading-3 " data-parent="#accordion ">
+                                                                <div class="card-body ">
+                                                                    <ul>
+                                                                        <li>Gated burst record mode may lock up after several trigger edges.</li>
+                                                                        <li>Gated burst record mode unreliable when trigger debounce is enabled</li>
+                                                                        <li>Memory leak in the M3 video coprocessors which could lead to a crash after lots of H.264 encoding.</li>
+                                                                        <li>Ignore video which was recorded during zero-time black calibration (which happens after changing resolution).</li>
+                                                                        <li>Stuttering issue on the playback window on new production LCD modules.</li>
+                                                                        <li>Fixed deadlock in camera when restoring user settings from external media.</li>
+                                                                        <li>Corrupted overlay text at narrow resolutions.</li>
+                                                                        <li>Video stream would remain in playback when starting recording via auto-record.</li>
+                                                                        <li>Opening and closing the white balance menu can lead to an unexpected change of the custom preset.</li>
+                                                                        <li>Bug in calculating the trigger delay on boot (segmented mode only).</li>
+                                                                        <li>Ensure a minimum of 0.25 bits/pixel when encoding h.264 video.</li>
+                                                                        <li>Crash can occur when saving extremely short videos.</li>
+                                                                        <li>After rebooting a camera, focus aid and zebras are sometimes not restored even if they were enabled before the reboot.</li>
+                                                                        <li>Restore white balance correctly after reboot</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card ">
+                                                            <div class="card-header " id="info-heading-4 ">
+                                                                <h3>
+                                                                    <button class="btn w-100 " data-toggle="collapse " data-target="#collapse-info-4 " aria-expanded="false " aria-controls="collapse-info-4 ">
+                                                                       <div class="d-flex justify-content-between align-items-center w-100 ">
+                                                                        Known Issues
+                                                                             <i class=" fa fa-plus "></i>
+                                                                       </div>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div id="collapse-info-4 " class="collapse " aria-labelledby="info-heading-4 " data-parent="#accordion ">
+                                                                <div class="card-body ">
+                                                                    <ul>
+                                                                        <li>The second frame of videos saved in all formats is not from the correct location in the selected region.</li>
+                                                                        <li>The first frame of videos saved in formats other than H.264 format is corrupted.</li>
+                                                                        <li>Very rare crashes of the video system, causing the camera to lock up on the playback/save window; MTBF seems to be somewhere in the 2-5k recordings at present.</li>
+                                                                        <li>Gated Burst record mode only: Live display does not appear to be buffered correctly when the trigger signal is inactive.</li>
+                                                                        <li>Speckles in image when recording below 60fps</li>
+                                                                        <li>Black cal makes the image look very dark at low framerates when recording below about 45fps</li>
+                                                                        <li>Saved videos will have a date modified of 7 or 8 hours earlier than what is set on the clock in the Util menu.</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer ">
+                                                    <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <!--Start Sub 3 Previous Button Mod-->
 
                                 <!--Start Sub 4 Previous Button Mod-->
                                 <div class="d-flex justify-content-around align-items-center w-100 ">
-                                    <a class="btn-mod-previous d-flex" href="#">
-                                        <div class="font-mod d-flex justify-content-center">
-                                            <i class="icon-mod-special fa fa-times align-self-center"></i>
+                                    <a class="btn-mod-previous d-flex " href="# ">
+                                        <div class="font-mod d-flex justify-content-center ">
+                                            <i class="icon-mod-special fa fa-times align-self-center "></i>
                                         </div>
-                                        <p class="align-self-center text-center">
+                                        <p class="align-self-center text-center " data-toggle="modal" data-target="#info-modal">
                                             Software v0.1
                                         </p>
+                                        <div class=" modal fade " id="info-modal " tabindex="-1 " role="dialog " aria-labelledby="install-info " aria-hidden="true ">
+                                            <div class="modal-dialog modal-lg " role="document ">
+                                                <div class="modal-content ">
+                                                    <div class="modal-header ">
+                                                        <h3 class="text-center text-success w-100 ">Installation Instructions</h3>
+                                                        <button type="button " class="close " data-dismiss="modal " aria-label="close ">
+                                                            <span aria-hidden="true ">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body ">
+                                                        <ol>
+                                                            <li>Extract the .zip file into the root directory of a FAT32 formatted USB drive.</li>
+                                                            <li>Turn on your camera and insert the USB drive.</li>
+                                                            <li>From the main window, tap the Util button to open the utility window.</li>
+                                                            <li>As a precaution, tap the Backup Calibration Data button on the utility window before starting the update.</li>
+                                                            <li>When the backup is completed, a pop-up window will be displayed.</li>
+                                                            <li>Tap the Done button to close the pop-up window.</li>
+                                                            <li>From the utility window, tap the Apply Software Update button to begin the software update.</li>
+                                                            <li>A warning message will be displayed, tap the Yes button to confirm and begin the update.</li>
+                                                            <li>During the update, the screen will go blank and an Applying Update message will be displayed.</li>
+                                                            <li>After approximately 60 seconds, the update will be complete and the camera will restart.</li>
+                                                        </ol>
+                                                        <div id="accordion ">
+                                                            <div class="card ">
+                                                                <div class="card-header " id="info-heading-1 ">
+                                                                    <h3>
+                                                                        <button class="btn w-100 " data-toggle="collapse " data-target="#collapse-info-1 " aria-expanded="true " aria-controls="collapse-info-1 ">
+                                                                           <div class="d-flex justify-content-between align-items-center w-100 ">
+                                                                                Notable Changes
+                                                                                 <i class=" fa fa-plus "></i>
+                                                                           </div>
+                                                                        </button>
+                                                                    </h3>
+                                                                </div>
+                                                                <div id="collapse-info-1 " class="collapse " aria-labelledby="info-heading-1 " data-parent="#accordion ">
+                                                                    <div class="card-body ">
+                                                                        <ul>
+                                                                            <li>Automatic ADC calibration during black calibration, which should reduce column banding across a wider temperature range.</li>
+                                                                            <li>Add a storage tab to the util menu to view, eject and format the attached storage devices.</li>
+                                                                            <li>Speed boost at most resolutions, with a top speed of 1069fps at 1280x1024, and 40420fps at 320x96.</li>
+                                                                            <li>Configurable automated power-on and off depending on the AC adaptor status.</li>
+                                                                            <li>Option to disable the ring buffer when in segmented recording mode.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="card ">
+                                                                <div class="card-header " id="info-heading-2 ">
+                                                                    <h3>
+                                                                        <button class="btn w-100 " data-toggle="collapse " data-target="#collapse-info-2 " aria-expanded="false " aria-controls="collapse-info-2 ">
+                                                                           <div class="d-flex justify-content-between align-items-center w-100 ">
+                                                                            Minutiae
+                                                                                 <i class=" fa fa-plus "></i>
+                                                                           </div>
+                                                                        </button>
+                                                                    </h3>
+                                                                </div>
+                                                                <div id="collapse-info-2 " class="collapse " aria-labelledby="info-heading-2 " data-parent="#accordion ">
+                                                                    <div class="card-body ">
+                                                                        <ul>
+                                                                            <li>Factory black calibration is now user accessible from the Factory tab of the util window.</li>
+                                                                            <li>The software update button has been moved to the storage tab of the util window.</li>
+                                                                            <li>Shipping mode to disable power-on by battery until an AC adaptor is attached.</li>
+                                                                            <li>Add a watchdog to reboot the camera in case of a power-on boot failure.</li>
+                                                                            <li>Display descriptive error strings instead of number on failure.</li>
+                                                                            <li>End of recording from lack of free space generates a warning dialog.</li>
+                                                                            <li>Revert to a valid resolution when focus is lost while editing the H/V resolution widgets.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+
+                                                            <div class="card ">
+                                                                <div class="card-header " id="info-heading-3 ">
+                                                                    <h3>
+                                                                        <button class="btn w-100 " data-toggle="collapse " data-target="#collapse-info-3 " aria-expanded="false " aria-controls="collapse-info-3 ">
+                                                                           <div class="d-flex justify-content-between align-items-center w-100 ">
+                                                                            Fixed Bugs
+                                                                                 <i class=" fa fa-plus "></i>
+                                                                           </div>
+                                                                        </button>
+                                                                    </h3>
+                                                                </div>
+                                                                <div id="collapse-info-3 " class="collapse " aria-labelledby="info-heading-3 " data-parent="#accordion ">
+                                                                    <div class="card-body ">
+                                                                        <ul>
+                                                                            <li>Gated burst record mode may lock up after several trigger edges.</li>
+                                                                            <li>Gated burst record mode unreliable when trigger debounce is enabled</li>
+                                                                            <li>Memory leak in the M3 video coprocessors which could lead to a crash after lots of H.264 encoding.</li>
+                                                                            <li>Ignore video which was recorded during zero-time black calibration (which happens after changing resolution).</li>
+                                                                            <li>Stuttering issue on the playback window on new production LCD modules.</li>
+                                                                            <li>Fixed deadlock in camera when restoring user settings from external media.</li>
+                                                                            <li>Corrupted overlay text at narrow resolutions.</li>
+                                                                            <li>Video stream would remain in playback when starting recording via auto-record.</li>
+                                                                            <li>Opening and closing the white balance menu can lead to an unexpected change of the custom preset.</li>
+                                                                            <li>Bug in calculating the trigger delay on boot (segmented mode only).</li>
+                                                                            <li>Ensure a minimum of 0.25 bits/pixel when encoding h.264 video.</li>
+                                                                            <li>Crash can occur when saving extremely short videos.</li>
+                                                                            <li>After rebooting a camera, focus aid and zebras are sometimes not restored even if they were enabled before the reboot.</li>
+                                                                            <li>Restore white balance correctly after reboot</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="card ">
+                                                                <div class="card-header " id="info-heading-4 ">
+                                                                    <h3>
+                                                                        <button class="btn w-100 " data-toggle="collapse " data-target="#collapse-info-4 " aria-expanded="false " aria-controls="collapse-info-4 ">
+                                                                           <div class="d-flex justify-content-between align-items-center w-100 ">
+                                                                            Known Issues
+                                                                                 <i class=" fa fa-plus "></i>
+                                                                           </div>
+                                                                        </button>
+                                                                    </h3>
+                                                                </div>
+                                                                <div id="collapse-info-4 " class="collapse " aria-labelledby="info-heading-4 " data-parent="#accordion ">
+                                                                    <div class="card-body ">
+                                                                        <ul>
+                                                                            <li>The second frame of videos saved in all formats is not from the correct location in the selected region.</li>
+                                                                            <li>The first frame of videos saved in formats other than H.264 format is corrupted.</li>
+                                                                            <li>Very rare crashes of the video system, causing the camera to lock up on the playback/save window; MTBF seems to be somewhere in the 2-5k recordings at present.</li>
+                                                                            <li>Gated Burst record mode only: Live display does not appear to be buffered correctly when the trigger signal is inactive.</li>
+                                                                            <li>Speckles in image when recording below 60fps</li>
+                                                                            <li>Black cal makes the image look very dark at low framerates when recording below about 45fps</li>
+                                                                            <li>Saved videos will have a date modified of 7 or 8 hours earlier than what is set on the clock in the Util menu.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer ">
+                                                        <button type="button " class="btn btn-secondary " data-dismiss="modal ">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </a>
                                 </div>
                                 <!--Start Sub 4 Previous Button Mod-->
@@ -331,40 +961,40 @@
                 <!--End Pill Sub Content 1-->
 
             </div>
-            <div class="row justify-content-center">
+            <div class="row justify-content-center ">
                 <!--Start Pill Sub Content 2-->
-                <div class="width-adjust col-md-4 col-12 p-0">
-                    <h4 class="text-uppercase text-center">Documents</h4>
-                    <div class="d-flex flex-column align-items-center p-3">
+                <div class="width-adjust col-md-4 col-12 p-0 ">
+                    <h4 class="text-uppercase text-center ">Documents</h4>
+                    <div class="d-flex flex-column align-items-center p-3 ">
                         <!--Button Mod-->
-                        <div class="d-flex justify-content-between align-items-center w-100">
-                            <a class="btn-mod-current d-flex w-100" href="Documents/Chronos_1.4_Doc/FM-ENGR-50001-Chronos-1.4-Datasheet-Rv4-1.pdf" target="_blank">
-                                <div class="font-mod d-flex justify-content-center">
-                                    <i class="icon-mod-2 fa fa-file-pdf-o align-self-center"></i>
+                        <div class="d-flex justify-content-between align-items-center w-100 ">
+                            <a class="btn-mod-current d-flex w-100 " href="Documents/Chronos_1.4_Doc/FM-ENGR-50001-Chronos-1.4-Datasheet-Rv4-1.pdf " target="_blank ">
+                                <div class="font-mod d-flex justify-content-center ">
+                                    <i class="icon-mod-2 fa fa-file-pdf-o align-self-center "></i>
                                 </div>
-                                <p class="align-self-center text-center">
+                                <p class="align-self-center text-center ">
                                     Chronos 1.4 Data Sheet
                                 </p>
                             </a>
                         </div>
                         <!--Button Mod-->
-                        <div class="d-flex justify-content-between align-items-center w-100">
-                            <a class="btn-mod-current d-flex w-100" href="Documents/Chronos_1.4_Doc/Chronos-1.4-v0.3.2-User-Manual-rev2.pdf" target="_blank">
-                                <div class="font-mod d-flex justify-content-center">
-                                    <i class="icon-mod-2 fa fa-file-pdf-o align-self-center"></i>
+                        <div class="d-flex justify-content-between align-items-center w-100 ">
+                            <a class="btn-mod-current d-flex w-100 " href="Documents/Chronos_1.4_Doc/Chronos-1.4-v0.3.2-User-Manual-rev2.pdf " target="_blank ">
+                                <div class="font-mod d-flex justify-content-center ">
+                                    <i class="icon-mod-2 fa fa-file-pdf-o align-self-center "></i>
                                 </div>
-                                <p class="align-self-center text-center">
+                                <p class="align-self-center text-center ">
                                     Chronos 1.4 User Manual
                                 </p>
                             </a>
                         </div>
                         <!--Button Mod-->
-                        <div class="d-flex justify-content-between align-items-center w-100">
-                            <a class="btn-mod-current d-flex w-100" href="Documents/Chronos_1.4_Doc/chronos_1.4_mounting_hole_locations.pdf" target="_blank">
-                                <div class="font-mod d-flex justify-content-center">
-                                    <i class="icon-mod-2 fa fa-file-pdf-o align-self-center"></i>
+                        <div class="d-flex justify-content-between align-items-center w-100 ">
+                            <a class="btn-mod-current d-flex w-100 " href="Documents/Chronos_1.4_Doc/chronos_1.4_mounting_hole_locations.pdf " target="_blank ">
+                                <div class="font-mod d-flex justify-content-center ">
+                                    <i class="icon-mod-2 fa fa-file-pdf-o align-self-center "></i>
                                 </div>
-                                <p class="align-self-center text-center">
+                                <p class="align-self-center text-center ">
                                     Chronos 1.4 Mechanical Drawing
                                 </p>
                             </a>
@@ -374,19 +1004,160 @@
                 <!--End Pill Sub Content 2-->
 
                 <!--Start Pill Sub Content 3-->
-                <div class=" width-adjust col-md-4 col-12 p-0">
-                    <h4 class="text-uppercase text-center">Trouble Shooting</h4>
-                    <div class="d-flex flex-column align-items-center p-3">
+                <div class=" width-adjust col-md-4 col-12 p-0 ">
+                    <h4 class="text-uppercase text-center ">Trouble Shooting</h4>
+                    <div class="d-flex flex-column align-items-center p-3 ">
                         <!--Button Mod-->
-                        <div class="d-flex justify-content-between align-items-center w-100">
-                            <a class="btn-mod-current d-flex w-100" href="#">
-                                <div class="font-mod d-flex justify-content-center">
-                                    <i class="icon-mod-3 fa fa-medkit align-self-center"></i>
+                        <div class="d-flex justify-content-between align-items-center w-100 ">
+                            <a class="btn-mod-current d-flex w-100 " href="# ">
+                                <div class="font-mod d-flex justify-content-center ">
+                                    <i class="icon-mod-3 fa fa-medkit align-self-center "></i>
                                 </div>
-                                <p class="align-self-center text-center">
-                                    Restoring Camera a Camera That Wont Boot
+                                <p class="align-self-center text-center " data-toggle="modal" data-target="#info-modal">
+                                    Restoring a Camera That Wont Boot
                                 </p>
                             </a>
+                            <div class="modal fade" id="info-modal" tabindex="-1" role="dialog" aria-labelledby="install-info" aria-hidden="true">
+                                <div class="modal-dialog modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h3 class="text-center text-success w-100">Installation Instructions</h3>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <ol>
+                                                <li>Extract the .zip file into the root directory of a FAT32 formatted USB drive.</li>
+                                                <li>Turn on your camera and insert the USB drive.</li>
+                                                <li>From the main window, tap the Util button to open the utility window.</li>
+                                                <li>As a precaution, tap the Backup Calibration Data button on the utility window before starting the update.</li>
+                                                <li>When the backup is completed, a pop-up window will be displayed.</li>
+                                                <li>Tap the Done button to close the pop-up window.</li>
+                                                <li>From the utility window, tap the Apply Software Update button to begin the software update.</li>
+                                                <li>A warning message will be displayed, tap the Yes button to confirm and begin the update.</li>
+                                                <li>During the update, the screen will go blank and an Applying Update message will be displayed.</li>
+                                                <li>After approximately 60 seconds, the update will be complete and the camera will restart.</li>
+                                            </ol>
+                                            <div id="accordion">
+                                                <div class="card">
+                                                    <div class="card-header" id="info-heading-1">
+                                                        <h3>
+                                                            <button class="btn w-100" data-toggle="collapse" data-target="#collapse-info-1" aria-expanded="true" aria-controls="collapse-info-1">
+                                                               <div class="d-flex justify-content-between align-items-center w-100">
+                                                                    Notable Changes
+                                                                     <i class=" fa fa-plus"></i>
+                                                               </div>
+                                                            </button>
+                                                        </h3>
+                                                    </div>
+                                                    <div id="collapse-info-1" class="collapse" aria-labelledby="info-heading-1" data-parent="#accordion">
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>Automatic ADC calibration during black calibration, which should reduce column banding across a wider temperature range.</li>
+                                                                <li>Add a storage tab to the util menu to view, eject and format the attached storage devices.</li>
+                                                                <li>Speed boost at most resolutions, with a top speed of 1069fps at 1280x1024, and 40420fps at 320x96.</li>
+                                                                <li>Configurable automated power-on and off depending on the AC adaptor status.</li>
+                                                                <li>Option to disable the ring buffer when in segmented recording mode.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="card">
+                                                    <div class="card-header" id="info-heading-2">
+                                                        <h3>
+                                                            <button class="btn w-100" data-toggle="collapse" data-target="#collapse-info-2" aria-expanded="false" aria-controls="collapse-info-2">
+                                                               <div class="d-flex justify-content-between align-items-center w-100">
+                                                                Minutiae
+                                                                     <i class=" fa fa-plus"></i>
+                                                               </div>
+                                                            </button>
+                                                        </h3>
+                                                    </div>
+                                                    <div id="collapse-info-2" class="collapse" aria-labelledby="info-heading-2" data-parent="#accordion">
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>Factory black calibration is now user accessible from the Factory tab of the util window.</li>
+                                                                <li>The software update button has been moved to the storage tab of the util window.</li>
+                                                                <li>Shipping mode to disable power-on by battery until an AC adaptor is attached.</li>
+                                                                <li>Add a watchdog to reboot the camera in case of a power-on boot failure.</li>
+                                                                <li>Display descriptive error strings instead of number on failure.</li>
+                                                                <li>End of recording from lack of free space generates a warning dialog.</li>
+                                                                <li>Revert to a valid resolution when focus is lost while editing the H/V resolution widgets.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="card">
+                                                    <div class="card-header" id="info-heading-3">
+                                                        <h3>
+                                                            <button class="btn w-100" data-toggle="collapse" data-target="#collapse-info-3" aria-expanded="false" aria-controls="collapse-info-3">
+                                                               <div class="d-flex justify-content-between align-items-center w-100">
+                                                                Fixed Bugs
+                                                                     <i class=" fa fa-plus"></i>
+                                                               </div>
+                                                            </button>
+                                                        </h3>
+                                                    </div>
+                                                    <div id="collapse-info-3" class="collapse" aria-labelledby="info-heading-3" data-parent="#accordion">
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>Gated burst record mode may lock up after several trigger edges.</li>
+                                                                <li>Gated burst record mode unreliable when trigger debounce is enabled</li>
+                                                                <li>Memory leak in the M3 video coprocessors which could lead to a crash after lots of H.264 encoding.</li>
+                                                                <li>Ignore video which was recorded during zero-time black calibration (which happens after changing resolution).</li>
+                                                                <li>Stuttering issue on the playback window on new production LCD modules.</li>
+                                                                <li>Fixed deadlock in camera when restoring user settings from external media.</li>
+                                                                <li>Corrupted overlay text at narrow resolutions.</li>
+                                                                <li>Video stream would remain in playback when starting recording via auto-record.</li>
+                                                                <li>Opening and closing the white balance menu can lead to an unexpected change of the custom preset.</li>
+                                                                <li>Bug in calculating the trigger delay on boot (segmented mode only).</li>
+                                                                <li>Ensure a minimum of 0.25 bits/pixel when encoding h.264 video.</li>
+                                                                <li>Crash can occur when saving extremely short videos.</li>
+                                                                <li>After rebooting a camera, focus aid and zebras are sometimes not restored even if they were enabled before the reboot.</li>
+                                                                <li>Restore white balance correctly after reboot</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card">
+                                                    <div class="card-header" id="info-heading-4">
+                                                        <h3>
+                                                            <button class="btn w-100" data-toggle="collapse" data-target="#collapse-info-4" aria-expanded="false" aria-controls="collapse-info-4">
+                                                               <div class="d-flex justify-content-between align-items-center w-100">
+                                                                Known Issues
+                                                                     <i class=" fa fa-plus"></i>
+                                                               </div>
+                                                            </button>
+                                                        </h3>
+                                                    </div>
+                                                    <div id="collapse-info-4" class="collapse" aria-labelledby="info-heading-4" data-parent="#accordion">
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>The second frame of videos saved in all formats is not from the correct location in the selected region.</li>
+                                                                <li>The first frame of videos saved in formats other than H.264 format is corrupted.</li>
+                                                                <li>Very rare crashes of the video system, causing the camera to lock up on the playback/save window; MTBF seems to be somewhere in the 2-5k recordings at present.</li>
+                                                                <li>Gated Burst record mode only: Live display does not appear to be buffered correctly when the trigger signal is inactive.</li>
+                                                                <li>Speckles in image when recording below 60fps</li>
+                                                                <li>Black cal makes the image look very dark at low framerates when recording below about 45fps</li>
+                                                                <li>Saved videos will have a date modified of 7 or 8 hours earlier than what is set on the clock in the Util menu.</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -405,8 +1176,8 @@
     <script src="Scripts/SideMenu.js "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
     <script src="https://github.com/FortAwesome/Font-Awesome/blob/master/js/all.js "></script>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <script type="module " src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js "></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js "></script>
     <!--End Script Source Files-->
 </body>
 
