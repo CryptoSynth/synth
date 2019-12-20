@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
 
 /*------------------------------------------------------
-    Html/Body Section  
+    Html/Body Section
 --------------------------------------------------------*/
 
 body,
@@ -18,22 +18,33 @@ html {
 
 
 /*------------------------------------------------------
-    Pill Box Section 1   
+    Background Colors
 --------------------------------------------------------*/
 
-.pill-section-1 {
+#chronos-hd {
     background-image: linear-gradient(135deg, #c2ffd8 10%, #465efb 100%);
+}
+
+#chronos-fhd {
+    background-image: linear-gradient(135deg, #fdeb71 10%, #f8d800 100%);
+}
+
+#chronos-hd .col-md-3 {
+    background-color: orange;
+}
+
+#chronos-fhd .col-md-3 {
+    background-color: lightgreen;
 }
 
 
 /*------------------------------------------------------
-    Pill Box Content 1  
+    Pill Box Content 1
 --------------------------------------------------------*/
 
 .pill-section-1 .col-md-3 {
     border-right: none;
-    border-bottom: 3px solid lightgreen;
-    background-image: linear-gradient(135deg, #fdd819 10%, #e80505 100%);
+    border-bottom: 3px solid black;
 }
 
 .pill-section-1 .image-1 {
@@ -47,8 +58,12 @@ html {
     color: white;
 }
 
-.pill-section-1 strong {
+#chronos-hd strong {
     color: cyan;
+}
+
+#chronos-fhd strong {
+    color: magenta;
 }
 
 .pill-section-1 .pill-content-1 h3 {
@@ -57,7 +72,7 @@ html {
 
 
 /*------------------------------------------------------
-    Pill Box Content 2   
+    Pill Box Content 2
 --------------------------------------------------------*/
 
 .pill-section-1 .pill-content-2 h4 {
@@ -79,7 +94,7 @@ html {
 
 
 /*------------------------------------------------------
-    Button Mod Current 
+    Button Mod Current
 --------------------------------------------------------*/
 
 .pill-section-1 .btn-mod-current {
@@ -247,10 +262,10 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 @media (min-width: 768px) {
     /*------------------------------------------------------
-    Pill Box Section 1 
+    Pill Box Section 1
 --------------------------------------------------------*/
     .pill-section-1 .col-md-3 {
-        border-right: 3px solid lightgreen;
+        border-right: 3px solid black;
         border-bottom: none;
         height: 100vh;
     }
@@ -264,7 +279,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
         width: 100%;
     }
     /*------------------------------------------------------
-    Pill Box Content 2  
+    Pill Box Content 2
 --------------------------------------------------------*/
     .pill-section-1 .pill-content-2 h4 {
         font-size: 1.5vw;
