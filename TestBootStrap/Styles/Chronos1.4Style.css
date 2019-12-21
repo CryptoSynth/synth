@@ -8,10 +8,10 @@ html {
     font-family: "Noto Sans SC", sans-serif;
     height: 100vh;
     background-color: black;
-    -ms-scroll-snap-type: mandatory;
-    scroll-snap-type: mandatory;
-    -ms-scroll-snap: y mandatory;
-    scroll-snap-type: y mandatory;
+    -ms-scroll-snap-type: proximity;
+    scroll-snap-type: proximity;
+    -ms-scroll-snap: y proximity;
+    scroll-snap-type: y proximity;
     scroll-behavior: smooth;
 }
 

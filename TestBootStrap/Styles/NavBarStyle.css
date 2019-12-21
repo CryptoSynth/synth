@@ -184,8 +184,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
 ----------------------------------------------------- */
 
 #home::before {
+    font-weight: 900 !important;
     content: "\f015" !important;
-    font-family: "FontAwesome" !important;
+    font-family: "Font Awesome 5 Free" !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -198,8 +199,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 #chronos-1::before {
+    font-weight: 900 !important;
     content: "\f030" !important;
-    font-family: "FontAwesome" !important;
+    font-family: "Font Awesome 5 Free" !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -212,8 +214,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 #chronos-2::before {
+    font-weight: 900 !important;
     content: "\f030" !important;
-    font-family: "FontAwesome" !important;
+    font-family: "Font Awesome 5 Free" !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -226,8 +229,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 #accessories::before {
+    font-weight: 900 !important;
     content: "\f1b3" !important;
-    font-family: "FontAwesome" !important;
+    font-family: "Font Awesome 5 Free" !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -240,8 +244,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 #about-us::before {
+    font-weight: 900 !important;
     content: "\f0c0" !important;
-    font-family: "FontAwesome" !important;
+    font-family: "Font Awesome 5 Free" !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -254,8 +259,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 #resources::before {
+    font-weight: 900 !important;
     content: "\f085" !important;
-    font-family: "FontAwesome" !important;
+    font-family: "Font Awesome 5 Free" !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -268,8 +274,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 #shop-now::before {
+    font-weight: 900 !important;
     content: "\f07a" !important;
-    font-family: "FontAwesome" !important;
+    font-family: "Font Awesome 5 Free" !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;

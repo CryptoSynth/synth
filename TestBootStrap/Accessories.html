@@ -9,19 +9,19 @@
 
     <!--Style Sheets CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" />
     <link rel="stylesheet" href="Styles/hover-min.css" />
-    <link rel="stylesheet" href="Styles/NavBarStyle.css" />
-    <link rel="stylesheet" href="Styles/hamburgers-min.css">
     <link rel="stylesheet" href="Styles/Accessories.css" />
+    <link rel="stylesheet" href="Styles/hamburgers-min.css">
     <link rel="stylesheet" href="Styles/fixed.css" />
+    <link rel="stylesheet" href="Styles/NavBarStyle.css" />
     <link rel="stylesheet" href="Styles/pageLoader.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
     <!--Start Main Menu Navagation-->
-    <header>
+    <header class="position-absolute w-100">
         <!--Sidebar Menu-->
         <!--SideBar-->
         <nav id="sidebar">
@@ -94,21 +94,21 @@
                                             Downloads
                                         </a>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="#">
-                                            Contact Us
-                                        </a>
-                                </li>
                             </ul>
                         </div>
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a id="about-us" class="hvr-sweep-to-left" href="/AboutUs.html">
+                        <p class="hvrcenter">Contact Us</p>
+                    </a>
                 </li>
             </ul>
         </nav>
 
         <div class="mainnav">
             <!--Sidebar Menu In Page-->
-            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <nav class="navbar navbar-expand-lg  navbar-dark">
                 <!--Logo and Name-->
                 <div id="menu" class="d-flex justify-content-between w-100">
                     <a class="navbar-brand d-flex" href="/Home.html">
@@ -131,123 +131,140 @@
     <!--End Main Menu Navagation-->
 
     <!--Start Landing Picture-->
-    <section class="landing-picture h-50">
-        <div class="container-fluid p-0 h-100">
-            <div class="row accessories-image justify-content-center h-100">
-                <h1 class="align-self-center text-white text-uppercase px-2 animated fadeInRight">
-                    Chronos Accessories
-                </h1>
-            </div>
+    <section class="landing-picture">
+        <div class="d-flex flex-column align-items-center justify-content-center position-absolute w-100 h-100">
+            <h1 class="text-white text-uppercase animated fadeInRight">
+                Chronos Accessories
+            </h1>
         </div>
+
+        <a class="scroll-down scroll-start" href="#anchor">
+            <div class="d-flex flex-column align-items-center justify-content-end position-absolute w-100 h-100 pb-3  animated delay-1s bounce">
+                <p class="m-1">Scroll Down</p>
+                <i class="fa fa-chevron-down"></i>
+            </div>
+        </a>
+
+        <div class="d-flex h-100 w-100 justify-content-center accessories-image">
+            <img class="image-adjust" src="/Images/elegent-smoke.png">
+        </div>
+
     </section>
     <!--End Landing Picture-->
 
     <!--Start Lens Section-->
-    <section class="accessories">
-        <div class="container-fluid p-0 h-100">
-            <div class="row h-100">
-                <div class="col-md-4 col-12">
-                    <img src="/Images/Accessories/Lens/Lens.png" class="adjust-image d-block mx-auto" alt="Lens">
-                </div>
-                <div class="col-md-8 col-12">
-                    <div class="d-flex flex-column justify-content-around h-100">
+    <section id="anchor" class="accessories scroll-start">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 col-12">
+                <img src="/Images/Accessories/Lens/Lens.png" class="adjust-image d-block mx-auto" alt="Lens">
+            </div>
+            <div class="col-md-8 col-12">
+                <div class="d-flex flex-column justify-content-around h-100">
+                    <div class="background-heading d-flex w-100 align-items-center justify-content-center justify-content-md-start">
                         <h1>Lens</h1>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                            survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
-                        <a id="shop-now" class="btn align-self-center hvr-sweep-to-top" href="#">
+                    </div>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <a id="shop-now" class="btn align-self-center hvr-sweep-to-top" href="# ">
                             Shop Now
                         </a>
-                    </div>
                 </div>
             </div>
-    </section>
-    <!--End Lens Section-->
-    <hr class="mx-5" />
-    <!--Start Lighting Section-->
-    <section class="accessories">
-        <div class="container-fluid p-0 h-100">
-            <div class="row h-100">
-                <div class="col-md-4 col-12">
-                    <img src="/Images/Accessories/Lighting/SLB-60W_LED_Light.png" class="adjust-image d-block mx-auto" alt="">
-                </div>
-                <div class="col-md-8 col-12">
-                    <div class="d-flex flex-column justify-content-around h-100">
+        </div>
+
+        <!--End Lens Section-->
+        <hr/>
+        <!--Start Lighting Section-->
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 col-12">
+                <img src="/Images/Accessories/Lighting/SLB-60W_LED_Light.png" class="adjust-image d-block mx-auto" alt=" ">
+            </div>
+            <div class="col-md-8 col-12 ">
+                <div class="d-flex flex-column justify-content-around h-100">
+                    <div class="background-heading d-flex w-100 align-items-center">
                         <h1>Lighting</h1>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                            survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
-                        <a id="shop-now" class="btn align-self-center hvr-sweep-to-top" href="#">
+                    </div>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <a id="shop-now" class="btn align-self-center hvr-sweep-to-top" href="# ">
                                     Shop Now
                         </a>
-                    </div>
                 </div>
             </div>
-    </section>
-    <!--End Lighting Section-->
-    <hr class="mx-5" />
-    <!--Start Media Section-->
-    <section class="accessories">
-        <div class="container-fluid p-0 h-100">
-            <div class="row h-100">
-                <div class="col-md-4 col-12">
-                    <img src="/Images/Accessories/Media/SanDisk_250GB_SSD.jpg" class="adjust-image d-block mx-auto" alt="">
-                </div>
-                <div class="col-md-8 col-12">
-                    <div class="d-flex flex-column justify-content-around h-100">
+        </div>
+
+        <!--End Lighting Section-->
+        <hr/>
+        <!--Start Media Section-->
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 col-12">
+                <img src="/Images/Accessories/Media/SanDisk_250GB_SSD.png" class="adjust-image d-block mx-auto" alt=" ">
+            </div>
+            <div class="col-md-8 col-12">
+                <div class="d-flex flex-column justify-content-around h-100">
+                    <div class="background-heading d-flex w-100 align-items-center">
                         <h1>Media</h1>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                            survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
-                        <a id="shop-now" class="btn align-self-center hvr-sweep-to-top" href="#">
+                    </div>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <a id="shop-now" class="btn align-self-center hvr-sweep-to-top" href="#">
                                     Shop Now
                         </a>
-                    </div>
                 </div>
             </div>
-    </section>
-    <!--End Media Section-->
-    <hr class="mx-5" />
-    <!--Start Accessories Section-->
-    <section class="accessories">
-        <div class="container-fluid p-0 h-100">
-            <div class="row h-100">
-                <div class="col-md-4 col-12">
-                    <img src="/Images/Accessories/Accesories/BNC_Coupler.jpg" class="adjust-image d-block mx-auto" alt="">
-                </div>
-                <div class="col-md-8 col-12">
-                    <div class="d-flex flex-column justify-content-around h-100">
+        </div>
+
+        <!--End Media Section-->
+        <hr/>
+        <!--Start Accessories Section-->
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 col-12">
+                <img src="/Images/Accessories/Accesories/BNC_Coupler.png" class="adjust-image d-block mx-auto" alt=" ">
+            </div>
+            <div class="col-md-8 col-12">
+                <div class="d-flex flex-column justify-content-around h-100">
+                    <div class="background-heading d-flex w-100 align-items-center">
                         <h1>Accessories</h1>
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                            survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-                            recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
-                        <a id="shop-now" class="btn align-self-center hvr-sweep-to-top" href="#">
+                    </div>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
+                        survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+                        with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                    <a id="shop-now" class="btn align-self-center hvr-sweep-to-top" href="# ">
                                     Shop Now
                         </a>
-                    </div>
                 </div>
             </div>
+        </div>
     </section>
     <!--End Accessories Section-->
     <!--Script Source Files-->
 
+    <!--Start Scroll Back to top-->
+    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+    <!--End Scroll Back to top-->
     <!--Script Source Files-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+    <script src="https://github.com/FortAwesome/Font-Awesome/blob/master/js/all.js "></script>
     <script src="Scripts/buttonLoader.js "></script>
     <script src="Scripts/SideMenu.js "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
-    <script src="https://github.com/FortAwesome/Font-Awesome/blob/master/js/all.js "></script>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <script src="Scripts/scroll-to-top.js"></script>
+    <script type="module " src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js "></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js "></script>
     <!--End Script Source Files-->
 </body>
 

@@ -1,13 +1,24 @@
 /* ---------------------------------------------------
-    HTML & Body
+    HTML/BODY/SCROLL BACK TO TOP
 ----------------------------------------------------- */
 
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
 body,
 html {
     font-family: "Noto Sans SC", sans-serif;
-    background-image: linear-gradient(135deg, #feb692 10%, #ea5455 100%);
-    height: 100vh;
+}
+
+.scroll-snap-y {
+    overflow-x: hidden;
+    -ms-scroll-snap-type: mandatory;
+    scroll-snap-type: mandatory;
+    -ms-scroll-snap: y mandatory;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.scroll-start {
+    scroll-snap-align: start;
 }
 
 *:focus {
@@ -15,27 +26,46 @@ html {
     box-shadow: none !important;
 }
 
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
 
 /* ---------------------------------------------------
    Product Picture Header
 ----------------------------------------------------- */
 
+.landing-picture {
+    height: 100vh;
+}
+
 .landing-picture .accessories-image {
-    background-image: url(/Images/elegent-smoke.png);
-    background-attachment: fixed;
-    background-position-y: unset;
+    position: fixed;
+    z-index: -1;
     background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 0;
-    height: 100%;
+}
+
+.landing-picture .image-adjust {
+    width: 100%;
 }
 
 .landing-picture h1 {
-    font-size: 2.5rem;
-    width: 100%;
+    font-size: 4rem;
     text-align: center;
     line-height: 4.5rem;
     text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.6);
+    margin: 0;
+    word-spacing: 2rem;
+}
+
+.landing-picture .scroll-down {
+    text-decoration: none;
+    font-size: 1.5rem;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.6);
+    color: white !important;
 }
 
 
@@ -43,13 +73,22 @@ html {
    Product Accessories
 ----------------------------------------------------- */
 
+.accessories {
+    height: 100%;
+    background-image: linear-gradient(135deg, #feb692 10%, #ea5455 100%);
+}
+
 .accessories h1 {
-    width: 100%;
     text-align: center;
     background-color: lightyellow;
     color: black;
-    padding: 0.2rem;
+    padding: 0.5rem 1rem;
     box-shadow: 5px 5px 4px 1px rgba(0, 0, 0, 0.3);
+}
+
+.accessories p {
+    text-align: justify;
+    padding: 1rem 0rem;
 }
 
 .accessories .adjust-image {
@@ -57,11 +96,12 @@ html {
 }
 
 hr {
-    border-top: 1px solid black !important;
+    border-top: 1.2px solid rgba(0, 0, 0, 0.6);
+    margin: 2rem 1.5rem;
 }
 
 .accessories .btn {
-    width: 75%;
+    width: 30%;
     background-color: black;
     color: white;
     border-radius: 20px;
@@ -88,22 +128,27 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 =============*/
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     /* ---------------------------------------------------
    Product Picture Header
 ----------------------------------------------------- */
+    .landing-picture .image-adjust {
+        width: unset;
+    }
     .landing-picture h1 {
-        font-size: 4vw;
-        margin-left: 1rem;
-        text-align: unset;
+        font-size: 2.5rem;
     }
     /* ---------------------------------------------------
    Product Accessories
 ----------------------------------------------------- */
     .accessories h1 {
-        width: 30%;
+        width: 100%;
     }
     .accessories .btn {
-        width: 25%;
+        width: 100%;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        border: 0;
     }
 }
