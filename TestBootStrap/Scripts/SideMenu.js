@@ -7,12 +7,11 @@ $(document).ready(function() {
         $(".overlay").removeClass("active");
 
         //
-
+        $(".hamburger").removeClass("is-active");
     });
 
-    var $hamburger = $(".hamburger");
-    $hamburger.on("click", function(e) {
-        $hamburger.toggleClass("is-active");
+    $(".hamburger").on("click", function() {
+        $(".hamburger").toggleClass("is-active");
 
         // open sidebar
         $("#sidebar").addClass("active");

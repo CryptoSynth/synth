@@ -6,6 +6,7 @@
 body,
 html {
     font-family: "Noto Sans SC", sans-serif;
+    scroll-behavior: smooth;
 }
 
 .scroll-snap-y {
@@ -88,7 +89,6 @@ html {
 
 .accessories p {
     text-align: justify;
-    padding: 1rem 0rem;
 }
 
 .accessories .adjust-image {
@@ -106,6 +106,11 @@ hr {
     color: white;
     border-radius: 20px;
     border: 0;
+}
+
+.accessories .contact-us-style a {
+    text-decoration: none;
+    color: cyan;
 }
 
 
