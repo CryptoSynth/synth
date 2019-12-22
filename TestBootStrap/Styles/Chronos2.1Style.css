@@ -6,12 +6,13 @@
 body,
 html {
     font-family: "Noto Sans SC", sans-serif;
-    background-image: linear-gradient(135deg, #fd6585 10%, #0d25b9 100%);
+    background-image: linear-gradient(135deg, #ff6fd8 10%, #3813c2 100%);
     -ms-scroll-snap-type: mandatory;
     scroll-snap-type: mandatory;
     -ms-scroll-snap: y mandatory;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+    background-repeat: no-repeat;
 }
 
 .scroll-start {
@@ -36,7 +37,8 @@ html {
     z-index: 0;
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    transform: scale(1, 2.2);
+    object-fit: contain;
 }
 
 .landingpage .main-title {
@@ -95,7 +97,7 @@ html {
 }
 
 .feature hr {
-    border: 1.5px solid plum;
+    border: 1.5px solid white;
     width: 10vw;
     margin-top: 0.3rem;
 }
@@ -112,7 +114,7 @@ html {
     justify-content: center;
     padding: 1rem 0rem;
     z-index: 1;
-    background-color: plum;
+    background-color: black;
     transform: rotate(30deg);
     border-radius: 10px;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
@@ -189,7 +191,7 @@ html {
 
 .feature .table-style .font-size {
     font-size: 6vw;
-    background: -webkit-linear-gradient(135deg, #43cbff 10%, #9708cc 100%);
+    background: -webkit-linear-gradient(135deg, #fdd819 10%, #e80505 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -205,11 +207,11 @@ html {
 }
 
 .feature .table-style th:hover {
-    background-color: plum;
+    background-color: lightgray;
 }
 
 .feature .table-style td:hover {
-    background-color: plum;
+    background-color: lightgray;
 }
 
 .feature .fa-check {
@@ -228,13 +230,15 @@ html {
 ----------------------------------------------------- */
 
 .feature .info-btn {
-    width: 40%;
+    width: 65%;
     letter-spacing: 0.3rem;
-    color: plum;
+    color: black;
+    border: 1.5px solid black;
 }
 
 .feature .info-btn:hover {
     color: white;
+    border: 1.5px solid white;
 }
 
 
@@ -244,7 +248,7 @@ html {
 
 .feature .listhead {
     font-size: 2rem;
-    color: plum;
+    color: black;
     text-align: center;
 }
 
@@ -262,7 +266,7 @@ html {
 
 .feature .modal-table .btn {
     border: none;
-    color: plum;
+    color: black;
     font-size: 2rem;
 }
 
@@ -277,7 +281,7 @@ html {
 
 .feature .modal-footer .btn-footer {
     color: white;
-    background-color: plum;
+    background-color: black;
     border-radius: 40px;
     padding: 0.5rem 1.5rem;
 }
@@ -289,6 +293,7 @@ html {
 
 .order {
     height: 100vh;
+    position: relative;
 }
 
 .order model-viewer {
@@ -302,6 +307,7 @@ html {
     color: white;
     background-color: black;
     padding: 0.5rem 1.5rem;
+    position: absolute;
 }
 
 .order .order-button {
@@ -313,8 +319,6 @@ html {
     background-color: black;
     color: white;
     z-index: 2;
-    bottom: 2%;
-    right: 5%;
 }
 
 .order .order-button:hover {
@@ -330,12 +334,12 @@ html {
     z-index: 2;
 }
 
-.order .up-button:hover {
-    color: black;
+.element-down {
+    bottom: 4%;
 }
 
-.order .element-down {
-    margin-top: 30rem;
+.order .up-button:hover {
+    color: black;
 }
 
 .order .poster-img {
@@ -369,6 +373,13 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .landingpage .main-title {
         font-size: 9.5vw;
         margin-top: 15rem;
+    }
+    .landingpage .vid1 {
+        z-index: 0;
+        height: 100%;
+        width: 100%;
+        transform: scale(1, 1);
+        object-fit: cover;
     }
     /* ---------------------------------------------------
     Feature Section

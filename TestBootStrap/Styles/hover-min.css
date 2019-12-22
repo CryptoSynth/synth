@@ -1889,7 +1889,6 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    background: plum;
     border-radius: 30px;
     margin: 0.4rem 0.5rem;
     z-index: 1;
@@ -2788,8 +2787,8 @@
     height: 10px;
     width: 90%;
     opacity: 0;
-    background: -webkit-radial-gradient( center, ellipse, rgba(252, 156, 255, 0.35) 0, rgba(255, 0, 0, 0) 80%);
-    background: radial-gradient( ellipse at center, rgba(252, 156, 255, 0.35) 0, rgba(255, 0, 0, 0) 80%);
+    background: -webkit-radial-gradient( center, ellipse, rgba(0, 0, 0, 0.35) 0, rgba(255, 0, 0, 0) 80%);
+    background: radial-gradient( ellipse at center, rgba(0, 0, 0, 0.35) 0, rgba(255, 0, 0, 0) 80%);
     -webkit-transition-duration: 0.3s;
     transition-duration: 0.3s;
     -webkit-transition-property: transform, opacity;
@@ -4565,31 +4564,32 @@
 .hvr-curl-bottom-left:hover:before {
     width: 25px;
     height: 25px;
-} transform: perspective(1px) translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
 }
 
+transform: perspective(1px) translateZ(0);
+box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+position: relative;
+
+}
 .hvr-curl-bottom-left:before {
-  pointer-events: none;
-  position: absolute;
-  content: "";
-  height: 0;
-  width: 0;
-  bottom: 0;
-  left: 0;
-  background: #fff;
-  background: linear-gradient(45deg, #fff 45%, #aaa 50%, #ccc 56%, #fff 80%);
-  box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.4);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: width, height;
-  transition-property: width, height;
+    pointer-events: none;
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background: #fff;
+    background: linear-gradient(45deg, #fff 45%, #aaa 50%, #ccc 56%, #fff 80%);
+    box-shadow: 1px -1px 1px rgba(0, 0, 0, 0.4);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: width, height;
+    transition-property: width, height;
 }
-
 .hvr-curl-bottom-left:active:before,
 .hvr-curl-bottom-left:focus:before,
 .hvr-curl-bottom-left:hover:before {
-  width: 25px;
-  height: 25px;
+    width: 25px;
+    height: 25px;
 }
