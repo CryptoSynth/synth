@@ -6,9 +6,9 @@
 body,
 html {
     font-family: "Noto Sans SC", sans-serif;
-    height: 100vh;
+    height: 100%;
     background-color: black;
-    -ms-scroll-snap-type: mandatoryy;
+    -ms-scroll-snap-type: mandatory;
     scroll-snap-type: mandatory;
     -ms-scroll-snap: y mandatory;
     scroll-snap-type: y mandatory;
@@ -26,33 +26,27 @@ html {
 
 
 /* ---------------------------------------------------
-    Navbar
------------------------------------------------------ */
-
-.mainnav .navbar {
-    z-index: 3;
-}
-
-
-/* ---------------------------------------------------
     Landing Page Section
 ----------------------------------------------------- */
 
 .landingpage {
-    overflow: hidden;
     height: 100vh;
 }
 
 .landingpage .vid1 {
-    transform: translateX(-30%);
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
-.landingpage .flex-item-h1 {
-    top: 20%;
-    font-size: 3rem;
+.landingpage .main-title {
     text-align: center;
     padding: 0.3rem 1.5rem;
-    z-index: 2;
+    color: white;
+    margin-top: 15rem;
+    z-index: 1;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.6);
 }
 
 .landingpage strong {
@@ -60,17 +54,12 @@ html {
     color: aqua;
 }
 
-.landingpage .flex-item-a {
-    bottom: 2%;
+.landingpage .scroll-down {
     text-decoration: none;
-    color: white;
     font-size: 1.5rem;
-    padding: 0.3rem 0.8rem 0.3rem 0.8rem;
-    z-index: 2;
-}
-
-.landingpage .flex-item-a:hover {
-    color: aqua;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.6);
+    color: white !important;
+    z-index: 1;
 }
 
 
@@ -81,6 +70,7 @@ html {
 .feature {
     height: 100vh;
     background-color: #111;
+    z-index: 2;
 }
 
 .feature .image-section {
@@ -325,7 +315,9 @@ html {
     font-size: 1.2rem;
     background-color: black;
     color: white;
-    margin-bottom: 3rem;
+    z-index: 2;
+    bottom: 2%;
+    right: 5%;
 }
 
 .order .order-button:hover {
@@ -338,22 +330,15 @@ html {
     font-size: 3rem;
     padding: 0rem 20px;
     margin-top: 4rem;
+    z-index: 2;
 }
 
 .order .up-button:hover {
     color: black;
 }
 
-.order .to-front {
-    z-index: 1;
-}
-
-.order .to-back {
-    z-index: 0;
-}
-
-.order .bottom {
-    bottom: 0%;
+.order .element-down {
+    margin-top: 37rem;
 }
 
 
@@ -380,14 +365,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
     /* ---------------------------------------------------
     Landing Page
 ----------------------------------------------------- */
-    .landingpage .vid1 {
-        transform: translateX(0%);
-        height: 100%;
-    }
-    .landingpage .flex-item-h1 {
-        top: 10%;
+    .landingpage .main-title {
         font-size: 9.5vw;
-        text-align: unset;
+        margin-top: 15rem;
     }
     /* ---------------------------------------------------
     Feature Section
@@ -462,14 +442,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .order .order-button {
         width: 20%;
     }
-}
-
-@media (min-width: 1025px) {
-    /* ---------------------------------------------------
-    Landing Page Section
------------------------------------------------------ */
-    .landingpage .vid1 {
-        height: unset;
-        width: 100%;
+    .order .element-down {
+        margin-top: 41rem;
     }
 }

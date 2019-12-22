@@ -65,12 +65,12 @@
                 </li>
                 <li class=" nav-item">
                     <a id="accessories" class="hvr-sweep-to-left" href="/Accessories.html">
-                        <p class="hvrcenter">Accessories</p>
+                        <p>Accessories</p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a id="about-us" class="hvr-sweep-to-left" href="/AboutUs.html">
-                        <p class="hvrcenter">About Us</p>
+                        <p>About Us</p>
                     </a>
                 </li>
                 <li class=" nav-item">
@@ -86,13 +86,13 @@
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <a href="/Tutorial.html">
-                                            Tutorials
-                                        </a>
+                                        <p>Tutorials</p>
+                                    </a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="/Downloads.html">
-                                            Downloads
-                                        </a>
+                                        <p>Downloads</p>
+                                    </a>
                                 </li>
                             </ul>
                         </div>
@@ -129,27 +129,27 @@
         </div>
     </header>
     <!--End Main Menu Navagation-->
+
     <!--Start Landing Page Section-->
-    <section class="landingpage scroll-start h-100">
+    <section class="landingpage scroll-start">
+        <a class="d-flex flex-column justify-content-center align-items-center" href="#feature">
+            <div class="d-flex flex-column align-items-center justify-content-around h-100 w-100 position-absolute">
+                <h1 class="main-title">
+                    Chronos-1.4 <strong>HD</strong>
+                </h1>
+                <div class="scroll-down d-flex flex-column h-100 justify-content-end align-content-center align-items-center mb-3 animated bounce">
+                    <a class="d-flex flex-column justify-content-center align-items-center hvr-grow" href="#feature">
+                        <p class="m-1">Scroll Down</p>
+                        <i class="fa fa-chevron-down"></i>
+                    </a>
+                </div>
+
+            </div>
+        </a>
         <!--Video-->
         <video class="vid1" autoplay="autoplay" playsinline="playsinline" loop="loop" muted="muted">
-            <source src="video/Video_Smoke.mp4" />
-        </video>
-
-        <!--Overlay Container-->
-        <div class="container-fluid">
-
-            <div class="d-flex flex-column align-items-center">
-
-                <h1 class="flex-item-h1 position-absolute text-uppercase text-white">Chronos 1.4-<strong>HD</strong></h1>
-                <a class="flex-item-a position-absolute d-flex flex-column animated delay-1s bounce" href="#feature">
-                        Scroll Down
-                        <i class="fa fa-chevron-down align-self-center"></i>
-                    </a>
-            </div>
-
-        </div>
-
+                    <source src="video/Video_Smoke.mp4" />
+                </video>
     </section>
     <!--End Landing Page Section-->
 
@@ -380,24 +380,19 @@
     <!--End Feature Section-->
     <!--Start Order Section-->
     <section class="order scroll-start">
-
-        <model-viewer s reveal="interaction" src="Scripts/3D-Model/Chronos_1.4.glb" poster="Images/Camera-3D.png" auto-rotate camera-controls alt="Camera-3D-Model" background-color="#f5dff4" environment-image="Images/studio_small_07_1k.hdr" shadow-intensity="1"
+        <model-viewer reveal="interaction" src="Scripts/3D-Model/Chronos_1.4.glb" poster="Images/Camera-3D.png" auto-rotate camera-controls alt="Camera-3D-Model" background-color="#f5dff4" environment-image="Images/studio_small_07_1k.hdr" shadow-intensity="1"
             stage-light-intensity="4" environment-intensity="2">
 
-            <div class="d-flex justify-content-center align-items-center w-100">
+            <div class="d-flex flex-column justify-content-center align-items-center align-content-center position-absolute w-100 ">
                 <a class=" up-button btn " href="#feature">
                     <i class="fa fa-chevron-up"></i>
                 </a>
             </div>
-            <div class="d-flex position-absolute justify-content-center align-items-center w-100 bottom">
-                <a id="btnFetch " class="order-button btn" href="KronStore.html#!/Chronos-1-4-HD/p/161263018/category=0 ">
-                        Buy Now
-                    </a>
-            </div>
-            <div class="d-flex flex justify-content-center align-items-center h-100 w-100" slot="poster">
+
+            <div class="d-flex flex justify-content-center align-items-center position-absolute w-100 h-100" slot="poster">
                 <img class="h-50" src="/Images/Camera-3D.png">
 
-                <div class=" d-flex position-absolute flex-column justify-content-center align-items-center w-100 h-50">
+                <div class=" d-flex position-absolute flex-column justify-content-center align-content-center align-items-center w-100">
                     <button class="model-btn" id="btnLoader" id="button-load">
                             <i class="fa fa-download pr-2"></i>
                             Load 3D Model
@@ -405,8 +400,13 @@
                 </div>
             </div>
 
-
+            <div class="element-down d-flex flex-column justify-content-center align-items-center align-content-center position-absolute w-100 ">
+                <a id="btnFetch " class="order-button btn" href="KronStore.html#!/Chronos-1-4-HD/p/161263018/category=0 ">
+                    Buy Now
+                </a>
+            </div>
         </model-viewer>
+
 
 
 
