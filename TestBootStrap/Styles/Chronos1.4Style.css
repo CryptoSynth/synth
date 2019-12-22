@@ -1,353 +1,336 @@
-﻿/* ---------------------------------------------------
+﻿    /* ---------------------------------------------------
     HTML & Body
 ----------------------------------------------------- */
-
-@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
-body,
-html {
-    font-family: "Noto Sans SC", sans-serif;
-    height: 100%;
-    background-color: black;
-    -ms-scroll-snap-type: mandatory;
-    scroll-snap-type: mandatory;
-    -ms-scroll-snap: y mandatory;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-}
-
-.scroll-start {
-    scroll-snap-align: start;
-}
-
-*:focus {
-    outline: none !important;
-    box-shadow: none !important;
-}
-
-
-/* ---------------------------------------------------
+    
+    @import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
+    body,
+    html {
+        font-family: "Noto Sans SC", sans-serif;
+        height: 100%;
+        background-color: black;
+        -ms-scroll-snap-type: mandatory;
+        scroll-snap-type: mandatory;
+        -ms-scroll-snap: y mandatory;
+        scroll-snap-type: y mandatory;
+        scroll-behavior: smooth;
+    }
+    
+    .scroll-start {
+        scroll-snap-align: start;
+    }
+    
+    *:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    /* ---------------------------------------------------
     Landing Page Section
 ----------------------------------------------------- */
-
-.landingpage {
-    height: 100vh;
-}
-
-.landingpage .vid1 {
-    z-index: 0;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.landingpage .main-title {
-    text-align: center;
-    padding: 0.3rem 1.5rem;
-    color: white;
-    margin-top: 15rem;
-    z-index: 1;
-    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.6);
-}
-
-.landingpage strong {
-    text-shadow: 1vw 1vw black;
-    color: aqua;
-}
-
-.landingpage .scroll-down {
-    text-decoration: none;
-    font-size: 1.5rem;
-    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.6);
-    color: white !important;
-    z-index: 1;
-}
-
-
-/* ---------------------------------------------------
+    
+    .landingpage {
+        height: 100vh;
+    }
+    
+    .landingpage .vid1 {
+        z-index: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .landingpage .main-title {
+        text-align: center;
+        padding: 0.3rem 1.5rem;
+        color: white;
+        margin-top: 15rem;
+        z-index: 1;
+        text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.6);
+    }
+    
+    .landingpage strong {
+        text-shadow: 1vw 1vw black;
+        color: aqua;
+    }
+    
+    .landingpage .scroll-down {
+        text-decoration: none;
+        font-size: 1.5rem;
+        text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.6);
+        color: white !important;
+        z-index: 1;
+    }
+    /* ---------------------------------------------------
     Feature Page Section
 ----------------------------------------------------- */
-
-.feature {
-    height: 100vh;
-    background-color: #111;
-    z-index: 2;
-}
-
-.feature .image-section {
-    height: 30%;
-}
-
-.feature .table-section {
-    height: 70%;
-}
-
-
-/* ---------------------------------------------------
+    
+    .feature {
+        height: 100vh;
+        background-color: #111;
+        z-index: 2;
+    }
+    
+    .feature .image-section {
+        height: 30%;
+    }
+    
+    .feature .table-section {
+        height: 70%;
+    }
+    /* ---------------------------------------------------
     Feature Images and VS text
 ----------------------------------------------------- */
-
-.feature .adjust-image {
-    width: 100%;
-    padding: 0 1rem;
-}
-
-.feature .vs-text {
-    font-size: 2rem;
-    color: white;
-    margin: 0;
-}
-
-.feature hr {
-    border: 1.5px solid plum;
-    width: 10vw;
-    margin-top: 0.3rem;
-}
-
-.feature .phantom {
-    filter: blur(4px);
-}
-
-.feature .censored {
-    position: absolute;
-    display: flex;
-    width: 75%;
-    height: 35%;
-    justify-content: center;
-    padding: 1rem 0rem;
-    z-index: 1;
-    background-color: plum;
-    transform: rotate(30deg);
-    border-radius: 10px;
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
-}
-
-.feature .censored i {
-    color: white;
-    z-index: 2;
-    font-size: 4vw;
-    padding: 0 0.3rem;
-    align-self: center;
-}
-
-
-/* ---------------------------------------------------
+    
+    .feature .adjust-image {
+        width: 100%;
+        padding: 0 1rem;
+    }
+    
+    .feature .vs-text {
+        font-size: 2rem;
+        color: white;
+        margin: 0;
+    }
+    
+    .feature hr {
+        border: 1.5px solid plum;
+        width: 10vw;
+        margin-top: 0.3rem;
+    }
+    
+    .feature .phantom {
+        filter: blur(4px);
+    }
+    
+    .feature .censored {
+        position: absolute;
+        display: flex;
+        width: 75%;
+        height: 35%;
+        justify-content: center;
+        padding: 1rem 0rem;
+        z-index: 1;
+        background-color: plum;
+        transform: rotate(30deg);
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    .feature .censored i {
+        color: white;
+        z-index: 2;
+        font-size: 4vw;
+        padding: 0 0.3rem;
+        align-self: center;
+    }
+    /* ---------------------------------------------------
     Feature Table
 ----------------------------------------------------- */
-
-.feature .table-style {
-    margin-bottom: 0;
-    vertical-align: middle;
-    text-align: center;
-    background-color: white;
-}
-
-.feature .outside-col-style {
-    width: 40%;
-}
-
-.feature .inside-col-style {
-    width: 20%;
-}
-
-.feature .shadow-column:before {
-    box-shadow: -15px 0 15px -15px inset;
-    content: " ";
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: -15px;
-    width: 15px;
-}
-
-.feature .shadow-column:before {
-    box-shadow: -15px 0 15px -15px inset;
-    content: " ";
-    height: 100%;
-    position: absolute;
-    bottom: 15;
-    left: -15px;
-    width: 15px;
-}
-
-.feature .shadow-column:after {
-    box-shadow: 15px 0 15px -15px inset;
-    content: " ";
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: -15px;
-    width: 15px;
-}
-
-.feature .shadow-column {
-    position: relative;
-    text-transform: uppercase;
-    vertical-align: middle;
-}
-
-.feature .th-style {
-    vertical-align: middle;
-    font-size: 0.8rem;
-}
-
-.feature .table-style .font-size {
-    font-size: 6vw;
-    background: -webkit-linear-gradient(135deg, #43cbff 10%, #9708cc 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.feature .table-style th {
-    text-transform: uppercase;
-    font-size: 0.8rem;
-}
-
-.feature .table-style td {
-    vertical-align: middle;
-    font-size: 0.8rem;
-}
-
-.feature .table-style th:hover {
-    background-color: plum;
-}
-
-.feature .table-style td:hover {
-    background-color: plum;
-}
-
-.feature .fa-check {
-    color: rgb(0, 255, 0);
-    font-size: 1.5rem;
-}
-
-.feature .fa-times {
-    color: rgb(255, 0, 0);
-    font-size: 1.5rem;
-}
-
-
-/* ---------------------------------------------------
+    
+    .feature .table-style {
+        margin-bottom: 0;
+        vertical-align: middle;
+        text-align: center;
+        background-color: white;
+    }
+    
+    .feature .outside-col-style {
+        width: 40%;
+    }
+    
+    .feature .inside-col-style {
+        width: 20%;
+    }
+    
+    .feature .shadow-column:before {
+        box-shadow: -15px 0 15px -15px inset;
+        content: " ";
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -15px;
+        width: 15px;
+    }
+    
+    .feature .shadow-column:before {
+        box-shadow: -15px 0 15px -15px inset;
+        content: " ";
+        height: 100%;
+        position: absolute;
+        bottom: 15;
+        left: -15px;
+        width: 15px;
+    }
+    
+    .feature .shadow-column:after {
+        box-shadow: 15px 0 15px -15px inset;
+        content: " ";
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: -15px;
+        width: 15px;
+    }
+    
+    .feature .shadow-column {
+        position: relative;
+        text-transform: uppercase;
+        vertical-align: middle;
+    }
+    
+    .feature .th-style {
+        vertical-align: middle;
+        font-size: 0.8rem;
+    }
+    
+    .feature .table-style .font-size {
+        font-size: 6vw;
+        background: -webkit-linear-gradient(135deg, #43cbff 10%, #9708cc 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    
+    .feature .table-style th {
+        text-transform: uppercase;
+        font-size: 0.8rem;
+    }
+    
+    .feature .table-style td {
+        vertical-align: middle;
+        font-size: 0.8rem;
+    }
+    
+    .feature .table-style th:hover {
+        background-color: plum;
+    }
+    
+    .feature .table-style td:hover {
+        background-color: plum;
+    }
+    
+    .feature .fa-check {
+        color: rgb(0, 255, 0);
+        font-size: 1.5rem;
+    }
+    
+    .feature .fa-times {
+        color: rgb(255, 0, 0);
+        font-size: 1.5rem;
+    }
+    /* ---------------------------------------------------
     Learn More
 ----------------------------------------------------- */
-
-.feature .info-btn {
-    width: 40%;
-    letter-spacing: 0.3rem;
-    color: plum;
-}
-
-.feature .info-btn:hover {
-    color: white;
-}
-
-
-/* ---------------------------------------------------
+    
+    .feature .info-btn {
+        width: 40%;
+        letter-spacing: 0.3rem;
+        color: plum;
+    }
+    
+    .feature .info-btn:hover {
+        color: white;
+    }
+    /* ---------------------------------------------------
     Modal Table
 ----------------------------------------------------- */
-
-.feature .listhead {
-    font-size: 2rem;
-    color: plum;
-    text-align: center;
-}
-
-.feature .modal-table th {
-    font-size: 1rem;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.feature .modal-table td {
-    font-size: 0.9rem;
-    vertical-align: middle;
-    text-align: center;
-}
-
-.feature .modal-table .btn {
-    border: none;
-    color: plum;
-    font-size: 2rem;
-}
-
-.feature .modal-table .btn:hover {
-    background-color: rgba(0, 0, 0, 0);
-    color: black;
-}
-
-.feature .modal-table .modal-subtable {
-    padding: 0rem !important;
-}
-
-.feature .modal-footer .btn-footer {
-    color: white;
-    background-color: plum;
-    border-radius: 40px;
-    padding: 0.5rem 1.5rem;
-}
-
-
-/* ---------------------------------------------------
+    
+    .feature .listhead {
+        font-size: 2rem;
+        color: plum;
+        text-align: center;
+    }
+    
+    .feature .modal-table th {
+        font-size: 1rem;
+        text-align: center;
+        vertical-align: middle;
+    }
+    
+    .feature .modal-table td {
+        font-size: 0.9rem;
+        vertical-align: middle;
+        text-align: center;
+    }
+    
+    .feature .modal-table .btn {
+        border: none;
+        color: plum;
+        font-size: 2rem;
+    }
+    
+    .feature .modal-table .btn:hover {
+        background-color: rgba(0, 0, 0, 0);
+        color: black;
+    }
+    
+    .feature .modal-table .modal-subtable {
+        padding: 0rem !important;
+    }
+    
+    .feature .modal-footer .btn-footer {
+        color: white;
+        background-color: plum;
+        border-radius: 40px;
+        padding: 0.5rem 1.5rem;
+    }
+    /* ---------------------------------------------------
     Order Page Section
 ----------------------------------------------------- */
-
-.order {
-    height: 100vh;
-}
-
-.order model-viewer {
-    width: 100%;
-    height: 100%;
-}
-
-.order .model-btn {
-    border: none;
-    border-radius: 10px;
-    color: white;
-    background-color: black;
-    padding: 0.5rem 1.5rem;
-}
-
-.order .order-button {
-    text-decoration: none;
-    border-radius: 40px;
-    width: 50%;
-    padding: 0.3rem;
-    font-size: 1.2rem;
-    background-color: black;
-    color: white;
-    z-index: 2;
-    bottom: 2%;
-    right: 5%;
-}
-
-.order .order-button:hover {
-    background-color: white;
-    color: black;
-}
-
-.order .up-button {
-    color: white;
-    font-size: 3rem;
-    padding: 0rem 20px;
-    margin-top: 4rem;
-    z-index: 2;
-}
-
-.order .up-button:hover {
-    color: black;
-}
-
-.order .element-down {
-    margin-top: 37rem;
-    margin-bottom: 4rem;
-}
-
-.order .poster-img {
-    width: 50%;
-}
-
-
-/*============ BOOTSTRAP BREAK POINTS:
+    
+    .order {
+        height: 100vh;
+    }
+    
+    .order model-viewer {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .order .model-btn {
+        border: none;
+        border-radius: 10px;
+        color: white;
+        background-color: black;
+        padding: 0.5rem 1.5rem;
+    }
+    
+    .order .order-button {
+        text-decoration: none;
+        border-radius: 40px;
+        width: 50%;
+        padding: 0.3rem;
+        font-size: 1.2rem;
+        background-color: black;
+        color: white;
+        z-index: 2;
+        bottom: 2%;
+        right: 5%;
+    }
+    
+    .order .order-button:hover {
+        background-color: white;
+        color: black;
+    }
+    
+    .order .up-button {
+        color: white;
+        font-size: 3rem;
+        padding: 0rem 20px;
+        margin-top: 4rem;
+        z-index: 2;
+    }
+    
+    .order .up-button:hover {
+        color: black;
+    }
+    
+    .order .element-down {
+        margin-top: 30rem;
+    }
+    
+    .order .poster-img {
+        width: 50%;
+    }
+    /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
 No media query since this is the default in Bootstrap
@@ -365,89 +348,89 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
 =============*/
-
-@media (min-width: 768px) {
-    /* ---------------------------------------------------
+    
+    @media (min-width: 768px) {
+        /* ---------------------------------------------------
     Landing Page
 ----------------------------------------------------- */
-    .landingpage .main-title {
-        font-size: 9.5vw;
-        margin-top: 15rem;
-    }
-    /* ---------------------------------------------------
+        .landingpage .main-title {
+            font-size: 9.5vw;
+            margin-top: 15rem;
+        }
+        /* ---------------------------------------------------
     Feature Section
 ----------------------------------------------------- */
-    .feature .padding-style {
-        padding-left: 3rem !important;
-        padding-right: 3rem !important;
-    }
-    .feature .adjust-image {
-        width: unset;
-        height: 20vh;
-    }
-    .feature .vs-text {
-        font-size: 4vw;
-    }
-    .feature .censored i {
-        font-size: 3vw;
-        padding: 0 0.7rem;
-    }
-    /* ---------------------------------------------------
+        .feature .padding-style {
+            padding-left: 3rem !important;
+            padding-right: 3rem !important;
+        }
+        .feature .adjust-image {
+            width: unset;
+            height: 20vh;
+        }
+        .feature .vs-text {
+            font-size: 4vw;
+        }
+        .feature .censored i {
+            font-size: 3vw;
+            padding: 0 0.7rem;
+        }
+        /* ---------------------------------------------------
     Feature Table
 ----------------------------------------------------- */
-    .feature .outside-col-style {
-        width: 30%;
-    }
-    .feature .inside-col-style {
-        width: 20%;
-    }
-    .feature .shadow-column {
-        position: relative;
-        text-transform: uppercase;
-        font-size: 0.8rem;
-    }
-    .feature .th-style {
-        font-size: 1.5rem;
-    }
-    .feature .table-style .font-size {
-        font-size: 2vw;
-    }
-    .feature .fa-check {
-        font-size: 2rem;
-    }
-    .feature .fa-times {
-        font-size: 2rem;
-    }
-    .feature th {
-        font-size: 2rem;
-    }
-    .feature td {
-        font-size: 1.5rem;
-    }
-    .feature .censored {
-        width: 50%;
-        height: 35%;
-    }
-    .feature .censored i {
-        font-size: 3vw;
-        padding: 0 0.7rem;
-    }
-    /* ---------------------------------------------------
+        .feature .outside-col-style {
+            width: 30%;
+        }
+        .feature .inside-col-style {
+            width: 20%;
+        }
+        .feature .shadow-column {
+            position: relative;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+        }
+        .feature .th-style {
+            font-size: 1.5rem;
+        }
+        .feature .table-style .font-size {
+            font-size: 2vw;
+        }
+        .feature .fa-check {
+            font-size: 2rem;
+        }
+        .feature .fa-times {
+            font-size: 2rem;
+        }
+        .feature th {
+            font-size: 2rem;
+        }
+        .feature td {
+            font-size: 1.5rem;
+        }
+        .feature .censored {
+            width: 50%;
+            height: 35%;
+        }
+        .feature .censored i {
+            font-size: 3vw;
+            padding: 0 0.7rem;
+        }
+        /* ---------------------------------------------------
     Learn More
 ----------------------------------------------------- */
-    .feature .padding-style-2 {
-        padding-right: 2rem !important;
-    }
-    .feature .info-btn {
-        width: 20%;
-    }
-    /* ---------------------------------------------------
+        .feature .padding-style-2 {
+            padding-right: 2rem !important;
+        }
+        .feature .info-btn {
+            width: 20%;
+        }
+        /* ---------------------------------------------------
     Order Section
 ----------------------------------------------------- */
-    .order .order-button {
-        width: 20%;
+        .order .order-button {
+            width: 20%;
+        }
+        .order .element-down {
+            margin-top: 40rem;
+        }
     }
-    .order .element-down {
-        margin-top: 41rem;
-    }
-}
