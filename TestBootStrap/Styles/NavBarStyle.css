@@ -274,7 +274,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
     align-items: center !important;
     justify-content: center !important;
     position: absolute !important;
-    background: cyan !important;
+    background: white !important;
     border-radius: 30px !important;
     z-index: 1 !important;
     font-size: 2rem !important;

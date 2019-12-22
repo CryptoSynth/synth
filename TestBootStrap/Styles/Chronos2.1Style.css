@@ -37,7 +37,7 @@ html {
     z-index: 0;
     height: 100%;
     width: 100%;
-    transform: scale(1, 2.2);
+    transform: scale(1, 2);
     object-fit: contain;
 }
 
@@ -296,54 +296,36 @@ html {
     position: relative;
 }
 
-.order model-viewer {
-    width: 100%;
+.order .vid2 {
+    z-index: 0;
     height: 100%;
+    width: 100%;
+    transform: scale(1, 1);
+    object-fit: cover;
 }
 
-.order .model-btn {
-    border: none;
-    border-radius: 10px;
-    color: white;
-    background-color: black;
-    padding: 0.5rem 1.5rem;
-    position: absolute;
-}
-
-.order .order-button {
-    text-decoration: none;
-    border-radius: 40px;
-    width: 50%;
-    padding: 0.3rem;
-    font-size: 1.2rem;
-    background-color: black;
-    color: white;
+.order .pre {
+    font-size: 15vw;
     z-index: 2;
+    text-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+    font-weight: bolder;
+    margin-top: 15rem;
 }
 
-.order .order-button:hover {
+.order .pre-btn {
+    color: white;
+    background-color: none;
+    font-size: 1rem;
+    border-radius: 40px;
+    z-index: 2;
+    width: 80%;
+    margin-bottom: 2rem;
+    border: 1.5px solid white;
+}
+
+.order .pre-btn:hover {
     background-color: white;
     color: black;
-}
-
-.order .up-button {
-    color: white;
-    font-size: 3rem;
-    padding: 0rem 20px;
-    margin-top: 4rem;
-    z-index: 2;
-}
-
-.element-down {
-    bottom: 4%;
-}
-
-.order .up-button:hover {
-    color: black;
-}
-
-.order .poster-img {
-    width: 50%;
 }
 
 
@@ -451,10 +433,20 @@ Extra (xl) large devices (large desktops, 1200px and up)
     /* ---------------------------------------------------
     Order Section
 ----------------------------------------------------- */
-    .order .order-button {
-        width: 20%;
+    .order .vid2 {
+        z-index: 0;
+        height: 100%;
+        width: 100%;
+        transform: scale(1, 1);
+        object-fit: cover;
     }
-    .order .element-down {
-        margin-top: 40rem;
+    .order .pre {
+        font-size: 11vw;
+        margin-top: 15rem;
+    }
+    .order .pre-btn {
+        font-size: 1.5rem;
+        width: 30%;
+        margin-bottom: 3rem;
     }
 }

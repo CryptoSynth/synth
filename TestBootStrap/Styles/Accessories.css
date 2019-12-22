@@ -7,6 +7,9 @@ body,
 html {
     font-family: "Noto Sans SC", sans-serif;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    height: 100vh;
+    background-image: linear-gradient(135deg, #e2b0ff 10%, #9f44d3 100%);
 }
 
 .scroll-snap-y {
@@ -27,90 +30,39 @@ html {
     box-shadow: none !important;
 }
 
-.back-to-top {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    display: none;
-}
 
-
-/* ---------------------------------------------------
-   Product Picture Header
------------------------------------------------------ */
-
-.landing-picture {
-    height: 100vh;
-}
-
-.landing-picture .accessories-image {
-    position: fixed;
-    z-index: -1;
-    background-repeat: no-repeat;
-}
-
-.landing-picture .image-adjust {
-    width: 100%;
-}
-
-.landing-picture h1 {
-    font-size: 4rem;
-    text-align: center;
-    line-height: 4.5rem;
-    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.6);
-    margin: 0;
-    word-spacing: 2rem;
-}
-
-.landing-picture .scroll-down {
-    text-decoration: none;
-    font-size: 1.5rem;
-    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.6);
-    color: white !important;
-}
-
-
-/* ---------------------------------------------------
+/*------------------------------------------------
    Product Accessories
 ----------------------------------------------------- */
 
 .accessories {
     height: 100%;
-    background-image: linear-gradient(135deg, #feb692 10%, #ea5455 100%);
+    padding: 4rem 0rem 0rem 0rem;
 }
 
-.accessories h1 {
-    text-align: center;
-    background-color: lightyellow;
-    color: black;
-    padding: 0.5rem 1rem;
-    box-shadow: 5px 5px 4px 1px rgba(0, 0, 0, 0.3);
+.col-md-5 {
+    padding: 1.5rem 1.5rem !important;
 }
 
-.accessories p {
-    text-align: justify;
+.accessories-border {
+    border-radius: 20px;
+    padding: 2.5rem 1rem;
+    background-color: #00fa9a;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    position: relative;
 }
 
 .accessories .adjust-image {
-    height: 200px;
-}
-
-hr {
-    border-top: 1.2px solid rgba(0, 0, 0, 0.6);
-    margin: 2rem 1.5rem;
+    height: 150px;
+    margin-bottom: 2.5rem;
 }
 
 .accessories .btn {
-    width: 30%;
+    width: 50%;
     background-color: black;
     color: white;
     border-radius: 20px;
     border: 0;
-}
-
-.accessories .contact-us-style a {
-    text-decoration: none;
-    color: cyan;
 }
 
 
@@ -135,19 +87,10 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 @media (max-width: 768px) {
     /* ---------------------------------------------------
-   Product Picture Header
------------------------------------------------------ */
-    .landing-picture .image-adjust {
-        width: unset;
-    }
-    .landing-picture h1 {
-        font-size: 2.5rem;
-    }
-    /* ---------------------------------------------------
    Product Accessories
 ----------------------------------------------------- */
-    .accessories h1 {
-        width: 100%;
+    .accessories {
+        height: unset;
     }
     .accessories .btn {
         width: 100%;
