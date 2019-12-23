@@ -9,7 +9,7 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     height: 100vh;
-    background-image: linear-gradient(135deg, #e2b0ff 10%, #9f44d3 100%);
+    background-image: linear-gradient( 135deg, #FF6FD8 10%, #3813C2 100%);
 }
 
 .scroll-snap-y {

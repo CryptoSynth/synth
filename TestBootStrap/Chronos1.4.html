@@ -42,13 +42,15 @@
             <ul class="navbar-nav d-flex flex-column text-center h-100">
                 <li class="nav-item active">
                     <a id="home" class="hvr-sweep-to-left" href="/Home.html">
-                        <p>Home</p>
+                        <div class="d-flex justify-content-around align-items-center">
+                            <p id="home-title">Home</p>
+                        </div>
                     </a>
                 </li>
                 <li class=" nav-item">
                     <a id="chronos-1" class="hvr-sweep-to-left" href="/Chronos1.4.html">
                         <div class="d-flex justify-content-around align-items-center">
-                            <p>Chronos-1.4
+                            <p id="chronos-1-title">Chronos-1.4
                                 <strong class="hd">HD</strong>
                             </p>
                         </div>
@@ -57,7 +59,7 @@
                 <li class=" nav-item">
                     <a id="chronos-2" class="hvr-sweep-to-left" href="/Chronos2.1.html">
                         <div class="d-flex justify-content-around align-items-center">
-                            <p>Chronos-2.1
+                            <p id="chronos-2-title">Chronos-2.1
                                 <strong class="fhd">FHD</strong>
                             </p>
                         </div>
@@ -65,19 +67,19 @@
                 </li>
                 <li class=" nav-item">
                     <a id="accessories" class="hvr-sweep-to-left" href="/Accessories.html">
-                        <p>Accessories</p>
+                        <p id="accessories-title">Accessories</p>
                     </a>
                 </li>
                 <li class="nav-item">
                     <a id="about-us" class="hvr-sweep-to-left" href="/AboutUs.html">
-                        <p>About Us</p>
+                        <p id="aboutus-title">About Us</p>
                     </a>
                 </li>
                 <li class=" nav-item">
                     <div class="hvrcenter" id=accordion>
                         <div id="resources-dropdown">
                             <a id="resources" class="hvr-sweep-to-left" href="#" data-toggle="collapse" data-target="#resource-collapse" aria-expanded="true" aria-controls="resource-collapse">
-                                <p>Resources</p>
+                                <p id="resources-title">Resources</p i>
                             </a>
                         </div>
                     </div>
@@ -85,13 +87,13 @@
                         <div class="resources-dropdown">
                             <ul class="navbar-nav">
                                 <li class="nav-item">
-                                    <a href="/Tutorial.html">
-                                        <p>Tutorials</p>
+                                    <a id="tutorials" href="/Tutorial.html">
+                                        <p id="tutorials-title">Tutorials</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="/Downloads.html">
-                                        <p>Downloads</p>
+                                    <a id="downloads" href="/Downloads.html">
+                                        <p id="downloads-title">Downloads</p>
                                     </a>
                                 </li>
                             </ul>
@@ -99,8 +101,8 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a id="about-us" class="hvr-sweep-to-left" href="/AboutUs.html">
-                        <p class="hvrcenter">Contact Us</p>
+                    <a id="contact-us" class="hvr-sweep-to-left" href="#">
+                        <p id="contact-us-title">Contact Us</p>
                     </a>
                 </li>
             </ul>
@@ -108,10 +110,10 @@
 
         <div class="mainnav">
             <!--Sidebar Menu In Page-->
-            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark p-0">
                 <!--Logo and Name-->
-                <div id="menu" class="d-flex justify-content-between w-100">
-                    <a class="navbar-brand d-flex" href="/Home.html">
+                <div id="menu" class="d-flex justify-content-between align-items-center w-100 h-100 p-2">
+                    <a href="/Home.html" class="img-brand">
                         <img src="/Images/Master_Logo.png" class="w-25" alt="">
                     </a>
 
@@ -122,31 +124,43 @@
                         </span>
                     </button>
                 </div>
+                <div class="d-flex justify-content-center align-items-center w-100 h-100 position-absolute title-mainnav">
+                    <h3 class="text-white text-center text-uppercase m-0">Chronos 1.4-HD</h3>
+
+                </div>
             </nav>
 
             <!--Dark Overlay-->
-            <div class="overlay"></div>
+            <div class="overlay">
+                <div class="d-flex justify-content-center align-items-center h-100 w-100 position-absolute">
+                    <h1 id="title-hover" class="text-white display-1"></h1>
+                </div>
+            </div>
         </div>
     </header>
     <!--End Main Menu Navagation-->
 
+    <!--Start Particle Background-->
+    <div id="id"></div>
+    <!--End Particle Background-->
+
     <!--Start Landing Page Section-->
     <section class="landingpage scroll-start">
-        <a class="d-flex flex-column justify-content-center align-items-center" href="#feature">
-            <div class="d-flex flex-column align-items-center justify-content-around h-100 w-100 position-absolute">
-                <div class="scroll-down d-flex flex-column h-100 justify-content-end align-content-center align-items-center mb-3 animated bounce">
-                    <a class="d-flex flex-column justify-content-center align-items-center hvr-grow" href="#feature">
-                        <p class="m-1">Scroll Down</p>
-                        <i class="fa fa-chevron-down"></i>
-                    </a>
-                </div>
-
+        <div class="d-flex flex-column justify-content-around align-items-center h-100 w-100">
+            <div class="white-frame d-flex align-self-center">
+                <video class="vid1" autoplay playsinline loop muted>
+                        <source src="video/Chronos_1.4-HD.mp4">
+                    </video>
             </div>
-        </a>
-        <!--Video-->
-        <video class="vid1" autoplay="autoplay" playsinline="playsinline" loop="loop" muted="muted">
-                    <source src="video/Chronos_1.4-HD.mp4" />
-                </video>
+            <div class="d-flex justify-content-around align-items-center h-100 w-100 position-absolute">
+                <a href="#feature" class="hvr-grow align-self-end scroll-down">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <p class="m-0">Scroll Down</p>
+                        <i class="fa fa-chevron-down p-2"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
     </section>
     <!--End Landing Page Section-->
 
@@ -205,7 +219,7 @@
                             <td>$65,000</td>
                         </tr>
                         <tr>
-                            <td>1280 x 1024 pixels</td>
+                            <td>720p (1280 x 1024)</td>
                             <th class="shadow-column" scope="row">Max Resolution</th>
                             <td><i class="fa fa-times"></i></td>
                         </tr>
@@ -413,6 +427,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
     <script src="Scripts/buttonLoader.js "></script>
     <script src="Scripts/SideMenu.js "></script>
+    <script src="Scripts/particles-background.js "></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
     <script src="https://github.com/FortAwesome/Font-Awesome/blob/master/js/all.js "></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>

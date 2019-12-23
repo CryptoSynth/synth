@@ -1,20 +1,24 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
 
 /*------------------------------------------------------
-    Html/Body Section  
+    Html/Body Section
 --------------------------------------------------------*/
 
 body,
 html {
     font-family: "Noto Sans SC", sans-serif !important;
-    overflow-x: hidden;
-    height: 100%;
     margin: 0;
     padding: 0;
-    background-color: plum;
-    background-image: linear-gradient( 30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient( 150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient( 30deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient( 150deg, #445 12%, transparent 12.5%, transparent 87%, #445 87.5%, #445), linear-gradient( 60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a), linear-gradient( 60deg, #99a 25%, transparent 25.5%, transparent 75%, #99a 75%, #99a);
-    background-size: 80px 140px;
-    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+    position: relative;
+    -ms-scroll-snap-type: proximity;
+    scroll-snap-type: proximity;
+    -ms-scroll-snap: y proximity;
+    scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+}
+
+.scroll-start {
+    scroll-snap-align: start;
 }
 
 *:focus {
@@ -28,7 +32,8 @@ html {
 ----------------------------------------------------- */
 
 .vid-about {
-    height: 100%;
+    height: 100vh;
+    padding: 5rem 0rem 0rem 0rem;
 }
 
 .vid-about .white-frame {
@@ -45,8 +50,9 @@ html {
 
 .vid-about i {
     font-size: 2rem;
-    color: white;
+    color: black;
     padding: 1rem;
+    text-shadow: 0px 0px 5px rgb(0, 0, 0, 0.7);
 }
 
 .vid-about .title {
@@ -61,26 +67,37 @@ html {
     Staff Page Sizing
 ----------------------------------------------------- */
 
-.staff-about {
-    margin-top: 2rem;
-    height: auto;
+.collapsed-bio {
+    margin: 5rem 0rem 1rem 0rem;
+}
+
+.collapsed-bio .special-p {
+    font-size: 3.5vh;
+}
+
+.staff-about .card {
+    background-color: rgba(0, 0, 0, 0) !important;
+    border: none;
+    padding: 1.5rem 0rem;
 }
 
 .staff-about .banner-dep {
     color: black;
-    background-color: white;
+    border: 2px solid black;
     border-radius: 10px;
-    margin-left: 2rem;
+    padding: 1rem 1rem;
+    font-size: 2vw;
+    width: 35%;
 }
 
-.staff-about .hr-width {
-    margin: 0rem 3.5rem;
-    border: 1.5px solid white;
+.staff-about .banner-dep:hover {
+    color: white;
+    background-color: black;
 }
 
 .staff-about .row {
-    padding: 0;
     width: 100%;
+    margin-top: 5rem;
 }
 
 .staff-about .bio {
@@ -91,11 +108,6 @@ html {
 
 .staff-about .special-one {
     font-size: 0.65rem;
-}
-
-.staff-about a {
-    text-decoration: none;
-    color: skyblue;
 }
 
 
@@ -304,8 +316,8 @@ html {
 
 .flip-card {
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 310px;
+    height: 310px;
     perspective: 1000px;
     /* Remove this if you don't want the 3D effect */
 }
@@ -383,10 +395,10 @@ Extra (xl) large devices (large desktops, 1200px and up)
     Video About-Us
 ----------------------------------------------------- */
     .vid-about .white-frame {
-        border: 5px solid white;
-        margin: 0rem .4rem;
+        border: 1.5px solid white;
+        margin: 0rem 0.2rem;
         width: auto;
-        height: 55%;
+        height: 50%;
         box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.3);
     }
     .vid-about .about-us {
@@ -394,13 +406,55 @@ Extra (xl) large devices (large desktops, 1200px and up)
         object-fit: cover;
     }
     /* ---------------------------------------------------
-    Staff Page Sizing
+    Staff Page
 ----------------------------------------------------- */
-    .staff-about .row {
-        padding: 1.5rem 0rem;
-        width: unset;
-    }
     .staff-about .banner-dep {
-        margin-left: 0rem;
+        padding: 1rem 2rem;
+        font-size: 7vw;
+        width: 100%;
+        margin: 0rem 0.5rem;
+    }
+    .staff-about .col-12 {
+        padding: 1rem 0rem;
+    }
+}
+
+
+/* ---------------------------------------------------
+    Particles Background
+----------------------------------------------------- */
+
+#id {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    overflow-x: hidden;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+    background-image: linear-gradient( 135deg, #FF6FD8 10%, #3813C2 100%);
+    border-radius: 20%;
+    opacity: 0;
+    animation: particles 2s linear infinite;
+}
+
+@keyframes particles {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: .8;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-200%);
     }
 }

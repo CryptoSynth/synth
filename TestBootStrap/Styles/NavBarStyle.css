@@ -20,6 +20,14 @@
     font-size: 1.5rem;
 }
 
+.title-mainnav {
+    z-index: -1;
+}
+
+.hamburger {
+    line-height: 0 !important;
+}
+
 
 /* ---------------------------------------------------
     SIDEBAR MAIN STYLE
