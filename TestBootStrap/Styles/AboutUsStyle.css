@@ -9,12 +9,12 @@ html {
     font-family: "Noto Sans SC", sans-serif !important;
     margin: 0;
     padding: 0;
-    position: relative;
-    -ms-scroll-snap-type: proximity;
-    scroll-snap-type: proximity;
-    -ms-scroll-snap: y proximity;
-    scroll-snap-type: y proximity;
+    -ms-scroll-snap-type: mandatory;
+    scroll-snap-type: mandatory;
+    -ms-scroll-snap: y mandatory;
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
+    background-image: linear-gradient(135deg, #ffe985 10%, #fa742b 100%);
 }
 
 .scroll-start {
@@ -67,307 +67,81 @@ html {
     Staff Page Sizing
 ----------------------------------------------------- */
 
-.collapsed-bio {
-    margin: 5rem 0rem 1rem 0rem;
+.staff-about {
+    height: 100vh;
 }
 
-.collapsed-bio .special-p {
-    font-size: 3.5vh;
+.staff-about .title-section {
+    text-transform: uppercase;
+    background-color: black;
+    box-shadow: 5px 0px 5px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2vw;
+    padding: 1.5rem 2rem;
+}
+
+.staff-about .name-title {
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.3rem 1rem;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+.staff-about .job-title {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.staff-about .carousel {
+    height: 100%;
+    width: 45%;
+}
+
+.staff-about .carousel-inner {
+    height: 100%;
+    width: 100%;
+}
+
+.staff-about .carousel-item {
+    height: 100%;
+    padding: 4rem 0rem;
+}
+
+.staff-about i {
+    color: white;
+    font-size: 2.5rem;
 }
 
 .staff-about .card {
-    background-color: rgba(0, 0, 0, 0) !important;
+    width: 70%;
+    height: 100%;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     border: none;
-    padding: 1.5rem 0rem;
 }
 
-.staff-about .banner-dep {
-    color: black;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 1rem 1rem;
-    font-size: 2vw;
-    width: 35%;
-}
-
-.staff-about .banner-dep:hover {
-    color: white;
-    background-color: black;
-}
-
-.staff-about .row {
-    width: 100%;
-    margin-top: 5rem;
-}
-
-.staff-about .bio {
-    padding: 0rem 1rem 0rem 1rem;
-    margin: 0;
-    font-size: 0.8rem;
-}
-
-.staff-about .special-one {
+.staff-about .card-body p {
     font-size: 0.65rem;
+    text-align: justify;
+    padding: 0.3rem;
 }
 
-
-/* ---------------------------------------------------
-    Engineer Section
------------------------------------------------------ */
-
-.staff-about .eng-1 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Images/Staff/Engineers/stefany.jpg);
+.staff-about .card-body .p-shrink {
+    font-size: 0.6rem;
 }
 
-.staff-about .eng-2 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Images/Staff/Engineers/simon.jpg);
+.staff-about .card-body a {
+    text-decoration: none;
+    color: lightskyblue;
 }
 
-.staff-about .eng-3 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Images/Staff/Engineers/nicholas.jpg);
+.staff-about .carousel-indicators {
+    margin: 0;
 }
 
-.staff-about .eng-4 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Images/Staff/Engineers/owen.jpg);
-}
-
-.staff-about .eng-5 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Images/Staff/Engineers/kurt.jpg);
-}
-
-.staff-about .eng-6 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Images/Staff/Engineers/ken.jpg);
-}
-
-.staff-about .eng-7 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Images/Staff/Engineers/david.jpg);
-}
-
-.staff-about .eng-8 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Images/Staff/Engineers/sanjay.jpg);
-}
-
-.staff-about .eng-9 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Images/Staff/Engineers/daniel.jpg);
-}
-
-.staff-about .eng-10 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Images/Staff/Engineers/pierre.jpg);
-}
-
-
-/* ---------------------------------------------------
-    Operations Section
------------------------------------------------------ */
-
-.staff-about .op-1 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Images/Staff/Operations/tabatha.jpg);
-}
-
-.staff-about .op-2 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Images/Staff/Operations/alex.jpg);
-}
-
-
-/* ---------------------------------------------------
-    Production Section
------------------------------------------------------ */
-
-.staff-about .pro-1 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Images/Staff/Production/ryan.jpg);
-}
-
-.staff-about .pro-2 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Images/Staff/Production/eli.jpg);
-}
-
-.staff-about .pro-3 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Images/Staff/Production/alex.jpg);
-}
-
-
-/* ---------------------------------------------------
-    Supply Chain
------------------------------------------------------ */
-
-.staff-about .supply-1 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Images/Staff/Supply-Chain/chris.jpg);
-}
-
-.staff-about .supply-2 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Images/Staff/Supply-Chain/kassidy.jpg);
-}
-
-
-/* ---------------------------------------------------
-    Sales and Marketing
------------------------------------------------------ */
-
-.staff-about .sales-1 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Images/Staff/Sales-and-Marketing/thomas.jpg);
-}
-
-.staff-about .sales-2 {
-    background-repeat: no-repeat;
-    background-size: contain;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(/Images/Staff/Sales-and-Marketing/michael.jpg);
-}
-
-
-/* ---------------------------------------------------
-    Flip-Card Template
------------------------------------------------------ */
-
-
-/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-
-.flip-card {
-    background-color: transparent;
-    width: 310px;
-    height: 310px;
-    perspective: 1000px;
-    /* Remove this if you don't want the 3D effect */
-}
-
-
-/* This container is needed to position the front and back side */
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
-}
-
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-
-.flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-}
-
-
-/* Position the front and back side */
-
-.flip-card-front,
-.flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-}
-
-
-/* Style the front side (fallback if image is missing) */
-
-.flip-card-front {
-    background-color: #bbb;
-    color: black;
-}
-
-
-/* Style the back side */
-
-.flip-card-back {
-    background-color: white;
-    color: black;
-    transform: rotateY(180deg);
+.staff-about .carousel-indicators li {
+    background-color: black;
 }
 
 
@@ -390,6 +164,38 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 =============*/
 
+@media (max-width: 768px) {
+    /* ---------------------------------------------------
+   Staff Page
+----------------------------------------------------- */
+    .staff-about .carousel {
+        width: 70%;
+    }
+    .staff-about .card {
+        width: 70%;
+    }
+    .staff-about .card-body {
+        font-size: 0.7rem;
+        padding: 0.5rem 0.5rem;
+        text-align: justify;
+    }
+    .staff-about i {
+        color: white;
+        font-size: 1.5rem;
+    }
+    .staff-about .carousel-indicators {
+        padding: 0rem 1rem;
+    }
+    .staff-about .carousel-control-next,
+    .staff-about .carousel-control-prev {
+        align-items: flex-end;
+        padding-bottom: 1.5rem;
+    }
+    .staff-about .carousel-indicators li {
+        background-color: white;
+    }
+}
+
 @media (max-width: 426px) {
     /* ---------------------------------------------------
     Video About-Us
@@ -408,53 +214,21 @@ Extra (xl) large devices (large desktops, 1200px and up)
     /* ---------------------------------------------------
     Staff Page
 ----------------------------------------------------- */
-    .staff-about .banner-dep {
-        padding: 1rem 2rem;
+    .staff-about .carousel-item {
+        padding: 4rem 0rem 6rem 0rem;
+    }
+    .staff-about .title-section h1 {
         font-size: 7vw;
+        margin-bottom: 0;
+    }
+    .staff-about .title-section i {
+        font-size: 7vw;
+        margin-bottom: 0;
+    }
+    .staff-about .carousel {
         width: 100%;
-        margin: 0rem 0.5rem;
     }
-    .staff-about .col-12 {
-        padding: 1rem 0rem;
-    }
-}
-
-
-/* ---------------------------------------------------
-    Particles Background
------------------------------------------------------ */
-
-#id {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    overflow-x: hidden;
-    z-index: -1;
-}
-
-.particle {
-    position: absolute;
-    background-image: linear-gradient( 135deg, #FF6FD8 10%, #3813C2 100%);
-    border-radius: 20%;
-    opacity: 0;
-    animation: particles 2s linear infinite;
-}
-
-@keyframes particles {
-    0% {
-        opacity: 0;
-    }
-    40% {
-        opacity: .8;
-        transform: translateY(0%);
-    }
-    100% {
-        opacity: 0;
-        transform: translateY(-200%);
+    .staff-about .card {
+        width: 90%;
     }
 }
