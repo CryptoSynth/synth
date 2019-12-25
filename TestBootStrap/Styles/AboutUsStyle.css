@@ -14,7 +14,7 @@ html {
     -ms-scroll-snap: y mandatory;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-    background-image: linear-gradient(135deg, #ffe985 10%, #fa742b 100%);
+    background-color: #bcfdff;
 }
 
 .scroll-start {
