@@ -96,17 +96,17 @@ html {
 
 .staff-about .carousel {
     height: 100%;
-    width: 45%;
+    width: 100%;
 }
 
 .staff-about .carousel-inner {
     height: 100%;
-    width: 100%;
 }
 
 .staff-about .carousel-item {
     height: 100%;
-    padding: 4rem 0rem;
+    width: 100%;
+    margin: auto auto;
 }
 
 .staff-about i {
@@ -115,10 +115,11 @@ html {
 }
 
 .staff-about .card {
-    width: 70%;
+    width: 30%;
     height: 100%;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     border: none;
+    margin: 4rem 0rem;
 }
 
 .staff-about .card-body p {
@@ -164,7 +165,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 =============*/
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     /* ---------------------------------------------------
    Staff Page
 ----------------------------------------------------- */
@@ -190,6 +191,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .staff-about .carousel-control-prev {
         align-items: flex-end;
         padding-bottom: 1.5rem;
+        z-index: 0;
     }
     .staff-about .carousel-indicators li {
         background-color: white;
