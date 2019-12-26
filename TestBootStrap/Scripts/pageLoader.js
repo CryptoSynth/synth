@@ -1,10 +1,10 @@
-var loadTime;
+$(window).on("load", function() {
+    setTimeout(removeLoader); //wait for page load PLUS two seconds.
+});
 
-function pageLoader() {
-    loadTime = setTimeout(showPage, 2500);
-}
-
-function showPage() {
-    document.getElementById("loader-background").style.display = "none";
-    document.getElementById("preload-target").style.display = "block";
+function removeLoader() {
+    $("#loader-background").fadeOut(500, function() {
+        // fadeOut complete. Remove the loading div
+        $("#loader-background").remove(); //makes page more lightweight
+    });
 }

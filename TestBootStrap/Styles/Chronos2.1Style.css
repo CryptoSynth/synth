@@ -6,10 +6,10 @@
 body,
 html {
     font-family: "Noto Sans SC", sans-serif;
-    -ms-scroll-snap-type: proximity;
-    scroll-snap-type: proximity;
-    -ms-scroll-snap: y proximity;
-    scroll-snap-type: y proximity;
+    -ms-scroll-snap-type: mandatory;
+    scroll-snap-type: mandatory;
+    -ms-scroll-snap: y mandatory;
+    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     background-repeat: no-repeat;
 }

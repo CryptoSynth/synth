@@ -8,6 +8,10 @@ body,
 html {
     font-family: "Noto Sans SC", sans-serif;
     overflow-x: hidden;
+    -ms-scroll-snap-type: mandatory;
+    scroll-snap-type: mandatory;
+    -ms-scroll-snap: y mandatory;
+    scroll-snap-type: y mandatory;
     height: 100vh;
 }
 
