@@ -121,6 +121,7 @@ html {
     width: 100%;
     position: absolute;
     text-align: center;
+    margin: 0;
 }
 
 .staff-about .card {
