@@ -9,8 +9,6 @@ html {
     font-family: "Noto Sans SC", sans-serif !important;
     margin: 0;
     padding: 0;
-    -ms-scroll-snap-type: mandatory;
-    scroll-snap-type: mandatory;
     -ms-scroll-snap: y mandatory;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
@@ -69,7 +67,7 @@ html {
 ----------------------------------------------------- */
 
 .staff-about {
-    height: 100vh;
+    height: 100%;
 }
 
 .staff-about .title-section {
@@ -91,7 +89,7 @@ html {
 }
 
 .staff-about .job-title {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin: 0;
 }
 
@@ -107,7 +105,6 @@ html {
 .staff-about .carousel-item {
     height: 100%;
     width: 100%;
-    margin: auto auto;
 }
 
 .staff-about i {
@@ -117,14 +114,17 @@ html {
 
 .staff-about .card {
     width: 30%;
-    height: 100%;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     border: none;
-    margin: 4rem 0rem;
+    margin: 0rem 0rem;
+}
+
+.staff-about .card-body {
+    padding: 0.5rem;
 }
 
 .staff-about .card-body p {
-    font-size: 0.65rem;
+    font-size: 1.65vh;
     text-align: justify;
     padding: 0.3rem;
 }
@@ -166,40 +166,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 =============*/
 
-@media (max-width: 767px) {
-    /* ---------------------------------------------------
-   Staff Page
------------------------------------------------------ */
-    .staff-about .carousel {
-        width: 70%;
-    }
-    .staff-about .card {
-        width: 70%;
-    }
-    .staff-about .card-body {
-        font-size: 0.7rem;
-        padding: 0.5rem 0.5rem;
-        text-align: justify;
-    }
-    .staff-about i {
-        color: white;
-        font-size: 1.5rem;
-    }
-    .staff-about .carousel-indicators {
-        padding: 0rem 1rem;
-    }
-    .staff-about .carousel-control-next,
-    .staff-about .carousel-control-prev {
-        align-items: flex-end;
-        padding-bottom: 1.5rem;
-        z-index: 0;
-    }
-    .staff-about .carousel-indicators li {
-        background-color: white;
-    }
-}
-
-@media (max-width: 426px) {
+@media (max-width: 768px) {
     /* ---------------------------------------------------
     Video About-Us
 ----------------------------------------------------- */
@@ -217,8 +184,8 @@ Extra (xl) large devices (large desktops, 1200px and up)
     /* ---------------------------------------------------
     Staff Page
 ----------------------------------------------------- */
-    .staff-about .carousel-item {
-        padding: 4rem 0rem 6rem 0rem;
+    .staff-about .title-section {
+        padding: .5rem 1rem;
     }
     .staff-about .title-section h1 {
         font-size: 7vw;
@@ -233,5 +200,12 @@ Extra (xl) large devices (large desktops, 1200px and up)
     }
     .staff-about .card {
         width: 90%;
+    }
+    .staff-about .carousel-control-next,
+    .staff-about .carousel-control-prev {
+        z-index: 0;
+    }
+    .staff-about .carousel-indicators li {
+        background-color: white;
     }
 }
