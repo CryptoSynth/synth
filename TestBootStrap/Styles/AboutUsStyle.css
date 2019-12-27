@@ -108,6 +108,11 @@ html {
     width: 100%;
 }
 
+.staff-about .carousel-control-next,
+.staff-about .carousel-control-prev {
+    z-index: 0;
+}
+
 .staff-about i {
     color: black;
     font-size: 2.5rem;
@@ -218,7 +223,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
     }
     .staff-about .carousel-control-next,
     .staff-about .carousel-control-prev {
-        z-index: 0;
         width: 16%;
     }
     .staff-about .carousel-indicators li {

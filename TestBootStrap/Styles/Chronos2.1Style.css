@@ -6,12 +6,11 @@
 body,
 html {
     font-family: "Noto Sans SC", sans-serif;
-    -ms-scroll-snap-type: mandatory;
-    scroll-snap-type: mandatory;
     -ms-scroll-snap: y mandatory;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     background-repeat: no-repeat;
+    height: 100%;
 }
 
 .scroll-start {

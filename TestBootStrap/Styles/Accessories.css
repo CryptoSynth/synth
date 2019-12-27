@@ -7,22 +7,9 @@ body,
 html {
     font-family: "Noto Sans SC", sans-serif;
     scroll-behavior: smooth;
-    overflow-x: hidden;
-    height: 100vh;
-    background-image: linear-gradient( 135deg, #FF6FD8 10%, #3813C2 100%);
-}
-
-.scroll-snap-y {
-    overflow-x: hidden;
-    -ms-scroll-snap-type: mandatory;
-    scroll-snap-type: mandatory;
-    -ms-scroll-snap: y mandatory;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-}
-
-.scroll-start {
-    scroll-snap-align: start;
+    height: 100%;
+    background-image: linear-gradient(135deg, #ff6fd8 10%, #3813c2 100%);
+    overflow-y: hidden;
 }
 
 *:focus {
@@ -37,7 +24,7 @@ html {
 
 .accessories {
     height: 100%;
-    padding: 4rem 0rem 0rem 0rem;
+    padding: 3.5rem 0rem 0rem 0rem;
 }
 
 .col-md-5 {

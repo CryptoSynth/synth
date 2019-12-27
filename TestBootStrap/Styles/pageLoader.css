@@ -11,7 +11,7 @@
     position: absolute;
     flex-direction: column;
     align-items: center;
-    z-index: 900;
+    z-index: 1;
 }
 
 #loader-line-1 {
