@@ -91,6 +91,7 @@ html {
 .staff-about .job-title {
     font-size: 0.8rem;
     margin: 0;
+    text-align: center;
 }
 
 .staff-about .carousel {
@@ -108,15 +109,24 @@ html {
 }
 
 .staff-about i {
-    color: white;
+    color: black;
     font-size: 2.5rem;
 }
 
+.staff-about .badge-title {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+
 .staff-about .card {
-    width: 30%;
+    width: 25%;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     border: none;
-    margin: 0rem 0rem;
 }
 
 .staff-about .card-body {
@@ -185,7 +195,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
     Staff Page
 ----------------------------------------------------- */
     .staff-about .title-section {
-        padding: .5rem 1rem;
+        padding: 0.5rem 1rem;
     }
     .staff-about .title-section h1 {
         font-size: 7vw;
@@ -201,11 +211,16 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .staff-about .card {
         width: 90%;
     }
+    .staff-about i {
+        color: black;
+        font-size: 2.5rem;
+    }
     .staff-about .carousel-control-next,
     .staff-about .carousel-control-prev {
         z-index: 0;
+        width: 16%;
     }
     .staff-about .carousel-indicators li {
-        background-color: white;
+        background-color: black;
     }
 }
