@@ -11,7 +11,7 @@
 
 .mainnav .navbar {
     background-color: rgba(0, 0, 0, 0.5) !important;
-    z-index: 1;
+    z-index: 2;
     font-family: "Noto Sans SC", sans-serif;
 }
 
@@ -26,6 +26,10 @@
 
 .hamburger {
     line-height: 0 !important;
+}
+
+#title-hover {
+    font-size: 8vw;
 }
 
 

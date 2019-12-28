@@ -7,13 +7,11 @@
 body,
 html {
     font-family: "Noto Sans SC", sans-serif !important;
-    margin: 0;
-    padding: 0;
     -ms-scroll-snap: y mandatory;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     background-color: #bcfdff;
-    height: 100%;
+    transition: background-color linear 1s;
 }
 
 .scroll-start {
@@ -33,7 +31,6 @@ html {
 .vid-about {
     height: 100vh;
     padding: 5rem 0rem 0rem 0rem;
-    background-color: white;
 }
 
 .vid-about .white-frame {
@@ -68,19 +65,62 @@ html {
 ----------------------------------------------------- */
 
 .ceo {
-    height: 100%;
+    height: 100vh;
+    padding: 0rem 4rem;
 }
 
-.ceo-title {
+.ceo .ceo-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
     color: white;
-    padding: .5rem 1rem;
-    margin: 2rem 2rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.ceo .ceo-card .img {
+    padding: 0rem;
+}
+
+.ceo .ceo-card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.ceo .ceo-title {
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 4vh;
+    margin: 0rem 0rem 2rem 0rem;
     border: 2px solid white;
     border-radius: 10px;
+    z-index: 1;
+    text-align: center;
+    width: 50%;
 }
 
-.ceo .waves-fill {
-    background-color: white;
+.ceo .ceo-card .bio {
+    font-size: 2vh;
+    padding: 1rem !important;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.wave-fill-hidden {
+    stroke: none;
+    fill: url(#MyGradient);
+    opacity: 0;
+    transition: ease-out 1s;
+}
+
+.wave-fill-seen {
+    opacity: 1;
+    fill: url(#MyGradient);
+    transition: ease-in 1s;
+}
+
+#wave-path {
+    z-index: 0;
 }
 
 
@@ -89,7 +129,24 @@ html {
 ----------------------------------------------------- */
 
 .staff-about {
-    height: 100%;
+    height: 100vh;
+}
+
+.wave-fill-hidden-2 {
+    stroke: none;
+    fill: url(#MyGradient-2);
+    opacity: 0;
+    transition: ease-out 1s;
+}
+
+.wave-fill-seen-2 {
+    opacity: 1;
+    fill: url(#MyGradient-2);
+    transition: ease-in 1s;
+}
+
+#wave-path-2 {
+    z-index: 0;
 }
 
 .staff-about .title-section {
@@ -106,14 +163,16 @@ html {
     margin: 0;
     padding: 0.3rem 1rem;
     border-radius: 10px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
+    font-weight: bolder;
 }
 
 .staff-about .job-title {
     font-size: 0.8rem;
     margin: 0;
     text-align: center;
+    color: white;
 }
 
 .staff-about .carousel {
@@ -154,7 +213,11 @@ html {
 .staff-about .card {
     width: 25%;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
     border: none;
+    background-color: black;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .staff-about .card-body {
@@ -165,6 +228,7 @@ html {
     font-size: 1.65vh;
     text-align: justify;
     padding: 0.3rem;
+    color: white;
 }
 
 .staff-about .card-body .p-shrink {
@@ -182,6 +246,39 @@ html {
 
 .staff-about .carousel-indicators li {
     background-color: black;
+}
+
+
+/* ---------------------------------------------------
+    Staff Section Colors
+----------------------------------------------------- */
+
+.color-vid {
+    background-color: #bcfdff;
+}
+
+.color-ceo {
+    background-color: white;
+}
+
+.color-engineer {
+    background-color: white;
+}
+
+.color-operations {
+    background-color: lightgreen;
+}
+
+.color-production {
+    background-color: yellow;
+}
+
+.color-supply {
+    background-color: plum;
+}
+
+.color-sales {
+    background-color: rgb(238, 64, 64);
 }
 
 
@@ -204,7 +301,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 =============*/
 
-@media (max-width: 768px) {
+@media (max-width: 425px) {
     /* ---------------------------------------------------
     Video About-Us
 ----------------------------------------------------- */
@@ -218,6 +315,31 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .vid-about .about-us {
         width: 100%;
         object-fit: cover;
+    }
+    /* ---------------------------------------------------
+    Ceo Section
+----------------------------------------------------- */
+    .ceo {
+        height: 100vh;
+        padding: 0rem 1rem;
+    }
+    .row {
+        height: 100%;
+    }
+    .ceo .ceo-card .bio {
+        font-size: 1.5vh;
+        margin: 0 !important;
+        padding-top: 0rem;
+        height: 100%;
+        line-height: 1rem;
+        padding: 1rem !important;
+    }
+    .ceo .ceo-title {
+        font-size: 3vh;
+        padding: 0.5rem 1rem;
+        margin: 0.5rem 0rem;
+        width: 100%;
+        text-align: center;
     }
     /* ---------------------------------------------------
     Staff Section
@@ -240,12 +362,12 @@ Extra (xl) large devices (large desktops, 1200px and up)
         width: 90%;
     }
     .staff-about i {
-        color: black;
+        color: white;
         font-size: 2.5rem;
     }
     .staff-about .carousel-control-next,
     .staff-about .carousel-control-prev {
-        width: 16%;
+        width: 20%;
     }
     .staff-about .carousel-indicators li {
         background-color: black;

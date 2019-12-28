@@ -135,7 +135,7 @@
             <!--Dark Overlay-->
             <div class="overlay">
                 <div class="d-flex justify-content-center align-items-center h-100 w-100 position-absolute">
-                    <h1 id="title-hover" class="text-white display-1"></h1>
+                    <h1 id="title-hover" class="text-white"></h1>
                 </div>
             </div>
         </div>
@@ -143,7 +143,7 @@
     <!--End Main Menu Navagation-->
 
     <!--About Us Video-->
-    <section class="vid-about scroll-start">
+    <section class="vid-about scroll-start" data-color="vid">
         <div class="d-flex flex-column justify-content-around align-items-center h-100 w-100">
             <div class="white-frame d-flex align-self-center">
                 <video class="about-us" autoplay playsinline loop muted controls>
@@ -156,20 +156,42 @@
         </div>
     </section>
 
-    <section id="anchor-1" class="ceo scroll-start">
-        <div class="d-flex h-100 w-100 justify-content-start align-items-end position-absolute">
-            <h1 class="ceo-title">CEO</h1>
-        </div>
-        <div class="d-flex h-100 w-100 waves-fill">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M208.46,-9.76 C152.69,67.10 262.02,75.98 394.12,167.85 L0.00,150.00 L0.00,0.00 Z" style="stroke: none; fill: #8a2be2;"></path>
-            </svg>
-        </div>
+    <!--Start Ceo Section-->
+    <section id="anchor-1" class="ceo scroll-start" data-color="ceo">
+        <div class="d-flex justify-content-center align-items-center h-100 w-100">
+            <div class="row justify-content-center align-items-center">
+                <div class="d-flex flex-column flex-md-row justify-content-center align-items-center ceo-card">
+                    <div class="col-lg-5 img">
+                        <img src="Images/CEO.jpg" alt="david">
+                    </div>
+                    <div class="d-flex flex-column justify-content-between align-items-center bio p-3">
+                        <h1 class="ceo-title ">Founder & CEO</h1>
 
+                        <p class="m-0 position-bottom">David is an electronics engineer specializing in digital systems, FPGAs, and image processing. He's worked at such companies as Delta-Q Technologies, Verisante, Mistywest, and Signal Laboratories. His passion for high-speed imaging
+                            began in 2006 after seeing the cool things Mythbusters were doing. Unable to afford a high-speed camera at the time, he set out to build his own, which ultimately lead to Chronos. In his spare time, he makes science and engineering
+                            videos on his Youtube channel tesla500.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="wave-path" class="d-flex h-100 w-100 wave-fill-hidden position-absolute">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path id="path" d="M44.24,-69.96 C-52.26,364.24 251.35,-257.46 531.82,254.70 L157.67,178.71 L-164.56,139.24 Z"></path>
+                    <defs>
+                        <linearGradient id="MyGradient">
+                            <stop offset="5%" stop-color="#52E5E7" />
+                            <stop offset="90%" stop-color="#130CB7" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
     </section>
+    <!--End Ceo Section-->
 
     <!--Start Engineering Section-->
-    <section class="staff-about scroll-start">
+    <section class="staff-about scroll-start engineer" data-color="engineer">
         <div class="d-flex flex-column justify-content-center align-items-center h-100 w-100">
 
             <div id="carousel-indicator-main" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -194,7 +216,7 @@
                                     <h1 class="badge-title align-self-end">Engineers</h1>
                                 </div>
                                 <div class="card-body">
-                                    <div class="d-flex justify-content-around align-items-center">
+                                    <div class="d-flex justify-content-between align-items-center">
                                         <h3 class="name-title">Stefany</h3>
                                         <h4 class="job-title">Product Engineering Manager</h4>
                                     </div>
@@ -399,20 +421,32 @@
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carousel-indicator-main" role="button" data-slide="prev">
-                    <span><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carousel-indicator-main" role="button" data-slide="next">
-                    <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+            <div id="wave-path-2" class="d-flex h-100 w-100 wave-fill-seen-2 position-absolute">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                    <path d="M394.12,-78.84 C152.69,70.06 598.98,-4.83 197.17,264.56 L583.75,197.46 L500.00,0.00 Z"></path>
+                    <defs>
+                        <linearGradient id="MyGradient-2">
+                            <stop offset="5%" stop-color="#90F7EC" />
+                            <stop offset="95%" stop-color="#32CCBC" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
         </div>
+
     </section>
     <!--End Engineering Section-->
 
     <!--Start Operations Section-->
-    <section class="staff-about scroll-start">
+    <section class="staff-about scroll-start" data-color="operations">
         <div class="d-flex flex-column justify-content-center align-items-center h-100 w-100">
             <div id="carousel-indicator-main-2" class="carousel slide" data-ride="carousel" data-interval="false">
                 <ol class="carousel-indicators">
@@ -421,7 +455,7 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100 ">
+                        <div class="d-flex flex-column justify-content-center align-items-center h-100">
                             <div class="card">
                                 <div class="d-flex h-100 w-100">
                                     <img class="card-img-top" src="Images/Staff/Operations/tabatha.jpg" alt="tabatha">
@@ -465,11 +499,11 @@
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carousel-indicator-main-2" role="button" data-slide="prev">
-                    <span><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carousel-indicator-main-2" role="button" data-slide="next">
-                    <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
@@ -478,7 +512,7 @@
     <!--End Operations Section-->
 
     <!--Start Production Section-->
-    <section class="staff-about scroll-start">
+    <section class="staff-about scroll-start" data-color="production">
         <div class="d-flex flex-column justify-content-center align-items-center h-100 w-100">
             <div id="carousel-indicator-main-3" class="carousel slide" data-ride="carousel" data-interval="false">
                 <ol class="carousel-indicators">
@@ -545,11 +579,11 @@
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carousel-indicator-main-3" role="button" data-slide="prev">
-                    <span><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carousel-indicator-main-3" role="button" data-slide="next">
-                    <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
@@ -558,7 +592,7 @@
     <!--End Production Section-->
 
     <!--Start Supply Chain Section-->
-    <section class="staff-about scroll-start">
+    <section class="staff-about scroll-start" data-color="supply">
         <div class="d-flex flex-column justify-content-center align-items-center h-100 w-100">
             <div id="carousel-indicator-main-4" class="carousel slide" data-ride="carousel" data-interval="false">
                 <ol class="carousel-indicators">
@@ -608,11 +642,11 @@
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carousel-indicator-main-4" role="button" data-slide="prev">
-                    <span><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carousel-indicator-main-4" role="button" data-slide="next">
-                    <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
@@ -621,7 +655,7 @@
     <!--End Supply Chain Section-->
 
     <!--Start Sales and Marketing Section-->
-    <section class="staff-about scroll-start">
+    <section class="staff-about scroll-start" data-color="sales">
         <div class="d-flex flex-column justify-content-center align-items-center h-100 w-100">
             <div id="carousel-indicator-main-5" class="carousel slide" data-ride="carousel" data-interval="false">
                 <ol class="carousel-indicators">
@@ -669,24 +703,26 @@
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#carousel-indicator-main-5" role="button" data-slide="prev">
-                    <span><i class="fa fa-chevron-circle-left" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
                     <span class="sr-only">Previous</span>
                 </a>
                 <a class="carousel-control-next" href="#carousel-indicator-main-5" role="button" data-slide="next">
-                    <span><i class="fa fa-chevron-circle-right" aria-hidden="true"></i></span>
+                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
         </div>
+
     </section>
     <!--End Sales and Marketing Section-->
 
     <!--Script Source Files-->
     <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js " integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
-    <script src="Scripts/buttonLoader.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
+    <script src="Scripts/buttonLoader.js"></script>
+    <script src="Scripts/background-change.js"></script>
     <script src="Scripts/SideMenu.js"></script>
-    <script src="https://github.com/FortAwesome/Font-Awesome/blob/master/js/all.js "></script>
+    <script src="https://github.com/FortAwesome/Font-Awesome/blob/master/js/all.js"></script>
 </body>
 
 </html>
