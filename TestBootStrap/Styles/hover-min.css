@@ -2082,9 +2082,7 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    background: plum;
     border-radius: 30px;
-    margin: 0.4rem 0.5rem;
     z-index: 1;
     top: 0;
     bottom: 0;

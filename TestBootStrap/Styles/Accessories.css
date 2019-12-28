@@ -7,9 +7,7 @@ body,
 html {
     font-family: "Noto Sans SC", sans-serif;
     scroll-behavior: smooth;
-    height: 100%;
     background-image: linear-gradient(135deg, #ff6fd8 10%, #3813c2 100%);
-    overflow-y: hidden;
 }
 
 *:focus {
