@@ -14,41 +14,132 @@
     <link rel="stylesheet" href="Styles/hamburgers-min.css">
     <link rel="stylesheet" href="Styles/LeosPlayGroundStyle.css">
     <link rel="stylesheet" href="Styles/pageLoader.css" />
-    <link rel="stylesheet" type="text/css" href="Styles/loading-bar.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
     <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
 </head>
 
 <body>
+    <!--Start Main Menu Navagation-->
+    <header>
+        <!--Sidebar Menu-->
+        <!--SideBar-->
+        <nav id="sidebar">
+            <!--Exit sideBar Menu Icon-->
+            <div class="d-flex justify-content-end sidebar-header align-self-center w-100">
+                <!--Sidebar Header-->
+                <div class="align-self-end" id="dismiss">
+                    <!--Sidebar Menu Button-->
+                    <button class="btn hamburger hamburger--collapse" type="button" id="sidebarCollapse">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
 
-    <html>
+            <!--Sidebar List-->
+            <ul class="navbar-nav d-flex flex-column text-center h-100">
+                <li class="nav-item active">
+                    <a id="home" class="hvr-sweep-to-left" href="/Home.html">
+                        <div class="d-flex justify-content-around align-items-center">
+                            <p id="home-title">Home</p>
+                        </div>
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <a id="chronos-1" class="hvr-sweep-to-left" href="/Chronos1.4.html">
+                        <div class="d-flex justify-content-around align-items-center">
+                            <p id="chronos-1-title">Chronos-1.4
+                                <strong class="hd">HD</strong>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <a id="chronos-2" class="hvr-sweep-to-left" href="/Chronos2.1.html">
+                        <div class="d-flex justify-content-around align-items-center">
+                            <p id="chronos-2-title">Chronos-2.1
+                                <strong class="fhd">FHD</strong>
+                            </p>
+                        </div>
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <a id="accessories" class="hvr-sweep-to-left" href="/Accessories.html">
+                        <p id="accessories-title">Accessories</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a id="about-us" class="hvr-sweep-to-left" href="/AboutUs.html">
+                        <p id="aboutus-title">About Us</p>
+                    </a>
+                </li>
+                <li class=" nav-item">
+                    <div class="hvrcenter" id=accordion>
+                        <div id="resources-dropdown">
+                            <a id="resources" class="hvr-sweep-to-left" href="#" data-toggle="collapse" data-target="#resource-collapse" aria-expanded="true" aria-controls="resource-collapse">
+                                <p id="resources-title">Resources</p i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="resource-collapse" class="collapse" aria-labelledby="resources-dropdown" data-parent="#accordion">
+                        <div class="resources-dropdown">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a id="tutorials" href="/Tutorial.html">
+                                        <p id="tutorials-title">Tutorials</p>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a id="downloads" href="/Downloads.html">
+                                        <p id="downloads-title">Downloads</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a id="contact-us" class="hvr-sweep-to-left" href="playground.html">
+                        <p id="contact-us-title">Contact Us</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-        <title>Contact Us</title>
-        <style type="text/css">
-            html {
-                margin: 0;
-                height: 100%;
-                overflow: hidden;
-            }
-            
-            iframe {
-                position: absolute;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                top: 0;
-                border: 0;
-            }
-        </style>
-    </head>
+        <div class="mainnav">
+            <!--Sidebar Menu In Page-->
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark p-0">
+                <!--Logo and Name-->
+                <div id="menu" class="d-flex justify-content-between align-items-center w-100 h-100 p-2">
+                    <a href="/Home.html" class="img-brand">
+                        <img src="/Images/Master_Logo.png" class="w-25" alt="">
+                    </a>
 
-    <body> <iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://leonardojramirez.typeform.com/to/vtqR4Q"></iframe>
-        <script type="text/javascript" src="https://embed.typeform.com/embed.js"></script>
-    </body>
+                    <!--Sidebar Menu Button-->
+                    <button class="btn hamburger hamburger--collapse" type="button" id="sidebarCollapse">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+                <div class="d-flex justify-content-center align-items-center w-100 h-100 position-absolute title-mainnav">
+                </div>
+            </nav>
 
-    </html>
+            <!--Dark Overlay-->
+            <div class="overlay">
+                <div class="d-flex justify-content-center align-items-center h-100 w-100 position-absolute">
+                    <h1 id="title-hover" class="text-white display-1"></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--End Main Menu Navagation-->
+    <div class="d-flex justify-content-center align-items-center h-100 w-100">
+        <iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://leonardojramirez.typeform.com/to/vtqR4Q"></iframe>
+    </div>
 
     <!--Script Source Files-->
     <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
@@ -58,10 +149,10 @@
     <script src="Scripts/pageLoader.js"></script>
     <script src="Scripts/SideMenu.js "></script>
     <script src="Scripts/leos-playground.js"></script>
+    <script type="text/javascript" src="https://embed.typeform.com/embed.js"></script>
     <script src="https://github.com/FortAwesome/Font-Awesome/blob/master/js/all.js"></script>
     <script type="module " src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-
     <!--End Script Source Files-->
 </body>
 

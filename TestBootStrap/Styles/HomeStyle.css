@@ -46,12 +46,6 @@ body {
     border: 0;
 }
 
-.foot .btn:hover {
-    color: black;
-    width: 100%;
-    font-weight: bold;
-}
-
 .foot h5 {
     color: white !important;
     font-size: 1rem;
@@ -59,11 +53,7 @@ body {
 
 .foot strong {
     font-size: 1.5rem !important;
-    color: aqua;
-}
-
-.foot .spinner-style {
-    color: magenta;
+    color: lightskyblue;
 }
 
 
@@ -105,9 +95,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .foot .btn {
         background-color: white;
         color: black;
-        width: 50%;
-    }
-    .foot .btn:hover {
         width: 50%;
     }
 }

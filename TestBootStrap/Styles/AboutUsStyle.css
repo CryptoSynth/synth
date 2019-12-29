@@ -11,7 +11,7 @@ html {
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     background-color: #bcfdff;
-    transition: background-color linear 1s;
+    transition: background-color 0.5s ease-in;
 }
 
 .scroll-start {
@@ -106,23 +106,6 @@ html {
     text-align: justify;
 }
 
-.wave-fill-hidden {
-    stroke: none;
-    fill: url(#MyGradient);
-    opacity: 0;
-    transition: ease-out 1s;
-}
-
-.wave-fill-seen {
-    opacity: 1;
-    fill: url(#MyGradient);
-    transition: ease-in 1s;
-}
-
-#wave-path {
-    z-index: 0;
-}
-
 
 /* ---------------------------------------------------
     Staff Section Sizing
@@ -130,23 +113,6 @@ html {
 
 .staff-about {
     height: 100vh;
-}
-
-.wave-fill-hidden-2 {
-    stroke: none;
-    fill: url(#MyGradient-2);
-    opacity: 0;
-    transition: ease-out 1s;
-}
-
-.wave-fill-seen-2 {
-    opacity: 1;
-    fill: url(#MyGradient-2);
-    transition: ease-in 1s;
-}
-
-#wave-path-2 {
-    z-index: 0;
 }
 
 .staff-about .title-section {
@@ -191,7 +157,7 @@ html {
 
 .staff-about .carousel-control-next,
 .staff-about .carousel-control-prev {
-    z-index: 0;
+    z-index: 1;
 }
 
 .staff-about i {
@@ -246,39 +212,6 @@ html {
 
 .staff-about .carousel-indicators li {
     background-color: black;
-}
-
-
-/* ---------------------------------------------------
-    Staff Section Colors
------------------------------------------------------ */
-
-.color-vid {
-    background-color: #bcfdff;
-}
-
-.color-ceo {
-    background-color: white;
-}
-
-.color-engineer {
-    background-color: white;
-}
-
-.color-operations {
-    background-color: lightgreen;
-}
-
-.color-production {
-    background-color: yellow;
-}
-
-.color-supply {
-    background-color: plum;
-}
-
-.color-sales {
-    background-color: rgb(238, 64, 64);
 }
 
 
@@ -372,4 +305,144 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .staff-about .carousel-indicators li {
         background-color: black;
     }
+}
+
+
+/* ---------------------------------------------------
+    Wave Settings
+----------------------------------------------------- */
+
+.wave-fill-hidden {
+    stroke: none;
+    fill: url(#MyGradient);
+    opacity: 0;
+    transition: ease-out 0.5s;
+}
+
+.wave-fill-seen {
+    opacity: 1;
+    fill: url(#MyGradient);
+    transition: ease-in 1s;
+}
+
+#wave-path {
+    z-index: 0;
+}
+
+.wave-fill-hidden-2 {
+    stroke: none;
+    fill: white;
+    opacity: 0;
+    transition: ease-out 0.5s;
+}
+
+.wave-fill-seen-2 {
+    opacity: 1;
+    fill: white;
+    transition: ease-in 0.5s;
+}
+
+#wave-path-2 {
+    z-index: 0;
+}
+
+.wave-fill-hidden-3 {
+    stroke: none;
+    fill: white;
+    opacity: 0;
+    transition: ease-out 0.5s;
+}
+
+.wave-fill-seen-3 {
+    opacity: 1;
+    fill: white;
+    transition: ease-in 0.5s;
+}
+
+#wave-path-3 {
+    z-index: 0;
+}
+
+.wave-fill-hidden-4 {
+    stroke: none;
+    fill: white;
+    opacity: 0;
+    transition: ease-out 0.5s;
+}
+
+.wave-fill-seen-4 {
+    opacity: 1;
+    fill: white;
+    transition: ease-in 0.5s;
+}
+
+#wave-path-4 {
+    z-index: 0;
+}
+
+.wave-fill-hidden-5 {
+    stroke: none;
+    fill: white;
+    opacity: 0;
+    transition: ease-out 0.5s;
+}
+
+.wave-fill-seen-5 {
+    opacity: 1;
+    fill: white;
+    transition: ease-in 0.5s;
+}
+
+#wave-path-5 {
+    z-index: 0;
+}
+
+.wave-fill-hidden-6 {
+    stroke: none;
+    fill: white;
+    opacity: 0;
+    transition: ease-out 0.5s;
+}
+
+.wave-fill-seen-6 {
+    opacity: 1;
+    fill: white;
+    transition: ease-in 0.5s;
+}
+
+#wave-path-6 {
+    z-index: 0;
+}
+
+
+/* ---------------------------------------------------
+    Section Color Settings
+----------------------------------------------------- */
+
+.color-vid {
+    background-color: #bcfdff;
+}
+
+.color-ceo {
+    background-color: white;
+}
+
+.color-engineer {
+    background-color: lightgreen;
+}
+
+.color-operations {
+    background-color: yellow;
+}
+
+.color-production {
+    background-color: salmon;
+}
+
+.color-supply {
+    background-color: #ffa100;
+}
+
+.color-sales {
+    background-color: rgb(238, 64, 64);
 }

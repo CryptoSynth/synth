@@ -2,12 +2,14 @@ $(window).scroll(function() {
     // selectors
     var $window = $(window),
         $body = $("body"),
-        $panel = $(".staff-about, .vid-about, .ceo");
+        $sections = $(
+            ".ceo, .vid-about, .engineer, .operations, .production, .supply, .sales"
+        );
 
     // Change 33% earlier than scroll position so colour is there when you arrive.
-    var scroll = $window.scrollTop() + $window.height() / 3;
+    var scroll = $window.scrollTop() + $window.height() / 5;
 
-    $panel.each(function() {
+    $sections.each(function() {
         var $this = $(this);
         // if position is within range of this panel.
         // So position of (position of top of div <= scroll position) && (position of bottom of div > scroll position).
@@ -52,6 +54,62 @@ $(window).scroll(function() {
         } else {
             $("#wave-path-2").addClass("wave-fill-hidden-2");
             $("#wave-path-2").removeClass("wave-fill-seen-2");
+        }
+    });
+
+    $(".operations").each(function() {
+        if (
+            $(this).position().top <= scroll &&
+            $(this).position().top + $(this).height() > scroll
+        ) {
+            //fade in wave
+            $("#wave-path-3").removeClass("wave-fill-hidden-3");
+            $("#wave-path-3").addClass("wave-fill-seen-3");
+        } else {
+            $("#wave-path-3").addClass("wave-fill-hidden-3");
+            $("#wave-path-3").removeClass("wave-fill-seen-3");
+        }
+    });
+
+    $(".production").each(function() {
+        if (
+            $(this).position().top <= scroll &&
+            $(this).position().top + $(this).height() > scroll
+        ) {
+            //fade in wave
+            $("#wave-path-4").removeClass("wave-fill-hidden-4");
+            $("#wave-path-4").addClass("wave-fill-seen-4");
+        } else {
+            $("#wave-path-4").addClass("wave-fill-hidden-4");
+            $("#wave-path-4").removeClass("wave-fill-seen-4");
+        }
+    });
+
+    $(".supply").each(function() {
+        if (
+            $(this).position().top <= scroll &&
+            $(this).position().top + $(this).height() > scroll
+        ) {
+            //fade in wave
+            $("#wave-path-5").removeClass("wave-fill-hidden-5");
+            $("#wave-path-5").addClass("wave-fill-seen-5");
+        } else {
+            $("#wave-path-5").addClass("wave-fill-hidden-5");
+            $("#wave-path-5").removeClass("wave-fill-seen-5");
+        }
+    });
+
+    $(".sales").each(function() {
+        if (
+            $(this).position().top <= scroll &&
+            $(this).position().top + $(this).height() > scroll
+        ) {
+            //fade in wave
+            $("#wave-path-6").removeClass("wave-fill-hidden-6");
+            $("#wave-path-6").addClass("wave-fill-seen-6");
+        } else {
+            $("#wave-path-6").addClass("wave-fill-hidden-6");
+            $("#wave-path-6").removeClass("wave-fill-seen-6");
         }
     });
 });

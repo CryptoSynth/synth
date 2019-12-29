@@ -16,7 +16,7 @@
 }
 
 .mainnav i {
-    color: aqua;
+    color: lightskyblue;
     font-size: 1.5rem;
 }
 
@@ -29,7 +29,11 @@
 }
 
 #title-hover {
-    font-size: 8vw;
+    font-size: 10vw;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    text-transform: uppercase;
+    letter-spacing: 0.4rem;
 }
 
 
@@ -70,17 +74,13 @@
     opacity: 1;
 }
 
-.mCSB_container {
-    height: 100% !important;
-}
-
 .navbar-nav .hd {
-    color: aqua;
+    color: lightskyblue;
     font-size: 1.6rem;
 }
 
 .navbar-nav .fhd {
-    color: magenta;
+    color: violet;
     font-size: 1.7rem;
 }
 
@@ -94,7 +94,7 @@
 
 .navbar-nav .resources-dropdown a {
     font-size: 1.2rem !important;
-    color: lightgreen;
+    color: white;
     background-color: unset !important;
 }
 
@@ -103,7 +103,7 @@
 }
 
 #sidebar .sidebar-header {
-    padding: 16px 15px 10px 10px;
+    padding: 14px 10px 10px 10px;
 }
 
 #sidebar ul li a {
@@ -188,6 +188,13 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .foot .col-md-6 {
         padding: 0;
     }
+    #title-hover {
+        font-size: 7vw;
+        writing-mode: horizontal-tb;
+        text-orientation: none;
+        text-transform: uppercase;
+        letter-spacing: 0.4rem;
+    }
 }
 
 
@@ -202,7 +209,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
     align-items: center !important;
     justify-content: center !important;
     position: absolute !important;
-    background: cyan !important;
+    background-image: linear-gradient( 135deg, #43cbff 10%, #9708cc 100%) !important;
     border-radius: 30px !important;
     margin: 0.4rem 0.5rem !important;
     z-index: 1 !important;
@@ -216,7 +223,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
     align-items: center !important;
     justify-content: center !important;
     position: absolute !important;
-    background: cyan !important;
+    background-image: linear-gradient( 135deg, #43cbff 10%, #9708cc 100%) !important;
     border-radius: 30px !important;
     margin: 0.4rem 0.5rem !important;
     z-index: 1 !important;
@@ -224,13 +231,13 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 #chronos-2::before {
-    content: "\f030" !important;
+    content: "\f030  \f005" !important;
     font-family: "FontAwesome";
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     position: absolute !important;
-    background: cyan !important;
+    background-image: linear-gradient( 135deg, #43cbff 10%, #9708cc 100%) !important;
     border-radius: 30px !important;
     margin: 0.4rem 0.5rem !important;
     z-index: 1 !important;
@@ -244,7 +251,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
     align-items: center !important;
     justify-content: center !important;
     position: absolute !important;
-    background: cyan !important;
+    background-image: linear-gradient( 135deg, #43cbff 10%, #9708cc 100%) !important;
     border-radius: 30px !important;
     margin: 0.4rem 0.5rem !important;
     z-index: 1 !important;
@@ -258,7 +265,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
     align-items: center !important;
     justify-content: center !important;
     position: absolute !important;
-    background: cyan !important;
+    background-image: linear-gradient( 135deg, #43cbff 10%, #9708cc 100%) !important;
     border-radius: 30px !important;
     margin: 0.4rem 0.5rem !important;
     z-index: 1 !important;
@@ -272,7 +279,21 @@ Extra (xl) large devices (large desktops, 1200px and up)
     align-items: center !important;
     justify-content: center !important;
     position: absolute !important;
-    background: cyan !important;
+    background-image: linear-gradient( 135deg, #43cbff 10%, #9708cc 100%) !important;
+    border-radius: 30px !important;
+    margin: 0.4rem 0.5rem !important;
+    z-index: 1 !important;
+    font-size: 1.5rem !important;
+}
+
+#contact-us::before {
+    content: "\f0e0" !important;
+    font-family: "FontAwesome";
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important;
+    background-image: linear-gradient( 135deg, #43cbff 10%, #9708cc 100%) !important;
     border-radius: 30px !important;
     margin: 0.4rem 0.5rem !important;
     z-index: 1 !important;
