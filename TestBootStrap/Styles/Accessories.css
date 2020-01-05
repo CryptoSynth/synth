@@ -32,7 +32,7 @@ html {
 .accessories-border {
     border-radius: 20px;
     padding: 2.5rem 1rem;
-    background-color: #00fa9a;
+    background-color: black;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     position: relative;
 }
@@ -44,8 +44,8 @@ html {
 
 .accessories .btn {
     width: 50%;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 20px;
     border: 0;
 }

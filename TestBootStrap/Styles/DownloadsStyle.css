@@ -26,19 +26,19 @@ html {
 --------------------------------------------------------*/
 
 #chronos-hd {
-    background-image: linear-gradient(135deg, #c2ffd8 10%, #465efb 100%);
+    background-color: lightgreen;
 }
 
 #chronos-fhd {
-    background-image: linear-gradient(135deg, #fdeb71 10%, #f8d800 100%);
+    background-color: white;
 }
 
 #chronos-hd .col-md-3 {
-    background-color: orange;
+    background-image: linear-gradient(135deg, #fdeb71 10%, #f8d800 100%);
 }
 
 #chronos-fhd .col-md-3 {
-    background-color: lightgreen;
+    background-image: linear-gradient(135deg, #c2ffd8 10%, #465efb 100%);
 }
 
 

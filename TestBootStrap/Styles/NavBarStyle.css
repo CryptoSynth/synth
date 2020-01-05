@@ -16,8 +16,12 @@
 }
 
 .mainnav i {
-    color: lightskyblue;
-    font-size: 1.5rem;
+    color: white;
+    font-size: 2.1rem;
+}
+
+.mainnav i:hover {
+    color: cyan;
 }
 
 .title-mainnav {
@@ -217,7 +221,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 #chronos-1::before {
-    content: "\f030" !important;
+    content: "\f030  HD" !important;
     font-family: "FontAwesome";
     display: flex !important;
     align-items: center !important;
@@ -231,7 +235,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 #chronos-2::before {
-    content: "\f030  \f005" !important;
+    content: "\f030  FHD" !important;
     font-family: "FontAwesome";
     display: flex !important;
     align-items: center !important;
