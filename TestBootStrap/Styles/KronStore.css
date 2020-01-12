@@ -7,8 +7,7 @@
 body,
 html {
     font-family: "Noto Sans SC", sans-serif !important;
-    overflow-x: hidden !important;
-    height: 100% !important;
+    background-image: linear-gradient(135deg, #abdcff 10%, #0396ff 100%);
 }
 
 *:focus {
@@ -16,66 +15,33 @@ html {
     box-shadow: none !important;
 }
 
-.store {
-    height: 100%;
-}
-
-.ecwid {
-    height: 100%;
-}
-
 
 /* ---------------------------------------------------
     Product Page: Category\Sub-Category Page Layout
 ----------------------------------------------------- */
 
-#my-store-21136031 {
-    min-height: 100% !important;
+.store {
+    height: 100vh !important;
+    overflow-x: hidden !important;
 }
 
 
 /*Main Store Background Color*/
 
 div.ecwid-productBrowser {
-    background-image: linear-gradient( to right bottom, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff) !important;
-    height: 100vh !important;
-    justify-content: center !important;
-    align-content: center !important;
-    display: grid !important;
-    color: white !important;
+    background-color: transparent !important;
 }
 
 
 /*Sub Store Background Color*/
-
-.ecwid-productBrowser .ecwid-productBrowser-CategoryPage .ecwid-productBrowser-CategoryPage-42778287 {
-    height: auto !important;
-}
-
-.ec-size .ec-store {
-    height: auto !important;
-    display: flex !important;
-    flex-direction: row !important;
-    width: 100% !important;
-    justify-content: center !important;
-    align-items: center !important;
-}
-
-.ec-store .ec-store__content-wrapper {
-    margin: auto !important;
-    width: 100% !important;
-    justify-content: center !important;
-    align-items: center !important;
-}
 
 
 /* ---------------------------------------------------
     Product Page: Sidebar Menu
 ----------------------------------------------------- */
 
-.ec-store div.product-details__sidebar {
-    height: 100% !important;
-    margin: 5rem 0rem !important;
+.ec-store .product-details__sidebar {
+    margin-top: 5rem !important;
 }
 
 
@@ -156,4 +122,53 @@ div.ecwid-productBrowser {
 
 .ec-store .product-details__product-description p:last-child {
     color: black !important;
+}
+
+
+/* ---------------------------------------------------
+    Cart Page
+----------------------------------------------------- */
+
+.ec-store .ec-cart {
+    background-color: white !important;
+    color: black !important;
+    padding: 1rem !important;
+    border-radius: 20px !important;
+    margin-top: 20rem !important;
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+@media (max-width: 425px) {
+    .store {
+        height: 100vh !important;
+        margin-top: 0rem !important;
+    }
+    .ec-store .product-details__sidebar {
+        margin-top: 0rem !important;
+    }
+    .ec-store .ec-cart {
+        margin-top: 40rem !important;
+    }
+    .ec-store .product-details--layout-sidebar-right .product-details__gallery {
+        margin-top: 8rem !important;
+    }
 }

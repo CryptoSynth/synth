@@ -10,7 +10,7 @@ html {
     -ms-scroll-snap: y mandatory;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-    background-color: #bcfdff;
+    background-color: white;
     transition: background-color 0.5s ease-in;
 }
 
@@ -108,6 +108,44 @@ html {
 
 
 /* ---------------------------------------------------
+    Card Structure
+----------------------------------------------------- */
+
+.staff-about .card-mod {
+    height: 100%;
+    height: 580px;
+    margin: 1rem 1rem;
+}
+
+.staff-about .main-card {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.staff-about .card-top {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 100%;
+    margin: 0rem 0rem 1rem 0rem;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+}
+
+.staff-about .card-bottom {
+    font-size: 1rem;
+    text-align: justify;
+    color: white;
+    margin: 0;
+    width: 100%;
+    background-color: black;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+
+/* ---------------------------------------------------
     Staff Section Sizing
 ----------------------------------------------------- */
 
@@ -115,103 +153,67 @@ html {
     height: 100vh;
 }
 
+.staff-about .card-l {
+    height: 100vh;
+    margin: 0;
+    z-index: 2;
+}
+
+.staff-about .img-format {
+    width: 100%;
+    object-fit: cover;
+}
+
+.staff-about .title-overlay {
+    z-index: 1;
+}
+
 .staff-about .title-section {
     text-transform: uppercase;
-    background-color: black;
-    box-shadow: 5px 0px 5px 5px rgba(0, 0, 0, 0.5);
-    color: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 0.5rem 1.5rem;
+    color: black;
     font-size: 2vw;
-    padding: 1.5rem 2rem;
+    margin: 1.2rem 2rem;
 }
 
 .staff-about .name-title {
-    font-size: 1rem;
-    margin: 0;
-    padding: 0.3rem 1rem;
-    border-radius: 10px;
-    background-color: white;
-    color: black;
+    font-size: 0.8rem;
+    margin: 0.5rem 0rem 0.5rem 1.5rem;
+    padding: 0.5rem 0.5rem;
+    color: white;
     font-weight: bolder;
+    text-align: center;
 }
 
 .staff-about .job-title {
     font-size: 0.8rem;
-    margin: 0;
+    margin: 0.5rem;
+    padding: 0.5rem 0rem;
     text-align: center;
     color: white;
-}
-
-.staff-about .carousel {
-    height: 100%;
-    width: 100%;
-}
-
-.staff-about .carousel-inner {
-    height: 100%;
-}
-
-.staff-about .carousel-item {
-    height: 100%;
-    width: 100%;
-}
-
-.staff-about .carousel-control-next,
-.staff-about .carousel-control-prev {
-    z-index: 1;
+    font-weight: bolder;
 }
 
 .staff-about i {
-    color: black;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    margin: 0.5rem 1.5rem 0.5rem 0rem;
+    transition: all 0.3s ease-in-out;
 }
 
-.staff-about .badge-title {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    margin: 0;
+.staff-about i:hover {
+    transform: scale(1.5);
+    cursor: pointer;
 }
 
-.staff-about .card {
-    width: 25%;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
-    border: none;
-    background-color: black;
-    z-index: 1;
-    overflow: hidden;
+.staff-about p {
+    padding: 1rem;
 }
 
-.staff-about .card-body {
-    padding: 0.5rem;
-}
-
-.staff-about .card-body p {
-    font-size: 1.65vh;
-    text-align: justify;
-    padding: 0.3rem;
-    color: white;
-}
-
-.staff-about .card-body .p-shrink {
-    font-size: 0.6rem;
-}
-
-.staff-about .card-body a {
+.staff-about .card-bottom a {
     text-decoration: none;
     color: lightskyblue;
-}
-
-.staff-about .carousel-indicators {
-    margin: 0;
-}
-
-.staff-about .carousel-indicators li {
-    background-color: black;
 }
 
 
@@ -234,7 +236,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 =============*/
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
     /* ---------------------------------------------------
     Video About-Us
 ----------------------------------------------------- */
@@ -277,33 +279,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
     /* ---------------------------------------------------
     Staff Section
 ----------------------------------------------------- */
-    .staff-about .title-section {
-        padding: 0.5rem 1rem;
-    }
-    .staff-about .title-section h1 {
-        font-size: 7vw;
-        margin-bottom: 0;
-    }
-    .staff-about .title-section i {
-        font-size: 7vw;
-        margin-bottom: 0;
-    }
-    .staff-about .carousel {
-        width: 100%;
-    }
-    .staff-about .card {
-        width: 90%;
-    }
-    .staff-about i {
-        color: white;
-        font-size: 2.5rem;
-    }
-    .staff-about .carousel-control-next,
-    .staff-about .carousel-control-prev {
-        width: 20%;
-    }
-    .staff-about .carousel-indicators li {
-        background-color: black;
+    .staff-about .card-top {
+        width: 250px;
+        height: 250px;
     }
 }
 
@@ -432,11 +410,11 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 .color-operations {
-    background-color: yellow;
+    background-color: lightskyblue;
 }
 
 .color-production {
-    background-color: salmon;
+    background-color: lightsalmon;
 }
 
 .color-supply {

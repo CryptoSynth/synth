@@ -13,12 +13,12 @@
     <link rel="stylesheet" href="Styles/hover-min.css" />
     <link rel="stylesheet" href="Styles/NavBarStyle.css" />
     <link rel="stylesheet" href="Styles/hamburgers-min.css">
-    <link rel="stylesheet" href="Styles/AboutUsStyle.css" />
-    <link rel="stylesheet" href="Styles/fixed.css" />
+    <link rel="stylesheet" href="Styles/AboutUsStyle.css">
     <link rel="stylesheet" href="Styles/pageLoader.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.2.0/css/all.css'>
 
 </head>
 
@@ -191,241 +191,202 @@
 
     <!--Start Engineering Section-->
     <section class="staff-about scroll-start engineer" data-color="engineer">
-        <div class="d-flex flex-column justify-content-center align-items-center h-100 w-100">
-            <div id="carousel-indicator-main" class="carousel slide" data-ride="carousel" data-interval="false">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-indicator-main" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-indicator-main" data-slide-to="1"></li>
-                    <li data-target="#carousel-indicator-main" data-slide-to="2"></li>
-                    <li data-target="#carousel-indicator-main" data-slide-to="3"></li>
-                    <li data-target="#carousel-indicator-main" data-slide-to="4"></li>
-                    <li data-target="#carousel-indicator-main" data-slide-to="5"></li>
-                    <li data-target="#carousel-indicator-main" data-slide-to="6"></li>
-                    <li data-target="#carousel-indicator-main" data-slide-to="7"></li>
-                    <li data-target="#carousel-indicator-main" data-slide-to="8"></li>
-                    <li data-target="#carousel-indicator-main" data-slide-to="9"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100 w-100">
-                            <div class="card">
-                                <div class="d-flex h-100 w-100">
-                                    <img class="card-img-top" src="Images/Staff/Engineers/stefany.jpg" alt="stefany">
-                                    <h1 class="badge-title align-self-end">Engineers</h1>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h3 class="name-title">Stefany</h3>
-                                        <h4 class="job-title">Product Engineering Manager</h4>
-                                    </div>
-                                    <p class="card-text">
-                                        Stefany came to us after watching a crazy dude with cargo shorts and sandals talk about a Burnaby company called Kron Technologies. She saw the crazy bunch of nerds that populated the fifteen minute mini-documentary, and decided that was the place to
-                                        be. Stefany is not a stranger to technology, start-ups, or just shenanigans in general. She has accomplished a lot and has a lot of quiet (and not so quiet) wisdom to offer.
-                                        <br>
-                                        <br> Stefany is enjoying her west coast lifestyle here at Kron Technologies. She is also the mind behind the C256 Foenix project!
-                                    </p>
-                                </div>
-                            </div>
+        <div class="d-flex h-100 w-100 justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center w-100 card-l">
+                <div class="card-mod">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-100 main-card">
+                        <div id="eng-img-1" class="card-top">
+                            <img src="/Images/Staff/Engineers/stefany.jpg" class="img-format" alt="stefany">
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100 ">
-                            <div class="card">
-                                <div class="d-flex h-100 w-100">
-                                    <img class="card-img-top" src="Images/Staff/Engineers/simon.jpg" alt="simon">
-                                    <h1 class="badge-title align-self-end">Engineers</h1>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-around align-items-center">
-                                        <h3 class="name-title">Simon</h3>
-                                        <h4 class="job-title">Software EngineDebug & UI Engineer</h4>
-                                    </div>
-                                    <p class="card-text">
-                                        Simon is David's brother and self-taught programmer who helps to implement new features in and debug the user interface on the camera using Qt. Simon enjoys racing and crashing with and without cheats in Burnout 2: Point of Impact.
-                                        <br>
-                                        <br> Check out his YouTube channel <a href="https://www.youtube.com/user/sparker599 " target="_blank">sparker599</a>!
-                                    </p>
-                                </div>
+                        <div class="d-flex flex-column card-bottom">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h1 class="name-title">Stefany</h1>
+                                <h1 class="job-title">Product Engineering Manager</h1>
+                                <i id="eng-toggle-1" class="fa fa-chevron-down" data-target="#eng-1" data-toggle="collapse"></i>
                             </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100 ">
-                            <div class="card">
-                                <div class="d-flex h-100 w-100">
-                                    <img class="card-img-top" src="Images/Staff/Engineers/nicholas.jpg" alt="nicholas">
-                                    <h1 class="badge-title align-self-end">Engineers</h1>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-around align-items-center">
-                                        <h3 class="name-title">Nicholas</h3>
-                                        <h4 class="job-title">Electronics/Firmware Developer</h4>
-                                    </div>
-                                    <p class="card-text p-shrink">
-                                        Nicholas has a background developing robotics, embedded systems, and industrial control systems. He thrives on tackling challenging problems with technology that's always changing and has the expertise to design and tie together software, electronics,
-                                        and hardware. He believes that there are thousands of ways to solve a problem, but the best ideas often take the most work to find and are only obvious after you’ve put in the work. Nicholas is both a movie nerd
-                                        and the inventor of the first fully functional CNC sewing machine (that we know of). If you can't find him, check the basement; he's probably tinkering with a robot or rewatching old horror movies.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100 ">
-                            <div class="card">
-                                <div class="d-flex h-100 w-100">
-                                    <img class="card-img-top" src="Images/Staff/Engineers/owen.jpg" alt="owen">
-                                    <h1 class=" badge-title align-self-end ">Engineers</h1>
-                                </div>
-                                <div class="card-body ">
-                                    <div class="d-flex justify-content-around align-items-center ">
-                                        <h3 class="name-title ">Owen</h3>
-                                        <h4 class="job-title ">Software Engineer</h4>
-                                    </div>
-                                    <p class="card-text ">
-                                        Software engineer by day, and hardware tinkerer by night. He has a long career in wireless technology, network protocols and real time systems. He's known to have a particular fondness for cryptography, computer security and problems that venture into
-                                        computational number theory.
-                                        <br>
-                                        <br> In his spare time you might find him making hot sauce, praying to the church of GNU, or pretending to be an amateur race car driver.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100 ">
-                            <div class="card">
-                                <div class="d-flex h-100 w-100">
-                                    <img class="card-img-top" src="Images/Staff/Engineers/kurt.jpg" alt="kurt">
-                                    <h1 class="badge-title align-self-end">Engineers</h1>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-around align-items-center">
-                                        <h3 class="name-title">Kurt</h3>
-                                        <h4 class="job-title">Electronics Technologist</h4>
-                                    </div>
-                                    <p class="card-text">
-                                        We think Kurt might have sneaked in when the bay doors were open one day. He came fully prepared with a tool kit and smile. Kurt is the calm in the sea of large personalities. His lends his focus to the healing bench making test jigs and wrestling with
-                                        RMAs.
-                                        <br>
-                                        <br> When not working for the Man (David?), Kurt works on his own electronics projects such as mechanical keyboards!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100 ">
-                            <div class="card">
-                                <div class="d-flex h-100 w-100">
-                                    <img class="card-img-top" src="Images/Staff/Engineers/ken.jpg" alt="ken">
-                                    <h1 class="badge-title align-self-end">Engineers</h1>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-around align-items-center">
-                                        <h3 class="name-title">Ken</h3>
-                                        <h4 class="job-title">Electronics Engineer</h4>
-                                    </div>
-                                    <p class="card-text">
-                                        During his youth, Ken was fascinated in how parts could come together to create beautiful creations. This leads to him graduating as an engineer. To build his experience, he starts his career in a 2-Ways radio design company. Currently, PCB design is
-                                        now his new grounds, but still loves to build plastic models during his free time.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100 ">
-                            <div class="card">
-                                <div class="d-flex h-100 w-100">
-                                    <img class="card-img-top" src="Images/Staff/Engineers/david.jpg" alt="david">
-                                    <h1 class="badge-title align-self-end">Engineers</h1>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-around align-items-center">
-                                        <h3 class="name-title">David</h3>
-                                        <h4 class="job-title">Software / User Interface Engineer</h4>
-                                    </div>
-                                    <p class="card-text">
-                                        The guy trying to make the camera interface pretty and intuitive. The lone designery-type in the herd of low-level hardware engineers that is Krontech. Often swears at Inkscape, though he secretly loves it. As a hobby, David makes open-source games!
-                                        <br>
-                                        <br> Check out his latest project at <a href="https://frogatto.com/" target="_blank">frogatto</a>. You can find him on the forums as David Roberts (DDR), Graphical Developer.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100 ">
-                            <div class="card">
-                                <div class="d-flex h-100 w-100">
-                                    <img class="card-img-top" src="Images/Staff/Engineers/sanjay.jpg" alt="sanjay">
-                                    <h1 class="badge-title align-self-end">Engineers</h1>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-around align-items-center">
-                                        <h3 class="name-title">Sanjay</h3>
-                                        <h4 class="job-title">Embedded Software Engineer</h4>
-                                    </div>
-                                    <p class="card-text">
-                                        DSanjay's passion for all things tech comes from his high school days of building robots for the FIRST Robotics Competition. He went on to pursue a degree in Computer Engineering and has worked in Silicon Valley, as well as on his own startup ideas. When
-                                        he's not busy bending software to his will, he enjoys cooking plant-based meals and going on road trips.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100 ">
-                            <div class="card">
-                                <div class="d-flex h-100 w-100">
-                                    <img class="card-img-top" src="Images/Staff/Engineers/daniel.jpg" alt="daniel">
-                                    <h1 class="badge-title align-self-end">Engineers</h1>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-around align-items-center">
-                                        <h3 class="name-title">Daniel</h3>
-                                        <h4 class="job-title">Junior FPGA Engineer</h4>
-                                    </div>
-                                    <p class="card-text">
-                                        Daniel is an Electrical Engineering graduate with a passion for FPGA's and RTL design. Taught that "almost anything done in software can be made in hardware, except it runs 10 times faster" he strives to make that statement a reality, with results ranging
-                                        from successful, to "Why did you even attempt that?" His interests outside of working (slaving?) away for Stefany include indoor boulderingg, competitive Pokemon and Competitive Ballroom dance!
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100 ">
-                            <div class="card">
-                                <div class="d-flex h-100 w-100">
-                                    <img class="card-img-top" src="Images/Staff/Engineers/pierre.jpg" alt="pierre">
-                                    <h1 class="badge-title align-self-end">Engineers</h1>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-around align-items-center">
-                                        <h3 class="name-title">Pierre</h3>
-                                        <h4 class="job-title">FPGA engineer</h4>
-                                    </div>
-                                    <p class="card-text p-shrink">
-                                        Pierre is a born tinkerer whose interests range from 3-D printing to automation and AI. To him, FPGA is the cornerstone of superior, more efficient design. His latest ambition is to build an automated monkey with robotic arms capable of swinging from
-                                        a series of ceiling-mounted handles. Hailing from Switzerland, he holds two engineering degrees in microelectronics and microtechnics. He has worked across Europe for a variety of companies such as Alcatel Space
-                                        and its subsidiaries, before being lured by the West Coast lifestyle and settling in BC with his family. In his spare time, Pierre enjoys outdoorsy pursuits such as backcountry camping, skiing and sailing. He is
-                                        always eager to seek new experiences that put more wind in his sails.
-                                    </p>
-                                </div>
-                            </div>
+                            <p id="eng-1" class="collapse">
+                                Stefany came to us after watching a crazy dude with cargo shorts and sandals talk about a Burnaby company called Kron Technologies. She saw the crazy bunch of nerds that populated the fifteen minute mini-documentary, and decided that was the place to
+                                be. Stefany is not a stranger to technology, start-ups, or just shenanigans in general. She has accomplished a lot and has a lot of quiet (and not so quiet) wisdom to offer.
+                                <br>
+                                <br> Stefany is enjoying her west coast lifestyle here at Kron Technologies. She is also the mind behind the C256 Foenix project!
+                            </p>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carousel-indicator-main" role="button" data-slide="prev">
-                    <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-indicator-main" role="button" data-slide="next">
-                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="card-mod">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-100 main-card">
+                        <div id="eng-img-2" class="card-top">
+                            <img src="/Images/Staff/Engineers/simon.jpg" class="img-format" alt="simon">
+                        </div>
+                        <div class="d-flex flex-column card-bottom">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h1 class="name-title">Simon</h1>
+                                <h1 class="job-title">Software EngineDebug & UI Engineer</h1>
+                                <i id="eng-toggle-2" class="fa fa-chevron-down" data-target="#eng-2" data-toggle="collapse"></i>
+                            </div>
+                            <p id="eng-2" class="collapse">
+                                Simon is David's brother and self-taught programmer who helps to implement new features in and debug the user interface on the camera using Qt. Simon enjoys racing and crashing with and without cheats in Burnout 2: Point of Impact.
+                                <br>
+                                <br> Check out his YouTube channel <a href="https://www.youtube.com/user/sparker599 " target="_blank">sparker599</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-mod">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-100 main-card">
+                        <div id="eng-img-3" class="card-top">
+                            <img src="/Images/Staff/Engineers/nicholas.jpg" class="img-format" alt="nicholas">
+                        </div>
+                        <div class="d-flex flex-column card-bottom">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h1 class="name-title">Nicholas</h1>
+                                <h1 class="job-title">Electronics/Firmware Developer</h1>
+                                <i id="eng-toggle-3" class="fa fa-chevron-down" data-target="#eng-3" data-toggle="collapse"></i>
+                            </div>
+                            <p id="eng-3" class="collapse">
+                                Nicholas has a background developing robotics, embedded systems, and industrial control systems. He thrives on tackling challenging problems with technology that's always changing and has the expertise to design and tie together software, electronics,
+                                and hardware. He believes that there are thousands of ways to solve a problem, but the best ideas often take the most work to find and are only obvious after you’ve put in the work. Nicholas is both a movie nerd and the
+                                inventor of the first fully functional CNC sewing machine (that we know of). If you can't find him, check the basement; he's probably tinkering with a robot or rewatching old horror movies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-mod">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-100 main-card">
+                        <div id="eng-img-4" class="card-top">
+                            <img src="/Images/Staff/Engineers/owen.jpg" class="img-format" alt="owen">
+                        </div>
+                        <div class="d-flex flex-column card-bottom">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h1 class="name-title">Owen</h1>
+                                <h1 class="job-title">Software Engineer</h1>
+                                <i id="eng-toggle-4" class="fa fa-chevron-down" data-target="#eng-4" data-toggle="collapse"></i>
+                            </div>
+                            <p id="eng-4" class="collapse">
+                                Software engineer by day, and hardware tinkerer by night. He has a long career in wireless technology, network protocols and real time systems. He's known to have a particular fondness for cryptography, computer security and problems that venture into
+                                computational number theory.
+                                <br>
+                                <br> In his spare time you might find him making hot sauce, praying to the church of GNU, or pretending to be an amateur race car driver.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-mod">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-100 main-card">
+                        <div id="eng-img-5" class="card-top">
+                            <img src="/Images/Staff/Engineers/kurt.jpg" class="img-format" alt="kurt">
+                        </div>
+                        <div class="d-flex flex-column card-bottom">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h1 class="name-title">Kurt</h1>
+                                <h1 class="job-title">Electronics Technologist</h1>
+                                <i id="eng-toggle-5" class="fa fa-chevron-down" data-target="#eng-5" data-toggle="collapse"></i>
+                            </div>
+                            <p id="eng-5" class="collapse">
+                                We think Kurt might have sneaked in when the bay doors were open one day. He came fully prepared with a tool kit and smile. Kurt is the calm in the sea of large personalities. His lends his focus to the healing bench making test jigs and wrestling with
+                                RMAs.
+                                <br>
+                                <br> When not working for the Man (David?), Kurt works on his own electronics projects such as mechanical keyboards!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-mod">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-100 main-card">
+                        <div id="eng-img-6" class="card-top">
+                            <img src="/Images/Staff/Engineers/ken.jpg" class="img-format" alt="ken">
+                        </div>
+                        <div class="d-flex flex-column card-bottom">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h1 class="name-title">Ken</h1>
+                                <h1 class="job-title">Electronics Engineer</h1>
+                                <i id="eng-toggle-6" class="fa fa-chevron-down" data-target="#eng-6" data-toggle="collapse"></i>
+                            </div>
+                            <p id="eng-6" class="collapse">
+                                During his youth, Ken was fascinated in how parts could come together to create beautiful creations. This leads to him graduating as an engineer. To build his experience, he starts his career in a 2-Ways radio design company. Currently, PCB design is
+                                now his new grounds, but still loves to build plastic models during his free time.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-mod">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-100 main-card">
+                        <div id="eng-img-7" class="card-top">
+                            <img src="/Images/Staff/Engineers/david.jpg" class="img-format" alt="david">
+                        </div>
+                        <div class="d-flex flex-column card-bottom">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h1 class="name-title">David</h1>
+                                <h1 class="job-title">Software / User Interface Engineer</h1>
+                                <i id="eng-toggle-7" class="fa fa-chevron-down" data-target="#eng-7" data-toggle="collapse"></i>
+                            </div>
+                            <p id="eng-7" class="collapse">
+                                The guy trying to make the camera interface pretty and intuitive. The lone designery-type in the herd of low-level hardware engineers that is Krontech. Often swears at Inkscape, though he secretly loves it. As a hobby, David makes open-source games!
+                                <br>
+                                <br> Check out his latest project at <a href="https://frogatto.com/" target="_blank">frogatto</a>. You can find him on the forums as David Roberts (DDR), Graphical Developer.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-mod">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-100 main-card">
+                        <div id="eng-img-8" class="card-top">
+                            <img src="/Images/Staff/Engineers/sanjay.jpg" class="img-format" alt="sanjay">
+                        </div>
+                        <div class="d-flex flex-column card-bottom">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h1 class="name-title">Sanjay</h1>
+                                <h1 class="job-title">Embedded Software Engineer</h1>
+                                <i id="eng-toggle-8" class="fa fa-chevron-down" data-target="#eng-8" data-toggle="collapse"></i>
+                            </div>
+                            <p id="eng-8" class="collapse">
+                                DSanjay's passion for all things tech comes from his high school days of building robots for the FIRST Robotics Competition. He went on to pursue a degree in Computer Engineering and has worked in Silicon Valley, as well as on his own startup ideas. When
+                                he's not busy bending software to his will, he enjoys cooking plant-based meals and going on road trips.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-mod">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-100 main-card">
+                        <div id="eng-img-9" class="card-top">
+                            <img src="/Images/Staff/Engineers/daniel.jpg" class="img-format" alt="">
+                        </div>
+                        <div class="d-flex flex-column card-bottom">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h1 class="name-title">Daniel</h1>
+                                <h1 class="job-title">Junior FPGA Engineer</h1>
+                                <i id="eng-toggle-9" class="fa fa-chevron-down" data-target="#eng-9" data-toggle="collapse"></i>
+                            </div>
+                            <p id="eng-9" class="collapse">
+                                Daniel is an Electrical Engineering graduate with a passion for FPGA's and RTL design. Taught that "almost anything done in software can be made in hardware, except it runs 10 times faster" he strives to make that statement a reality, with results ranging
+                                from successful, to "Why did you even attempt that?" His interests outside of working (slaving?) away for Stefany include indoor boulderingg, competitive Pokemon and Competitive Ballroom dance!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-mod">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-100 main-card">
+                        <div id="eng-img-10" class="card-top">
+                            <img src="/Images/Staff/Engineers/pierre.jpg" class="img-format" alt="pierre">
+                        </div>
+                        <div class="d-flex flex-column card-bottom">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h1 class="name-title">Pierre</h1>
+                                <h1 class="job-title">FPGA Engineer</h1>
+                                <i id="eng-toggle-10" class="fa fa-chevron-down" data-target="#eng-10" data-toggle="collapse"></i>
+                            </div>
+                            <p id="eng-10" class="collapse">
+                                Pierre is a born tinkerer whose interests range from 3-D printing to automation and AI. To him, FPGA is the cornerstone of superior, more efficient design. His latest ambition is to build an automated monkey with robotic arms capable of swinging from
+                                a series of ceiling-mounted handles. Hailing from Switzerland, he holds two engineering degrees in microelectronics and microtechnics. He has worked across Europe for a variety of companies such as Alcatel Space and its
+                                subsidiaries, before being lured by the West Coast lifestyle and settling in BC with his family. In his spare time, Pierre enjoys outdoorsy pursuits such as backcountry camping, skiing and sailing. He is always eager to
+                                seek new experiences that put more wind in his sails.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-end h-100 w-100 position-absolute title-overlay">
+                <h1 class="title-section">Engineers</h1>
             </div>
             <div id="wave-path-2" class="d-flex h-100 w-100 wave-fill-seen-2 position-absolute">
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
@@ -438,157 +399,122 @@
                     </defs>
                 </svg>
             </div>
-        </div>
-
     </section>
     <!--End Engineering Section-->
 
     <!--Start Operations Section-->
     <section class="staff-about scroll-start operations" data-color="operations">
-        <div class="d-flex flex-column justify-content-center align-items-center h-100 w-100">
-            <div id="carousel-indicator-main-2" class="carousel slide" data-ride="carousel" data-interval="false">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-indicator-main-2" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-indicator-main-2" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100">
-                            <div class="card">
-                                <div class="d-flex h-100 w-100">
-                                    <img class="card-img-top" src="Images/Staff/Operations/tabatha.jpg" alt="tabatha">
-                                    <h1 class="badge-title align-self-end">Operations</h1>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-around align-items-center">
-                                        <h3 class="name-title">Tabatha</h3>
-                                        <h4 class="job-title">General Manager</h4>
-                                    </div>
-                                    <p class="card-text">
-                                        She is the crazy person who runs around in the shadows, writing emails in the early mornings. Her background includes chef, network admin, and cat wrangler. Jack of all trades that never seems to remember to go home. If you ever email into info@ at 6
-                                        am and get an email back in less than 10 seconds… it’s probably Tabatha.
-                                    </p>
-                                </div>
-                            </div>
+        <div class="d-flex h-100 w-100 justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center w-100 card-l">
+                <div class="card-mod">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-100 main-card">
+                        <div id="op-img-1" class="card-top">
+                            <img src="/Images/Staff/Operations/tabatha.jpg" class="img-format" alt="tabatha">
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100 ">
-                            <div class="card">
-                                <div class="d-flex h-100 w-100">
-                                    <img class="card-img-top" src="Images/Staff/Operations/alex.jpg" alt="alex">
-                                    <h1 class="badge-title align-self-end">Operations</h1>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-around align-items-center">
-                                        <h3 class="name-title">Alex</h3>
-                                        <h4 class="job-title">Finance Manager</h4>
-                                    </div>
-                                    <p class="card-text">
-                                        DEX: 15
-                                        <br> CON: 14
-                                        <br> INT: 17
-                                        <br> WIS: 12
-                                        <br> CHA: 9
-                                    </p>
-                                </div>
+                        <div class="d-flex flex-column card-bottom">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h1 class="name-title">Tabatha</h1>
+                                <h1 class="job-title">General Manager</h1>
+                                <i id="op-toggle-1" class="fa fa-chevron-down" data-target="#op-1" data-toggle="collapse"></i>
                             </div>
+                            <p id="op-1" class="collapse">
+                                She is the crazy person who runs around in the shadows, writing emails in the early mornings. Her background includes chef, network admin, and cat wrangler. Jack of all trades that never seems to remember to go home. If you ever email into info@ at 6
+                                am and get an email back in less than 10 seconds… it’s probably Tabatha.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carousel-indicator-main-2" role="button" data-slide="prev">
-                    <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-indicator-main-2" role="button" data-slide="next">
-                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="card-mod">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-100 main-card">
+                        <div id="op-img-2" class="card-top">
+                            <img src="/Images/Staff/Operations/alex.jpg" class="img-format" alt="alex">
+                        </div>
+                        <div class="d-flex flex-column card-bottom">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h1 class="name-title">Alex</h1>
+                                <h1 class="job-title">Finance Manager</h1>
+                                <i id="op-toggle-2" class="fa fa-chevron-down" data-target="#op-2" data-toggle="collapse"></i>
+                            </div>
+                            <p id="op-2" class="collapse">
+                                DEX: 15
+                                <br> CON: 14
+                                <br> INT: 17
+                                <br> WIS: 12
+                                <br> CHA: 9
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-end h-100 w-100 position-absolute title-overlay">
+                <h1 class="title-section">Operations</h1>
             </div>
             <div id="wave-path-3" class="d-flex h-100 w-100 wave-fill-seen-3 position-absolute">
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
                     <path d="M471.44,215.23 C41.98,177.73 584.31,21.80 -69.18,-5.81 L-87.25,137.26 L-52.82,262.59 Z"></path>
                 </svg>
             </div>
-        </div>
     </section>
     <!--End Operations Section-->
 
+
     <!--Start Production Section-->
     <section class="staff-about scroll-start production" data-color="production">
-        <div class="d-flex flex-column justify-content-center align-items-center h-100 w-100">
-            <div id="carousel-indicator-main-3" class="carousel slide" data-ride="carousel" data-interval="false">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-indicator-main-3" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-indicator-main-3" data-slide-to="1"></li>
-                    <li data-target="#carousel-indicator-main-3" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100">
-                            <div class="card">
-                                <div class="d-flex h-100 w-100">
-                                    <img class="card-img-top" src="Images/Staff/Production/ryan.jpg" alt="ryan">
-                                    <h1 class="badge-title align-self-end">Production</h1>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-around align-items-center ">
-                                        <h3 class="name-title">Ryan</h3>
-                                        <h4 class="job-title">Production Assistant</h4>
-                                    </div>
-                                    <p class="card-text">
-                                        After spending 5 years in security, Ryan wanted a change in pace and found a newish start-up was the place to be. Now he spends his time assembling cameras and looking for deals on hardware.
-                                    </p>
-                                </div>
-                            </div>
+        <div class="d-flex h-100 w-100 justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center w-100 card-l">
+                <div class="card-mod">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-100 main-card">
+                        <div id="pro-img-1" class="card-top">
+                            <img src="/Images/Staff/Production/ryan.jpg" class="img-format" alt="ryan">
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100">
-                            <div class="card">
-                                <div class="d-flex h-100 w-100">
-                                    <img class="card-img-top" src="Images/Staff/Production/eli.jpg" alt="Eli">
-                                    <h1 class="badge-title align-self-end">Production</h1>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-around align-items-center">
-                                        <h3 class="name-title">Eli</h3>
-                                        <h4 class="job-title">Production Assistant</h4>
-                                    </div>
-                                    <p class="card-text">
-                                        Eli is like a magical elf that converts stuff into things. When he's not converting stuff into cameras for Krontech, he keeps himself busy converting stuff into guitar pedals, curry, and prog metal.
-                                    </p>
-                                </div>
+                        <div class="d-flex flex-column card-bottom">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h1 class="name-title">Ryan</h1>
+                                <h1 class="job-title">Production Assistant</h1>
+                                <i id="pro-toggle-1" class="fa fa-chevron-down" data-target="#pro-1" data-toggle="collapse"></i>
                             </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100 ">
-                            <div class="card">
-                                <div class="d-flex h-100 w-100">
-                                    <img class="card-img-top" src="Images/Staff/Production/alex.jpg" alt="alex">
-                                    <h1 class="badge-title align-self-end">Production</h1>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-around align-items-center">
-                                        <h3 class="name-title">Alex</h3>
-                                        <h4 class="job-title">Electronics Technologist</h4>
-                                    </div>
-                                    <p class="card-text">
-                                    </p>
-                                </div>
-                            </div>
+                            <p id="pro-1" class="collapse">
+                                After spending 5 years in security, Ryan wanted a change in pace and found a newish start-up was the place to be. Now he spends his time assembling cameras and looking for deals on hardware.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carousel-indicator-main-3" role="button" data-slide="prev">
-                    <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-indicator-main-3" role="button" data-slide="next">
-                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="card-mod">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-100 main-card">
+                        <div id="pro-img-2" class="card-top">
+                            <img src="/Images/Staff/Production/eli.jpg" class="img-format" alt="eli">
+                        </div>
+                        <div class="d-flex flex-column card-bottom">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h1 class="name-title">Eli</h1>
+                                <h1 class="job-title">Production Assistant</h1>
+                                <i id="pro-toggle-2" class="fa fa-chevron-down" data-target="#pro-2" data-toggle="collapse"></i>
+                            </div>
+                            <p id="pro-2" class="collapse">
+                                Eli is like a magical elf that converts stuff into things. When he's not converting stuff into cameras for Krontech, he keeps himself busy converting stuff into guitar pedals, curry, and prog metal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-mod">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-100 main-card">
+                        <div id="pro-img-3" class="card-top">
+                            <img src="/Images/Staff/Production/alex.jpg" class="img-format" alt="alex">
+                        </div>
+                        <div class="d-flex flex-column card-bottom">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h1 class="name-title">Alex</h1>
+                                <h1 class="job-title">Electronics Technologist</h1>
+                                <i id="pro-toggle-3" class="fa fa-chevron-down" data-target="#pro-3" data-toggle="collapse"></i>
+                            </div>
+                            <p id="pro-3" class="collapse">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-end h-100 w-100 position-absolute title-overlay">
+                <h1 class="title-section">Production</h1>
             </div>
             <div id="wave-path-4" class="d-flex h-100 w-100 wave-fill-seen-4 position-absolute">
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
@@ -601,68 +527,54 @@
                     </defs>
                 </svg>
             </div>
-        </div>
     </section>
     <!--End Production Section-->
 
     <!--Start Supply Chain Section-->
     <section class="staff-about scroll-start supply" data-color="supply">
-        <div class="d-flex flex-column justify-content-center align-items-center h-100 w-100">
-            <div id="carousel-indicator-main-4" class="carousel slide" data-ride="carousel" data-interval="false">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-indicator-main-4" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-indicator-main-4" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100 ">
-                            <div class="card">
-                                <div class="d-flex h-100 w-100">
-                                    <img class="card-img-top" src="Images/Staff/Supply-Chain/chris.jpg" alt="chris">
-                                    <h1 class="badge-title align-self-end">Supply Chain</h1>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-around align-items-center">
-                                        <h3 class="name-title">Chris</h3>
-                                        <h4 class="job-title">Supply Chain Manager</h4>
-                                    </div>
-                                    <p class="card-text">
-                                        Chris is busy using his experience in supply chain as a Material Coordinator, Purchaser, and Planner to support and improve processes at Kron Technologies. His Bachelors of Science in Honours Biophysics helps him to think critically and produce results
-                                        on a deadline. He enjoys volunteering and taking on lead roles for local conventions to give back to his community.
-                                        <br>
-                                        <br> Chris’s strengths in logic, details, and organization are also used to make puns. Don’t get him started. </p>
-                                </div>
-                            </div>
+        <div class="d-flex h-100 w-100 justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center w-100 card-l">
+                <div class="card-mod">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-100 main-card">
+                        <div id="sup-img-1" class="card-top">
+                            <img src="/Images/Staff/Supply-Chain/chris.jpg" class="img-format" alt="chris">
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100 ">
-                            <div class="card">
-                                <div class="d-flex h-100 w-100">
-                                    <img class="card-img-top" src="Images/Staff/Supply-Chain/kassidy.jpg" alt="kassidy">
-                                    <h1 class="badge-title align-self-end">Supply Chain</h1>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-around align-items-center">
-                                        <h3 class="name-title">Kassidy</h3>
-                                        <h4 class="job-title">Warehouse Assistant</h4>
-                                    </div>
-                                    <p class="card-text">
-                                        Kassidy moved from Saskatoon a few months after graduating high school and asked for a job helping out around the warehouse. She started out with cleaning and building boxes, but now handles most of the shipments, deliveries and inventory. You can usually
-                                        find headphone, doodles and coffee at her work station. She’s not sure of what she wants to do in the future but hopes to continue to grow with her art. </p>
-                                </div>
+                        <div class="d-flex flex-column card-bottom">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h1 class="name-title">Chris</h1>
+                                <h1 class="job-title">Supply Chain Manager</h1>
+                                <i id="sup-toggle-1" class="fa fa-chevron-down" data-target="#sup-1" data-toggle="collapse"></i>
                             </div>
+                            <p id="sup-1" class="collapse">
+                                Chris is busy using his experience in supply chain as a Material Coordinator, Purchaser, and Planner to support and improve processes at Kron Technologies. His Bachelors of Science in Honours Biophysics helps him to think critically and produce results
+                                on a deadline. He enjoys volunteering and taking on lead roles for local conventions to give back to his community.
+                                <br>
+                                <br> Chris’s strengths in logic, details, and organization are also used to make puns. Don’t get him started.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carousel-indicator-main-4" role="button" data-slide="prev">
-                    <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-indicator-main-4" role="button" data-slide="next">
-                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="card-mod">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-100 main-card">
+                        <div id="sup-img-2" class="card-top">
+                            <img src="/Images/Staff/Supply-Chain/kassidy.jpg" class="img-format" alt="kassidy">
+                        </div>
+                        <div class="d-flex flex-column card-bottom">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h1 class="name-title">Kassidy</h1>
+                                <h1 class="job-title">Warehouse Assistant</h1>
+                                <i id="sup-toggle-2" class="fa fa-chevron-down" data-target="#sup-2" data-toggle="collapse"></i>
+                            </div>
+                            <p id="sup-2" class="collapse">
+                                Kassidy moved from Saskatoon a few months after graduating high school and asked for a job helping out around the warehouse. She started out with cleaning and building boxes, but now handles most of the shipments, deliveries and inventory. You can usually
+                                find headphone, doodles and coffee at her work station. She’s not sure of what she wants to do in the future but hopes to continue to grow with her art.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-end h-100 w-100 position-absolute title-overlay">
+                <h1 class="title-section">Supply Chain</h1>
             </div>
             <div id="wave-path-5" class="d-flex h-100 w-100 wave-fill-seen-5 position-absolute">
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
@@ -675,66 +587,52 @@
                     </defs>
                 </svg>
             </div>
-        </div>
     </section>
     <!--End Supply Chain Section-->
 
     <!--Start Sales and Marketing Section-->
     <section class="staff-about scroll-start sales" data-color="sales">
-        <div class="d-flex flex-column justify-content-center align-items-center h-100 w-100">
-            <div id="carousel-indicator-main-5" class="carousel slide" data-ride="carousel" data-interval="false">
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-indicator-main-5" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-indicator-main-5" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100">
-                            <div class="card">
-                                <div class="d-flex h-100 w-100">
-                                    <img class="card-img-top" src="Images/Staff/Sales-and-Marketing/thomas.jpg" alt="thomas">
-                                    <h1 class="badge-title align-self-end">Sales & Marketing</h1>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-around align-items-center">
-                                        <h3 class="name-title">Thomas</h3>
-                                        <h4 class="job-title">Sales & Marketing Manager</h4>
-                                    </div>
-                                    <p class="card-text">
-                                        From an aerospace engineering background, Thomas has already lived in 4 different countries. He worked for the automotive industry as a sales engineer as his first shift. Eager for more invigorating adventures, Thomas got married and moved to Vancouver
-                                        right before joining the herd as the only non-Canadian citizen. You can definitely find him at social events, conferences and workshops in town during his spare time, where he will share his own business ideas.</p>
-                                </div>
-                            </div>
+        <div class="d-flex h-100 w-100 justify-content-center align-items-center">
+            <div class="d-flex justify-content-center align-items-center w-100 card-l">
+                <div class="card-mod">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-100 main-card">
+                        <div id="sal-img-1" class="card-top">
+                            <img src="/Images/Staff/Sales-and-Marketing/thomas.jpg" class="img-format" alt="thomas">
                         </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="d-flex flex-column justify-content-center align-items-center h-100">
-                            <div class="card">
-                                <div class="d-flex h-100 w-100">
-                                    <img class="card-img-top" src="Images/Staff/Sales-and-Marketing/michael.jpg" alt="michael">
-                                    <h1 class="badge-title align-self-end">Sales & Marketing</h1>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-around align-items-center">
-                                        <h3 class="name-title">Michael</h3>
-                                        <h4 class="job-title">Sales & Support Representative</h4>
-                                    </div>
-                                    <p class="card-text">
-                                        Michael is working toward his BBA at Capilano University. He can often be found crashing drones into stuff, skiing and scuba diving. He is still thinking of a way to combine all three of those things. Until then, check out his drone league that you, (yes
-                                        you) should totally join! <a href="http://vanwhoop.ca/ " target="_blank">vanwhoop</a> </p>
-                                </div>
+                        <div class="d-flex flex-column card-bottom">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h1 class="name-title">Thomas</h1>
+                                <h1 class="job-title">Sales & Marketing Manager</h1>
+                                <i id="sal-toggle-1" class="fa fa-chevron-down" data-target="#sal-1" data-toggle="collapse"></i>
                             </div>
+                            <p id="sal-1" class="collapse">
+                                From an aerospace engineering background, Thomas has already lived in 4 different countries. He worked for the automotive industry as a sales engineer as his first shift. Eager for more invigorating adventures, Thomas got married and moved to Vancouver
+                                right before joining the herd as the only non-Canadian citizen. You can definitely find him at social events, conferences and workshops in town during his spare time, where he will share his own business ideas.
+                            </p>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carousel-indicator-main-5" role="button" data-slide="prev">
-                    <span><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-indicator-main-5" role="button" data-slide="next">
-                    <span><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
-                    <span class="sr-only">Next</span>
-                </a>
+                <div class="card-mod">
+                    <div class="d-flex flex-column justify-content-around align-items-center h-100 main-card">
+                        <div id="sal-img-2" class="card-top">
+                            <img src="/Images/Staff/Sales-and-Marketing/michael.jpg" class="img-format" alt="michael">
+                        </div>
+                        <div class="d-flex flex-column card-bottom">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h1 class="name-title">Michael</h1>
+                                <h1 class="job-title">Sales & Support Representative</h1>
+                                <i id="sal-toggle-2" class="fa fa-chevron-down" data-target="#sal-2" data-toggle="collapse"></i>
+                            </div>
+                            <p id="sal-2" class="collapse">
+                                Michael is working toward his BBA at Capilano University. He can often be found crashing drones into stuff, skiing and scuba diving. He is still thinking of a way to combine all three of those things. Until then, check out his drone league that you, (yes
+                                you) should totally join! <a href="http://vanwhoop.ca/ " target="_blank">vanwhoop</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center align-items-end h-100 w-100 position-absolute title-overlay">
+                <h1 class="title-section">Sales & Marketing</h1>
             </div>
             <div id="wave-path-6" class="d-flex h-100 w-100 wave-fill-seen-6 position-absolute">
                 <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
@@ -747,18 +645,19 @@
                     </defs>
                 </svg>
             </div>
-        </div>
-
     </section>
     <!--End Sales and Marketing Section-->
 
     <!--Script Source Files-->
     <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM " crossorigin="anonymous "></script>
-    <script src="Scripts/buttonLoader.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="Scripts/pageLoader.js"></script>
+    <script src="Scripts/SideMenu.js "></script>
+    <script src="Scripts/About-Us.js"></script>
     <script src="Scripts/background-change.js"></script>
-    <script src="Scripts/SideMenu.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://github.com/FortAwesome/Font-Awesome/blob/master/js/all.js"></script>
+    <!--End Script Source Files-->
 </body>
 
 </html>
