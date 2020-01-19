@@ -10,7 +10,7 @@ html {
     -ms-scroll-snap: y mandatory;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-    background-color: white;
+    background-color: #bcfdff;
     transition: background-color 0.5s ease-in;
 }
 
@@ -218,6 +218,37 @@ html {
 }
 
 
+/* ---------------------------------------------------
+    Thank You Customer Sizing
+----------------------------------------------------- */
+
+.thank-you .main-title {
+    color: white;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 2px rgba(85, 67, 67, 0.8);
+}
+
+.thank-you .sub-title {
+    color: white;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px rgba(85, 67, 67, 0.8);
+}
+
+.thank-you .thanks-btn {
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    width: 20%;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.thank-you .thanks-btn:hover {
+    background-color: black;
+    color: white;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+
 /*============ BOOTSTRAP BREAK POINTS:
 
 Extra small (xs) devices (portrait phones, less than 576px)
@@ -283,6 +314,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .staff-about .card-top {
         width: 250px;
         height: 250px;
+    }
+    .staff-about .card-mod {
+        margin: 0rem;
     }
 }
 
@@ -397,10 +431,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
 /* ---------------------------------------------------
     Section Color Settings
 ----------------------------------------------------- */
-
-.color-vid {
-    background-color: #bcfdff;
-}
 
 .color-ceo {
     background-color: white;

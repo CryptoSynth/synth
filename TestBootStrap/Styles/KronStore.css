@@ -7,7 +7,7 @@
 body,
 html {
     font-family: "Noto Sans SC", sans-serif !important;
-    background-image: linear-gradient(135deg, #abdcff 10%, #0396ff 100%);
+    background-color: gainsboro;
 }
 
 *:focus {
@@ -21,8 +21,12 @@ html {
 ----------------------------------------------------- */
 
 .store {
-    height: 100vh !important;
+    margin-top: 3rem;
     overflow-x: hidden !important;
+}
+
+.store a {
+    color: black !important;
 }
 
 
@@ -159,16 +163,15 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 @media (max-width: 425px) {
     .store {
-        height: 100vh !important;
-        margin-top: 0rem !important;
+        margin-top: 3rem !important;
     }
     .ec-store .product-details__sidebar {
         margin-top: 0rem !important;
     }
     .ec-store .ec-cart {
-        margin-top: 40rem !important;
+        margin-top: 1rem !important;
     }
     .ec-store .product-details--layout-sidebar-right .product-details__gallery {
-        margin-top: 8rem !important;
+        margin-top: 1rem !important;
     }
 }

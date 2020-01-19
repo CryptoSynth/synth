@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
+body,
+html {
+    font-family: "Noto Sans SC", sans-serif;
+    height: 100%;
+}
+
+.contact-us {
+    height: 100vh;
+}
+
+.contact-us .footer {
+    padding: 1rem;
+    background-color: black;
+    color: white;
+}
+
+.contact-us i {
+    font-size: 3vh;
+}
+
+.contact-us p {
+    font-size: 2vh;
+}
+
+.contact-us .b-r {
+    border-right: 2px solid white;
+}
+
+.contact-us .b-l {
+    border-left: 2px solid white;
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+@media (max-width: 768px) {
+    /* ---------------------------------------------------
+    Contact Us Style
+----------------------------------------------------- */
+    .contact-us .footer-info {
+        padding: 0.5rem 0rem;
+        justify-content: unset !important;
+    }
+    .contact-us i {
+        font-size: 2.5vh;
+    }
+    .contact-us p {
+        font-size: 1.5vh;
+    }
+    .contact-us a {
+        font-size: 1.5vh;
+    }
+    .contact-us .b-r {
+        border-right: 0px;
+        border-top: 1px solid white;
+        margin: 0rem 1rem;
+    }
+    .contact-us .b-l {
+        border-left: 0px;
+        border-top: 1px solid white;
+        margin: 0rem 1rem;
+    }
+}

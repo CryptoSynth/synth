@@ -11,13 +11,13 @@
 
 .mainnav .navbar {
     background-color: rgba(0, 0, 0, 0.5) !important;
-    z-index: 2;
+    z-index: 3;
     font-family: "Noto Sans SC", sans-serif;
 }
 
 .mainnav i {
     color: white;
-    font-size: 2.1rem;
+    font-size: 2.5rem;
 }
 
 .mainnav i:hover {
@@ -34,8 +34,8 @@
 
 #title-hover {
     font-size: 10vw;
-    writing-mode: vertical-lr;
-    text-orientation: upright;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
     text-transform: uppercase;
     letter-spacing: 0.4rem;
 }
@@ -217,7 +217,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
     border-radius: 30px !important;
     margin: 0.4rem 0.5rem !important;
     z-index: 1 !important;
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
 }
 
 #chronos-1::before {
