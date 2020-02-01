@@ -1,0 +1,59 @@
+/*===============================================================
+    Valadation Form Icons Removed
+=================================================================*/
+
+.master-shipping-modal .was-validated .form-control:valid {
+    background-image: none;
+}
+
+.master-shipping-modal .was-validated .form-control:invalid {
+    background-image: none;
+}
+
+
+/*===============================================================
+  Shipping Policy
+=================================================================*/
+
+.master-shipping-modal .modal-footer i {
+    font-size: 0.7rem;
+    color: red;
+}
+
+.master-shipping-modal .modal-footer p {
+    margin: 0;
+}
+
+.master-shipping-modal .modal-footer a {
+    color: blue;
+    font-weight: 600;
+}
+
+
+/*===============================================================
+  Shipping Policy
+=================================================================*/
+
+.master-shipping-modal .card-header h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.master-shipping-modal .card-header {
+    padding: 0;
+    margin: 0;
+}
+
+#shipping-collapse-9 strong {
+    color: red;
+}
+
+.master-shipping-modal .something-in-here a {
+    color: lightskyblue;
+}
+
+#upload-doc:hover,
+#yes:hover,
+#no:hover {
+    cursor: pointer;
+}

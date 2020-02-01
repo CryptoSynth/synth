@@ -1,4 +1,66 @@
 body,
-html {
-    background-color: black;
+html {}
+
+section {
+    height: 100vh;
+}
+
+
+/*===============================================================
+    Input Here
+=================================================================*/
+
+.main-body {
+    background-image: url(/Images/glow_back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-body .carousel-body {
+    position: absolute;
+    z-index: 5;
+}
+
+.main-body .card-body {
+    height: 100vh;
+    padding: 1rem;
+}
+
+.main-body .card-content {
+    background-color: white;
+    height: 100%;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: unset;
+}
+
+.main-body .card-content:hover {
+    transition: all 0.5s ease-in;
+}
+
+.slick-center {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+    transition: all 1s;
+    overflow: unset;
+}
+
+.slick-center .card-content {
+    box-shadow: 0px 88px 98px 1px rgba(140, 1, 204, 0.5);
+}
+
+.slick-active {
+    opacity: 0.2;
+    transform: scale(0.9);
+    transition: all 1s ease-in-out;
+}
+
+.slick-slide {
+    opacity: 0.2;
+    transform: scale(0.8);
+}
+
+.slick-center:hover,
+.slick-active:hover {
+    opacity: 0.6;
 }

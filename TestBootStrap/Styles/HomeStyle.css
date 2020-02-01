@@ -3,11 +3,14 @@
 ----------------------------------------------------- */
 
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
-body {
+body,
+html {
     font-family: "Noto Sans SC", sans-serif;
-    overflow: hidden;
-    height: 100%;
     background-color: #111;
+}
+
+a {
+    cursor: pointer;
 }
 
 
@@ -24,7 +27,7 @@ body {
     border: 2px solid white;
     height: 15rem;
     width: unset;
-    margin: 0rem .5rem;
+    margin: 0rem 0.5rem;
 }
 
 .mobile-vid .vid-1 {
