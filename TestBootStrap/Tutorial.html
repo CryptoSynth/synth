@@ -6,21 +6,23 @@
     <!--Required Meta tag-->
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Turorial</title>
+    <title>Tutorial</title>
 
     <!--Style Sheets CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" href="Styles/hover-min.css" />
     <link rel="stylesheet" href="Styles/NavBarStyle.css" />
     <link rel="stylesheet" href="Styles/hamburgers-min.css" />
-    <link rel="stylesheet" href="Styles/LeosPlayGroundStyle.css" />
     <link rel="stylesheet" href="Styles/pageLoader.css" />
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <!-- Add the slick-theme.css if you want default styling -->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="Styles/LeosPlayGroundStyle.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" />
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
+
 </head>
 <!--Start Main Menu Navagation-->
 <header>
@@ -134,7 +136,6 @@
                                 <span class="hamburger-inner"></span>
                             </span>
                         </button>
-
                 </div>
             </div>
             <div class="d-flex justify-content-center align-items-center w-100 h-100 position-absolute title-mainnav">
@@ -155,93 +156,160 @@
     <section class="main-body">
         <div class="carousel-body d-flex justify-content-around align-content-center w-100">
             <div class="card-body">
-                <div class="card-content  d-flex justify-content-center align-items-center">
-                    <a href="#">Video 1</a>
+                <div class="test d-flex justify-content-center align-items-center h-100 w-100 position-relative">
+                    <div class="card-content d-flex flex-column justify-content-center align-items-center h-100 w-100">
+                        <div class="plyr__video-embed" id="player">
+                            <iframe allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/PaooERICNaE?ecver=1&amp;iv_load_policy=1&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="560" height="315" allowtransparency="true" frameborder="0">
+                        <div class="text-body d-flex flex-column justify-content-around align-items-center h-50 w-100">
+                            <h1 class="">Test Video 1</h1 c>
+                            <p class="">This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the
+                                video that will go here. This is some text of the video that will go here. This is some text of the video that will go here.
+                            </p>
+                        </div>
+                        <div id="img-1" class="img-overlay d-flex flex-column justify-content-top align-items-center h-100 w-100 position-absolute">
+                            <img src="/Images/play-button-512.png" width="150px" height="150px">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card-body">
-                <div class="card-content d-flex justify-content-center align-items-center">
-                    <a href="#">Video 1</a>
+                <div class="test d-flex justify-content-center align-items-center h-100 w-100 position-relative">
+                    <div class="card-content d-flex flex-column justify-content-center align-items-center h-100 w-100">
+                        <div class="plyr__video-embed" id="player">
+                            <iframe src="https://www.youtube.com/embed/p9XandILnvk?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" allowfullscreen allowtransparency></iframe>
+                        </div>
+                        <div class="text-body d-flex flex-column justify-content-around align-items-center h-50 w-100">
+                            <h1 class="m-0 mt-5">Test Video 1</h1 c>
+                            <p class="m-0 p-4">This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the
+                                video that will go here. This is some text of the video that will go here. This is some text of the video that will go here.
+                            </p>
+                        </div>
+                        <div id="img-2" class="img-overlay d-flex flex-column justify-content-top align-items-center h-100 w-100 position-absolute">
+                            <img src="/Images/play-button-512.png" width="150px" height="150px">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card-body">
-                <div class="card-content d-flex justify-content-center align-items-center">
-                    <a href="#">Video 1</a>
+                <div class="test d-flex justify-content-center align-items-center h-100 w-100 position-relative">
+                    <div class="card-content d-flex flex-column justify-content-center align-items-center h-100 w-100">
+                        <div class="plyr__video-embed" id="player">
+                            <iframe src="https://www.youtube.com/embed/N0opKfWNTJI?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" allowfullscreen allowtransparency></iframe>
+                        </div>
+                        <div class="text-body d-flex flex-column justify-content-around align-items-center h-50 w-100">
+                            <h1 class="m-0 mt-5">Test Video 1</h1 c>
+                            <p class="m-0 p-4">This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the
+                                video that will go here. This is some text of the video that will go here. This is some text of the video that will go here.
+                            </p>
+                        </div>
+                        <div id="img-3" class="img-overlay d-flex flex-column justify-content-top align-items-center h-100 w-100 position-absolute">
+                            <img src="/Images/play-button-512.png" width="150px" height="150px">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card-body">
-                <div class="card-content d-flex justify-content-center align-items-center">
-                    <a href="#">Video 1</a>
+                <div class="test d-flex justify-content-center align-items-center h-100 w-100 position-relative">
+                    <div class="card-content d-flex flex-column justify-content-center align-items-center h-100 w-100">
+                        <div class="plyr__video-embed" id="player">
+                            <iframe src="https://www.youtube.com/embed/N0opKfWNTJI?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" allowfullscreen allowtransparency></iframe>
+                        </div>
+                        <div class="text-body d-flex flex-column justify-content-around align-items-center h-50 w-100">
+                            <h1 class="m-0 mt-5">Test Video 1</h1 c>
+                            <p class="m-0 p-4">This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the
+                                video that will go here. This is some text of the video that will go here. This is some text of the video that will go here.
+                            </p>
+                        </div>
+                        <div id="img-3" class="img-overlay d-flex flex-column justify-content-top align-items-center h-100 w-100 position-absolute">
+                            <img src="/Images/play-button-512.png" width="150px" height="150px">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card-body">
-                <div class="card-content d-flex justify-content-center align-items-center">
-                    <a href="#">Video 1</a>
+                <div class="test d-flex justify-content-center align-items-center h-100 w-100 position-relative">
+                    <div class="card-content d-flex flex-column justify-content-center align-items-center h-100 w-100">
+                        <div class="plyr__video-embed" id="player">
+                            <iframe src="https://www.youtube.com/embed/N0opKfWNTJI?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" allowfullscreen allowtransparency></iframe>
+                        </div>
+                        <div class="text-body d-flex flex-column justify-content-around align-items-center h-50 w-100">
+                            <h1 class="m-0 mt-5">Test Video 1</h1 c>
+                            <p class="m-0 p-4">This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the
+                                video that will go here. This is some text of the video that will go here. This is some text of the video that will go here.
+                            </p>
+                        </div>
+                        <div id="img-3" class="img-overlay d-flex flex-column justify-content-top align-items-center h-100 w-100 position-absolute">
+                            <img src="/Images/play-button-512.png" width="150px" height="150px">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card-body">
-                <div class="card-content d-flex justify-content-center align-items-center">
-                    <a href="#">Video 1</a>
+                <div class="test d-flex justify-content-center align-items-center h-100 w-100 position-relative">
+                    <div class="card-content d-flex flex-column justify-content-center align-items-center h-100 w-100">
+                        <div class="plyr__video-embed" id="player">
+                            <iframe src="https://www.youtube.com/embed/N0opKfWNTJI?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" allowfullscreen allowtransparency></iframe>
+                        </div>
+                        <div class="text-body d-flex flex-column justify-content-around align-items-center h-50 w-100">
+                            <h1 class="m-0 mt-5">Test Video 1</h1 c>
+                            <p class="m-0 p-4">This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the
+                                video that will go here. This is some text of the video that will go here. This is some text of the video that will go here.
+                            </p>
+                        </div>
+                        <div id="img-3" class="img-overlay d-flex flex-column justify-content-top align-items-center h-100 w-100 position-absolute">
+                            <img src="/Images/play-button-512.png" width="150px" height="150px">
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="card-body">
-                <div class="card-content d-flex justify-content-center align-items-center">
-                    <a href="#">Video 1</a>
+                <div class="test d-flex justify-content-center align-items-center h-100 w-100 position-relative">
+                    <div class="card-content d-flex flex-column justify-content-center align-items-center h-100 w-100">
+                        <div class="plyr__video-embed" id="player">
+                            <iframe src="https://www.youtube.com/embed/N0opKfWNTJI?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" allowfullscreen allowtransparency></iframe>
+                        </div>
+                        <div class="text-body d-flex flex-column justify-content-around align-items-center h-50 w-100">
+                            <h1 class="m-0 mt-5">Test Video 1</h1 c>
+                            <p class="m-0 p-4">This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the
+                                video that will go here. This is some text of the video that will go here. This is some text of the video that will go here.
+                            </p>
+                        </div>
+                        <div id="img-3" class="img-overlay d-flex flex-column justify-content-top align-items-center h-100 w-100 position-absolute">
+                            <img src="/Images/play-button-512.png" width="150px" height="150px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="test d-flex justify-content-center align-items-center h-100 w-100 position-relative">
+                    <div class="card-content d-flex flex-column justify-content-center align-items-center h-100 w-100">
+                        <div class="plyr__video-embed" id="player">
+                            <iframe src="https://www.youtube.com/embed/N0opKfWNTJI?origin=https://plyr.io&amp;iv_load_policy=3&amp;modestbranding=1&amp;playsinline=1&amp;showinfo=0&amp;rel=0&amp;enablejsapi=1" allowfullscreen allowtransparency></iframe>
+                        </div>
+                        <div class="text-body d-flex flex-column justify-content-around align-items-center h-50 w-100">
+                            <h1 class="m-0 mt-5">Test Video 1</h1 c>
+                            <p class="m-0 p-4">This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the video that will go here. This is some text of the
+                                video that will go here. This is some text of the video that will go here. This is some text of the video that will go here.
+                            </p>
+                        </div>
+                        <div id="img-3" class="img-overlay d-flex flex-column justify-content-top align-items-center h-100 w-100 position-absolute">
+                            <img src="/Images/play-button-512.png" width="150px" height="150px">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="main-body">
-        <div class="carousel-body d-flex justify-content-around align-content-center w-100">
-            <div class="card-body">
-                <div class="card-content  d-flex justify-content-center align-items-center">
-                    <a href="#">Video 1</a>
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="card-content d-flex justify-content-center align-items-center">
-                    <a href="#">Video 1</a>
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="card-content d-flex justify-content-center align-items-center">
-                    <a href="#">Video 1</a>
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="card-content d-flex justify-content-center align-items-center">
-                    <a href="#">Video 1</a>
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="card-content d-flex justify-content-center align-items-center">
-                    <a href="#">Video 1</a>
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="card-content d-flex justify-content-center align-items-center">
-                    <a href="#">Video 1</a>
-                </div>
-            </div>
-            <div class="card-body">
-                <div class="card-content d-flex justify-content-center align-items-center">
-                    <a href="#">Video 1</a>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!--Script Source Files-->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="Scripts/SideMenu.js "></script>
-    <script src="Scripts/leos-playground.js"></script>
-    <script src="Scripts/cookie-formsave.js"></script>
-    <script src="https://github.com/FortAwesome/Font-Awesome/blob/master/js/all.js"></script>
-    <!--End Script Source Files-->
+        <!--Script Source Files-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="Scripts/leos-playground.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js " integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1 " crossorigin="anonymous "></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="Scripts/SideMenu.js"></script>
+        <script src="https://kit.fontawesome.com/a620b27d08.js" crossorigin="anonymous"></script>
+        <script src="https://github.com/FortAwesome/Font-Awesome/blob/master/js/all.js "></script>
+        <!--End Script Source Files-->
 </body>
 
 </html>
