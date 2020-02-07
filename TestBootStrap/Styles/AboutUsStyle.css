@@ -10,7 +10,6 @@ html {
     -ms-scroll-snap: y mandatory;
     scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
-    background-color: #bcfdff;
     transition: background-color 0.5s ease-in;
 }
 

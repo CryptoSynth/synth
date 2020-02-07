@@ -64,17 +64,11 @@ $(document).ready(function() {
     $("#eng-toggle-6").on("click", function() {
         $("#eng-img-6").toggle();
     });
-    $("#eng-toggle-7").on("click", function() {
-        $("#eng-img-7").toggle();
-    });
     $("#eng-toggle-8").on("click", function() {
         $("#eng-img-8").toggle();
     });
     $("#eng-toggle-9").on("click", function() {
         $("#eng-img-9").toggle();
-    });
-    $("#eng-toggle-10").on("click", function() {
-        $("#eng-img-10").toggle();
     });
 
     //Fade Out: Sec Operations

@@ -21,7 +21,7 @@
 }
 
 .mainnav i:hover {
-    color: cyan;
+    color: red;
 }
 
 .title-mainnav {
@@ -93,7 +93,7 @@
 }
 
 .navbar-nav .resources-dropdown ul {
-    background: linear-gradient( 180deg, rgba(0, 0, 0, 0) 20%, rgba(104, 93, 93, 0.5) 70%);
+    background-color: gray;
 }
 
 .navbar-nav .resources-dropdown a {
@@ -213,7 +213,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
     align-items: center !important;
     justify-content: center !important;
     position: absolute !important;
-    background-image: linear-gradient( 135deg, #43cbff 10%, #9708cc 100%) !important;
+    background-color: white;
     border-radius: 30px !important;
     margin: 0.4rem 0.5rem !important;
     z-index: 1 !important;
@@ -221,13 +221,13 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 #chronos-1::before {
-    content: "\f030  HD" !important;
+    content: "\f030" !important;
     font-family: "FontAwesome";
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     position: absolute !important;
-    background-image: linear-gradient( 135deg, #43cbff 10%, #9708cc 100%) !important;
+    background-color: white;
     border-radius: 30px !important;
     margin: 0.4rem 0.5rem !important;
     z-index: 1 !important;
@@ -235,13 +235,13 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 #chronos-2::before {
-    content: "\f030  FHD" !important;
+    content: "\f030  HD" !important;
     font-family: "FontAwesome";
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     position: absolute !important;
-    background-image: linear-gradient( 135deg, #43cbff 10%, #9708cc 100%) !important;
+    background-color: white;
     border-radius: 30px !important;
     margin: 0.4rem 0.5rem !important;
     z-index: 1 !important;
@@ -255,7 +255,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
     align-items: center !important;
     justify-content: center !important;
     position: absolute !important;
-    background-image: linear-gradient( 135deg, #43cbff 10%, #9708cc 100%) !important;
+    background-color: white;
     border-radius: 30px !important;
     margin: 0.4rem 0.5rem !important;
     z-index: 1 !important;
@@ -269,7 +269,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
     align-items: center !important;
     justify-content: center !important;
     position: absolute !important;
-    background-image: linear-gradient( 135deg, #43cbff 10%, #9708cc 100%) !important;
+    background-color: white;
     border-radius: 30px !important;
     margin: 0.4rem 0.5rem !important;
     z-index: 1 !important;
@@ -283,7 +283,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
     align-items: center !important;
     justify-content: center !important;
     position: absolute !important;
-    background-image: linear-gradient( 135deg, #43cbff 10%, #9708cc 100%) !important;
+    background-color: white;
     border-radius: 30px !important;
     margin: 0.4rem 0.5rem !important;
     z-index: 1 !important;
@@ -297,7 +297,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
     align-items: center !important;
     justify-content: center !important;
     position: absolute !important;
-    background-image: linear-gradient( 135deg, #43cbff 10%, #9708cc 100%) !important;
+    background-color: white;
     border-radius: 30px !important;
     margin: 0.4rem 0.5rem !important;
     z-index: 1 !important;

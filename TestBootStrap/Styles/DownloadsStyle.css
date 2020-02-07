@@ -26,21 +26,21 @@ html {
 --------------------------------------------------------*/
 
 #chronos-hd {
-    background-color: black;
+    background-image: linear-gradient(to right, #ece9e6, #ffffff);
     border-bottom: 1px solid white;
 }
 
 #chronos-fhd {
-    background-color: black;
+    background-image: linear-gradient(to right, #ece9e6, #ffffff);
     border-top: 1px solid white;
 }
 
 #chronos-hd .col-md-3 {
-    background-image: linear-gradient( to right bottom, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
+    background-color: #111;
 }
 
 #chronos-fhd .col-md-3 {
-    background-image: linear-gradient( to right bottom, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
+    background-color: #111;
 }
 
 
@@ -50,7 +50,7 @@ html {
 
 .pill-section-1 .col-md-3 {
     border-right: none;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid white;
 }
 
 .pill-section-1 .image-1 {
@@ -58,18 +58,14 @@ html {
 }
 
 .pill-section-1 h3 {
-    border: 2px solid black;
+    border: 2px solid white;
     padding: 0.5rem 1rem;
     border-radius: 10px;
-    color: black;
+    color: white;
 }
 
 #chronos-hd strong {
     color: lightskyblue;
-}
-
-#chronos-fhd strong {
-    color: mediumorchid;
 }
 
 .pill-section-1 .pill-content-1 h3 {
@@ -82,9 +78,9 @@ html {
 --------------------------------------------------------*/
 
 .pill-section-1 .pill-content-2 h4 {
-    background-color: white;
+    background-color: #111;
     margin-top: 1rem;
-    color: black;
+    color: white;
     font-size: 4vw;
     width: 100%;
     margin: 0;
@@ -94,7 +90,7 @@ html {
 .pill-section-1 .width-adjust {
     margin: 1rem 1rem;
     border-radius: 20px;
-    border: 2px solid white;
+    border: 2px solid #111;
     overflow: hidden;
 }
 

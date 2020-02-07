@@ -63,7 +63,7 @@ html {
 
 .feature {
     height: 100vh;
-    background-image: linear-gradient(135deg, #f05f57 10%, #360940 100%);
+    background-color: #111;
 }
 
 .feature .image-section {
