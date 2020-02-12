@@ -18,10 +18,6 @@ section {
     Input Here
     =================================================================*/
 
-.main-body {}
-
-.main-body .carousel-body {}
-
 .main-body .card-body {
     height: 100vh;
     padding: 4rem 0rem;
