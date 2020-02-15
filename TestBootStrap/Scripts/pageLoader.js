@@ -3,7 +3,7 @@ $(window).on("load", function() {
 });
 
 function removeLoader() {
-    $("#loader-background").fadeOut(500, function() {
+    $("#loader-background").fadeOut(5000000, function() {
         // fadeOut complete. Remove the loading div
         $("#loader-background").remove(); //makes page more lightweight
     });

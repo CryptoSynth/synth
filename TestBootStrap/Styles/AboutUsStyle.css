@@ -65,7 +65,8 @@ html {
 
 .ceo {
     height: 100vh;
-    padding: 0rem 4rem;
+    padding: 0rem 15rem;
+    background: linear-gradient(to left, #00bf8f, white, #00bf8f);
 }
 
 .ceo .ceo-card {
@@ -175,7 +176,7 @@ html {
     padding: 0.5rem 1.5rem;
     color: black;
     font-size: 2vw;
-    margin: 1.2rem 2rem;
+    margin: 4rem 2rem 0rem 2rem;
 }
 
 .staff-about .name-title {
@@ -287,7 +288,8 @@ Extra (xl) large devices (large desktops, 1200px and up)
 ----------------------------------------------------- */
     .ceo {
         height: 100vh;
-        padding: 0rem 1rem;
+        padding: 0rem 2rem;
+        padding-top: 3rem;
     }
     .row {
         height: 100%;
@@ -316,6 +318,19 @@ Extra (xl) large devices (large desktops, 1200px and up)
     }
     .staff-about .card-mod {
         margin: 0rem;
+        padding: .2rem;
+    }
+    .staff-about p {
+        font-size: 1.5vh;
+    }
+    .staff-about .title-section {
+        text-transform: uppercase;
+        border: 2px solid black;
+        border-radius: 20px;
+        padding: 0.5rem 1.5rem;
+        color: black;
+        font-size: 4vw;
+        margin-top: 5rem;
     }
 }
 
@@ -323,23 +338,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
 /* ---------------------------------------------------
     Wave Settings
 ----------------------------------------------------- */
-
-.wave-fill-hidden {
-    stroke: none;
-    fill: url(#MyGradient);
-    opacity: 0;
-    transition: ease-out 0.5s;
-}
-
-.wave-fill-seen {
-    opacity: 1;
-    fill: url(#MyGradient);
-    transition: ease-in 1s;
-}
-
-#wave-path {
-    z-index: 0;
-}
 
 .wave-fill-hidden-2 {
     stroke: none;
@@ -431,26 +429,22 @@ Extra (xl) large devices (large desktops, 1200px and up)
     Section Color Settings
 ----------------------------------------------------- */
 
-.color-ceo {
-    background-color: white;
-}
-
 .color-engineer {
-    background-color: lightgreen;
+    background-color: #00bf8f;
 }
 
 .color-operations {
-    background-color: lightskyblue;
+    background-color: #00bf8f;
 }
 
 .color-production {
-    background-color: lightsalmon;
+    background-color: #00bf8f;
 }
 
 .color-supply {
-    background-color: #ffa100;
+    background-color: #00bf8f;
 }
 
 .color-sales {
-    background-color: rgb(238, 64, 64);
+    background-color: #00bf8f;
 }

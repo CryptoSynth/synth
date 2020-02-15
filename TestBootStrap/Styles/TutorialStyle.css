@@ -3,10 +3,11 @@ body,
 html {
     font-family: "Noto Sans SC", sans-serif;
     background-color: #cdc1ff;
-    background-image: linear-gradient(to right, #0f0c29, #423b91, #24243e);
+    background-image: linear-gradient(to right, #111, #00bf8f, #111);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-repeat: no-repeat;
     background-size: cover;
+    transition: all 0.5s ease-in;
 }
 
 section {

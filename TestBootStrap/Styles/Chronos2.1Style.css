@@ -46,13 +46,10 @@ html {
 
 .landingpage .scroll-down {
     text-decoration: none;
-    color: black;
+    color: #00bf8f;
     font-size: 6vw;
     margin-bottom: 1rem;
     font-weight: bolder;
-}
-
-.landingpage i {
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
 }
 
@@ -63,7 +60,7 @@ html {
 
 .feature {
     height: 100vh;
-    background-color: #111;
+    background: linear-gradient(to right, #00bf8f, #111);
 }
 
 .feature .image-section {
@@ -86,12 +83,12 @@ html {
 
 .feature .vs-text {
     font-size: 2rem;
-    color: white;
+    color: #111;
     margin: 0;
 }
 
 .feature hr {
-    border: 1.5px solid white;
+    border: 2px solid #111;
     width: 10vw;
     margin-top: 0.3rem;
 }
@@ -111,7 +108,7 @@ html {
     background-color: black;
     transform: rotate(30deg);
     border-radius: 10px;
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.9);
 }
 
 .feature .censored i {
@@ -132,6 +129,7 @@ html {
     vertical-align: middle;
     text-align: center;
     background-color: white;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
 .feature .outside-col-style {
@@ -185,37 +183,35 @@ html {
 
 .feature .table-style .font-size {
     font-size: 6vw;
-    background: -webkit-linear-gradient(135deg, #fdd819 10%, #e80505 100%);
+    background-color: #00bf8f;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .feature .table-style th {
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
 }
 
 .feature .table-style td {
     vertical-align: middle;
-    font-size: 0.8rem;
+    font-size: 0.5rem;
 }
 
-.feature .table-style th:hover {
-    background-color: lightgray;
-}
-
-.feature .table-style td:hover {
-    background-color: lightgray;
+.feature .table-style tbody tr:hover td {
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, .6);
+    font-weight: bolder;
 }
 
 .feature .fa-check {
-    color: rgb(0, 255, 0);
-    font-size: 1.5rem;
+    color: rgb(55, 182, 55);
+    font-size: 1.2rem;
 }
 
 .feature .fa-times {
     color: rgb(255, 0, 0);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    margin-right: .5rem;
 }
 
 
@@ -226,51 +222,68 @@ html {
 .feature .info-btn {
     width: 65%;
     letter-spacing: 0.3rem;
-    color: black;
-    border: 1.5px solid black;
+    color: #111;
+    border: 2px solid #111;
 }
 
 .feature .info-btn:hover {
-    color: white;
-    border: 1.5px solid white;
+    color: black;
+    border: 2px solid black;
 }
 
 
 /* ---------------------------------------------------
-    Modal Table
+    Main Modal Table
 ----------------------------------------------------- */
 
+.feature .modal-content {
+    background-color: white;
+}
+
 .feature .listhead {
-    font-size: 2rem;
-    color: black;
-    text-align: center;
-}
-
-.feature .modal-table th {
     font-size: 1rem;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.feature .modal-table td {
-    font-size: 0.9rem;
-    vertical-align: middle;
-    text-align: center;
-}
-
-.feature .modal-table .btn {
-    border: none;
     color: black;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.feature .main-modal-table th {
+    font-size: .8rem;
+    text-align: left;
+    vertical-align: middle;
+    color: black;
+}
+
+.feature .main-modal-table td {
+    font-size: 0.8rem;
+    vertical-align: middle;
+    text-align: center;
+    color: black;
+}
+
+.feature .main-modal-table tbody tr:hover td {
+    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, .5);
+    font-weight: bolder;
+}
+
+.feature .main-modal-table .btn {
+    border: none;
+    color: rgb(252, 59, 59);
     font-size: 2rem;
 }
 
-.feature .modal-table .btn:hover {
-    background-color: rgba(0, 0, 0, 0);
+
+/* ---------------------------------------------------
+    Sub Modal Table
+----------------------------------------------------- */
+
+.feature .sub-modal-table tbody {
     color: black;
+    background-color: white;
 }
 
-.feature .modal-table .modal-subtable {
-    padding: 0rem !important;
+.feature .modal-footer {
+    border: 0;
 }
 
 .feature .modal-footer .btn-footer {
@@ -312,7 +325,7 @@ html {
 
 .order .pre:hover {
     background-color: white;
-    color: black;
+    color: #00bf8f;
 }
 
 
@@ -357,6 +370,10 @@ Extra (xl) large devices (large desktops, 1200px and up)
     /* ---------------------------------------------------
     Feature Section
 ----------------------------------------------------- */
+    .feature .table-section {
+        height: 70%;
+        padding: 0rem 4rem;
+    }
     .feature .padding-style {
         padding-left: 3rem !important;
         padding-right: 3rem !important;
@@ -371,6 +388,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .feature .censored i {
         font-size: 3vw;
         padding: 0 0.7rem;
+    }
+    .feature .fa-times {
+        margin-right: 1rem;
     }
     /* ---------------------------------------------------
     Feature Table
@@ -398,11 +418,11 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .feature .fa-times {
         font-size: 2rem;
     }
-    .feature th {
-        font-size: 2rem;
+    .feature .table-style th {
+        font-size: .9rem;
     }
-    .feature td {
-        font-size: 1.5rem;
+    .feature .table-style td {
+        font-size: .9rem;
     }
     .feature .censored {
         width: 50%;

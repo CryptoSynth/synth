@@ -15,6 +15,10 @@ html {
     height: 100vh;
 }
 
+.scroll-start {
+    scroll-snap-align: unset;
+}
+
 *:focus {
     outline: none !important;
     box-shadow: none !important;
@@ -25,22 +29,26 @@ html {
     Background Colors
 --------------------------------------------------------*/
 
-#chronos-hd {
-    background-image: linear-gradient(to right, #ece9e6, #ffffff);
-    border-bottom: 1px solid white;
+#chronos {
+    background: linear-gradient(to right, #ce2d28, #111);
+    border-bottom: 1.5px solid black;
 }
 
-#chronos-fhd {
-    background-image: linear-gradient(to right, #ece9e6, #ffffff);
-    border-top: 1px solid white;
+#chronos-hd {
+    background: linear-gradient(to right, #00bf8f, #111);
+    border-top: 1.5px solid black;
+}
+
+#chronos .col-md-3 {
+    background-color: #111;
 }
 
 #chronos-hd .col-md-3 {
     background-color: #111;
 }
 
-#chronos-fhd .col-md-3 {
-    background-color: #111;
+#chronos-hd strong {
+    color: #00bf8f;
 }
 
 
@@ -50,7 +58,7 @@ html {
 
 .pill-section-1 .col-md-3 {
     border-right: none;
-    border-bottom: 3px solid white;
+    border-bottom: 3px solid black;
 }
 
 .pill-section-1 .image-1 {
@@ -64,10 +72,6 @@ html {
     color: white;
 }
 
-#chronos-hd strong {
-    color: lightskyblue;
-}
-
 .pill-section-1 .pill-content-1 h3 {
     font-size: 4vw;
 }
@@ -78,9 +82,9 @@ html {
 --------------------------------------------------------*/
 
 .pill-section-1 .pill-content-2 h4 {
-    background-color: #111;
+    background-color: white;
     margin-top: 1rem;
-    color: white;
+    color: black;
     font-size: 4vw;
     width: 100%;
     margin: 0;
@@ -90,7 +94,7 @@ html {
 .pill-section-1 .width-adjust {
     margin: 1rem 1rem;
     border-radius: 20px;
-    border: 2px solid #111;
+    border: 2px solid white;
     overflow: hidden;
 }
 
@@ -101,16 +105,16 @@ html {
 
 .pill-section-1 .btn-mod-current {
     border-radius: 100px;
-    border: 2px solid #5d6d7c;
-    background-color: #5d6d7c;
+    border: 2px solid white;
+    background-color: white;
     overflow: hidden;
     margin: 0.5rem 0rem;
-    color: white;
+    color: #111;
 }
 
 .pill-section-1 .btn-mod-current:hover {
-    background-color: white;
-    color: #5d6d7c;
+    background-color: #111;
+    color: white;
 }
 
 .pill-section-1 p {
@@ -125,19 +129,19 @@ html {
 --------------------------------------------------------*/
 
 .pill-section-1 .icon-mod-1 {
-    color: white;
+    color: #111;
 }
 
 .pill-section-1 .icon-mod-2 {
-    color: white;
+    color: #111;
 }
 
 .pill-section-1 .icon-mod-3 {
-    color: white;
+    color: #111;
 }
 
 .pill-section-1 .font-mod {
-    background-color: #5d6d7c;
+    background-color: white;
     width: 40px;
 }
 
@@ -151,19 +155,20 @@ html {
 --------------------------------------------------------*/
 
 .pill-section-1 .icon-mod-info {
-    border: 2px solid #5d6d7c;
-    background-color: #5d6d7c;
+    border: 2px solid white;
+    background-color: white;
     border-radius: 100%;
     padding: 5px 10px;
     margin: auto;
     font-size: 15px;
-    color: white;
+    color: black;
 }
 
 .pill-section-1 .icon-mod-info:hover {
-    border: 2px solid #5d6d7c;
+    border: 2px solid #111;
     background-color: white;
-    color: #5d6d7c;
+    color: #111;
+    cursor: pointer;
 }
 
 
@@ -173,16 +178,16 @@ html {
 
 .pill-section-1 .btn-previous-dropdown {
     border-radius: 100px;
-    border: 2px solid #5d6d7c;
-    background-color: #5d6d7c;
+    border: 2px solid white;
+    background-color: white;
     overflow: hidden;
     margin: 0.5rem 0rem;
-    color: white;
+    color: #111;
 }
 
 .pill-section-1 .btn-previous-dropdown:hover {
-    background-color: white;
-    color: #5d6d7c;
+    background-color: #111;
+    color: white;
 }
 
 
@@ -192,16 +197,16 @@ html {
 
 .pill-section-1 .btn-mod-previous {
     border-radius: 100px;
-    border: 2px solid #5d6d7c;
-    background-color: #5d6d7c;
+    border: 2px solid white;
+    background-color: white;
     overflow: hidden;
     margin: 0.5rem 0rem;
-    color: white;
+    color: #111;
 }
 
 .pill-section-1 .btn-mod-previous:hover {
-    background-color: white;
-    color: #5d6d7c;
+    background-color: black;
+    color: white;
 }
 
 
@@ -263,6 +268,9 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (min-width: 768px) {
+    .scroll-start {
+        scroll-snap-align: start;
+    }
     /*------------------------------------------------------
     Pill Box Section 1
 --------------------------------------------------------*/

@@ -79,13 +79,8 @@
 }
 
 .navbar-nav .hd {
-    color: lightskyblue;
+    color: #00bf8f;
     font-size: 1.6rem;
-}
-
-.navbar-nav .fhd {
-    color: violet;
-    font-size: 1.7rem;
 }
 
 .navbar-nav p {

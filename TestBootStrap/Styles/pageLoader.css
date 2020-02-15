@@ -1,5 +1,5 @@
 /*---------------------------------------------------
-    Loader Icon Style 
+    Loader Icon Style
 ----------------------------------------------------*/
 
 #loader-background {
@@ -16,77 +16,18 @@
 
 #loader-line-1 {
     position: absolute;
-    width: 100px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     align-self: center;
+    justify-content: center;
     border-radius: 100%;
-    border-top: 5px solid rgb(228, 111, 228);
-    border-left: 0px solid rgb(228, 111, 228);
-    border-bottom: 5px solid rgb(96, 194, 233);
-    border-right: 0px solid rgb(96, 194, 233);
-    ;
+    border-top: 10px solid #00bf8f;
+    border-left: 10px solid #00bf8f;
+    border-bottom: 10px solid #ce2d28;
+    border-right: 10px solid #ce2d28;
     -webkit-animation: spin 2.0s linear infinite;
     animation: spin 2.0s linear infinite;
-}
-
-#loader-line-2 {
-    position: absolute;
-    width: 100px;
-    height: 300px;
-    align-self: center;
-    border-radius: 100%;
-    border-top: 5px solid rgb(228, 111, 228);
-    border-left: 0px solid rgb(228, 111, 228);
-    border-bottom: 5px solid rgb(96, 194, 233);
-    border-right: 0px solid rgb(96, 194, 233);
-    ;
-    -webkit-animation: spin 2.1s linear infinite;
-    animation: spin 2.1s linear infinite;
-}
-
-#loader-line-3 {
-    position: absolute;
-    width: 100px;
-    height: 300px;
-    align-self: center;
-    border-radius: 100%;
-    border-top: 5px solid rgb(228, 111, 228);
-    border-left: 0px solid rgb(228, 111, 228);
-    border-bottom: 5px solid rgb(96, 194, 233);
-    border-right: 0px solid rgb(96, 194, 233);
-    ;
-    -webkit-animation: spin 2.2s linear infinite;
-    animation: spin 2.2s linear infinite;
-}
-
-#loader-line-4 {
-    position: absolute;
-    width: 100px;
-    height: 300px;
-    align-self: center;
-    border-radius: 100%;
-    border-top: 5px solid rgb(228, 111, 228);
-    border-left: 0px solid rgb(228, 111, 228);
-    border-bottom: 5px solid rgb(96, 194, 233);
-    border-right: 0px solid rgb(96, 194, 233);
-    ;
-    -webkit-animation: spin 2.3s linear infinite;
-    animation: spin 2.3s linear infinite;
-}
-
-#loader-line-5 {
-    position: absolute;
-    width: 100px;
-    height: 300px;
-    align-self: center;
-    border-radius: 100%;
-    border-top: 5px solid rgb(228, 111, 228);
-    border-left: 0px solid rgb(228, 111, 228);
-    border-bottom: 5px solid rgb(96, 194, 233);
-    border-right: 0px solid rgb(96, 194, 233);
-    ;
-    -webkit-animation: spin 2.4s linear infinite;
-    animation: spin 2.4s linear infinite;
+    box-shadow: 0px 0px 0px 3px white, inset 0px 0px 0px 3px white;
 }
 
 #loader-icon {
@@ -94,13 +35,14 @@
     height: 180px;
     background-image: url(/Images/LoaderIcon.png);
     align-self: center;
+    justify-content: center;
     background-size: cover;
     z-index: 1;
 }
 
 
 /*---------------------------------------------------
-    Loader Icon Animation 
+    Loader Icon Animation
 ----------------------------------------------------*/
 
 @-webkit-keyframes spin {
