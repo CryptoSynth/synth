@@ -88,7 +88,7 @@
 }
 
 .navbar-nav .resources-dropdown ul {
-    background-color: gray;
+    background-color: rgba(255, 255, 255, 0.1) !important;
 }
 
 .navbar-nav .resources-dropdown a {
@@ -98,7 +98,7 @@
 }
 
 .navbar-nav .resources-dropdown a:hover {
-    color: white !important;
+    color: #ce2d28 !important;
 }
 
 #sidebar .sidebar-header {

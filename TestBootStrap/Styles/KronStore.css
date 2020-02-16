@@ -7,7 +7,7 @@
 body,
 html {
     font-family: "Noto Sans SC", sans-serif !important;
-    background-color: gainsboro;
+    background-color: #111;
 }
 
 *:focus {
@@ -26,7 +26,7 @@ html {
 }
 
 .store a {
-    color: black !important;
+    color: #ce2d28 !important;
 }
 
 
@@ -34,6 +34,7 @@ html {
 
 div.ecwid-productBrowser {
     background-color: transparent !important;
+    color: white!important;
 }
 
 
@@ -53,7 +54,7 @@ div.ecwid-productBrowser {
 
 .ec-store .product-details__product-title {
     font-size: 2rem !important;
-    color: black !important;
+    color: #00bf8f !important;
     margin: 0.5rem !important;
     text-align: center !important;
 }
@@ -62,10 +63,14 @@ div.ecwid-productBrowser {
 /*Sidebar breadcrumbs*/
 
 .ec-store .product-details .ec-breadcrumbs {
-    color: black !important;
+    color: white !important;
     margin: 0rem !important;
     padding: 0.5rem !important;
     text-align: center !important;
+}
+
+.ec-store label {
+    color: white !important;
 }
 
 
@@ -73,7 +78,7 @@ div.ecwid-productBrowser {
 
 .ec-store .product-details__product-price:last-child {
     font-size: 2rem !important;
-    color: black !important;
+    color: #00bf8f !important;
     margin: 0rem !important;
     padding: 0rem !important;
     text-align: center !important;
@@ -84,7 +89,7 @@ div.ecwid-productBrowser {
 
 .ec-store .ec-header-h6 {
     font-size: 1rem !important;
-    color: black !important;
+    color: #00bf8f !important;
     margin: 0.5rem !important;
     text-align: center !important;
     padding: 0rem !important;
@@ -125,7 +130,7 @@ div.ecwid-productBrowser {
 /*Sidebar breadcrumbs Description*/
 
 .ec-store .product-details__product-description p:last-child {
-    color: black !important;
+    color: white !important;
 }
 
 
@@ -134,8 +139,8 @@ div.ecwid-productBrowser {
 ----------------------------------------------------- */
 
 .ec-store .ec-cart {
-    background-color: white !important;
-    color: black !important;
+    background-color: #ce2d28 !important;
+    color: white !important;
     padding: 1rem !important;
     border-radius: 20px !important;
     margin-top: 20rem !important;

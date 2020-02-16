@@ -66,13 +66,14 @@ html {
 .ceo {
     height: 100vh;
     padding: 0rem 15rem;
-    background: linear-gradient(to left, #00bf8f, white, #00bf8f);
+    background: linear-gradient(to left, #00bf8f, #111, #00bf8f);
 }
 
 .ceo .ceo-card {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, .2);
     border-radius: 10px;
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
     color: white;
     overflow: hidden;
     z-index: 1;

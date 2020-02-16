@@ -7,15 +7,15 @@ Prompt: Fix for mobile, but ask if we want this
 Resources Menu: Add pages Shipping policy, FAQ, warranty, and return
 - No FAQ and warranty/return Page because of shippiing policy prompt
 Think about Newsletter subcription button (Ask thomas about percentage)
-Add social media icons, email addresses for each dept, and business hours, expand to contact us page
 
 Download image file...
 cookie script
 google analytic
 switch sections for product page (model top and video towards the middle, features towards the bottom
-infographic for about us page
-change color scheme for menu button 
 
 Notes for Thomas:
-- Image File 
+- Image File
 - Join Us Message
+- Holiday Calendar is broke 
+- Enter Account Number: (What account number)
+-- implement logic so that (if user is canadian they go to the store imidiate)

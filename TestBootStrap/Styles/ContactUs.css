@@ -17,6 +17,7 @@ html {
 
 .contact-us i {
     font-size: 3vh;
+    color: #00bf8f !important;
 }
 
 .contact-us p {
@@ -29,6 +30,69 @@ html {
 
 .contact-us .b-l {
     border-left: 2px solid white;
+}
+
+.contact-us .footer-location {
+    padding: 0.5rem 0rem;
+}
+
+.contact-us .footer-location i {
+    font-size: 4em;
+}
+
+.contact-us .footer-location .padding-address {
+    padding-left: 4rem !important;
+}
+
+.contact-us .footer-location .address {
+    background-color: #00bf8f;
+    border-radius: 10px;
+    color: black;
+    padding: .2rem 1rem;
+}
+
+.contact-us .red {
+    color: red !important;
+}
+
+.contact-us .footer-location .buisness-hour {
+    padding: .5rem 0rem;
+    font-size: .8rem;
+}
+
+.contact-us h5 {
+    text-decoration: underline;
+    padding: 0.5rem 0rem;
+    color: #ce2d28;
+}
+
+.contact-us .footer-phone {
+    padding: 0.5rem 0rem;
+}
+
+.contact-us .footer-email {
+    padding: 0.5rem 0rem;
+}
+
+.contact-us .email-pad {
+    padding: 0rem 3rem;
+}
+
+.contact-us .email-title {
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: #ce2d28;
+}
+
+.contact-us p {
+    margin: 0;
+}
+
+.contact-us .email-list p:hover {
+    background-color: #00bf8f;
+    color: black;
+    padding: 0rem 1rem;
+    border-radius: 10px;
 }
 
 
@@ -55,12 +119,34 @@ Extra (xl) large devices (large desktops, 1200px and up)
     /* ---------------------------------------------------
     Contact Us Style
 ----------------------------------------------------- */
-    .contact-us .footer-info {
-        padding: 0.5rem 0rem;
-        justify-content: unset !important;
+    .contact-us .footer {
+        padding: 0rem 0rem;
+    }
+    .contact-us .footer-location {
+        padding: 0.7rem 3rem;
+        justify-content: space-between !important;
+    }
+    .contact-us .buisness-hour {
+        padding: .5rem 3rem;
+    }
+    .contact-us h5 {
+        padding: 0rem 3rem;
+        font-size: .8rem;
+    }
+    .contact-us .footer-phone {
+        padding: 0.7rem 3rem;
+        justify-content: space-between !important;
+    }
+    .contact-us .footer-email {
+        padding: 0.7rem 3rem;
+        justify-content: space-between !important;
+    }
+    .contact-us .email-title {
+        font-size: .6rem;
     }
     .contact-us i {
         font-size: 2.5vh;
+        padding: 0rem !important;
     }
     .contact-us p {
         font-size: 1.5vh;
@@ -71,11 +157,12 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .contact-us .b-r {
         border-right: 0px;
         border-top: 1px solid white;
-        margin: 0rem 1rem;
+        margin: 0rem 2rem;
     }
     .contact-us .b-l {
+        padding-bottom: .5rem;
         border-left: 0px;
         border-top: 1px solid white;
-        margin: 0rem 1rem;
+        margin: 0rem 2rem;
     }
 }

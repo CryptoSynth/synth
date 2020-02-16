@@ -1,3 +1,14 @@
+/* ---------------------------------------------------
+    HTML & Body
+----------------------------------------------------- */
+
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
+body,
+html {
+    font-family: "Noto Sans SC", sans-serif;
+}
+
+
 /*===============================================================
     Valadation Form Icons Removed
 =================================================================*/
@@ -11,49 +22,213 @@
 }
 
 
-/*===============================================================
-  Shipping Policy
-=================================================================*/
+/* ---------------------------------------------------
+    Modal-Body Content Style
+----------------------------------------------------- */
 
-.master-shipping-modal .modal-footer i {
-    font-size: 0.7rem;
-    color: red;
-}
-
-.master-shipping-modal .modal-footer p {
-    margin: 0;
-}
-
-.master-shipping-modal .modal-footer a {
-    color: blue;
-    font-weight: 600;
-}
-
-
-/*===============================================================
-  Shipping Policy
-=================================================================*/
-
-.master-shipping-modal .card-header h3 {
-    padding: 0;
-    margin: 0;
-}
-
-.master-shipping-modal .card-header {
-    padding: 0;
-    margin: 0;
-}
-
-#shipping-collapse-9 strong {
-    color: red;
-}
-
-.master-shipping-modal .something-in-here a {
-    color: lightskyblue;
+.master-shipping-modal .modal-content {
+    background-color: #111;
+    color: #00bf8f;
+    border: 1px solid white;
 }
 
 #upload-doc:hover,
 #yes:hover,
 #no:hover {
     cursor: pointer;
+}
+
+
+/* ---------------------------------------------------
+    Modal-Body Content Style (Yes)
+----------------------------------------------------- */
+
+#download-doc {
+    background-color: rgb(28, 60, 245);
+    border-radius: 20px;
+    border: 2px solid white;
+    color: white !important;
+}
+
+#download-doc:hover {
+    background-color: white;
+    color: rgb(28, 60, 245) !important;
+    border: 2px solid rgb(28, 60, 245);
+}
+
+#proceed {
+    background-color: #00bf8f;
+    border: 2px solid white;
+    border-radius: 20px;
+    color: white !important;
+}
+
+#proceed:hover {
+    background-color: white;
+    border: 2px solid #00bf8f;
+    border-radius: 20px;
+    color: #00bf8f !important;
+}
+
+
+/* ---------------------------------------------------
+    Modal-Body Content Style (No)
+----------------------------------------------------- */
+
+
+/*===============================================================
+  Modal-Footer Content Style
+=================================================================*/
+
+.master-shipping-modal .modal-footer i {
+    font-size: 1rem;
+    color: #ce2d28;
+}
+
+.master-shipping-modal .modal-footer p {
+    margin: 0;
+    text-align: center;
+}
+
+.master-shipping-modal .modal-footer a {
+    color: white !important;
+    padding: .15rem .8rem;
+    background-color: #00bf8f;
+    border: 2px solid white;
+    border-radius: 20px;
+}
+
+.master-shipping-modal .modal-footer a:hover {
+    background-color: white;
+    color: #00bf8f !important;
+    border: 2px solid #00bf8f;
+}
+
+.master-shipping-modal .modal-footer .btn-secondary {
+    color: white;
+    background-color: rgb(108, 117, 125);
+    border-radius: 10px;
+    padding: .15rem 2rem;
+}
+
+.master-shipping-modal .modal-footer .btn-secondary:hover {
+    border: 2px solid white;
+}
+
+
+/*===============================================================
+  Modal-Content Style (Shipping-Policy)
+=================================================================*/
+
+.master-shipping-modal .modal-policy {
+    color: white;
+}
+
+.master-shipping-modal .modal-header h3 {
+    color: #00bf8f !important;
+}
+
+.master-shipping-modal .modal-body .card-header h3 {
+    padding: 0;
+    margin: 0;
+}
+
+.master-shipping-modal .modal-body .card-header {
+    padding: 0;
+    margin: 0;
+    background-color: #00bf8f;
+    color: #00bf8f;
+}
+
+.master-shipping-modal .card {
+    border: 1px solid #00bf8f;
+}
+
+.master-shipping-modal .card .btn {
+    color: black;
+    background-color: #00bf8f;
+}
+
+.master-shipping-modal .card .btn:hover {
+    color: white;
+}
+
+.master-shipping-modal .card .card-body {
+    background-color: white;
+    color: black;
+}
+
+#shipping-collapse-9 strong {
+    color: red;
+}
+
+.master-shipping-modal a {
+    color: #ce2d28 !important;
+}
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
+
+@media (max-width: 768px) {
+    .master-shipping-modal .was-validated {
+        padding: 0rem !important;
+    }
+    .master-shipping-modal .form-row {
+        margin: 2rem 0rem 0rem 0rem !important;
+    }
+    /* ---------------------------------------------------
+    Modal-Body Content Style (Yes)
+----------------------------------------------------- */
+    #download-doc {
+        font-size: .7rem;
+    }
+    /*===============================================================
+  Modal-Footer Content Style
+=================================================================*/
+    .master-shipping-modal .modal-footer i {
+        font-size: 0.7rem;
+    }
+    .master-shipping-modal .modal-footer a {
+        font-size: 0.8rem;
+    }
+    .master-shipping-modal .modal-footer .btn-secondary {
+        margin: 1.5rem 0rem 0rem 0rem !important;
+        font-size: .8rem;
+    }
+    /*===============================================================
+  Modal-Footer Content Style
+=================================================================*/
+    .master-shipping-modal .modal-footer i {
+        font-size: .5rem;
+    }
+    /*===============================================================
+  Modal-Content Style (Shipping-Policy)
+=================================================================*/
+    .master-shipping-modal .modal-policy {
+        font-size: .8rem;
+        text-align: justify;
+    }
+    .master-shipping-modal .card .btn {
+        font-size: .8rem;
+    }
+    .master-shipping-modal .card .card-body {
+        font-size: .8rem;
+    }
 }
