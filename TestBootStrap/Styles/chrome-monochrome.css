@@ -29,7 +29,7 @@ html {
 .comparison {
     height: 100vh;
     padding: 2rem;
-    background-color: #111;
+    background-color: #00bf8f;
 }
 
 .comparison .backsplash {
@@ -61,7 +61,7 @@ html {
     height: 100%;
     width: 100%;
     background-size: cover;
-    border: 2px solid white;
+    border: 2px solid #111;
     transition: 0.5s ease-out;
 }
 
