@@ -11,12 +11,10 @@
 ## Leo To-Do:
 - Implement logic so that if user is canadian they dont get the shipping prompt and proceeds to store
 - Fix monchrome/color mobile and style page
-- Add FAQ, Warrant and Return accordion format data into prompt modal
-- Add valdation note for account number, so user knows what they have to enter
 - Add "Request Quote" button into website
 - Compress Img. File and integrate into Downloads page
 - Switch sections for product page (model top, video towards the middle, and features towards the bottom)
-- Change accesories style page
+- Fix Chronos 1.4/2.1 Modal
 
 ## Dean To-Do:
 - Idea for best "Request Quote" button placement into website

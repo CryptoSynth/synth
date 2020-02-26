@@ -7,12 +7,7 @@ body,
 html {
     font-family: "Noto Sans SC", sans-serif;
     scroll-behavior: smooth;
-    background: #485563;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #29323c, #485563);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #29323c, #485563);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #00bf8f, #111);
 }
 
 *:focus {
@@ -20,6 +15,9 @@ html {
     box-shadow: none !important;
 }
 
+a {
+    cursor: pointer;
+}
 
 /*------------------------------------------------
    Product Accessories
@@ -37,7 +35,7 @@ html {
 .accessories-border {
     border-radius: 20px;
     padding: 2.5rem 1rem;
-    background-color: transparent;
+    background-color: #111;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     position: relative;
 }
@@ -50,7 +48,7 @@ html {
 .accessories .btn {
     width: 50%;
     background-color: black;
-    color: white;
+    color: white !important;
     border-radius: 20px;
     border: 0;
 }

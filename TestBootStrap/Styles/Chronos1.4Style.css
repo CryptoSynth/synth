@@ -5,355 +5,350 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
 body,
 html {
-    font-family: "Noto Sans SC", sans-serif;
-    -ms-scroll-snap: y mandatory;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    background-repeat: no-repeat;
-    height: 100%;
-    transition: all 0.5s ease-in;
+  font-family: "Noto Sans SC", sans-serif;
+  -ms-scroll-snap: y mandatory;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  background-repeat: no-repeat;
+  height: 100%;
+  transition: all 0.5s ease-in;
 }
 
 .scroll-start {
-    scroll-snap-align: start;
+  scroll-snap-align: start;
 }
 
 *:focus {
-    outline: none !important;
-    box-shadow: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
+a {
+  cursor: pointer;
+}
 
 /* ---------------------------------------------------
     Landing Page Section
 ----------------------------------------------------- */
 
 .landingpage {
-    height: 100vh;
+  height: 100vh;
 }
 
 .landingpage .white-frame {
-    width: unset;
-    height: 15rem;
-    margin: 0rem .2rem;
-    border: 2px solid black;
-    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.3);
+  width: unset;
+  height: 15rem;
+  margin: 0rem 0.2rem;
+  border: 2px solid black;
+  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.3);
 }
 
 .landingpage .vid1 {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .landingpage .scroll-down {
-    text-decoration: none;
-    color: #ce2d28 !important;
-    font-size: 6vw;
-    margin-bottom: 1rem;
-    font-weight: bolder;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  color: #ce2d28 !important;
+  font-size: 6vw;
+  margin-bottom: 1rem;
+  font-weight: bolder;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
 }
-
 
 /* ---------------------------------------------------
     Feature Page Section
 ----------------------------------------------------- */
 
 .feature {
-    height: 100vh;
-    background: linear-gradient(to right, #ce2d28, #111);
+  height: 100vh;
+  background: linear-gradient(to right, #ce2d28, #111);
 }
 
 .feature .image-section {
-    height: 30%;
+  height: 30%;
 }
 
 .feature .table-section {
-    height: 70%;
-    padding: 0rem;
+  height: 70%;
+  padding: 0rem;
 }
-
 
 /* ---------------------------------------------------
     Feature Images and VS text
 ----------------------------------------------------- */
 
 .feature .adjust-image {
-    width: 100%;
-    padding: 0 1rem;
+  width: 100%;
+  padding: 0 1rem;
 }
 
 .feature .vs-text {
-    font-size: 2rem;
-    color: #111;
-    margin: 0;
+  font-size: 2rem;
+  color: #111;
+  margin: 0;
 }
 
 .feature hr {
-    border: 2px solid #111;
-    width: 10vw;
-    margin-top: 0.3rem;
+  border: 2px solid #111;
+  width: 10vw;
+  margin-top: 0.3rem;
 }
 
 .feature .phantom {
-    filter: blur(4px);
+  filter: blur(4px);
 }
 
 .feature .censored {
-    position: absolute;
-    display: flex;
-    width: 75%;
-    height: 35%;
-    justify-content: center;
-    padding: 1rem 0rem;
-    z-index: 1;
-    background-color: black;
-    transform: rotate(30deg);
-    border-radius: 10px;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.9);
+  position: absolute;
+  display: flex;
+  width: 75%;
+  height: 35%;
+  justify-content: center;
+  padding: 1rem 0rem;
+  z-index: 1;
+  background-color: black;
+  transform: rotate(30deg);
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.9);
 }
 
 .feature .censored i {
-    color: white;
-    z-index: 2;
-    font-size: 4vw;
-    padding: 0 0.3rem;
-    align-self: center;
+  color: white;
+  z-index: 2;
+  font-size: 4vw;
+  padding: 0 0.3rem;
+  align-self: center;
 }
-
 
 /* ---------------------------------------------------
     Feature Table
 ----------------------------------------------------- */
 
 .feature .table-style {
-    margin-bottom: 0;
-    vertical-align: middle;
-    text-align: center;
-    background-color: white;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0;
+  vertical-align: middle;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
 }
 
 .feature .outside-col-style {
-    width: 40%;
+  width: 40%;
 }
 
 .feature .inside-col-style {
-    width: 20%;
+  width: 20%;
 }
 
 .feature .shadow-column:before {
-    box-shadow: -15px 0 15px -15px inset;
-    content: " ";
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: -15px;
-    width: 15px;
+  box-shadow: -15px 0 15px -15px inset;
+  content: " ";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: 15px;
 }
 
 .feature .shadow-column:before {
-    box-shadow: -15px 0 15px -15px inset;
-    content: " ";
-    height: 100%;
-    position: absolute;
-    bottom: 15;
-    left: -15px;
-    width: 15px;
+  box-shadow: -15px 0 15px -15px inset;
+  content: " ";
+  height: 100%;
+  position: absolute;
+  bottom: 15;
+  left: -15px;
+  width: 15px;
 }
 
 .feature .shadow-column:after {
-    box-shadow: 15px 0 15px -15px inset;
-    content: " ";
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: -15px;
-    width: 15px;
+  box-shadow: 15px 0 15px -15px inset;
+  content: " ";
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: -15px;
+  width: 15px;
 }
 
 .feature .shadow-column {
-    position: relative;
-    text-transform: uppercase;
-    vertical-align: middle;
+  position: relative;
+  text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .feature .th-style {
-    vertical-align: middle;
-    font-size: 0.8rem;
+  vertical-align: middle;
+  font-size: 0.8rem;
 }
 
 .feature .table-style .font-size {
-    font-size: 6vw;
-    background-color: #ce2d28;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 6vw;
+  background-color: #ce2d28;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .feature .table-style th {
-    text-transform: uppercase;
-    font-size: 0.5rem;
+  text-transform: uppercase;
+  font-size: 0.5rem;
 }
 
 .feature .table-style td {
-    vertical-align: middle;
-    font-size: 0.5rem;
+  vertical-align: middle;
+  font-size: 0.5rem;
 }
 
 .feature .table-style tbody tr:hover td {
-    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, .6);
-    font-weight: bolder;
+  box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.6);
+  font-weight: bolder;
 }
 
 .feature .fa-check {
-    color: rgb(55, 182, 55);
-    font-size: 1.2rem;
+  color: rgb(55, 182, 55);
+  font-size: 1.2rem;
 }
 
 .feature .fa-times {
-    color: rgb(255, 0, 0);
-    font-size: 1.2rem;
+  color: rgb(255, 0, 0);
+  font-size: 1.2rem;
 }
-
 
 /* ---------------------------------------------------
     Learn More
 ----------------------------------------------------- */
 
 .feature .info-btn {
-    width: 65%;
-    letter-spacing: 0.3rem;
-    color: #111;
-    border: 2px solid #111;
+  width: 65%;
+  letter-spacing: 0.3rem;
+  color: #111;
+  border: 2px solid #111;
 }
 
 .feature .info-btn:hover {
-    color: black;
-    border: 2px solid black;
+  color: black;
+  border: 2px solid black;
 }
-
 
 /* ---------------------------------------------------
     Main Modal Table
 ----------------------------------------------------- */
 
 .feature .modal-content {
-    background-color: white;
+  background-color: white;
 }
 
 .feature .listhead {
-    font-size: 1rem;
-    color: black;
-    text-align: center;
-    white-space: nowrap;
+  font-size: 1rem;
+  color: black;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .feature .main-modal-table th {
-    font-size: .8rem;
-    text-align: left;
-    vertical-align: middle;
-    color: black;
+  font-size: 0.8rem;
+  text-align: left;
+  vertical-align: middle;
+  color: black;
 }
 
 .feature .main-modal-table td {
-    font-size: 0.8rem;
-    vertical-align: middle;
-    text-align: center;
-    color: black;
+  font-size: 0.8rem;
+  vertical-align: middle;
+  text-align: center;
+  color: black;
 }
 
 .feature .main-modal-table tbody tr:hover td {
-    box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, .6);
-    font-weight: bolder;
+  box-shadow: inset 0px 0px 2px 2px rgba(0, 0, 0, 0.6);
+  font-weight: bolder;
 }
 
 .feature .main-modal-table .btn {
-    border: none;
-    color: rgb(252, 59, 59);
-    font-size: 2rem;
+  border: none;
+  color: rgb(252, 59, 59);
+  font-size: 2rem;
 }
-
 
 /* ---------------------------------------------------
     Sub Modal Table
 ----------------------------------------------------- */
 
 .feature .sub-modal-table tbody {
-    color: black;
-    background-color: white;
+  color: black;
+  background-color: white;
 }
 
 .feature .modal-footer {
-    border: 0;
+  border: 0;
 }
 
 .feature .modal-footer .btn-footer {
-    color: white;
-    background-color: black;
-    border-radius: 40px;
-    padding: 0.5rem 1.5rem;
+  color: white;
+  background-color: black;
+  border-radius: 40px;
+  padding: 0.5rem 1.5rem;
 }
-
 
 /* ---------------------------------------------------
     Order Page Section
 ----------------------------------------------------- */
 
 .order {
-    height: 100vh;
-    position: relative;
+  height: 100vh;
+  position: relative;
 }
 
 .order model-viewer {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .order .model-btn {
-    border: none;
-    border-radius: 10px;
-    color: white;
-    background-color: black;
-    padding: 0.5rem 1.5rem;
-    position: absolute;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+  padding: 0.5rem 1.5rem;
+  position: absolute;
 }
 
 .order .order-button {
-    text-decoration: none;
-    border-radius: 40px;
-    width: 50%;
-    padding: 0.3rem;
-    font-size: 1.2rem;
-    background-color: black;
-    color: white;
-    z-index: 2;
+  text-decoration: none;
+  border-radius: 40px;
+  width: 50%;
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  background-color: black;
+  color: white !important;
+  z-index: 2;
 }
 
 .order .order-button:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 .order .up-button {
-    color: white;
-    font-size: 3rem;
-    padding: 0rem 20px;
-    margin-top: 4rem;
-    z-index: 2;
+  color: white;
+  font-size: 3rem;
+  padding: 0rem 20px;
+  margin-top: 4rem;
+  z-index: 2;
 }
 
 .element-down {
-    bottom: 8%;
+  bottom: 8%;
 }
 
 .order .up-button:hover {
-    color: black;
+  color: black;
 }
 
 .order .poster-img {
-    width: 50%;
+  width: 50%;
 }
-
 
 /*============ BOOTSTRAP BREAK POINTS:
 
@@ -375,103 +370,103 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (min-width: 768px) {
-    /* ---------------------------------------------------
+  /* ---------------------------------------------------
     Landing Page
 ----------------------------------------------------- */
-    .landingpage .white-frame {
-        width: 100%;
-        height: 100%;
-        border: 0px solid white;
-    }
-    .landingpage .vid1 {
-        z-index: 0;
-        height: 100%;
-        width: 100%;
-        object-fit: cover;
-    }
-    .landingpage .scroll-down {
-        font-size: 1.8vw;
-        margin-bottom: 1rem;
-        color: white;
-    }
-    /* ---------------------------------------------------
+  .landingpage .white-frame {
+    width: 100%;
+    height: 100%;
+    border: 0px solid white;
+  }
+  .landingpage .vid1 {
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .landingpage .scroll-down {
+    font-size: 1.8vw;
+    margin-bottom: 1rem;
+    color: white;
+  }
+  /* ---------------------------------------------------
     Feature Section
 ----------------------------------------------------- */
-    .feature .table-section {
-        height: 70%;
-        padding: 0rem 4rem;
-    }
-    .feature .padding-style {
-        padding-left: 3rem !important;
-        padding-right: 3rem !important;
-    }
-    .feature .adjust-image {
-        width: unset;
-        height: 20vh;
-    }
-    .feature .vs-text {
-        font-size: 4vw;
-    }
-    .feature .censored i {
-        font-size: 3vw;
-        padding: 0 0.7rem;
-    }
-    /* ---------------------------------------------------
+  .feature .table-section {
+    height: 70%;
+    padding: 0rem 4rem;
+  }
+  .feature .padding-style {
+    padding-left: 3rem !important;
+    padding-right: 3rem !important;
+  }
+  .feature .adjust-image {
+    width: unset;
+    height: 20vh;
+  }
+  .feature .vs-text {
+    font-size: 4vw;
+  }
+  .feature .censored i {
+    font-size: 3vw;
+    padding: 0 0.7rem;
+  }
+  /* ---------------------------------------------------
     Feature Table
 ----------------------------------------------------- */
-    .feature .outside-col-style {
-        width: 30%;
-    }
-    .feature .inside-col-style {
-        width: 20%;
-    }
-    .feature .shadow-column {
-        position: relative;
-        text-transform: uppercase;
-        font-size: 0.8rem;
-    }
-    .feature .th-style {
-        font-size: 1.5rem;
-    }
-    .feature .table-style .font-size {
-        font-size: 2vw;
-    }
-    .feature .fa-check {
-        font-size: 2rem;
-    }
-    .feature .fa-times {
-        font-size: 2rem;
-    }
-    .feature .table-style th {
-        font-size: .9rem;
-    }
-    .feature .table-style td {
-        font-size: .9rem;
-    }
-    .feature .censored {
-        width: 50%;
-        height: 35%;
-    }
-    .feature .censored i {
-        font-size: 3vw;
-        padding: 0 0.7rem;
-    }
-    /* ---------------------------------------------------
+  .feature .outside-col-style {
+    width: 30%;
+  }
+  .feature .inside-col-style {
+    width: 20%;
+  }
+  .feature .shadow-column {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+  }
+  .feature .th-style {
+    font-size: 1.5rem;
+  }
+  .feature .table-style .font-size {
+    font-size: 2vw;
+  }
+  .feature .fa-check {
+    font-size: 2rem;
+  }
+  .feature .fa-times {
+    font-size: 2rem;
+  }
+  .feature .table-style th {
+    font-size: 0.9rem;
+  }
+  .feature .table-style td {
+    font-size: 0.9rem;
+  }
+  .feature .censored {
+    width: 50%;
+    height: 35%;
+  }
+  .feature .censored i {
+    font-size: 3vw;
+    padding: 0 0.7rem;
+  }
+  /* ---------------------------------------------------
     Learn More
 ----------------------------------------------------- */
-    .feature .padding-style-2 {
-        padding-right: 2rem !important;
-    }
-    .feature .info-btn {
-        width: 20%;
-    }
-    /* ---------------------------------------------------
+  .feature .padding-style-2 {
+    padding-right: 2rem !important;
+  }
+  .feature .info-btn {
+    width: 20%;
+  }
+  /* ---------------------------------------------------
     Order Section
 ----------------------------------------------------- */
-    .order .order-button {
-        width: 20%;
-    }
-    .order .element-down {
-        margin-top: 40rem;
-    }
+  .order .order-button {
+    width: 20%;
+  }
+  .order .element-down {
+    margin-top: 40rem;
+  }
 }

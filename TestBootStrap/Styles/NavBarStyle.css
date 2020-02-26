@@ -21,7 +21,7 @@
 }
 
 .mainnav i:hover {
-    color: red;
+    color: #ce2d28;
 }
 
 .title-mainnav {
@@ -33,14 +33,12 @@
 }
 
 #title-hover {
-    font-size: 10vw;
+    font-size: 9vw;
     writing-mode: vertical-rl;
     text-orientation: mixed;
     text-transform: uppercase;
     letter-spacing: 0.4rem;
 }
-
-
 /* ---------------------------------------------------
     SIDEBAR MAIN STYLE
 ----------------------------------------------------- */
@@ -188,7 +186,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
         padding: 0;
     }
     #title-hover {
-        font-size: 7vw;
+        font-size: 5vw;
         writing-mode: horizontal-tb;
         text-orientation: none;
         text-transform: uppercase;

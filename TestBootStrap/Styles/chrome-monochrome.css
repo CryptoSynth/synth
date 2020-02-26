@@ -6,78 +6,77 @@
 
 body,
 html {
-    font-family: "Noto Sans SC", sans-serif !important;
-    -ms-scroll-snap: y mandatory;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
+  font-family: "Noto Sans SC", sans-serif !important;
+  -ms-scroll-snap: y mandatory;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 .scroll-start {
-    scroll-snap-align: start;
+  scroll-snap-align: start;
 }
 
 *:focus {
-    outline: none !important;
-    box-shadow: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
-
 
 /* ---------------------------------------------------
     Comparison Section Style
 ----------------------------------------------------- */
 
 .comparison {
-    height: 100vh;
-    padding: 2rem;
-    background-color: #00bf8f;
+  height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(to right, #00bf8f, #111);
 }
 
 .comparison .backsplash {
-    background-color: white;
-    padding: 1rem;
-    border-radius: 30px;
-    height: 600px;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 30px;
+  height: 600px;
+  border: 2px solid black;
 }
 
 .comparison .chrome-title {
-    color: black;
-    margin-bottom: 1.5rem;
+  color: black;
+  margin-bottom: 1.5rem;
 }
 
 .comparison p {
-    font-size: 2vh;
+  font-size: 2vh;
 }
 
 .comparison .card-struct {
-    height: 100%;
-    height: 600px;
-    padding: 0rem 1rem;
+  height: 100%;
+  height: 600px;
+  padding: 0rem 1rem;
 }
 
 .comparison .img-change {
-    border-radius: 30px;
-    background-image: url("/Images/mono-chrome.png");
-    background-repeat: no-repeat;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-    border: 2px solid #111;
-    transition: 0.5s ease-out;
+  border-radius: 30px;
+  background-image: url("/Images/mono-chrome.png");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  border: 2px solid #111;
+  transition: 0.5s ease-out;
 }
 
 .comparison .img-change:hover {
-    transition: 0.5s ease-in;
-    background-image: url("/Images/chrome.png");
+  transition: 0.5s ease-in;
+  background-image: url("/Images/chrome.png");
 }
 
 .comparison .pointer {
-    font-size: 1.5rem;
-    color: white;
-    background-color: black;
-    border-radius: 20px;
-    padding: 1rem 0rem;
+  font-size: 1.5rem;
+  color: white;
+  background-color: black;
+  border-radius: 20px;
+  padding: 1rem 0rem;
 }
-
 
 /*============ BOOTSTRAP BREAK POINTS:
 
@@ -99,29 +98,29 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (max-width: 768px) {
-    /* ---------------------------------------------------
+  /* ---------------------------------------------------
     Comparison Section Style
 ----------------------------------------------------- */
-    .comparison {
-        height: 100%;
-        background-color: #111;
-    }
-    .comparison .backsplash {
-        margin-top: 2rem;
-    }
-    .comparison .chrome-title {
-        font-size: 1.5rem;
-    }
-    .comparison p {
-        text-align: justify;
-        font-size: 0.7rem;
-    }
-    .comparison .card-struct {
-        padding: 0rem;
-        padding-top: 1rem;
-    }
-    .comparison .pointer {
-        font-size: 1.5rem;
-        padding: .5rem;
-    }
+  .comparison {
+    height: 100%;
+    background-color: #111;
+  }
+  .comparison .backsplash {
+    margin-top: 2rem;
+  }
+  .comparison .chrome-title {
+    font-size: 1.5rem;
+  }
+  .comparison p {
+    text-align: justify;
+    font-size: 0.7rem;
+  }
+  .comparison .card-struct {
+    padding: 0rem;
+    padding-top: 1rem;
+  }
+  .comparison .pointer {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+  }
 }

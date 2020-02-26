@@ -64,6 +64,12 @@ $(document).ready(function() {
     $("#downloads").mouseout(function() {
         $("#title-hover").text("");
     });
+    $("#chrome").mouseover(function() {
+        $("#title-hover").text($("#chrome-title").text());
+    });
+    $("#chrome").mouseout(function() {
+        $("#title-hover").text("");
+    });
     $("#resources").mouseover(function() {
         $("#title-hover").text($("#resources-title").text());
     });

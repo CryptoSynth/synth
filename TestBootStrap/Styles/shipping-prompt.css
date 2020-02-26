@@ -95,7 +95,7 @@ html {
     padding: .15rem .8rem;
     background-color: #00bf8f;
     border: 2px solid white;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 .master-shipping-modal .modal-footer a:hover {
@@ -135,13 +135,13 @@ html {
 
 .master-shipping-modal .modal-body .card-header {
     padding: 0;
-    margin: 0;
     background-color: #00bf8f;
     color: #00bf8f;
 }
 
 .master-shipping-modal .card {
     border: 1px solid #00bf8f;
+    margin: .5rem;
 }
 
 .master-shipping-modal .card .btn {
