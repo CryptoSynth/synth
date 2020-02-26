@@ -7,17 +7,15 @@
 - Provide us a join us message for about us page
 - Provide a list of video to add to Videos Page
 - Once website is done, need to hook the new website to krons existing domain webhost platform
+- Take off email generation of form 1560
 
 ## Leo To-Do:
 - Implement logic so that if user is canadian they dont get the shipping prompt and proceeds to store
-- Fix monchrome/color mobile and style page
-- Add "Request Quote" button into website
+- Fix monchrome/color mobile
 - Compress Img. File and integrate into Downloads page
 - Switch sections for product page (model top, video towards the middle, and features towards the bottom)
 - Fix Chronos 1.4/2.1 Modal
-
-## Dean To-Do:
-- Idea for best "Request Quote" button placement into website
+- Add MIT-License in code 
 
 ----
 

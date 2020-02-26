@@ -82,4 +82,10 @@ $(document).ready(function() {
     $("#contact-us").mouseout(function() {
         $("#title-hover").text("");
     });
+    $("#quote").mouseover(function() {
+        $("#title-hover").text($("#quote-title").text());
+    });
+    $("#quote").mouseout(function() {
+        $("#title-hover").text("");
+    });
 });
