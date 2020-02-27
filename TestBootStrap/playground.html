@@ -23,38 +23,12 @@
 
 <body>
     <!--Start Order Section-->
-    <section class="order scroll-start">
-        <model-viewer reveal="interaction" src="3D-Model/Chronos_360.glb" poster="Images/Camera-3D.png" auto-rotate
-            camera-controls alt="Camera-3D-Model" exposure=".07" shadow-intensity="1" shadow-softness=".7"
-        environment-image="/Images/studio_1.hdr">
-
-            <div class="d-flex flex justify-content-center align-items-center position-absolute w-100 h-100"
-                slot="poster">
-                <img class="poster-img" src="/Images/Camera-3D.png">
-
-                <div
-                    class="d-flex position-absolute flex-column justify-content-center align-content-center align-items-center w-100">
-                    <button class="model-btn" id="btnLoader" id="button-load">
-                        <i class="fa fa-download pr-2"></i>
-                        Load 3D Model
-                    </button>
-                </div>
-            </div>
-
-            <div
-                class="element-down d-flex flex-column justify-content-center align-items-center align-content-center position-absolute w-100">
-                <a id="shop-now" class="order-button btn hvr-shutter-out-vertical btn-form" data-toggle="modal"
-                    data-target="#shipping-prompt" style="display: none;">
-                    Buy Now
-                </a>
-                <a id="shop-now" class="order-button btn hvr-shutter-out-vertical btn-shop"
-                    href="KronStore.html#!/Chronos-1-4-high-speed-camera/p/92268927/category=21981408"
-                    style="display: none;">
-                    Buy Now
-                </a>
-            </div>
-        </model-viewer>
-    </section>
+    <div class="d-flex flex-column justify-content-center align-items-center h-100 w-100">
+        <div id="ip">Loading...</div>
+        <div id="country_code"></div>
+        <div id="CA" style="display: none;">THE CA</div>
+        <div id="US" style="display: none;">THE US</div>
+    </div>
     <!--End Order Section-->
 
     <!--Scripts Here-->
@@ -69,6 +43,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script src="/Scripts/master-shipping.js"></script>
 </body>
 
 </html>

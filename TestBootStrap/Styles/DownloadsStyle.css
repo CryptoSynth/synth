@@ -7,7 +7,6 @@
 body,
 html {
     font-family: "Noto Sans SC", sans-serif;
-    overflow-x: hidden;
     -ms-scroll-snap-type: mandatory;
     scroll-snap-type: mandatory;
     -ms-scroll-snap: y mandatory;
@@ -96,6 +95,10 @@ html {
     border-radius: 20px;
     border: 2px solid white;
     overflow: hidden;
+}
+
+.pill-section-1 .text-2_1 {
+    color: white;
 }
 
 
@@ -271,6 +274,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .scroll-start {
         scroll-snap-align: start;
     }
+
     /*------------------------------------------------------
     Pill Box Section 1
 --------------------------------------------------------*/
@@ -279,30 +283,36 @@ Extra (xl) large devices (large desktops, 1200px and up)
         border-bottom: none;
         height: 100vh;
     }
+
     /*------------------------------------------------------
     Pill Box Content 1
 --------------------------------------------------------*/
     .pill-section-1 .pill-content-1 h3 {
         font-size: 2vw;
     }
+
     .pill-section-1 .image-1 {
         width: 100%;
     }
+
     /*------------------------------------------------------
     Pill Box Content 2
 --------------------------------------------------------*/
     .pill-section-1 .pill-content-2 h4 {
         font-size: 1.5vw;
     }
+
     .pill-section-1 p {
         font-size: 1vw;
     }
+
     /*------------------------------------------------------
     Modal Info Section
 --------------------------------------------------------*/
     .pill-section-1 ol {
         padding: 0rem 2.5rem;
     }
+
     .pill-section-1 li {
         font-size: 1rem;
     }
