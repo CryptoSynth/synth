@@ -3,6 +3,7 @@
 ----------------------------------------------------- */
 
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
+
 body,
 html {
   font-family: "Noto Sans SC", sans-serif;
@@ -46,15 +47,6 @@ a {
 .landingpage .vid1 {
   width: 100%;
   object-fit: cover;
-}
-
-.landingpage .scroll-down {
-  text-decoration: none;
-  color: #ce2d28 !important;
-  font-size: 6vw;
-  margin-bottom: 1rem;
-  font-weight: bolder;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
 }
 
 /* ---------------------------------------------------
@@ -267,7 +259,7 @@ a {
 
 .feature .main-modal-table .btn {
   border: none;
-  color: rgb(252, 59, 59);
+  color: #ce2d28;
   font-size: 2rem;
 }
 
@@ -294,7 +286,6 @@ a {
 /* ---------------------------------------------------
     Order Page Section
 ----------------------------------------------------- */
-
 .order {
   height: 100vh;
   position: relative;
@@ -303,6 +294,10 @@ a {
 .order model-viewer {
   width: 100%;
   height: 100%;
+  --poster-color: black;
+  --progress-bar-height: 10px;
+  --progress-bar-color: rgba(0, 0, 0, 1);
+  background-color: #ce2d28;
 }
 
 .order .model-btn {
@@ -312,6 +307,15 @@ a {
   background-color: black;
   padding: 0.5rem 1.5rem;
   position: absolute;
+}
+
+.order .scroll-down {
+  text-decoration: none;
+  color: black !important;
+  font-size: 3vh;
+  font-weight: bolder;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+  margin-top: 1rem;
 }
 
 .order .order-button {
@@ -330,24 +334,18 @@ a {
   color: black;
 }
 
-.order .up-button {
-  color: white;
-  font-size: 3rem;
-  padding: 0rem 20px;
-  margin-top: 4rem;
-  z-index: 2;
-}
-
 .element-down {
-  bottom: 8%;
+  bottom: 2%;
+  color: black;
+  font-size: 3vh;
+  font-weight: bolder;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
 }
 
-.order .up-button:hover {
-  color: black;
-}
 
 .order .poster-img {
-  width: 50%;
+  width: 100%;
+  padding-left: 3rem;
 }
 
 /*============ BOOTSTRAP BREAK POINTS:
@@ -370,6 +368,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (min-width: 768px) {
+
   /* ---------------------------------------------------
     Landing Page
 ----------------------------------------------------- */
@@ -378,17 +377,20 @@ Extra (xl) large devices (large desktops, 1200px and up)
     height: 100%;
     border: 0px solid white;
   }
+
   .landingpage .vid1 {
     z-index: 0;
     height: 100%;
     width: 100%;
     object-fit: cover;
   }
+
   .landingpage .scroll-down {
     font-size: 1.8vw;
     margin-bottom: 1rem;
     color: white;
   }
+
   /* ---------------------------------------------------
     Feature Section
 ----------------------------------------------------- */
@@ -396,75 +398,96 @@ Extra (xl) large devices (large desktops, 1200px and up)
     height: 70%;
     padding: 0rem 4rem;
   }
+
   .feature .padding-style {
     padding-left: 3rem !important;
     padding-right: 3rem !important;
   }
+
   .feature .adjust-image {
     width: unset;
     height: 20vh;
   }
+
   .feature .vs-text {
     font-size: 4vw;
   }
+
   .feature .censored i {
     font-size: 3vw;
     padding: 0 0.7rem;
   }
+
   /* ---------------------------------------------------
     Feature Table
 ----------------------------------------------------- */
   .feature .outside-col-style {
     width: 30%;
   }
+
   .feature .inside-col-style {
     width: 20%;
   }
+
   .feature .shadow-column {
     position: relative;
     text-transform: uppercase;
     font-size: 0.8rem;
   }
+
   .feature .th-style {
     font-size: 1.5rem;
   }
+
   .feature .table-style .font-size {
     font-size: 2vw;
   }
+
   .feature .fa-check {
     font-size: 2rem;
   }
+
   .feature .fa-times {
     font-size: 2rem;
   }
+
   .feature .table-style th {
     font-size: 0.9rem;
   }
+
   .feature .table-style td {
     font-size: 0.9rem;
   }
+
   .feature .censored {
     width: 50%;
     height: 35%;
   }
+
   .feature .censored i {
     font-size: 3vw;
     padding: 0 0.7rem;
   }
+
   /* ---------------------------------------------------
     Learn More
 ----------------------------------------------------- */
   .feature .padding-style-2 {
     padding-right: 2rem !important;
   }
+
   .feature .info-btn {
     width: 20%;
   }
+
   /* ---------------------------------------------------
     Order Section
 ----------------------------------------------------- */
   .order .order-button {
     width: 20%;
+  }
+  .order .poster-img {
+    width: 50%;
   }
   .order .element-down {
     margin-top: 40rem;

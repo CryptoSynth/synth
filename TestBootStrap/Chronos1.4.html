@@ -173,19 +173,9 @@
 
     <!--Start Order Section-->
     <section class="order scroll-start">
-        <model-viewer reveal="interaction" src="/Scripts/3D-Model/Chronos_360.glb" poster="Images/Camera-3D.png"
-            auto-rotate camera-controls alt="Camera-3D-Model" background-color="#ce2d28"
-            environment-image="Images/studio_small_07_1k.hdr" shadow-intensity="1" stage-light-intensity="4"
-            environment-intensity="2">
-
-            <div class="d-flex justify-content-around align-items-center h-100 w-100 position-absolute">
-                <a href="#feature" class="hvr-grow align-self-end scroll-down">
-                    <div class="d-flex flex-column justify-content-center align-items-center">
-                        <p class="m-0">Scroll Down</p>
-                        <i class="fa fa-chevron-down p-2"></i>
-                    </div>
-                </a>
-            </div>
+        <model-viewer reveal="interaction" src="3D-Model/Chronos_360.glb" poster="Images/Camera-3D.png" auto-rotate
+            camera-controls alt="Camera-3D-Model" exposure=".07" shadow-intensity="1" shadow-softness=".7"
+            environment-image="/Images/studio_1.hdr">
 
             <div class="d-flex flex justify-content-center align-items-center position-absolute w-100 h-100"
                 slot="poster">
@@ -211,6 +201,12 @@
                     style="display: none;">
                     Buy Now
                 </a>
+                <div class="d-flex flex-column justify-content-around align-items-center w-100">
+                    <a class="scroll-down" href="#feature">
+                        Scroll Down
+                    </a>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
             </div>
         </model-viewer>
     </section>
