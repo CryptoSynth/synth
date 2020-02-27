@@ -14,6 +14,11 @@
 - Fix monchrome/color mobile
 - Compress Img. File and integrate into Downloads page
 - Add MIT-License in code 
+- Method-POST: need clear direction and style change 
+- Modal in products pages change style to match or leave white? style buy button with proper store 
+- change modal style for downloads to match shipping 
+- image missing in downloads 2.1, blank the letters in downloads 2.1 section 
+- maybe fix the menu button 
 ----
 
 # Next Weeks Target (01MAR2020):

@@ -1,12 +1,11 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <!--Required Meta tag-->
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Home</title>
+    <title>Chronos 1.4</title>
 
     <!--Style Sheets CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -14,16 +13,15 @@
     <link rel="stylesheet" href="Styles/hover-min.css" />
     <link rel="stylesheet" href="Styles/NavBarStyle.css" />
     <link rel="stylesheet" href="Styles/hamburgers-min.css">
-    <link rel="stylesheet" href="Styles/HomeStyle.css" />
     <link rel="stylesheet" href="Styles/fixed.css" />
-    <link rel="stylesheet" href="Styles/shipping-prompt.css" />
     <link rel="stylesheet" href="Styles/pageLoader.css" />
+    <link rel="stylesheet" href="Styles/Chronos1.4Style.css" />
+    <link rel="stylesheet" href="Styles/shipping-prompt.css" />
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158655387-1"></script>
-
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -34,6 +32,7 @@
 
         gtag('config', 'UA-158655387-1');
     </script>
+
 </head>
 
 <body>
@@ -179,51 +178,299 @@
     </header>
     <!--End Main Menu Navagation-->
 
-    <!--Pre-Loader-->
-    <div id="loader-background">
-        <div id="loader-line-1"></div>
-        <div id="loader-icon"></div>
-    </div>
+    <!--Start Order Section-->
+    <section class="order scroll-start">
+        <model-viewer reveal="interaction" src="3D-Model/Chronos_360.glb" poster="Images/Camera-3D.png" auto-rotate
+            camera-controls alt="Camera-3D-Model" exposure=".07" shadow-intensity="1" shadow-softness=".7"
+            environment-image="/Images/studio_1.hdr">
 
-    <!--Start Video Landing Page-->
-    <section class="mobile-vid">
-        <div class="d-flex flex-column justify-content-around align-items-center h-100 w-100">
-            <div class="white-frame d-flex align-self-center">
-                <video class="vid-1" autoplay playsinline loop muted>
-                    <source src="video/Home_Page.mp4">
-                </video>
+            <div class="d-flex flex justify-content-center align-items-center position-absolute w-100 h-100"
+                slot="poster">
+                <img class="poster-img" src="/Images/Camera-3D.png">
+
+                <div
+                    class="d-flex position-absolute flex-column justify-content-center align-content-center align-items-center w-100">
+                    <button class="model-btn" id="btnLoader" id="button-load">
+                        <i class="fa fa-download pr-2"></i>
+                        Load 3D Model
+                    </button>
+                </div>
+            </div>
+
+            <div
+                class="element-down d-flex flex-column justify-content-center align-items-center align-content-center position-absolute w-100">
+                <a id="shop-now" class="order-button btn hvr-shutter-out-vertical btn-form" data-toggle="modal"
+                    data-target="#shipping-prompt" style="display: none;">
+                    Buy Now
+                </a>
+                <a id="shop-now" class="order-button btn hvr-shutter-out-vertical btn-shop"
+                    href="kron-store.html#!/Chronos-1-4-high-speed-camera/p/92268927/category=21981408"
+                    style="display: none;">
+                    Buy Now
+                </a>
+                <div class="d-flex flex-column justify-content-around align-items-center w-100">
+                    <a class="scroll-down" href="#feature">
+                        Scroll Down
+                    </a>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+        </model-viewer>
+    </section>
+    <!--End Order Section-->
+
+    <!--Start Feature Section-->
+    <section id="feature" class="feature scroll-start">
+
+        <div class="image-section row justify-content-around align-items-center p-0 pt-5">
+
+            <!--Chronos1.4 Image-->
+            <div class="col-5 col-md-4 p-0">
+
+                <img class="adjust-image d-block mx-auto" src="Images/Chronos_1.4.png" />
+
+            </div>
+
+            <!--VS Text-->
+            <div class="col-2 p-0">
+                <h3 class="vs-text text-center align-self-center">
+                    VS
+                </h3>
+                <hr />
+
+            </div>
+
+            <!--Competitor Image-->
+            <div class="col-5 col-md-4 p-0">
+
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="censored m-0 text-center">
+
+                        <i class="fa fa-dollar"></i>
+                        <i class="fa fa-dollar"></i>
+                        <i class="fa fa-dollar"></i>
+
+                    </div>
+
+                    <img class="phantom adjust-image d-block mx-auto" src="Images/edgertronic-scp1.png" />
+                </div>
             </div>
         </div>
-    </section>
 
-    <!--Start Footer Navagation-->
-    <footer class="foot">
-        <!--Start Navagation 2-->
-        <nav class="navbar navbar-dark bg-dark fixed-bottom text-uppercase">
-            <div class="container-fluid p-0">
-                <div class="row align-items-center w-100">
-                    <div class="col-md-4 col-12 text-center p-0 animated fadeIn slower">
-                        <h5 class="p-0">Starting At
-                            <strong>$2,999</strong>
-                            <div clas></div>
-                        </h5>
+        <div class="table-section row justify-content-center align-items-center">
+            <div class="col-12">
+                <table class="table-style table table-borderless">
+                    <thead>
+                        <tr>
+                            <th class=" th-style outside-col-style" scope="col">Chronos 1.4</th>
+                            <th class="font-size th-style inside-col-style shadow-column" scope="col">Features</th>
+                            <th class=" th-style outside-col-style" scope="col">Competitor</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>$2,999</td>
+                            <th class="shadow-column" scope="row">Price</th>
+                            <td>$6,495</td>
+                        </tr>
+                        <tr>
+                            <td>1280 x 1024 @ 1,057 fps</td>
+                            <th class="shadow-column" scope="row">Max Resolution | Max Framerate</th>
+                            <td>1280 x 720 @ 701 fps</td>
+                        </tr>
+                        <tr>
+                            <td>8GB | 16GB | 32GB</td>
+                            <th class="shadow-column" scope="row">Memory Options</th>
+                            <td>8GB | 16GB</td>
+                        </tr>
+                        <tr>
+                            <td>1 - 1/1,000,000 sec </td>
+                            <th class="shadow-column" scope="row">Exposure</th>
+                            <td>1/10 - 1/250,000 sec</td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-check"></i></td>
+                            <th class="shadow-column" scope="row">Color | Mono</th>
+                            <td><i class="fa fa-check"></i></td>
+                        </tr>
+                        <tr>
+                            <td>3 days</td>
+                            <th class="shadow-column" scope="row">Delivery Time</th>
+                            <td>5-6 weeks</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <button type="button" class="info-btn btn text-uppercase hvr-float-shadow" data-toggle="modal"
+                data-target="#myModal">
+                learn more
+            </button>
+        </div>
+        </div>
+
+
+        <!--Table Comparsion-->
+
+        <!--The Modal-->
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-scrollable modal-lg modal-dialog-centered">
+                <div class="modal-content w-100">
+
+                    <!--Modal Body-->
+                    <div class="modal-body">
+                        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+                        <!--Accordion Cards-->
+                        <div id="accordion" class="h-100">
+                            <!--Title Section-->
+                            <h1 class="listhead align-self-center text-uppercase">
+                                <a name="feature">Chronos-1.4 Features</a>
+                            </h1>
+
+                            <table class="table main-modal-table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" scope="col">Features</th>
+                                        <th class=" text-center" scope="col">Chronos-1.4</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row ">Standard HD</th>
+                                        <td><i class="fa fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row ">Max Resolution</th>
+                                        <td>1280x1024 pixels</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row ">Max Framerate</th>
+                                        <td>40,420 fps</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row ">Video Format</th>
+                                        <td>mp4, RAW</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row ">Throughput</th>
+                                        <td>1.4Gpx/s</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Runtime</th>
+                                        <td>1.5 hour recording</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row ">Charge Time</th>
+                                        <td>2 hours (0-80%) with in-camera charger</td>
+                                    </tr>
+                                    <tr class="w-100">
+                                        <th scope="col">I/O</th>
+                                        <td>
+                                            <div id="accordion">
+                                                <div class="card-io">
+                                                    <div class="card-heading" id="io-heading">
+                                                        <button class="btn" type="button" data-toggle="collapse"
+                                                            data-target="#io-collapse" aria-expanded="true "
+                                                            aria-controls="io-collapse">
+                                                            <i class="fa fa-plus"></i>
+                                                        </button>
+                                                    </div>
+
+                                                    <div id="io-collapse" class="collapse" aria-labelledby="io-heading"
+                                                        data-parent=#accordion>
+                                                        <div class="card-body p-0">
+                                                            <table class="sub-modal-table table">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row">Gigabit Ethernet</th>
+                                                                        <td><i class="fa fa-check"></i></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">Trigger</th>
+                                                                        <td><i class="fa fa-check"></i></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">Audio</th>
+                                                                        <td>AUX in/out</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">Video</th>
+                                                                        <td>HMDI</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">USB</th>
+                                                                        <td><i class="fa fa-check"></i></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">SATA</th>
+                                                                        <td><i class="fa fa-check"></i></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row">Analog</th>
+                                                                        <td><i class="fa fa-check"></i></td>
+                                                                    </tr>
+
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row ">Run-n-Gun</th>
+                                        <td><i class="fa fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row ">Focusing Peaking</th>
+                                        <td><i class="fa fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row ">Zebras</th>
+                                        <td><i class="fa fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row ">Focus Aid</th>
+                                        <td><i class="fa fa-check"></i></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row ">Price</th>
+                                        <td>$2,999</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                    <div class="offset-md-4 col-md-4 col-12 text-center">
-                        <a id="shop-now" class="btn hvr-shutter-out-vertical btn-form" id="btnLoader"
-                            data-toggle="modal" data-target="#shipping-prompt" style="display: none;">
-                            Shop Now
-                        </a>
-                        <a id="shop-now" class="btn hvr-shutter-out-vertical btn-shop" id="btnLoader"
-                            href="kron-store.html#!/Chronos-1-4-high-speed-camera/p/92268927/category=21981408"
-                            style="display: none;">
-                            Shop Now
+                    <!--Modal Footer-->
+                    <div class="modal-footer align-self-center">
+                        <a id="btnFetch " class="btn-footer"
+                            href="kron-store.html#!/Chronos-1-4-high-speed-camera/p/92268927/category=21981408">
+                            Buy Now
                         </a>
                     </div>
                 </div>
             </div>
-        </nav>
-    </footer>
-    <!--End Footer Navagation-->
+        </div>
+
+    </section>
+    <!--End Feature Section-->
+
+    <!--Start Landing Page Section-->
+    <section class="landingpage scroll-start">
+        <div class="d-flex flex-column justify-content-around align-items-center h-100 w-100">
+            <div class="white-frame d-flex align-self-center">
+                <video class="vid1" autoplay playsinline loop muted>
+                    <source src="video/Chronos_1.4-HD.mp4">
+                </video>
+            </div>
+            <!--Pre-Loader-->
+            <div id="loader-background">
+                <div id="loader-line-1"></div>
+                <div id="loader-icon"></div>
+            </div>
+        </div>
+    </section>
+    <!--End Landing Page Section-->
 
     <!--Start Modal Prompt-->
     <div class="master-shipping-modal">
@@ -313,6 +560,7 @@
                                     <option value="Burundi">Burundi</option>
                                     <option value="Cambodia">Cambodia</option>
                                     <option value="Cameroon">Cameroon</option>
+                                    <option value="Canada">Canada</option>
                                     <option value="Canary Islands">Canary Islands</option>
                                     <option value="Cape Verde">Cape Verde</option>
                                     <option value="Cayman Islands">Cayman Islands</option>
@@ -1747,9 +1995,7 @@
                                             Quote request form:
                                             <br>
                                             <br>
-                                            <a href="https://docs.google.com/forms/d/e/1FAIpQLSekgwT5lOtFvBAmffzstnQqmx5bc9g60c8Uj9u_OTO0eNodCA/viewform"
-                                                target="_blank">Quote
-                                                Request</a>
+                                            <a href="">Quote Request</a>
                                             <br>
                                             <br>
                                             Or
@@ -1875,12 +2121,15 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script src="Scripts/SideMenu.js"></script>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <script src="Scripts/SideMenu.js "></script>
     <script src="Scripts/pageLoader.js"></script>
+    <script src="Scripts/slide-transition.js"></script>
     <script src="Scripts/master-shipping.js"></script>
     <script src="Scripts/cookie-formsave.js"></script>
-    <script src="https://kit.fontawesome.com/a620b27d08.js" crossorigin="anonymous"></script>
     <script src="https://github.com/FortAwesome/Font-Awesome/blob/master/js/all.js "></script>
+    <script src="https://kit.fontawesome.com/a620b27d08.js" crossorigin="anonymous"></script>
     <!--End Script Source Files-->
 
 </body>
