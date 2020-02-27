@@ -12,7 +12,6 @@ html {
   scroll-behavior: smooth;
   background-repeat: no-repeat;
   height: 100%;
-  transition: all 0.5s ease-in;
 }
 
 .scroll-start {

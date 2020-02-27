@@ -12,21 +12,21 @@ function animateCSS(element, animationName, callback) {
     node.addEventListener('animationend', handleAnimationEnd)
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
     /*===============================================================
-        Modal Transition To Shipping Policy
+        Modal Transition To Shipping Policy, FAQ, Shipping Warranty 
     =================================================================*/
-    $(".info-btn").on('click', function() {
+    $(".info-btn").on('click', function () {
         animateCSS("#myModal", "fadeInLeftBig");
     });
 
-    $("#myModal").on('hide.bs.modal', function() {
+    $("#myModal").on('hide.bs.modal', function () {
         $(this).animate({
             width: "hide"
         });
     });
 
-    $(".close").on('click', function() {
+    $(".close").on('click', function () {
         $("#myModal").animate({
             width: "hide"
         });

@@ -30,13 +30,13 @@ function isDigit(userInput) {
   }
 }
 
-$(document).ready(function() {
+$(document).ready(function () {
   /*===============================================================
   Yes Form Valadation
 =================================================================*/
   var countries = "#countries-option";
 
-  $("#yes, #no").on("click", function() {
+  $("#yes, #no").on("click", function () {
     var yes = $("#yes");
 
     if (yes.is(":checked")) {
@@ -46,15 +46,15 @@ $(document).ready(function() {
       $("#download-doc").show();
       $("#proceed-2").hide();
 
-      $("#upload-doc").on("change", function() {
+      $("#upload-doc").on("change", function () {
         $("#proceed").show();
       });
 
-      $("#download-doc").on("click", function() {
+      $("#download-doc").on("click", function () {
         $("#upload-us").show();
       });
 
-      $("#upload-doc").on("change", function(e) {
+      $("#upload-doc").on("change", function (e) {
         var fileName = e.target.files[0].name;
         $(".custom-file-label").html(fileName);
       });
@@ -76,7 +76,7 @@ $(document).ready(function() {
   No Form Valadation
 =================================================================*/
 
-  $("#countries-menu").on("click", function() {
+  $("#countries-menu").on("click", function () {
     if (isValid(countries)) {
       $("#account-num").show();
       $("#desired-courier").show();
@@ -86,7 +86,7 @@ $(document).ready(function() {
     }
   });
 
-  $("#user-account").on("keyup", function() {
+  $("#user-account").on("keyup", function () {
     if (isDigit(this)) {
       $("#valid-num").hide();
     }
@@ -96,35 +96,49 @@ $(document).ready(function() {
                     Modal Transition To Shipping Policy
                 =================================================================*/
 
-  $("#shipping-click").on("click", function() {
+  $("#shipping-click").on("click", function () {
     var shipPrompt = $("#shipping-prompt");
     shipPrompt.animate({
       width: "hide"
     });
   });
 
-  $("#warranty-click").on("click", function() {
+  $("#warranty-click").on("click", function () {
     var shipPrompt = $("#shipping-prompt");
     shipPrompt.animate({
       width: "hide"
     });
   });
 
-  $("#faq-click").on("click", function() {
+  $("#faq-click").on("click", function () {
     var shipPrompt = $("#shipping-prompt");
     shipPrompt.animate({
       width: "hide"
     });
   });
 
-  $(".modal").on("hide.bs.modal", function() {
+  $("#shipping-policy").on("hide.bs.modal", function () {
     var shipPrompt = $("#shipping-prompt");
     shipPrompt.animate({
       width: "show"
     });
   });
 
-  $("#ship-close-click").on("click", function() {
+  $("#warranty-return").on("hide.bs.modal", function () {
+    var shipPrompt = $("#shipping-prompt");
+    shipPrompt.animate({
+      width: "show"
+    });
+  });
+
+  $("#faq").on("hide.bs.modal", function () {
+    var shipPrompt = $("#shipping-prompt");
+    shipPrompt.animate({
+      width: "show"
+    });
+  });
+
+  $("#ship-close-click").on("click", function () {
     var shipPrompt = $("#shipping-prompt");
     shipPrompt.animate({
       width: "show"

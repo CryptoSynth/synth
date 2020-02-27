@@ -13,10 +13,7 @@
 - Implement logic so that if user is canadian they dont get the shipping prompt and proceeds to store
 - Fix monchrome/color mobile
 - Compress Img. File and integrate into Downloads page
-- Switch sections for product page (model top, video towards the middle, and features towards the bottom)
-- Fix Chronos 1.4/2.1 Modal
 - Add MIT-License in code 
-
 ----
 
 # Next Weeks Target (01MAR2020):
