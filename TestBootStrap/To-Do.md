@@ -17,11 +17,6 @@
 - Compress Img. File and integrate into Downloads page
 - Method-POST: need clear direction and style change 
   
-### Mobile Fixes: 
-- Fix monchrome/color mobile
-- About us CEO Hieght card
-- Engineering fix sections 
-  
 # Next Weeks Target (01MAR2020):
 ----
 - Hook up google analytics with the new website

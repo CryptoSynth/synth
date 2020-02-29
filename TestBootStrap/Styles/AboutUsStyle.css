@@ -113,7 +113,7 @@ html {
 ----------------------------------------------------- */
 
 .staff-about .card-mod {
-    height: 100%;
+    height: 100vh;
     height: 580px;
     margin: 1rem 1rem;
     padding: 2rem;
@@ -166,18 +166,12 @@ html {
     object-fit: cover;
 }
 
-.staff-about .title-overlay {
-    z-index: 1;
-}
-
 .staff-about .title-section {
     text-transform: uppercase;
-    border: 2px solid black;
-    border-radius: 20px;
-    padding: 0.5rem 1.5rem;
     color: black;
-    font-size: 2vw;
-    margin: 4rem 2rem 0rem 2rem;
+    font-size: 7vw;
+    z-index: 1;
+    padding-top: 2rem;
 }
 
 .staff-about .name-title {
@@ -270,6 +264,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (max-width: 426px) {
+
     /* ---------------------------------------------------
     Video About-Us
 ----------------------------------------------------- */
@@ -280,21 +275,23 @@ Extra (xl) large devices (large desktops, 1200px and up)
         height: 50%;
         box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.3);
     }
+
     .vid-about .about-us {
         width: 100%;
         object-fit: cover;
     }
+
     /* ---------------------------------------------------
     Ceo Section
 ----------------------------------------------------- */
     .ceo {
-        height: 100vh;
         padding: 0rem 2rem;
-        padding-top: 3rem;
     }
+
     .row {
         height: 100%;
     }
+
     .ceo .ceo-card .bio {
         font-size: 1.5vh;
         margin: 0 !important;
@@ -303,6 +300,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
         line-height: 1rem;
         padding: 1rem !important;
     }
+
     .ceo .ceo-title {
         font-size: 3vh;
         padding: 0.5rem 1rem;
@@ -310,28 +308,32 @@ Extra (xl) large devices (large desktops, 1200px and up)
         width: 100%;
         text-align: center;
     }
+
     /* ---------------------------------------------------
     Staff Section
 ----------------------------------------------------- */
+    .staff-about {
+        height: unset;
+    }
+
     .staff-about .card-top {
         width: 250px;
         height: 250px;
     }
+
     .staff-about .card-mod {
         margin: 0rem;
         padding: .2rem;
     }
+
     .staff-about p {
         font-size: 1.5vh;
     }
+
     .staff-about .title-section {
-        text-transform: uppercase;
-        border: 2px solid black;
-        border-radius: 20px;
         padding: 0.5rem 1.5rem;
-        color: black;
-        font-size: 4vw;
-        margin-top: 5rem;
+        font-size: 7vw;
+        margin-top: 30vh;
     }
 }
 
