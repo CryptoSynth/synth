@@ -17,6 +17,9 @@
 - Compress Img. File and integrate into Downloads page
 - Method-POST: need clear direction and style change 
   
+### Mobile Fixes: 
+-transition between section?? 
+  
 # Next Weeks Target (01MAR2020):
 ----
 - Hook up google analytics with the new website
