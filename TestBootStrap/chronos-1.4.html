@@ -178,46 +178,30 @@
     </header>
     <!--End Main Menu Navagation-->
 
-    <!--Start Order Section-->
-    <section class="order scroll-start">
-        <model-viewer reveal="interaction" src="3D-Model/Chronos_360.glb" poster="Images/Camera-3D.png" auto-rotate
-            camera-controls alt="Camera-3D-Model" exposure=".07" shadow-intensity="1" shadow-softness=".7"
-            environment-image="/Images/studio_1.hdr">
-
-            <div class="d-flex flex justify-content-center align-items-center position-absolute w-100 h-100"
-                slot="poster">
-                <img class="poster-img" src="/Images/Camera-3D.png">
-
-                <div
-                    class="d-flex position-absolute flex-column justify-content-center align-content-center align-items-center w-100">
-                    <button class="model-btn" id="btnLoader" id="button-load">
-                        <i class="fa fa-download pr-2"></i>
-                        Load 3D Model
-                    </button>
-                </div>
+    <!--Start Landing Page Section-->
+    <section class="landingpage scroll-start">
+        <div class="d-flex flex-column justify-content-center align-items-center h-100 w-100">
+            <div class="white-frame d-flex align-self-center">
+                <video class="vid1" autoplay playsinline loop muted>
+                    <source src="video/Chronos_1.4-HD.mp4">
+                </video>
             </div>
-
-            <div
-                class="element-down d-flex flex-column justify-content-center align-items-center align-content-center position-absolute w-100">
-                <a id="shop-now" class="order-button btn hvr-shutter-out-vertical btn-form" data-toggle="modal"
-                    data-target="#shipping-prompt" style="display: none;">
-                    Buy Now
+            <div class="d-flex justify-content-around align-items-center h-100 w-100 position-absolute">
+                <a href="#feature" class="hvr-grow align-self-end scroll-down">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <p class="m-0">Scroll Down</p>
+                        <i class="fa fa-chevron-down p-2"></i>
+                    </div>
                 </a>
-                <a id="shop-now" class="order-button btn hvr-shutter-out-vertical btn-shop"
-                    href="kron-store.html#!/Chronos-1-4-high-speed-camera/p/92268927/category=21981408"
-                    style="display: none;">
-                    Buy Now
-                </a>
-                <div class="d-flex flex-column justify-content-around align-items-center w-100">
-                    <a class="scroll-down" href="#feature">
-                        Scroll Down
-                    </a>
-                    <i class="fas fa-chevron-down"></i>
-                </div>
             </div>
-        </model-viewer>
+            <!--Pre-Loader-->
+            <div id="loader-background">
+                <div id="loader-line-1"></div>
+                <div id="loader-icon"></div>
+            </div>
+        </div>
     </section>
-    <!--End Order Section-->
+    <!--End Landing Page Section-->
 
     <!--Start Feature Section-->
     <section id="feature" class="feature scroll-start">
@@ -318,12 +302,15 @@
 
                     <!--Modal Body-->
                     <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
                         <!--Accordion Cards-->
                         <div id="accordion" class="h-100">
                             <!--Title Section-->
-                            <h1 class="listhead align-self-center text-uppercase">
-                                <a name="feature">Chronos-1.4 Features</a>
+                            <h1 class="listhead d-flex justify-content-between align-items-center text-uppercase">
+                                <div class="d-flex justify-content-center align-items-center w-100">
+                                    <p class="m-0 text-center">Chronos 1.4 Features</p>
+                                </div>
+                                <button type="button" class="close" data-dismiss="modal"><i
+                                        class="fa fa-times"></i></button>
                             </h1>
 
                             <table class="table main-modal-table">
@@ -443,7 +430,11 @@
                     </div>
                     <!--Modal Footer-->
                     <div class="modal-footer align-self-center">
-                        <a id="btnFetch " class="btn-footer"
+                        <a id="btnFetch" class="btn-footer btn-form" style="display: none;" data-toggle="modal"
+                            data-target="#shipping-prompt">
+                            Buy Now
+                        </a>
+                        <a id="btnFetch" class="btn-footer btn-shop" style="display: none;"
                             href="kron-store.html#!/Chronos-1-4-high-speed-camera/p/92268927/category=21981408">
                             Buy Now
                         </a>
@@ -455,22 +446,47 @@
     </section>
     <!--End Feature Section-->
 
-    <!--Start Landing Page Section-->
-    <section class="landingpage scroll-start">
-        <div class="d-flex flex-column justify-content-around align-items-center h-100 w-100">
-            <div class="white-frame d-flex align-self-center">
-                <video class="vid1" autoplay playsinline loop muted>
-                    <source src="video/Chronos_1.4-HD.mp4">
-                </video>
+    <!--Start Order Section-->
+    <section class="order scroll-start">
+        <model-viewer reveal="interaction" src="3D-Model/Chronos_360.glb" poster="Images/Camera-3D.png" auto-rotate
+            camera-controls alt="Camera-3D-Model" exposure=".07" shadow-intensity="1" shadow-softness=".7"
+            environment-image="/Images/studio_1.hdr">
+
+            <div
+                class="d-flex flex-column justify-content-center align-items-center align-content-center position-absolute w-100">
+                <a class="element-up btn hvr-grow" href="#feature">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
             </div>
-            <!--Pre-Loader-->
-            <div id="loader-background">
-                <div id="loader-line-1"></div>
-                <div id="loader-icon"></div>
+
+            <div class="d-flex flex justify-content-center align-items-center position-absolute w-100 h-100"
+                slot="poster">
+                <img class="poster-img" src="/Images/Camera-3D.png">
+
+                <div
+                    class="d-flex position-absolute flex-column justify-content-center align-content-center align-items-center w-100">
+                    <button class="model-btn" id="btnLoader" id="button-load">
+                        <i class="fa fa-download pr-2"></i>
+                        Load 3D Model
+                    </button>
+                </div>
             </div>
-        </div>
+
+            <div
+                class="element-down d-flex flex-column justify-content-center align-items-center align-content-center position-absolute w-100">
+                <a id="shop-now" class="order-button btn hvr-shutter-out-vertical btn-form" data-toggle="modal"
+                    data-target="#shipping-prompt" style="display: none;">
+                    Buy Now
+                </a>
+                <a id="shop-now" class="order-button btn hvr-shutter-out-vertical btn-shop"
+                    href="kron-store.html#!/Chronos-1-4-high-speed-camera/p/92268927/category=21981408"
+                    style="display: none;">
+                    Buy Now
+                </a>
+            </div>
+        </model-viewer>
     </section>
-    <!--End Landing Page Section-->
+    <!--End Order Section-->
 
     <!--Start Modal Prompt-->
     <div class="master-shipping-modal">
@@ -851,7 +867,7 @@
                             </p>
                             <div class="card">
                                 <div class="card-header" id="shipping-info">
-                                    <h3>
+                                    <h3 class="my-auto">
                                         <button class="btn w-100" data-toggle="collapse"
                                             data-target="#shipping-collapse" aria-expanded="true"
                                             aria-controls="shipping-collapse">

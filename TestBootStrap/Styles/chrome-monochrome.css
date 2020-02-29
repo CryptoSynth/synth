@@ -10,6 +10,7 @@ html {
   -ms-scroll-snap: y mandatory;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 .scroll-start {
@@ -27,7 +28,7 @@ html {
 
 .comparison {
   height: 100vh;
-  padding: 2rem;
+  padding: 2rem 1rem 2rem 1rem;
   background: linear-gradient(to right, #00bf8f, #111);
 }
 
@@ -35,7 +36,7 @@ html {
   background-color: white;
   padding: 1rem;
   border-radius: 30px;
-  height: 600px;
+  height: 500px;
   border: 2px solid black;
 }
 
@@ -50,7 +51,7 @@ html {
 
 .comparison .card-struct {
   height: 100%;
-  height: 600px;
+  height: 500px;
   padding: 0rem 1rem;
 }
 
@@ -98,6 +99,11 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (max-width: 768px) {
+  body,
+  html {
+    height: unset;
+  }
+
   /* ---------------------------------------------------
     Comparison Section Style
 ----------------------------------------------------- */
@@ -105,22 +111,31 @@ Extra (xl) large devices (large desktops, 1200px and up)
     height: 100%;
     background-color: #111;
   }
+
   .comparison .backsplash {
     margin-top: 2rem;
   }
+
   .comparison .chrome-title {
     font-size: 1.5rem;
   }
+
   .comparison p {
     text-align: justify;
     font-size: 0.7rem;
   }
+
   .comparison .card-struct {
     padding: 0rem;
     padding-top: 1rem;
   }
+
   .comparison .pointer {
     font-size: 1.5rem;
     padding: 0.5rem;
+  }
+
+  .comparison .card-struct {
+    height: 300px;
   }
 }

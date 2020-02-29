@@ -216,38 +216,79 @@ html {
 /*------------------------------------------------------
     Modal Info Section
 --------------------------------------------------------*/
-
-.pill-section-1 .modal {
+.pill-content-2 .modal {
     padding: 0 !important;
 }
 
-.pill-section-1 .modal span {
-    color: red;
+.pill-content-2 .modal-content {
+    background-color: #111;
 }
 
-.pill-section-1 .card-header {
-    padding: 0.5rem 0.5rem;
-}
 
-.pill-section-1 .card h3 {
-    color: black;
+.pill-content-2 .modal-header h3 {
+    border: 0;
+    color: #00bf8f;
     padding: 0;
     margin: 0;
+}
+
+.pill-content-2 .card {
+    margin: .5rem;
+    padding: 0;
+    border: 1px solid #00bf8f;
+}
+
+.pill-content-2 .card-body {
+    padding: 0rem 1.2rem;
+}
+
+.pill-content-2 .card-header {
+    margin: 0;
+    padding: 0;
+}
+
+.pill-content-2 .card-header h3 {
+    margin: 0;
+    padding: 0;
     border: 0;
+    border-radius: 0;
+    background-color: #00bf8f;
+}
+
+.pill-content-2 .card .btn {
+    color: black;
+    font-size: 5vw;
+}
+
+.pill-content-2 .card .btn:hover {
+    color: white;
 }
 
 .pill-section-1 ol {
     padding: 0rem 1rem;
+    color: #00bf8f;
+    margin: 0;
 }
 
 .pill-section-1 ul {
-    padding: 0rem 1rem;
+    padding: 0rem;
 }
 
 .pill-section-1 li {
-    font-size: 0.8rem;
+    font-size: 3vw;
     text-align: justify;
     padding: 0.3rem;
+}
+
+.pill-content-2 .modal-footer .btn-secondary {
+    color: white;
+    background-color: rgb(108, 117, 125);
+    border-radius: 10px;
+    padding: .15rem 2rem;
+}
+
+.pill-content-2 .modal-footer .btn-secondary:hover {
+    border: 2px solid white;
 }
 
 
@@ -309,11 +350,20 @@ Extra (xl) large devices (large desktops, 1200px and up)
     /*------------------------------------------------------
     Modal Info Section
 --------------------------------------------------------*/
+    .pill-content-2 .card-body {
+        padding: 0rem 2rem;
+    }
+
+    .pill-content-2 .card .btn {
+        font-size: 1vw;
+    }
+
+
     .pill-section-1 ol {
         padding: 0rem 2.5rem;
     }
 
     .pill-section-1 li {
-        font-size: 1rem;
+        font-size: 1vw;
     }
 }

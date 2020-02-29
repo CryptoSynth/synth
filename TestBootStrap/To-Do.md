@@ -16,15 +16,11 @@
 ### Desktop Fixes:
 - Compress Img. File and integrate into Downloads page
 - Method-POST: need clear direction and style change 
-- Modal in products pages change style to match or leave white? style buy button with proper store 
-- change modal style for downloads to match shipping 
-
+  
 ### Mobile Fixes: 
 - Fix monchrome/color mobile
 - About us CEO Hieght card
 - Engineering fix sections 
-- Move Shipping department and job applications to the right side to allow space for contact us form typing 
-- Adjust Map icon and make smaller 
   
 # Next Weeks Target (01MAR2020):
 ----

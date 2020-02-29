@@ -3,6 +3,7 @@
 ----------------------------------------------------- */
 
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
+
 body,
 html {
   font-family: "Noto Sans SC", sans-serif;
@@ -245,6 +246,10 @@ a {
   white-space: nowrap;
 }
 
+.feature .modal-content i {
+  font-size: 4vh;
+}
+
 .feature .main-modal-table th {
   font-size: 0.8rem;
   text-align: left;
@@ -284,7 +289,7 @@ a {
 }
 
 .feature .modal-footer .btn-footer {
-  color: white;
+  color: white !important;
   background-color: black;
   border-radius: 40px;
   padding: 0.5rem 1.5rem;
@@ -344,6 +349,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (min-width: 768px) {
+
   /* ---------------------------------------------------
     Landing Page
 ----------------------------------------------------- */
@@ -352,16 +358,19 @@ Extra (xl) large devices (large desktops, 1200px and up)
     height: 100%;
     border: 0px solid white;
   }
+
   .landingpage .vid1 {
     z-index: 0;
     height: 100%;
     width: 100%;
     object-fit: cover;
   }
+
   .landingpage .scroll-down {
     font-size: 1.8vw;
     margin-bottom: 1rem;
   }
+
   /* ---------------------------------------------------
     Feature Section
 ----------------------------------------------------- */
@@ -369,73 +378,92 @@ Extra (xl) large devices (large desktops, 1200px and up)
     height: 70%;
     padding: 0rem 4rem;
   }
+
   .feature .padding-style {
     padding-left: 3rem !important;
     padding-right: 3rem !important;
   }
+
   .feature .adjust-image {
     width: unset;
     height: 20vh;
   }
+
   .feature .vs-text {
     font-size: 4vw;
   }
+
   .feature .censored i {
     font-size: 3vw;
     padding: 0 0.7rem;
   }
+
   .feature .fa-times {
     margin-right: 1rem;
   }
+
   /* ---------------------------------------------------
     Feature Table
 ----------------------------------------------------- */
   .feature .outside-col-style {
     width: 30%;
   }
+
   .feature .inside-col-style {
     width: 20%;
   }
+
   .feature .shadow-column {
     position: relative;
     text-transform: uppercase;
     font-size: 0.8rem;
   }
+
   .feature .th-style {
     font-size: 1.5rem;
   }
+
   .feature .table-style .font-size {
     font-size: 2vw;
   }
+
   .feature .fa-check {
     font-size: 2rem;
   }
+
   .feature .fa-times {
     font-size: 2rem;
   }
+
   .feature .table-style th {
     font-size: 0.9rem;
   }
+
   .feature .table-style td {
     font-size: 0.9rem;
   }
+
   .feature .censored {
     width: 50%;
     height: 35%;
   }
+
   .feature .censored i {
     font-size: 3vw;
     padding: 0 0.7rem;
   }
+
   /* ---------------------------------------------------
     Learn More
 ----------------------------------------------------- */
   .feature .padding-style-2 {
     padding-right: 2rem !important;
   }
+
   .feature .info-btn {
     width: 20%;
   }
+
   /* ---------------------------------------------------
     Order Section
 ----------------------------------------------------- */
@@ -446,6 +474,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
     transform: scale(1, 1);
     object-fit: cover;
   }
+
   .order .pre {
     font-size: 9vw;
     text-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);

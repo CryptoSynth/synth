@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
+
 body,
 html {
     font-family: "Noto Sans SC", sans-serif;
@@ -37,7 +38,7 @@ html {
 }
 
 .contact-us .footer-location i {
-    font-size: 4em;
+    font-size: 2rem;
 }
 
 .contact-us .footer-location .padding-address {
@@ -89,10 +90,7 @@ html {
 }
 
 .contact-us .email-list p:hover {
-    background-color: #00bf8f;
-    color: black;
-    padding: 0rem 1rem;
-    border-radius: 10px;
+    color: #00bf8f;
 }
 
 
@@ -116,53 +114,64 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (max-width: 768px) {
+
     /* ---------------------------------------------------
     Contact Us Style
 ----------------------------------------------------- */
     .contact-us .footer {
         padding: 0rem 0rem;
     }
+
     .contact-us .footer-location {
-        padding: 0.7rem 3rem;
-        justify-content: space-between !important;
+        padding: 0.7rem 1rem;
+        justify-content: space-around !important;
     }
+
     .contact-us .buisness-hour {
-        padding: .5rem 3rem;
+        padding: .5rem 1rem;
     }
+
     .contact-us h5 {
-        padding: 0rem 3rem;
+        padding: 0rem 1rem;
         font-size: .8rem;
     }
+
     .contact-us .footer-phone {
-        padding: 0.7rem 3rem;
-        justify-content: space-between !important;
+        padding: 0.7rem 1rem;
+        justify-content: space-around !important;
     }
+
     .contact-us .footer-email {
-        padding: 0.7rem 3rem;
-        justify-content: space-between !important;
+        padding: .5rem .5rem;
+        justify-content: space-around !important;
     }
+
     .contact-us .email-title {
         font-size: .6rem;
     }
+
     .contact-us i {
         font-size: 2.5vh;
         padding: 0rem !important;
     }
+
     .contact-us p {
         font-size: 1.5vh;
     }
+
     .contact-us a {
         font-size: 1.5vh;
     }
+
     .contact-us .b-r {
         border-right: 0px;
         border-top: 1px solid white;
-        margin: 0rem 2rem;
+        margin: 0rem 1rem;
     }
+
     .contact-us .b-l {
-        padding-bottom: .5rem;
         border-left: 0px;
         border-top: 1px solid white;
-        margin: 0rem 2rem;
+        margin: 0rem 1rem;
     }
 }
