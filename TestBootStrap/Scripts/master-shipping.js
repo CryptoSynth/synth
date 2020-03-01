@@ -34,7 +34,7 @@ $(document).ready(function () {
   /*===============================================================
     For Users that are in canada
   =================================================================*/
-  $.get("http://freegeoip.app/json/", function (response) {
+  $.get("https://freegeoip.app/json/", function (response) {
     if (response.country_code === 'CA') {
       $(".btn-shop").show();
       $(".btn-form").hide();
