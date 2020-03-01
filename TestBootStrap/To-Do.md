@@ -16,8 +16,6 @@
 ### Desktop Fixes:
 - Compress Img. File and integrate into Downloads page
 - Method-POST: need clear direction and style change 
-- Fix TVideo page 
-- Chrome\Monochrome Cart missing 
 - No, logic after user sumbits 
 - *Expand for more info* text add in chronos product pages table 
   
