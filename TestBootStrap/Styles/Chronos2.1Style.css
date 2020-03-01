@@ -18,15 +18,6 @@ html {
   scroll-snap-align: start;
 }
 
-*:focus {
-  outline: none !important;
-  box-shadow: none !important;
-}
-
-a {
-  cursor: pointer;
-}
-
 /* ---------------------------------------------------
     Landing Page Section
 ----------------------------------------------------- */

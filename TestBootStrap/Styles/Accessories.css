@@ -10,15 +10,6 @@ html {
     background: linear-gradient(to right, #00bf8f, #111);
 }
 
-*:focus {
-    outline: none !important;
-    box-shadow: none !important;
-}
-
-a {
-    cursor: pointer;
-}
-
 /*------------------------------------------------
    Product Accessories
 ----------------------------------------------------- */
