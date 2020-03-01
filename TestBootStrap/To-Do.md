@@ -16,6 +16,9 @@
 ### Desktop Fixes:
 - Compress Img. File and integrate into Downloads page
 - Method-POST: need clear direction and style change 
+- Fix Tutorial 
+- Chrome\Monochrome Cart missing 
+- No, logic after user sumbits 
   
 ### Mobile Fixes: 
 -transition between section?? 
