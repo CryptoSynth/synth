@@ -176,6 +176,7 @@ html {
 .feature .table-style .font-size {
   font-size: 6vw;
   background-color: #00bf8f;
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
