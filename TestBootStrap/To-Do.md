@@ -27,7 +27,8 @@
 - fix 425px about-us slick.js
 - add photo and video in safari format 
   
-# Next Weeks Target (01MAR2020):
+# Next Week Target (05MAR2020):
 ----
+- Launch Website
 
 
