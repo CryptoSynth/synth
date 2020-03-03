@@ -2,7 +2,6 @@
 ----
 
 ## Thomas To-Do:
-
 - Provide Home Intro video
 - Provide us a join us message for about us page
 - Provide a list of video to add to Videos Page (youtube)
@@ -12,7 +11,6 @@
 - Make type form account for contact-us page 
 
 ## Leo To-Do:
-
 ### Desktop Fixes:
 - Compress Img. File and integrate into Downloads page
 - Method-POST: need clear direction and style change 
