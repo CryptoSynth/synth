@@ -6,7 +6,8 @@
 - Provide Home Intro video
 - Provide us a join us message for about us page
 - Provide a list of video to add to Videos Page (youtube)
-- Once website is done, need to hook the new website to krons existing domain webhost platform (Apex Domain)
+- Once website is done, need to hook the new website to krons existing domain webhost platform (Reference Site Below)
+  - https://firebase.google.com/docs/hosting/custom-domain
 - Take off email generation of form 1560
 - Make type form account for contact-us page 
 
