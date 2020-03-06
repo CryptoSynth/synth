@@ -2,27 +2,27 @@
 ----
 
 ## Thomas To-Do:
-- Provide Home Intro video
-- Provide us a join us message for about us page
-- Provide a list of video to add to Videos Page (youtube)
-- Once website is done, need to hook the new website to krons existing domain webhost platform (Reference Site Below)
-  - https://firebase.google.com/docs/hosting/custom-domain
-- Take off email generation of form 1560
-- Make type form account for contact-us page 
-
+- Provide Apex Domain
+- Provide Typeform link account
+- Google Analytics Key
+- Google Optimize Key
+ 
 ## Leo To-Do:
 ### Desktop Fixes:
-- Compress Img. File and integrate into Downloads page
-- Method-POST: need clear direction and style change 
-- No, logic after user sumbits 
+- Compress Img.File and integrate into Downloads page (If time permits)
 - *Expand for more info* text add in chronos product pages table 
 - Connect Custom Domain
 - Google Aanlytics Connect
 - Google Optimize - First Party
+- rethought support button for about us page 
+- add title section to video 
+- add video, homepage 
+- add camera to main video, homepage 
+- Add DHL to first option & other courier, get rid of UPS and USPS
+- remove logic to shipping and adjust website buttons, add shipping info to menu under resources 
   
 ### Mobile Fixes: 
 - transition between section?? 
-- fix 425px about-us slick.js
 - add photo and video in safari format 
   
 # Next Week Target (05MAR2020):
