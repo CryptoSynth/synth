@@ -29,6 +29,18 @@ html {
     color: #ce2d28 !important;
 }
 
+.ec-size .ec-store .ec-text-muted{
+    color: white !important;
+}
+
+.ec-size .ec-store .grid-product__title-inner {
+    color: white !important;
+}
+
+.ec-size .ec-store .grid-product__price .grid-product__price-amount {
+    color: white !important;
+}
+
 
 /*Main Store Background Color*/
 

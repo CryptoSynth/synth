@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
+
 body,
 html {
     font-family: "Noto Sans SC", sans-serif;
@@ -8,11 +9,19 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     transition: all 0.5s ease-in;
+    -ms-scroll-snap: y mandatory;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
 }
 
 section {
     height: 100vh;
 }
+
+.scroll-start {
+    scroll-snap-align: start;
+}
+
 
 
 /*===============================================================
@@ -21,7 +30,7 @@ section {
 
 .main-body .card-body {
     height: 100vh;
-    padding: 4rem 0rem;
+    padding: 0rem;
 }
 
 .main-body .card-content {
@@ -36,11 +45,25 @@ section {
     transition: all 0.5s ease-in;
 }
 
+.slick-next {
+    right: 50px !important;
+}
+
+.slick-next:before,
+.slick-prev:before {
+    font-size: 5vh !important;
+    color: #ce2d28 !important;
+}
+
+.slick-prev {
+    left: 25px !important;
+    z-index: 2 !important;
+}
+
 .slick-center {
     opacity: 1 !important;
     transform: scale(1) !important;
-    transition: opacity 1s ease-in, transform 1s ease-in;
-    overflow: unset;
+    transition: transform 1s ease-in;
 }
 
 .slick-center .card-content {
@@ -48,21 +71,14 @@ section {
 }
 
 .slick-active {
-    color: white;
-    opacity: 0.2;
     transform: scale(0.9);
     transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .slick-slide {
-    opacity: 0.2;
     transform: scale(0.8);
 }
 
-.slick-center:hover,
-.slick-active:hover {
-    opacity: 0.6;
-}
 
 .main-body .text-body {
     background-color: rgba(0, 0, 0, 0);
@@ -70,28 +86,22 @@ section {
 
 .main-body .plyr__video-embed {
     display: flex;
-    height: 50%;
-    width: 100%;
-    position: relative;
+    height: unset;
+    width: unset;
+    position: unset;
 }
 
 .main-body h1 {
     color: white;
-    font-size: 7vh;
+    font-size: 4vh;
     margin: 0;
+    text-align: center;
 }
 
 .main-body p {
     color: white;
     font-size: 2vh;
     padding: 1rem;
-}
-
-.main-body .img-overlay {
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 9999;
-    border-radius: 5px;
-    padding-top: 5rem;
 }
 
 
@@ -116,25 +126,39 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 @media(max-width: 768px) {
     .main-body h1 {
-        color: white;
-        font-size: 6vh;
+        font-size: 3vh;
+        padding: 1rem;
+        line-height: 6vh;
+        text-transform: capitalize;
     }
-    .main-body p {
-        color: white;
-        font-size: 2.5vh;
-        text-align: justify;
-    }
+
     .main-body .card-body {
         padding: 4rem 0rem;
+    }
+
+    .slick-next {
+        top: 23rem;
+
+    }
+
+    .slick-prev {
+        top: 23rem;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+        font-size: 7vh !important;
+    }
+
+    .main-body .plyr__video-embed {
+        display: flex;
+        height: 50%;
+        width: 100%;
+        position: relative;
     }
 }
 
 @media(max-width: 1023px) {
-    .main-body p {
-        color: white;
-        font-size: 1.5vh;
-        text-align: justify;
-    }
     .main-body .card-body {
         padding: 4rem 0rem;
     }

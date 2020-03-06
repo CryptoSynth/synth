@@ -24,7 +24,18 @@ $(document).ready(function() {
                     centerMode: true,
                     arrows: false,
                     infinite: true,
-                    centerPadding: "150px",
+                    centerPadding: "20px",
+                    slidesToShow: 1,
+                    focusOnSelect: true
+                }
+            },
+            {
+                breakpoint: 426,
+                settings: {
+                    centerMode: true,
+                    arrows: false,
+                    infinite: true,
+                    centerPadding: "20px",
                     slidesToShow: 1,
                     focusOnSelect: true
                 }
@@ -34,7 +45,8 @@ $(document).ready(function() {
                 settings: {
                     centerMode: true,
                     arrows: false,
-                    centerPadding: "0px",
+                    infinite: true,
+                    centerPadding: "20px",
                     slidesToShow: 1,
                     focusOnSelect: true
                 }
