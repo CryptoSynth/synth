@@ -3,6 +3,7 @@
 ----------------------------------------------------- */
 
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
+
 body,
 html {
     font-family: "Noto Sans SC", sans-serif;
@@ -38,8 +39,8 @@ html {
 
 .accessories .btn {
     width: 50%;
-    background-color: black;
-    color: white !important;
+    background-color: white;
+    color: black !important;
     border-radius: 20px;
     border: 0;
 }
@@ -65,17 +66,15 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (max-width: 768px) {
+
     /* ---------------------------------------------------
    Product Accessories
 ----------------------------------------------------- */
     .accessories {
         height: unset;
     }
+
     .accessories .btn {
         width: 100%;
-        background-color: black;
-        color: white;
-        border-radius: 20px;
-        border: 0;
     }
 }

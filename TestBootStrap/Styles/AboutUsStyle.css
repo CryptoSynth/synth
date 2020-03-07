@@ -72,9 +72,8 @@ html {
 .ceo .ceo-card {
     background-color: rgba(0, 0, 0, .2);
     border-radius: 10px;
-    border: 2px solid white;
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
-    color: white;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+    color: black;
     overflow: hidden;
     z-index: 1;
 }
@@ -89,11 +88,11 @@ html {
 }
 
 .ceo .ceo-title {
-    color: white;
+    color: black;
     padding: 0.5rem 1rem;
     font-size: 4vh;
     margin: 0rem 0rem 2rem 0rem;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 10px;
     z-index: 1;
     text-align: center;
@@ -220,14 +219,13 @@ html {
 .thank-you .main-title {
     color: black;
     font-size: 9vh;
-    text-shadow: 2px 2px 2px rgba(85, 67, 67, 0.8);
     text-transform: uppercase;
+    border-bottom: 2px solid black;
 }
 
 .thank-you .sub-title {
     color: black;
     font-size: 4vh;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
     text-align: justify;
     padding: 2rem;
     line-height: 10vh;
@@ -342,6 +340,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
         font-size: 7vw;
         margin-top: 30vh;
     }
+
     .staff-about .card-bottom {
         width: 80%;
     }

@@ -6,26 +6,24 @@
 - Provide Typeform link account
 - Google Analytics Key
 - Google Optimize Key
+- Resize Images in ecwid so they look smaller in Kront Store 
  
 ## Leo To-Do:
 ### Desktop Fixes:
 
 - Compress Img.File and integrate into Downloads page (If time permits)
-- *Expand for more info* text add in chronos product pages table 
-- Connect Custom Domain
-- Google Aanlytics Connect
-- Google Optimize - First Party
-- rethought support button for about us page
-- add title section to video 
 - add video, homepage 
 - add camera to main video, homepage 
-- Add DHL to first option & other courier, get rid of UPS and USPS
-- remove logic to shipping and adjust website buttons, add shipping info to menu under resources 
-- change join us text to white
+- Connect Custom Domain
+- Connect Google Aanlytics
+- Connect Google Optimize
   
 ### Mobile Fixes: 
 - transition between section?? 
 - add photo and video in safari format 
+
+## Dean Future Ideas:
+- *Can't afford a camera, but want to contribute? consider donating ($5) ($10) ($15) ($20) (custom)*
   
 # Next Week Target (05MAR2020):
 ----

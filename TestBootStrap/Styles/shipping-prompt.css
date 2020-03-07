@@ -12,18 +12,6 @@ html {
 p {
     margin: 0;
 }
-/*===============================================================
-    Valadation Form Icons Removed
-=================================================================*/
-
-.master-shipping-modal .was-validated .form-control:valid {
-    background-image: none;
-}
-
-.master-shipping-modal .was-validated .form-control:invalid {
-    background-image: none;
-}
-
 
 /* ---------------------------------------------------
     Modal-Body Content Style
@@ -34,13 +22,6 @@ p {
     color: #00bf8f;
     border: 1px solid white;
 }
-
-#upload-doc:hover,
-#yes:hover,
-#no:hover {
-    cursor: pointer;
-}
-
 
 /* ---------------------------------------------------
     Modal-Body Content Style (Yes)
@@ -59,41 +40,24 @@ p {
     border: 2px solid rgb(28, 60, 245);
 }
 
-#proceed {
-    background-color: #00bf8f;
-    border: 2px solid white;
-    border-radius: 20px;
-    color: white !important;
-}
-
-#proceed:hover {
-    background-color: white;
-    border: 2px solid #00bf8f;
-    border-radius: 20px;
-    color: #00bf8f !important;
-}
-
-
-/* ---------------------------------------------------
-    Modal-Body Content Style (No)
------------------------------------------------------ */
-
-
 /*===============================================================
   Modal-Footer Content Style
 =================================================================*/
 
-.master-shipping-modal .modal-footer i {
+.master-shipping-modal .modal-footer i,
+.master-shipping-modal .modal-body-2 i {
     font-size: 1rem;
     color: #ce2d28;
 }
 
-.master-shipping-modal .modal-footer p {
+.master-shipping-modal .modal-footer p,
+.master-shipping-modal .modal-body-2 p {
     margin: 0;
     text-align: center;
 }
 
-.master-shipping-modal .modal-footer a {
+.master-shipping-modal .modal-footer a,
+.master-shipping-modal .modal-body-2 a {
     color: white !important;
     padding: .15rem .8rem;
     background-color: #00bf8f;
@@ -192,13 +156,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (max-width: 768px) {
-    .master-shipping-modal .was-validated {
-        padding: 0rem !important;
-    }
-
-    .master-shipping-modal .form-row {
-        margin: 2rem 0rem 0rem 0rem !important;
-    }
 
     /* ---------------------------------------------------
     Modal-Body Content Style (Yes)

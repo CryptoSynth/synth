@@ -30,6 +30,12 @@ html {
     width: 100%;
 }
 
+.img-resize {
+    height: 5vh;
+    margin: 0;
+    object-fit: contain;
+}
+
 
 /* ---------------------------------------------------
     Footer
@@ -86,6 +92,10 @@ Extra (xl) large devices (large desktops, 1200px and up)
     .mobile-vid .vid-1 {
         object-fit: cover;
         width: 100%;
+    }
+    .img-resize {
+        height: 20vh;
+        margin-right: 3rem;
     }
     /* ---------------------------------------------------
     Footer
