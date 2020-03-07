@@ -12,8 +12,6 @@
 ### Desktop Fixes:
 
 - Compress Img.File and integrate into Downloads page (If time permits)
-- add video, homepage 
-- add camera to main video, homepage 
 - Connect Custom Domain
 - Connect Google Aanlytics
 - Connect Google Optimize
