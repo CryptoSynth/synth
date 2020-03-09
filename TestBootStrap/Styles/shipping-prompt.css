@@ -19,7 +19,7 @@ p {
 
 .master-shipping-modal .modal-content {
     background-color: #111;
-    color: #00bf8f;
+    color: #1e73be;
     border: 1px solid white;
 }
 
@@ -47,7 +47,7 @@ p {
 .master-shipping-modal .modal-footer i,
 .master-shipping-modal .modal-body-2 i {
     font-size: 1rem;
-    color: #ce2d28;
+    color: red;
 }
 
 .master-shipping-modal .modal-footer p,
@@ -60,15 +60,15 @@ p {
 .master-shipping-modal .modal-body-2 a {
     color: white !important;
     padding: .15rem .8rem;
-    background-color: #00bf8f;
+    background-color: #1e73be;
     border: 2px solid white;
     border-radius: 5px;
 }
 
 .master-shipping-modal .modal-footer a:hover {
     background-color: white;
-    color: #00bf8f !important;
-    border: 2px solid #00bf8f;
+    color: #1e73be !important;
+    border: 2px solid #1e73be;
 }
 
 .master-shipping-modal .modal-footer .btn-secondary {
@@ -92,7 +92,7 @@ p {
 }
 
 .master-shipping-modal .modal-header h3 {
-    color: #00bf8f !important;
+    color: #1e73be !important;
     margin: 0;
 }
 
@@ -104,18 +104,18 @@ p {
 .master-shipping-modal .modal-body .card-header {
     padding: 0;
     margin: 0;
-    background-color: #00bf8f;
-    color: #00bf8f;
+    background-color: #1e73be;
+    color: #1e73be;
 }
 
 .master-shipping-modal .card {
-    border: 1px solid #00bf8f;
+    border: 1px solid #1e73be;
     margin: .5rem;
 }
 
 .master-shipping-modal .card .btn {
     color: black;
-    background-color: #00bf8f;
+    background-color: #1e73be;
 }
 
 .master-shipping-modal .card .btn:hover {
@@ -132,7 +132,7 @@ p {
 }
 
 .master-shipping-modal a {
-    color: #ce2d28 !important;
+    color: #1e73be !important;
 }
 
 

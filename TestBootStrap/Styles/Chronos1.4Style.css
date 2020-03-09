@@ -41,7 +41,7 @@ html {
 
 .landingpage .scroll-down {
   text-decoration: none;
-  color: #ce2d28 !important;
+  color: #1e73be !important;
   font-size: 3vh;
   font-weight: bolder;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
@@ -53,7 +53,7 @@ html {
 
 .feature {
   height: 100vh;
-  background: linear-gradient(to right, #ce2d28, #111);
+  background: linear-gradient(to right, #1e73be, #111);
 }
 
 .feature .image-section {
@@ -175,7 +175,7 @@ html {
 
 .feature .table-style .font-size {
   font-size: 6vw;
-  background-color: #ce2d28;
+  background-color: #1e73be;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -262,7 +262,7 @@ html {
 
 .feature .main-modal-table .btn {
   border: none;
-  color: #ce2d28;
+  color: #1e73be;
 }
 
 /* ---------------------------------------------------

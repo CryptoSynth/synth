@@ -29,12 +29,12 @@ html {
 --------------------------------------------------------*/
 
 #chronos {
-    background: linear-gradient(to right, #ce2d28, #111);
+    background: linear-gradient(to right, #1e73be, #111);
     border-bottom: 1.5px solid black;
 }
 
 #chronos-hd {
-    background: linear-gradient(to right, #00bf8f, #111);
+    background: linear-gradient(to right, #1e73be, #111);
     border-top: 1.5px solid black;
 }
 
@@ -47,7 +47,7 @@ html {
 }
 
 #chronos-hd strong {
-    color: #00bf8f;
+    color: #1e73be;
 }
 
 
@@ -227,7 +227,7 @@ html {
 
 .pill-content-2 .modal-header h3 {
     border: 0;
-    color: #00bf8f;
+    color: #1e73be;
     padding: 0;
     margin: 0;
 }
@@ -235,7 +235,7 @@ html {
 .pill-content-2 .card {
     margin: .5rem;
     padding: 0;
-    border: 1px solid #00bf8f;
+    border: 1px solid #1e73be;
 }
 
 .pill-content-2 .card-body {
@@ -252,7 +252,7 @@ html {
     padding: 0;
     border: 0;
     border-radius: 0;
-    background-color: #00bf8f;
+    background-color: #1e73be;
 }
 
 .pill-content-2 .card .btn {
@@ -266,7 +266,7 @@ html {
 
 .pill-section-1 ol {
     padding: 0rem 1rem;
-    color: #00bf8f;
+    color: #1e73be;
     margin: 0;
 }
 

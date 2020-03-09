@@ -41,7 +41,7 @@ html {
 
 .landingpage .scroll-down {
   text-decoration: none;
-  color: #00bf8f;
+  color: #1e73be;
   font-size: 6vw;
   margin-bottom: 1rem;
   font-weight: bolder;
@@ -54,7 +54,7 @@ html {
 
 .feature {
   height: 100vh;
-  background: linear-gradient(to right, #00bf8f, #111);
+  background: linear-gradient(to right, #1e73be, #111);
 }
 
 .feature .image-section {
@@ -175,7 +175,7 @@ html {
 
 .feature .table-style .font-size {
   font-size: 6vw;
-  background-color: #00bf8f;
+  background-color: #1e73be;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -263,7 +263,7 @@ html {
 
 .feature .main-modal-table .btn {
   border: none;
-  color: rgb(252, 59, 59);
+  color: #1e73be;
 }
 
 /* ---------------------------------------------------
@@ -317,7 +317,7 @@ html {
 
 .order .pre:hover {
   background-color: white;
-  color: #00bf8f !important;
+  color: #1e73be !important;
 }
 
 /*============ BOOTSTRAP BREAK POINTS:

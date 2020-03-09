@@ -18,7 +18,7 @@ html {
 
 .contact-us i {
     font-size: 3vh;
-    color: #00bf8f !important;
+    color: #1e73be !important;
 }
 
 .contact-us p {
@@ -46,7 +46,7 @@ html {
 }
 
 .contact-us .footer-location .address {
-    background-color: #00bf8f;
+    background-color: #1e73be;
     border-radius: 10px;
     color: black;
     padding: .2rem 1rem;
@@ -64,7 +64,7 @@ html {
 .contact-us h5 {
     text-decoration: underline;
     padding: 0.5rem 0rem;
-    color: #ce2d28;
+    color: #1e73be;
 }
 
 .contact-us .footer-phone {
@@ -82,7 +82,7 @@ html {
 .contact-us .email-title {
     font-size: .8rem;
     text-transform: uppercase;
-    color: #ce2d28;
+    color: #1e73be;
 }
 
 .contact-us p {
@@ -90,7 +90,7 @@ html {
 }
 
 .contact-us .email-list p:hover {
-    color: #00bf8f;
+    color: #1e73be;
 }
 
 

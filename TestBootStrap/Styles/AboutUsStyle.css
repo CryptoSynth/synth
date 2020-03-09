@@ -66,7 +66,7 @@ html {
 .ceo {
     height: 100vh;
     padding: 0rem 15rem;
-    background-color: #00bf8f;
+    background-color: #1e73be;
 }
 
 .ceo .ceo-card {
@@ -232,7 +232,7 @@ html {
 }
 
 .thank-you .sub-title a {
-    color: #ce2d28;
+    color: gold;
 }
 
 .thank-you .thanks-btn {
@@ -460,21 +460,21 @@ Extra (xl) large devices (large desktops, 1200px and up)
 ----------------------------------------------------- */
 
 .color-engineer {
-    background-color: #00bf8f;
+    background-color: #1e73be;
 }
 
 .color-operations {
-    background-color: #00bf8f;
+    background-color: #1e73be;
 }
 
 .color-production {
-    background-color: #00bf8f;
+    background-color: #1e73be;
 }
 
 .color-supply {
-    background-color: #00bf8f;
+    background-color: #1e73be;
 }
 
 .color-sales {
-    background-color: #00bf8f;
+    background-color: #1e73be;
 }

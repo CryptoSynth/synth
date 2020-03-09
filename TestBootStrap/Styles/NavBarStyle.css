@@ -24,7 +24,7 @@ a {
 }
 
 .mainnav i:hover {
-  color: #ce2d28;
+  color: #1e73be;
 }
 
 .title-mainnav {
@@ -80,7 +80,7 @@ a {
 }
 
 .navbar-nav .hd {
-  color: #00bf8f;
+  color: #1e73be;
   font-size: 1.6rem;
 }
 
@@ -99,7 +99,7 @@ a {
 }
 
 .navbar-nav .resources-dropdown a:hover {
-  color: #ce2d28 !important;
+  color: #1e73be !important;
 }
 
 #sidebar .sidebar-header {
@@ -298,7 +298,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 }
 
 #quote::before {
-  background: #ce2d28 !important;
+  background: #1e73be !important;
 }
 
 #shop-now::before {

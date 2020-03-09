@@ -29,7 +29,7 @@ html {
 .comparison {
   height: 100vh;
   padding: 2rem 1rem 2rem 1rem;
-  background: linear-gradient(to right, #00bf8f, #111);
+  background: linear-gradient(to right, #1e73be, #111);
 }
 
 .comparison .backsplash {
