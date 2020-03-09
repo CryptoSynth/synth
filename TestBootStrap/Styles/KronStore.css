@@ -7,7 +7,7 @@
 body,
 html {
     font-family: "Noto Sans SC", sans-serif !important;
-    background-color: #111;
+    background-color: #1e73be;
 }
 
 *:focus {
@@ -26,7 +26,7 @@ html {
 }
 
 .store a {
-    color: #ce2d28 !important;
+    color: white !important;
 }
 
 .ec-size .ec-store .ec-text-muted{
@@ -46,7 +46,7 @@ html {
 
 div.ecwid-productBrowser {
     background-color: transparent !important;
-    color: white!important;
+    color: black!important;
 }
 
 
@@ -66,7 +66,7 @@ div.ecwid-productBrowser {
 
 .ec-store .product-details__product-title {
     font-size: 2rem !important;
-    color: #00bf8f !important;
+    color: black !important;
     margin: 0.5rem !important;
     text-align: center !important;
 }
@@ -75,14 +75,14 @@ div.ecwid-productBrowser {
 /*Sidebar breadcrumbs*/
 
 .ec-store .product-details .ec-breadcrumbs {
-    color: white !important;
+    color: black !important;
     margin: 0rem !important;
     padding: 0.5rem !important;
     text-align: center !important;
 }
 
 .ec-store label {
-    color: white !important;
+    color: black !important;
 }
 
 
@@ -90,7 +90,7 @@ div.ecwid-productBrowser {
 
 .ec-store .product-details__product-price:last-child {
     font-size: 2rem !important;
-    color: #00bf8f !important;
+    color: black !important;
     margin: 0rem !important;
     padding: 0rem !important;
     text-align: center !important;
@@ -101,7 +101,7 @@ div.ecwid-productBrowser {
 
 .ec-store .ec-header-h6 {
     font-size: 1rem !important;
-    color: #00bf8f !important;
+    color: black !important;
     margin: 0.5rem !important;
     text-align: center !important;
     padding: 0rem !important;
@@ -142,7 +142,7 @@ div.ecwid-productBrowser {
 /*Sidebar breadcrumbs Description*/
 
 .ec-store .product-details__product-description p:last-child {
-    color: white !important;
+    color: black !important;
 }
 
 
@@ -151,8 +151,8 @@ div.ecwid-productBrowser {
 ----------------------------------------------------- */
 
 .ec-store .ec-cart {
-    background-color: #ce2d28 !important;
-    color: white !important;
+    background-color: white !important;
+    color: black !important;
     padding: 1rem !important;
     border-radius: 20px !important;
     margin-top: 20rem !important;
