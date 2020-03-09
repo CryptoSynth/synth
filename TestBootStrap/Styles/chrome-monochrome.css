@@ -57,7 +57,7 @@ html {
 
 .comparison .img-change {
   border-radius: 30px;
-  background-image: url("/Images/mono-chrome.png");
+  background-image: url("/Images/mono-chrome.webp");
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
@@ -99,6 +99,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (max-width: 768px) {
+
   body,
   html {
     height: unset;

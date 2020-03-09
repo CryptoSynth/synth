@@ -3,6 +3,7 @@
 ----------------------------------------------------- */
 
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
+
 body,
 html {
     font-family: "Noto Sans SC", sans-serif;
@@ -55,9 +56,14 @@ html {
     font-size: 1rem;
 }
 
-.foot strong {
-    font-size: 1.5rem !important;
+.foot .price-tag {
+    font-size: 2rem !important;
     color: #00bf8f;
+}
+
+.foot .hd-desc {
+    font-size: 1rem !important;
+    color: gold;
 }
 
 
@@ -81,6 +87,7 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (min-width: 768px) {
+
     /* ---------------------------------------------------
     Mobile-video
 ----------------------------------------------------- */
@@ -89,14 +96,17 @@ Extra (xl) large devices (large desktops, 1200px and up)
         height: 100%;
         width: 100%;
     }
+
     .mobile-vid .vid-1 {
         object-fit: cover;
         width: 100%;
     }
+
     .img-resize {
         height: 20vh;
         margin-right: 3rem;
     }
+
     /* ---------------------------------------------------
     Footer
 ----------------------------------------------------- */

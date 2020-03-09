@@ -149,7 +149,11 @@
                 <!--Logo and Name-->
                 <div id="menu" class="d-flex justify-content-between align-items-center w-100 h-100 p-2">
                     <a href="/index.html" class="img-brand">
-                        <img src="/Images/Master_Logo.webp" class="w-25" alt="">
+                        <picture>
+                            <source type="image/webp" srcset="/Images/Master_Logo.webp">
+                            <source type="image/heic" srcset="/Images/Master_Logo.heic">
+                            <img src="/Images/Master_Logo.png" class="w-25" alt="Kron Tech Logo">
+                        </picture>
                     </a>
 
                     <!--Sidebar Menu Button-->
@@ -186,6 +190,9 @@
             <div class="white-frame d-flex align-self-center">
                 <video class="vid1" autoplay playsinline loop muted>
                     <source src="video/Chronos_1.4-HD.webm">
+                    <source src="video/Chronos_1.4-HD.ogg">
+                    <source src="video/Chronos_1.4-HD.mp4">
+                    Your browser does not support the video tag.
                 </video>
             </div>
             <div class="d-flex justify-content-around align-items-center h-100 w-100 position-absolute">
@@ -212,9 +219,11 @@
 
             <!--Chronos1.4 Image-->
             <div class="col-5 col-md-4 p-0">
-
-                <img class="adjust-image d-block mx-auto" src="Images/Chronos_1.4.webp" />
-
+                <picture>
+                    <source type="image/webp" srcset="Images/Chronos_1.4.webp">
+                    <source type="image/heic" srcset="Images/Chronos_1.4.heic">
+                    <img class="adjust-image d-block mx-auto" src="Images/Chronos_1.4.png" alt="Chronos-1.4 Camera" />
+                </picture>
             </div>
 
             <!--VS Text-->
@@ -238,7 +247,12 @@
 
                     </div>
 
-                    <img class="phantom adjust-image d-block mx-auto" src="Images/edgertronic-scp1.webp" />
+                    <picture>
+                        <source type="image/webp" srcset="Images/edgertronic-scp1.webp">
+                        <source type="image/heic" srcset="Images/edgertronic-scp1.heic">
+                        <img class="phantom adjust-image d-block mx-auto" src="Images/edgertronic-scp1.png"
+                            alt="Competitor Camera" />
+                    </picture>
                 </div>
             </div>
         </div>
@@ -463,7 +477,8 @@
 
             <div class="d-flex flex justify-content-center align-items-center position-absolute w-100 h-100"
                 slot="poster">
-                <img class="poster-img" src="/Images/Camera-3D.webp">
+                <img class="poster-img" src="/Images/Camera-3D.webp" srcset="/Images/Camera-3D.png"
+                    alt="Camera-3D Model Poster">
 
                 <div
                     class="d-flex position-absolute flex-column justify-content-center align-content-center align-items-center w-100">

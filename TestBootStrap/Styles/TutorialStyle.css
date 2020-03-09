@@ -85,7 +85,7 @@ section {
     transform: scale(0.8);
 }
 
-.main-body .title-section{
+.main-body .title-section {
     color: black;
     text-transform: uppercase;
     font-size: 5vh;
@@ -138,6 +138,12 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media(max-width: 768px) {
+    .main-body .title-section {
+        font-size: 3vh;
+        margin: .5rem !important;
+        padding: 0 !important;
+    }
+
     .main-body h1 {
         font-size: 3vh;
         padding: 1rem;

@@ -30,7 +30,7 @@
         }
         gtag('js', new Date());
 
-        gtag('config', 'UA-158655387-1', { 'optimize_id': 'GTM-WJX9DS7'});
+        gtag('config', 'UA-158655387-1', { 'optimize_id': 'GTM-WJX9DS7' });
     </script>
 
 </head>
@@ -148,7 +148,11 @@
                 <!--Logo and Name-->
                 <div id="menu" class="d-flex justify-content-between align-items-center w-100 h-100 p-2">
                     <a href="/index.html" class="img-brand">
-                        <img src="/Images/Master_Logo.webp" class="w-25" alt="">
+                        <picture>
+                            <source type="image/webp" srcset="/Images/Master_Logo.webp">
+                            <source type="image/heic" srcset="/Images/Master_Logo.heic">
+                            <img src="/Images/Master_Logo.png" class="w-25" alt="Kron Tech Logo">
+                        </picture>
                     </a>
 
                     <!--Sidebar Menu Button-->
@@ -184,7 +188,11 @@
         <!--Start Pill Content 1-->
         <div class="pill-content-1 col-md-3 col-12">
             <div class="d-flex flex-md-column flex-row  justify-content-around align-items-center h-100">
-                <img class="image-1" src="/Images/Chronos_1.4.webp" />
+                <picture>
+                    <source type="image/webp" srcset="/Images/Chronos_1.4.webp">
+                    <source type="image/heic" srcset="/Images/Chronos_1.4.heic">
+                    <img class="image-1" src="/Images/Chronos_1.4.png" alt="Chronos-1.4 Camera" />
+                </picture>
                 <h3 class="text-uppercase ">Chronos 1.4</h3>
             </div>
         </div>
@@ -1686,7 +1694,12 @@
         <!--Start Pill Content 1-->
         <div class="pill-content-1 col-md-3 col-12">
             <div class="d-flex flex-md-column flex-row justify-content-around align-items-center h-100">
-                <img class="image-1" src="Images/Chronos_2.1.webp" />
+                <picture>
+                    <source type="image/webp" srcset="/Images/Chronos_2.1.webp">
+                    <source type="image/heic" srcset="/Images/Chronos_2.1.heic">
+                    <img class="image-1" src="/Images/Chronos_2.1.png" alt="Chronos 2.1-HD Camera" />
+                </picture>
+
                 <h3 class="text-uppercase ">Chronos 2.1
                     <Strong>HD</Strong>
                 </h3>
@@ -1769,8 +1782,7 @@
                                     data-target="#shipping-policy">Shipping Policy</a>
                                 <a id="warranty-click" class="mx-auto my-3" data-toggle="modal"
                                     data-target="#warranty-return">Warranty & Return</a>
-                                <a id="faq-click" class="mx-auto my-3" data-toggle="modal"
-                                    data-target="#faq">FAQ</a>
+                                <a id="faq-click" class="mx-auto my-3" data-toggle="modal" data-target="#faq">FAQ</a>
                             </div>
                         </div>
                     </div>

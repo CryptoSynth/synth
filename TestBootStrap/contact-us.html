@@ -146,7 +146,11 @@
                 <!--Logo and Name-->
                 <div id="menu" class="d-flex justify-content-between align-items-center w-100 h-100 p-2">
                     <a href="/index.html" class="img-brand">
-                        <img src="/Images/Master_Logo.webp" class="w-25" alt="">
+                        <picture>
+                            <source type="image/webp" srcset="/Images/Master_Logo.webp">
+                            <source type="image/heic" srcset="/Images/Master_Logo.heic">
+                            <img src="/Images/Master_Logo.png" class="w-25" alt="Kron Tech Logo">
+                        </picture>
                     </a>
 
                     <!--Sidebar Menu Button-->

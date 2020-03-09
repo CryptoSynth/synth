@@ -11,14 +11,13 @@
 ## Leo To-Do:
 ### Desktop Fixes:
 
-- Compress Img.File and integrate into Downloads page (If time permits)
+- fix ribbion on homepage and quailty video 
 - Connect Custom Domain
 - Connect Google Aanlytics
 - Connect Google Optimize
   
 ### Mobile Fixes: 
 - transition between section?? 
-- add photo and video in safari format 
 
 ## Dean Future Ideas:
 - *Can't afford a camera, but want to contribute? consider donating ($5) ($10) ($15) ($20) (custom)*

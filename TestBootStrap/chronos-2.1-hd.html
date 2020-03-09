@@ -37,148 +37,152 @@
 </head>
 
 <body>
-    <!--Start Main Menu Navagation-->
-    <header>
-        <!--Sidebar Menu-->
-        <!--SideBar-->
-        <nav id="sidebar">
-            <!--Exit sideBar Menu Icon-->
-            <div class="d-flex justify-content-end sidebar-header align-self-center w-100">
-                <!--Sidebar Header-->
-                <div class="align-self-end" id="dismiss">
-                    <!--Sidebar Menu Button-->
-                    <button class="btn hamburger hamburger--collapse" type="button" id="sidebarCollapse">
+ <!--Start Main Menu Navagation-->
+ <header>
+    <!--Sidebar Menu-->
+    <!--SideBar-->
+    <nav id="sidebar">
+        <!--Exit sideBar Menu Icon-->
+        <div class="d-flex justify-content-end sidebar-header align-self-center w-100">
+            <!--Sidebar Header-->
+            <div class="align-self-end" id="dismiss">
+                <!--Sidebar Menu Button-->
+                <button class="btn hamburger hamburger--collapse" type="button" id="sidebarCollapse">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!--Sidebar List-->
+        <ul class="navbar-nav d-flex flex-column text-center h-100">
+            <li class="nav-item active">
+                <a id="home" class="hvr-sweep-to-left" href="/index.html">
+                    <div class="d-flex justify-content-around align-items-center">
+                        <p id="home-title">Home</p>
+                    </div>
+                </a>
+            </li>
+            <li class=" nav-item">
+                <a id="chronos-1" class="hvr-sweep-to-left" href="/chronos-1.4.html">
+                    <div class="d-flex justify-content-around align-items-center">
+                        <p id="chronos-1-title">Chronos-1.4</p>
+                    </div>
+                </a>
+            </li>
+            <li class=" nav-item">
+                <a id="chronos-2" class="hvr-sweep-to-left" href="/chronos-2.1-hd.html">
+                    <div class="d-flex justify-content-around align-items-center">
+                        <p id="chronos-2-title">Chronos-2.1
+                            <strong>-</strong>
+                            <strong class="hd">HD</strong>
+                        </p>
+                    </div>
+                </a>
+            </li>
+            <li class=" nav-item">
+                <a id="accessories" class="hvr-sweep-to-left" href="/accessories.html">
+                    <p id="accessories-title">Accessories</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a id="about-us" class="hvr-sweep-to-left" href="/about-us.html">
+                    <p id="aboutus-title">About Us</p>
+                </a>
+            </li>
+            <li class=" nav-item">
+                <div class="hvrcenter" id=accordion>
+                    <div id="resources-dropdown">
+                        <a id="resources" class="hvr-sweep-to-left" href="#" data-toggle="collapse"
+                            data-target="#resource-collapse" aria-expanded="true" aria-controls="resource-collapse">
+                            <p id="resources-title">Resources</p>
+                        </a>
+                    </div>
+                </div>
+                <div id="resource-collapse" class="collapse" aria-labelledby="resources-dropdown"
+                    data-parent="#accordion">
+                    <div class="resources-dropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a id="tutorials" href="/videos.html">
+                                    <p id="tutorials-title">Videos</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="downloads" href="/downloads.html">
+                                    <p id="downloads-title">Downloads</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="chrome" href="/chrome-monochrome.html">
+                                    <p id="chrome-title">Chrome\Monochrome</p>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a id="shipping" data-toggle="modal" data-target="#shipping-prompt">
+                                    <p id="shipping-title">Shipping Information</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a id="contact-us" class="hvr-sweep-to-left" href="contact-us.html">
+                    <p id="contact-us-title">Contact Us</p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a id="quote" class="hvr-underline-from-center"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSekgwT5lOtFvBAmffzstnQqmx5bc9g60c8Uj9u_OTO0eNodCA/viewform"
+                    target="_blank">
+                    <p id="quote-title">Request Quote</p>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="mainnav">
+        <!--Sidebar Menu In Page-->
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark p-0">
+            <!--Logo and Name-->
+            <div id="menu" class="d-flex justify-content-between align-items-center w-100 h-100 p-2">
+                <a href="/index.html" class="img-brand">
+                    <picture>
+                        <source type="image/webp" srcset="/Images/Master_Logo.webp">
+                        <source type="image/heic" srcset="/Images/Master_Logo.heic">
+                        <img src="/Images/Master_Logo.png" class="w-25" alt="Kron Tech Logo">
+                    </picture>
+                </a>
+
+                <!--Sidebar Menu Button-->
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="kron-store.html#!/~/cart" class="mr-4">
+                        <i class="las la-shopping-cart"></i>
+                    </a>
+                    <button class="btn hamburger hamburger--collapse ml-4" type="button" id="sidebarCollapse">
                         <span class="hamburger-box">
                             <span class="hamburger-inner"></span>
                         </span>
                     </button>
                 </div>
             </div>
-
-            <!--Sidebar List-->
-            <ul class="navbar-nav d-flex flex-column text-center h-100">
-                <li class="nav-item active">
-                    <a id="home" class="hvr-sweep-to-left" href="/index.html">
-                        <div class="d-flex justify-content-around align-items-center">
-                            <p id="home-title">Home</p>
-                        </div>
-                    </a>
-                </li>
-                <li class=" nav-item">
-                    <a id="chronos-1" class="hvr-sweep-to-left" href="/chronos-1.4.html">
-                        <div class="d-flex justify-content-around align-items-center">
-                            <p id="chronos-1-title">Chronos-1.4</p>
-                        </div>
-                    </a>
-                </li>
-                <li class=" nav-item">
-                    <a id="chronos-2" class="hvr-sweep-to-left" href="/chronos-2.1-hd.html">
-                        <div class="d-flex justify-content-around align-items-center">
-                            <p id="chronos-2-title">Chronos-2.1
-                                <strong>-</strong>
-                                <strong class="hd">HD</strong>
-                            </p>
-                        </div>
-                    </a>
-                </li>
-                <li class=" nav-item">
-                    <a id="accessories" class="hvr-sweep-to-left" href="/accessories.html">
-                        <p id="accessories-title">Accessories</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a id="about-us" class="hvr-sweep-to-left" href="/about-us.html">
-                        <p id="aboutus-title">About Us</p>
-                    </a>
-                </li>
-                <li class=" nav-item">
-                    <div class="hvrcenter" id=accordion>
-                        <div id="resources-dropdown">
-                            <a id="resources" class="hvr-sweep-to-left" href="#" data-toggle="collapse"
-                                data-target="#resource-collapse" aria-expanded="true" aria-controls="resource-collapse">
-                                <p id="resources-title">Resources</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div id="resource-collapse" class="collapse" aria-labelledby="resources-dropdown"
-                        data-parent="#accordion">
-                        <div class="resources-dropdown">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a id="tutorials" href="/videos.html">
-                                        <p id="tutorials-title">Videos</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="downloads" href="/downloads.html">
-                                        <p id="downloads-title">Downloads</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="chrome" href="/chrome-monochrome.html">
-                                        <p id="chrome-title">Chrome\Monochrome</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a id="shipping" data-toggle="modal" data-target="#shipping-prompt">
-                                        <p id="shipping-title">Shipping Information</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a id="contact-us" class="hvr-sweep-to-left" href="contact-us.html">
-                        <p id="contact-us-title">Contact Us</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a id="quote" class="hvr-underline-from-center"
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSekgwT5lOtFvBAmffzstnQqmx5bc9g60c8Uj9u_OTO0eNodCA/viewform"
-                        target="_blank">
-                        <p id="quote-title">Request Quote</p>
-                    </a>
-                </li>
-            </ul>
+            <div
+                class="d-flex justify-content-center align-items-center w-100 h-100 position-absolute title-mainnav">
+            </div>
         </nav>
 
-        <div class="mainnav">
-            <!--Sidebar Menu In Page-->
-            <nav class="navbar navbar-expand-lg fixed-top navbar-dark p-0">
-                <!--Logo and Name-->
-                <div id="menu" class="d-flex justify-content-between align-items-center w-100 h-100 p-2">
-                    <a href="/index.html" class="img-brand">
-                        <img src="/Images/Master_Logo.webp" class="w-25" alt="">
-                    </a>
-
-                    <!--Sidebar Menu Button-->
-                    <div class="d-flex justify-content-between align-items-center">
-                        <a href="kron-store.html#!/~/cart" class="mr-4">
-                            <i class="las la-shopping-cart"></i>
-                        </a>
-                        <button class="btn hamburger hamburger--collapse ml-4" type="button" id="sidebarCollapse">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
-                    </div>
-                </div>
-                <div
-                    class="d-flex justify-content-center align-items-center w-100 h-100 position-absolute title-mainnav">
-                </div>
-            </nav>
-
-            <!--Dark Overlay-->
-            <div class="overlay">
-                <div
-                    class="d-flex flex-column justify-content-center align-items-start align-items-sm-center h-100 w-100 position-absolute">
-                    <h1 id="title-hover" class="text-white display-1"></h1>
-                </div>
+        <!--Dark Overlay-->
+        <div class="overlay">
+            <div
+                class="d-flex flex-column justify-content-center align-items-start align-items-sm-center h-100 w-100 position-absolute">
+                <h1 id="title-hover" class="text-white display-1"></h1>
             </div>
         </div>
-    </header>
-    <!--End Main Menu Navagation-->
+    </div>
+</header>
+<!--End Main Menu Navagation-->
 
     <!--Start Landing Page Section-->
     <section class="landingpage scroll-start">
@@ -186,6 +190,9 @@
             <div class="white-frame d-flex align-self-center">
                 <video class="vid1" autoplay playsinline loop muted>
                     <source src="video/Chronos_2.1-FHD.webm">
+                    <source src="video/Chronos_1.4-HD.ogg">
+                    <source src="video/Chronos_1.4-HD.mp4">
+                    Your browser does not support the video tag.
                 </video>
             </div>
             <div class="d-flex justify-content-around align-items-center h-100 w-100 position-absolute">
@@ -210,10 +217,15 @@
 
         <div class="image-section row justify-content-around align-items-center p-0 pt-5">
 
-            <!--Chronos1.4 Image-->
+            <!--Chronos-2.1-HD Image-->
             <div class="col-5 col-md-4 p-0">
 
-                <img class="adjust-image d-block mx-auto" src="Images/Chronos_2.1.webp" />
+                <picture>
+                    <source type="image/webp" srcset="Images/Chronos_2.1.webp">
+                    <source type="image/heic" srcset="Images/Chronos_2.1.heic">
+                    <img class="adjust-image d-block mx-auto" src="Images/Chronos_2.1.png"
+                        alt="Chronos-2.1-HD Camera" />
+                </picture>
 
             </div>
 
@@ -237,7 +249,12 @@
 
                     </div>
 
-                    <img class="phantom adjust-image d-block mx-auto" src="Images/edgertronic-scp2.webp" />
+                    <picture>
+                        <source type="image/webp" srcset="Images/edgertronic-scp2.webp">
+                        <source type="image/heic" srcset="Images/edgertronic-scp2.heic">
+                        <img class="phantom adjust-image d-block mx-auto" src="Images/edgertronic-scp2.png"
+                            alt="Competitor Image" />
+                    </picture>
                 </div>
             </div>
         </div>
@@ -464,7 +481,10 @@
         </div>
         <!--Video-->
         <video class="vid2" autoplay="autoplay" playsinline="playsinline" loop="loop" muted="muted">
-            <source src="video/Pre-Order.webm" />
+            <source src="video/Pre_Order.webm" />
+            <source src="video/Pre_Order.ogg" />
+            <source src="video/Pre_Order.mp4" />
+            Your browser does not support the video tag.
         </video>
     </section>
     <!--End Order Section-->
