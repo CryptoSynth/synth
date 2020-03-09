@@ -32,7 +32,7 @@ html {
 }
 
 .img-resize {
-    height: 5vh;
+    height: 3rem;
     margin: 0;
     object-fit: contain;
 }
@@ -64,6 +64,7 @@ html {
 .foot .hd-desc {
     font-size: 1rem !important;
     color: gold;
+    text-transform: none;
 }
 
 
