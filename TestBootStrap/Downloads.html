@@ -183,8 +183,299 @@
     </header>
     <!--End Main Menu Navagation-->
 
+    <!--Start Chronos 2.1 Section 1-->
+    <section id="chronos-hd" class="pill-section-1 row justify-content-center align-items-center scroll-start">
+        <!--Start Pill Content 1-->
+        <div class="pill-content-1 col-md-3 col-12">
+            <div class="d-flex flex-md-column flex-row justify-content-around align-items-center h-100">
+                <picture>
+                    <source type="image/webp" srcset="/Images/Chronos_2.1.webp">
+                    <source type="image/heic" srcset="/Images/Chronos_2.1.heic">
+                    <img class="image-1" src="/Images/Chronos_2.1.png" alt="Chronos 2.1-HD Camera" />
+                </picture>
+
+                <h3 class="text-uppercase ">Chronos 2.1
+                    <Strong>HD</Strong>
+                </h3>
+            </div>
+        </div>
+        <!--End Pill Content 1-->
+
+        <!--Start Pill Content 2-->
+        <div class="pill-content-2 col-md-9 col-12">
+            <div class="row justify-content-center ">
+                <!--Start Pill Sub Content 1-->
+                <div class="width-adjust col-md-4 col-12 p-0">
+                    <h4 class="text-uppercase text-center">Latest Software</h4>
+                    <div class="d-flex flex-column align-items-start w-100 p-3">
+                        <!--Button Mod-->
+                        <div class="d-flex justify-content-between align-items-center w-100">
+                            <a class="btn-mod-current d-flex"
+                                href="https://github.com/krontech/chronos-updates/blob/master/doc/DEBIAN.md"
+                                target="_blank">
+                                <div class="font-mod d-flex justify-content-center">
+                                    <i class="icon-mod-1 fa fa-download align-self-center"></i>
+                                </div>
+                                <p class="align-self-center text-center">
+                                    v0.4.0 - Debian & Networking
+                                </p>
+                            </a>
+                            <a class="font-mod-2 text-center" data-toggle="modal" data-target="#info-modal-current">
+                                <i class="icon-mod-info fa fa-info"></i>
+                            </a>
+                            <!--Modal Button Mod Info-->
+                            <div class="modal fade" id="info-modal-current" tabindex="-1" role="dialog"
+                                aria-labelledby="install-info" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-body">
+                                            <div class="modal-header">
+                                                <h3 class="text-center  w-100">
+                                                    Installation Instructions
+                                                </h3>
+                                            </div>
+                                            <p>The major focus of this release is to enable networking capabilities of
+                                                the camera, and a new GUI to choose from. Under the hood, we have also
+                                                replaced the operating system of the camera and will now be using an
+                                                embedded build of the Debian operating system. This is the software that
+                                                we are currently shipping on our Chronos 2.1 cameras, and is now also
+                                                available for users of the Chronos 1.4.
+                                                <br>
+                                                <br>
+                                                The most up-to-date instructions can be found in the
+                                                <a href="https://github.com/krontech/chronos-updates/blob/master/doc/DEBIAN.md"
+                                                    target="_blank">
+                                                    chronos-updates
+                                                </a>
+                                                respository on GitHub, but we have done our best to transcribe them here
+                                                for
+                                                you. The update procedure shown here should be familiar to anyone who
+                                                has
+                                                used a embedded Debian system such as the Beaglebone or Raspberry Pi.
+                                                <br>
+                                                <br>
+                                                Since this update requires a complete replacement of the operating
+                                                system,
+                                                we currently only offer this upgrade by completely replacing the
+                                                contents of
+                                                the microSD card. We are working on a more user friendly upgrade
+                                                procedure
+                                                that will hopefully be available in the next couple of weeks using the
+                                                v0.3.2 software update procedure.
+
+                                            </p>
+                                            <div id="accordion-info-current">
+                                                <div class="card">
+                                                    <div class="card-header" id="info-heading-current-1">
+                                                        <h3>
+                                                            <button class="btn w-100" data-toggle="collapse"
+                                                                data-target="#collapse-info-current-1"
+                                                                aria-expanded="true"
+                                                                aria-controls="collapse-info-current-1">
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center w-100">
+                                                                    Notable Changes
+                                                                    <i class=" fa fa-plus"></i>
+                                                                </div>
+                                                            </button>
+                                                        </h3>
+                                                    </div>
+                                                    <div id="collapse-info-current-1" class="collapse"
+                                                        aria-labelledby="info-heading-current-1"
+                                                        data-parent="#accordion-info-current">
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>
+                                                                    Support for the LUX2100 image sensor.
+                                                                </li>
+                                                                <li>
+                                                                    API for camera control via JSON/HTTP over the
+                                                                    Ethernet port.
+                                                                    <p>Examples: <a
+                                                                            href="https://github.com/krontech/chronos-utils/tree/master/api_examples_python"
+                                                                            target="_blank">https://github.com/krontech/chronos-utils/tree/master/api_examples_python</a>
+                                                                    </p>
+                                                                </li>
+                                                                <li>
+                                                                    Saving of media over network to an NFS and Samba
+                                                                    share.
+                                                                </li>
+                                                                <li>Software updates can be downloaded over the
+                                                                    internet.</li>
+                                                                <li>
+                                                                    Real-time video stream from the camera using RTSP.
+                                                                </li>
+                                                                <li>
+                                                                    New back-of-camera GUI is available via the software
+                                                                    update screen.
+                                                                    <p> For more information: <a
+                                                                            href="http://forum.krontech.ca/index.php?topic=498"
+                                                                            target="_blank">http://forum.krontech.ca/index.php?topic=498</a>
+                                                                    </p>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card">
+                                                    <div class="card-header" id="info-heading-current-2">
+                                                        <h3>
+                                                            <button class="btn w-100" data-toggle="collapse"
+                                                                data-target="#collapse-info-current-2"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapse-info-current-2">
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center w-100">
+                                                                    Minutiae
+                                                                    <i class=" fa fa-plus"></i>
+                                                                </div>
+                                                            </button>
+                                                        </h3>
+                                                    </div>
+                                                    <div id="collapse-info-current-2" class="collapse"
+                                                        aria-labelledby="info-heading-current-2"
+                                                        data-parent="#accordion-info-current">
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>
+                                                                    Internal D-Bus and Python APIs for camera control.
+                                                                </li>
+                                                                <li>
+                                                                    Move software update and GUI selection into a
+                                                                    standalone tool.
+                                                                </li>
+                                                                <li>
+                                                                    Add the ability to switch between GUIs via the
+                                                                    software update too.
+                                                                </li>
+                                                                <li>
+                                                                    Add Support for exposure trigger and shutter gating
+                                                                    to IO3 (isolated).
+                                                                </li>
+                                                                <li>
+                                                                    Reogranized the trigger/IO settings window to make
+                                                                    IO1 and IO2 consistent.
+                                                                </li>
+                                                                <li>
+                                                                    Allow specifying folders and complex paths in the
+                                                                    save settings.
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card">
+                                                    <div class="card-header" id="info-heading-current-3">
+                                                        <h3>
+                                                            <button class="btn w-100" data-toggle="collapse"
+                                                                data-target="#collapse-info-current-3"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapse-info-current-3">
+                                                                <div
+                                                                    class="d-flex justify-content-between align-items-center w-100">
+                                                                    Fixed Bugs
+                                                                    <i class=" fa fa-plus"></i>
+                                                                </div>
+                                                            </button>
+                                                        </h3>
+                                                    </div>
+                                                    <div id="collapse-info-current-3" class="collapse"
+                                                        aria-labelledby="info-heading-current-3"
+                                                        data-parent="#accordion-info-current">
+                                                        <div class="card-body">
+                                                            <ul>
+                                                                <li>
+                                                                    Improved accuracy of overlay timestamps in frame
+                                                                    trigger and shutter gating.
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                                                Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--End  Button Mod-->
+                    </div>
+                    <!--End Pill Sub Content 1-->
+                </div>
+            </div>
+            <div class="row justify-content-center ">
+                <!--Start Pill Sub Content 2-->
+                <div class="width-adjust col-md-4 col-12 p-0 ">
+                    <h4 class="text-uppercase text-center ">Documents</h4>
+                    <div class="d-flex flex-column align-items-center p-3 ">
+                        <!--Data Sheet Button Mod-->
+                        <div class="d-flex justify-content-between align-items-center w-100 ">
+                            <a class="btn-mod-current d-flex w-100 "
+                                href="Documents/Chronos_2.1_Doc/FM-ENGR-50002-Chronos-2.1-HD-Datasheet-Rev3.pdf"
+                                target="_blank ">
+                                <div class="font-mod d-flex justify-content-center ">
+                                    <i class="icon-mod-2 fa fa-file-pdf-o align-self-center "></i>
+                                </div>
+                                <p class="align-self-center text-center ">
+                                    Chronos 2.1-HD Data Sheet
+                                </p>
+                            </a>
+                        </div>
+                        <!--Mechanical Button Mod-->
+                        <div class="d-flex justify-content-between align-items-center w-100 ">
+                            <a class="btn-mod-current d-flex w-100 "
+                                href="/Documents/Chronos_2.1_Doc/chronos_2.1-HD_mounting_hole_locations.pdf"
+                                target="_blank ">
+                                <div class="font-mod d-flex justify-content-center ">
+                                    <i class="icon-mod-2 fa fa-file-pdf-o align-self-center "></i>
+                                </div>
+                                <p class="align-self-center text-center ">
+                                    Chronos 2.1-HD Mechanical Drawing
+                                </p>
+                            </a>
+                        </div>
+                        <!--Focal Button Mod-->
+                        <div class="d-flex justify-content-between align-items-center w-100 ">
+                            <a class="btn-mod-current d-flex w-100 "
+                                href="Documents/Chronos_2.1_Doc/Flange-Focal-Distance-Chronos-2.1-HD.pdf"
+                                target="_blank ">
+                                <div class="font-mod d-flex justify-content-center ">
+                                    <i class="icon-mod-2 fa fa-file-pdf-o align-self-center "></i>
+                                </div>
+                                <p class="align-self-center text-center ">
+                                    Chronos 2.1-HD Flange Focal Distance
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--End Pill Sub Content 2-->
+
+                <!--Start Pill Sub Content 3-->
+                <div class=" width-adjust col-md-4 col-12 p-0">
+                    <h4 class="text-uppercase text-center ">Trouble Shooting</h4>
+                    <div class="d-flex flex-column align-items-center p-3">
+                        <p class="text-2_1">More Documentation To Follow...</p>
+                    </div>
+                </div>
+                <!--End Pill Sub Content 3-->
+            </div>
+        </div>
+        <!--End Pill Content 2-->
+
+        <!--End Pill row 1-->
+    </section>
+    <!--End Chronos 2.1 Section 1-->
+
     <!--Start Chronos 1.4 Section 1-->
-    <section id="chronos" class="pill-section-1 row justify-content-center align-items-center scroll-start">
+    <section id="chronos" class="pill-section-1 row justify-content-center align-items-center scroll-start top-border">
         <!--Start Pill Content 1-->
         <div class="pill-content-1 col-md-3 col-12">
             <div class="d-flex flex-md-column flex-row  justify-content-around align-items-center h-100">
@@ -208,72 +499,67 @@
                         <!--Button Mod-->
                         <div class="d-flex justify-content-between align-items-center w-100">
                             <a class="btn-mod-current d-flex"
-                                href="Documents/Chronos_1.4_Doc/camUpdate-v0.3.2-patch1.zip">
+                                href="https://github.com/krontech/chronos-updates/blob/master/doc/DEBIAN.md"
+                                target="_blank">
                                 <div class="font-mod d-flex justify-content-center">
                                     <i class="icon-mod-1 fa fa-download align-self-center"></i>
                                 </div>
                                 <p class="align-self-center text-center">
-                                    Current Software v0.3.2
+                                    v0.4.0 - Debian & Networking
                                 </p>
                             </a>
-                            <a class="font-mod-2 text-center" data-toggle="modal" data-target="#info-modal-3-2">
+                            <a class="font-mod-2 text-center" data-toggle="modal" data-target="#info-modal-current">
                                 <i class="icon-mod-info fa fa-info"></i>
                             </a>
                             <!--Modal Button Mod Info-->
-                            <div class="modal fade" id="info-modal-3-2" tabindex="-1" role="dialog"
+                            <div class="modal fade" id="info-modal-current" tabindex="-1" role="dialog"
                                 aria-labelledby="install-info" aria-hidden="true">
                                 <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                                     <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h3 class="text-center w-100">
-                                                Installation Instructions
-                                            </h3>
-                                        </div>
                                         <div class="modal-body">
-                                            <ol>
-                                                <li>
-                                                    Extract the .zip file into the root directory of a FAT32 formatted
-                                                    USB drive.
-                                                </li>
-                                                <li>Turn on your camera and insert the USB drive.</li>
-                                                <li>
-                                                    From the main window, tap the Util button to open the utility
-                                                    window.
-                                                </li>
-                                                <li>
-                                                    As a precaution, tap the Backup Calibration Data button on the
-                                                    utility window before starting the update.
-                                                </li>
-                                                <li>
-                                                    When the backup is completed, a pop-up window will be displayed.
-                                                </li>
-                                                <li>
-                                                    Tap the Done button to close the pop-up window.
-                                                </li>
-                                                <li>
-                                                    From the utility window, tap the Apply Software Update button to
-                                                    begin the software update.
-                                                </li>
-                                                <li>
-                                                    A warning message will be displayed, tap the Yes button to confirm
-                                                    and begin the update.
-                                                </li>
-                                                <li>
-                                                    During the update, the screen will go blank and an Applying Update
-                                                    message will be displayed.
-                                                </li>
-                                                <li>
-                                                    After approximately 60 seconds, the update will be complete and the
-                                                    camera will restart.
-                                                </li>
-                                            </ol>
-                                            <div id="accordion-info-3-2">
+                                            <div class="modal-header">
+                                                <h3 class="text-center  w-100">
+                                                    Installation Instructions
+                                                </h3>
+                                            </div>
+                                            <p>The major focus of this release is to enable networking capabilities of
+                                                the camera, and a new GUI to choose from. Under the hood, we have also
+                                                replaced the operating system of the camera and will now be using an
+                                                embedded build of the Debian operating system. This is the software that
+                                                we are currently shipping on our Chronos 2.1 cameras, and is now also
+                                                available for users of the Chronos 1.4.
+                                                <br>
+                                                <br>
+                                                The most up-to-date instructions can be found in the
+                                                <a href="https://github.com/krontech/chronos-updates/blob/master/doc/DEBIAN.md"
+                                                    target="_blank">
+                                                    chronos-updates
+                                                </a>
+                                                respository on GitHub, but we have done our best to transcribe them here
+                                                for
+                                                you. The update procedure shown here should be familiar to anyone who
+                                                has
+                                                used a embedded Debian system such as the Beaglebone or Raspberry Pi.
+                                                <br>
+                                                <br>
+                                                Since this update requires a complete replacement of the operating
+                                                system,
+                                                we currently only offer this upgrade by completely replacing the
+                                                contents of
+                                                the microSD card. We are working on a more user friendly upgrade
+                                                procedure
+                                                that will hopefully be available in the next couple of weeks using the
+                                                v0.3.2 software update procedure.
+
+                                            </p>
+                                            <div id="accordion-info-current">
                                                 <div class="card">
-                                                    <div class="card-header" id="info-heading-3-2-1">
+                                                    <div class="card-header" id="info-heading-current-1">
                                                         <h3>
                                                             <button class="btn w-100" data-toggle="collapse"
-                                                                data-target="#collapse-info-3-2-1" aria-expanded="true"
-                                                                aria-controls="collapse-info-3-2-1">
+                                                                data-target="#collapse-info-current-1"
+                                                                aria-expanded="true"
+                                                                aria-controls="collapse-info-current-1">
                                                                 <div
                                                                     class="d-flex justify-content-between align-items-center w-100">
                                                                     Notable Changes
@@ -282,49 +568,38 @@
                                                             </button>
                                                         </h3>
                                                     </div>
-                                                    <div id="collapse-info-3-2-1" class="collapse"
-                                                        aria-labelledby="info-heading-3-2-1"
-                                                        data-parent="#accordion-info-3-2">
+                                                    <div id="collapse-info-current-1" class="collapse"
+                                                        aria-labelledby="info-heading-current-1"
+                                                        data-parent="#accordion-info-current">
                                                         <div class="card-body">
                                                             <ul>
                                                                 <li>
-                                                                    New Demosaic algorithm based on AHD, which should
-                                                                    improve color reproduction and reduce edge noise.
+                                                                    Support for the LUX2100 image sensor.
                                                                 </li>
                                                                 <li>
-                                                                    Standalone daemon to operate the video system, with
-                                                                    DBus API.
+                                                                    API for camera control via JSON/HTTP over the
+                                                                    Ethernet port.
+                                                                    <p>Examples: <a
+                                                                            href="https://github.com/krontech/chronos-utils/tree/master/api_examples_python"
+                                                                            target="_blank">https://github.com/krontech/chronos-utils/tree/master/api_examples_python</a>
+                                                                    </p>
                                                                 </li>
                                                                 <li>
-                                                                    External HDMI displays are supported at 1080p and
-                                                                    720p resolutions.
+                                                                    Saving of media over network to an NFS and Samba
+                                                                    share.
                                                                 </li>
-                                                                <li>Recording speed improvements.</li>
+                                                                <li>Software updates can be downloaded over the
+                                                                    internet.</li>
                                                                 <li>
-                                                                    Add CinemaDNG and TIFF as save file formats.
-                                                                </li>
-                                                                <li>
-                                                                    Deprecate Raw 16-bit right-justified save format in
-                                                                    favor of CinemaDNG.
+                                                                    Real-time video stream from the camera using RTSP.
                                                                 </li>
                                                                 <li>
-                                                                    Add a demo mode to replay a section of recorded
-                                                                    video in a loop.
-                                                                </li>
-                                                                <li>
-                                                                    Add option to overlay frame statistics onto
-                                                                    processed video formats (H.264 and TIFF).
-                                                                </li>
-                                                                <li>
-                                                                    Jog wheel can be used to adjust the exposure, and
-                                                                    navigate the settings menus.
-                                                                </li>
-                                                                <li>
-                                                                    New window to edit the color correction matrix.
-                                                                </li>
-                                                                <li>
-                                                                    New video memory recovery tool to download video
-                                                                    (slowly) in the event of a software crash.
+                                                                    New back-of-camera GUI is available via the software
+                                                                    update screen.
+                                                                    <p> For more information: <a
+                                                                            href="http://forum.krontech.ca/index.php?topic=498"
+                                                                            target="_blank">http://forum.krontech.ca/index.php?topic=498</a>
+                                                                    </p>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -332,11 +607,12 @@
                                                 </div>
 
                                                 <div class="card">
-                                                    <div class="card-header" id="info-heading-3-2-2">
+                                                    <div class="card-header" id="info-heading-current-2">
                                                         <h3>
                                                             <button class="btn w-100" data-toggle="collapse"
-                                                                data-target="#collapse-info-3-2-2" aria-expanded="false"
-                                                                aria-controls="collapse-info-3-2-2">
+                                                                data-target="#collapse-info-current-2"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapse-info-current-2">
                                                                 <div
                                                                     class="d-flex justify-content-between align-items-center w-100">
                                                                     Minutiae
@@ -345,38 +621,33 @@
                                                             </button>
                                                         </h3>
                                                     </div>
-                                                    <div id="collapse-info-3-2-2" class="collapse"
-                                                        aria-labelledby="info-heading-3-2-2"
-                                                        data-parent="#accordion-info-3-2">
+                                                    <div id="collapse-info-current-2" class="collapse"
+                                                        aria-labelledby="info-heading-current-2"
+                                                        data-parent="#accordion-info-current">
                                                         <div class="card-body">
                                                             <ul>
                                                                 <li>
-                                                                    Factory black calibration is now user accessible
-                                                                    from the Factory tab of the util window.
+                                                                    Internal D-Bus and Python APIs for camera control.
                                                                 </li>
                                                                 <li>
-                                                                    The software update button has been moved to the
-                                                                    storage tab of the util window.
+                                                                    Move software update and GUI selection into a
+                                                                    standalone tool.
                                                                 </li>
                                                                 <li>
-                                                                    Shipping mode to disable power-on by battery until
-                                                                    an AC adaptor is attached.
+                                                                    Add the ability to switch between GUIs via the
+                                                                    software update too.
                                                                 </li>
                                                                 <li>
-                                                                    Add a watchdog to reboot the camera in case of a
-                                                                    power-on boot failure.
+                                                                    Add Support for exposure trigger and shutter gating
+                                                                    to IO3 (isolated).
                                                                 </li>
                                                                 <li>
-                                                                    Display descriptive error strings instead of number
-                                                                    on failure.
+                                                                    Reogranized the trigger/IO settings window to make
+                                                                    IO1 and IO2 consistent.
                                                                 </li>
                                                                 <li>
-                                                                    End of recording from lack of free space generates a
-                                                                    warning dialog.
-                                                                </li>
-                                                                <li>
-                                                                    Revert to a valid resolution when focus is lost
-                                                                    while editing the H/V resolution widgets.
+                                                                    Allow specifying folders and complex paths in the
+                                                                    save settings.
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -384,11 +655,12 @@
                                                 </div>
 
                                                 <div class="card">
-                                                    <div class="card-header" id="info-heading-3-2-3">
+                                                    <div class="card-header" id="info-heading-current-3">
                                                         <h3>
                                                             <button class="btn w-100" data-toggle="collapse"
-                                                                data-target="#collapse-info-3-2-3" aria-expanded="false"
-                                                                aria-controls="collapse-info-3-2-3">
+                                                                data-target="#collapse-info-current-3"
+                                                                aria-expanded="false"
+                                                                aria-controls="collapse-info-current-3">
                                                                 <div
                                                                     class="d-flex justify-content-between align-items-center w-100">
                                                                     Fixed Bugs
@@ -397,121 +669,14 @@
                                                             </button>
                                                         </h3>
                                                     </div>
-                                                    <div id="collapse-info-3-2-3" class="collapse"
-                                                        aria-labelledby="info-heading-3-2-3"
-                                                        data-parent="#accordion-info-3-2">
+                                                    <div id="collapse-info-current-3" class="collapse"
+                                                        aria-labelledby="info-heading-current-3"
+                                                        data-parent="#accordion-info-current">
                                                         <div class="card-body">
                                                             <ul>
                                                                 <li>
-                                                                    Gated burst record mode may lock up after several
-                                                                    trigger edges.
-                                                                </li>
-                                                                <li>
-                                                                    Gated burst record mode unreliable when trigger
-                                                                    debounce is enabled
-                                                                </li>
-                                                                <li>
-                                                                    Memory leak in the M3 video coprocessors which could
-                                                                    lead to a crash after lots of H.264 encoding.
-                                                                </li>
-                                                                <li>
-                                                                    Ignore video which was recorded during zero-time
-                                                                    black calibration (which happens after changing
-                                                                    resolution).
-                                                                </li>
-                                                                <li>
-                                                                    Stuttering issue on the playback window on new
-                                                                    production LCD modules.
-                                                                </li>
-                                                                <li>
-                                                                    Fixed deadlock in camera when restoring user
-                                                                    settings from external media.
-                                                                </li>
-                                                                <li>
-                                                                    Corrupted overlay text at narrow resolutions.
-                                                                </li>
-                                                                <li>
-                                                                    Video stream would remain in playback when starting
-                                                                    recording via auto-record.
-                                                                </li>
-                                                                <li>
-                                                                    Opening and closing the white balance menu can lead
-                                                                    to an unexpected change of the custom preset.
-                                                                </li>
-                                                                <li>
-                                                                    Bug in calculating the trigger delay on boot
-                                                                    (segmented mode only).
-                                                                </li>
-                                                                <li>
-                                                                    Ensure a minimum of 0.25 bits/pixel when encoding
-                                                                    h.264 video.
-                                                                </li>
-                                                                <li>
-                                                                    Crash can occur when saving extremely short videos.
-                                                                </li>
-                                                                <li>
-                                                                    After rebooting a camera, focus aid and zebras are
-                                                                    sometimes not restored even if they were enabled
-                                                                    before the reboot.
-                                                                </li>
-                                                                <li>
-                                                                    Restore white balance correctly after reboot
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="card">
-                                                    <div class="card-header" id="info-heading-3-2-4">
-                                                        <h3>
-                                                            <button class="btn w-100" data-toggle="collapse"
-                                                                data-target="#collapse-info-3-2-4" aria-expanded="false"
-                                                                aria-controls="collapse-info-3-2-4">
-                                                                <div
-                                                                    class="d-flex justify-content-between align-items-center w-100">
-                                                                    Known Issues
-                                                                    <i class=" fa fa-plus"></i>
-                                                                </div>
-                                                            </button>
-                                                        </h3>
-                                                    </div>
-                                                    <div id="collapse-info-3-2-4" class="collapse"
-                                                        aria-labelledby="info-heading-3-2-4"
-                                                        data-parent="#accordion-info-3-2">
-                                                        <div class="card-body">
-                                                            <ul>
-                                                                <li>
-                                                                    The second frame of videos saved in all formats is
-                                                                    not from the correct location in the selected
-                                                                    region.
-                                                                </li>
-                                                                <li>
-                                                                    The first frame of videos saved in formats other
-                                                                    than H.264 format is corrupted.
-                                                                </li>
-                                                                <li>
-                                                                    Very rare crashes of the video system, causing the
-                                                                    camera to lock up on the playback/save window; MTBF
-                                                                    seems to be somewhere in the 2-5k recordings at
-                                                                    present.
-                                                                </li>
-                                                                <li>
-                                                                    Gated Burst record mode only: Live display does not
-                                                                    appear to be buffered correctly when the trigger
-                                                                    signal is inactive.
-                                                                </li>
-                                                                <li>
-                                                                    Speckles in image when recording below 60fps
-                                                                </li>
-                                                                <li>
-                                                                    Black cal makes the image look very dark at low
-                                                                    framerates when recording below about 45fps
-                                                                </li>
-                                                                <li>
-                                                                    Saved videos will have a date modified of 7 or 8
-                                                                    hours earlier than what is set on the clock in the
-                                                                    Util menu.
+                                                                    Improved accuracy of overlay timestamps in frame
+                                                                    trigger and shutter gating.
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -550,6 +715,329 @@
                         <div id="software-collapse" class="collapse w-100" aria-labelledby="software-dropdown"
                             data-parent="#accordion-previous-dropdown">
                             <div class="d-flex justify-content-around flex-column">
+                                <!--Start Sub 0 Previous Button Mod-->
+                                <div class="d-flex justify-content-around align-items-center w-100 ">
+                                    <a class="btn-mod-previous d-flex"
+                                        href="Documents/Chronos_1.4_Doc/camUpdate-v0.3.2-patch1.zip">
+                                        <div class="font-mod d-flex justify-content-center">
+                                            <i class="icon-mod-1 fa fa-download align-self-center"></i>
+                                        </div>
+                                        <p class="align-self-center text-center">
+                                            Software v0.3.2
+                                        </p>
+                                    </a>
+                                    <a class="font-mod-2 text-center" data-toggle="modal" data-target="#info-modal-3-0">
+                                        <i class="icon-mod-info fa fa-info"></i>
+                                    </a>
+                                    <!--Previous Button Mod Info-1-->
+                                    <div class="modal fade" id="info-modal-3-0" tabindex="-1" role="dialog"
+                                        aria-labelledby="install-info" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h3 class="text-center  w-100">
+                                                        Installation Instructions
+                                                    </h3>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <ol>
+                                                        <li>
+                                                            Extract the .zip file into the root directory of a FAT32
+                                                            formatted USB drive.
+                                                        </li>
+                                                        <li>Turn on your camera and insert the USB drive.</li>
+                                                        <li>
+                                                            From the main window, tap the Util button to open the
+                                                            utility window.
+                                                        </li>
+                                                        <li>
+                                                            As a precaution, tap the Backup Calibration Data button on
+                                                            the utility window before starting the update.
+                                                        </li>
+                                                        <li>
+                                                            When the backup is completed, a pop-up window will be
+                                                            displayed.
+                                                        </li>
+                                                        <li>
+                                                            Tap the Done button to close the pop-up window.
+                                                        </li>
+                                                        <li>
+                                                            From the utility window, tap the Apply Software Update
+                                                            button to begin the software update.
+                                                        </li>
+                                                        <li>
+                                                            A warning message will be displayed, tap the Yes button to
+                                                            confirm and begin the update.
+                                                        </li>
+                                                        <li>
+                                                            During the update, the screen will go blank and an Applying
+                                                            Update message will be displayed.
+                                                        </li>
+                                                        <li>
+                                                            After approximately 60 seconds, the update will be complete
+                                                            and the camera will restart.
+                                                        </li>
+                                                    </ol>
+                                                    <div id="accordion-info-3-0">
+                                                        <div class="card">
+                                                            <div class="card-header" id="info-heading-3-0-1">
+                                                                <h3>
+                                                                    <button class="btn w-100" data-toggle="collapse"
+                                                                        data-target="#collapse-info-3-0-1"
+                                                                        aria-expanded="true"
+                                                                        aria-controls="collapse-info-3-0-1">
+                                                                        <div
+                                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                                            Notable Changes
+                                                                            <i class=" fa fa-plus"></i>
+                                                                        </div>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div id="collapse-info-3-0-1" class="collapse"
+                                                                aria-labelledby="info-heading-3-0-1"
+                                                                data-parent="#accordion-info-3-0">
+                                                                <div class="card-body">
+                                                                    <ul>
+                                                                        <li>
+                                                                            Automatic ADC calibration during black
+                                                                            calibration, which should reduce column
+                                                                            banding across a wider temperature range.
+                                                                        </li>
+                                                                        <li>
+                                                                            Add a storage tab to the util menu to view,
+                                                                            eject and format the attached storage
+                                                                            devices.
+                                                                        </li>
+                                                                        <li>
+                                                                            Speed boost at most resolutions, with a top
+                                                                            speed of 1069fps at 1280x1024, and 40420fps
+                                                                            at 320x96.
+                                                                        </li>
+                                                                        <li>
+                                                                            Configurable automated power-on and off
+                                                                            depending on the AC adaptor status.
+                                                                        </li>
+                                                                        <li>
+                                                                            Option to disable the ring buffer when in
+                                                                            segmented recording mode.
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card">
+                                                            <div class="card-header" id="info-heading-3-0-2">
+                                                                <h3>
+                                                                    <button class="btn w-100" data-toggle="collapse"
+                                                                        data-target="#collapse-info-3-0-2"
+                                                                        aria-expanded="false"
+                                                                        aria-controls="collapse-info-3-0-2">
+                                                                        <div
+                                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                                            Minutiae
+                                                                            <i class=" fa fa-plus"></i>
+                                                                        </div>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div id="collapse-info-3-0-2" class="collapse"
+                                                                aria-labelledby="info-heading-3-0-2"
+                                                                data-parent="#accordion-info-3-0">
+                                                                <div class="card-body">
+                                                                    <ul>
+                                                                        <li>
+                                                                            Factory black calibration is now user
+                                                                            accessible from the Factory tab of the util
+                                                                            window.
+                                                                        </li>
+                                                                        <li>
+                                                                            The software update button has been moved to
+                                                                            the storage tab of the util window.
+                                                                        </li>
+                                                                        <li>
+                                                                            Shipping mode to disable power-on by battery
+                                                                            until an AC adaptor is attached.
+                                                                        </li>
+                                                                        <li>
+                                                                            Add a watchdog to reboot the camera in case
+                                                                            of a power-on boot failure.
+                                                                        </li>
+                                                                        <li>
+                                                                            Display descriptive error strings instead of
+                                                                            number on failure.
+                                                                        </li>
+                                                                        <li>
+                                                                            End of recording from lack of free space
+                                                                            generates a warning dialog.
+                                                                        </li>
+                                                                        <li>
+                                                                            Revert to a valid resolution when focus is
+                                                                            lost while editing the H/V resolution
+                                                                            widgets.
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card">
+                                                            <div class="card-header" id="info-heading-3-0-3">
+                                                                <h3>
+                                                                    <button class="btn w-100" data-toggle="collapse"
+                                                                        data-target="#collapse-info-3-0-3"
+                                                                        aria-expanded="false"
+                                                                        aria-controls="collapse-info-3-0-3">
+                                                                        <div
+                                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                                            Fixed Bugs
+                                                                            <i class=" fa fa-plus"></i>
+                                                                        </div>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div id="collapse-info-3-0-3" class="collapse"
+                                                                aria-labelledby="info-heading-3-0-3"
+                                                                data-parent="#accordion-info-3-0">
+                                                                <div class="card-body">
+                                                                    <ul>
+                                                                        <li>
+                                                                            Gated burst record mode may lock up after
+                                                                            several trigger edges.
+                                                                        </li>
+                                                                        <li>
+                                                                            Gated burst record mode unreliable when
+                                                                            trigger debounce is enabled
+                                                                        </li>
+                                                                        <li>
+                                                                            Memory leak in the M3 video coprocessors
+                                                                            which could lead to a crash after lots of
+                                                                            H.264 encoding.
+                                                                        </li>
+                                                                        <li>
+                                                                            Ignore video which was recorded during
+                                                                            zero-time black calibration (which happens
+                                                                            after changing resolution).
+                                                                        </li>
+                                                                        <li>
+                                                                            Stuttering issue on the playback window on
+                                                                            new production LCD modules.
+                                                                        </li>
+                                                                        <li>
+                                                                            Fixed deadlock in camera when restoring user
+                                                                            settings from external media.
+                                                                        </li>
+                                                                        <li>
+                                                                            Corrupted overlay text at narrow
+                                                                            resolutions.
+                                                                        </li>
+                                                                        <li>
+                                                                            Video stream would remain in playback when
+                                                                            starting recording via auto-record.
+                                                                        </li>
+                                                                        <li>
+                                                                            Opening and closing the white balance menu
+                                                                            can lead to an unexpected change of the
+                                                                            custom preset.
+                                                                        </li>
+                                                                        <li>
+                                                                            Bug in calculating the trigger delay on boot
+                                                                            (segmented mode only).
+                                                                        </li>
+                                                                        <li>
+                                                                            Ensure a minimum of 0.25 bits/pixel when
+                                                                            encoding h.264 video.
+                                                                        </li>
+                                                                        <li>
+                                                                            Crash can occur when saving extremely short
+                                                                            videos.
+                                                                        </li>
+                                                                        <li>
+                                                                            After rebooting a camera, focus aid and
+                                                                            zebras are sometimes not restored even if
+                                                                            they were enabled before the reboot.
+                                                                        </li>
+                                                                        <li>
+                                                                            Restore white balance correctly after reboot
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="card">
+                                                            <div class="card-header" id="info-heading-3-0-5">
+                                                                <h3>
+                                                                    <button class="btn w-100" data-toggle="collapse"
+                                                                        data-target="#collapse-info-3-0-5"
+                                                                        aria-expanded="false"
+                                                                        aria-controls="collapse-info-3-0-5">
+                                                                        <div
+                                                                            class="d-flex justify-content-between align-items-center w-100">
+                                                                            Known Issues
+                                                                            <i class=" fa fa-plus"></i>
+                                                                        </div>
+                                                                    </button>
+                                                                </h3>
+                                                            </div>
+                                                            <div id="collapse-info-3-0-5" class="collapse"
+                                                                aria-labelledby="info-heading-3-0-5"
+                                                                data-parent="#accordion-info-3-0">
+                                                                <div class="card-body">
+                                                                    <ul>
+                                                                        <li>
+                                                                            The second frame of videos saved in all
+                                                                            formats is not from the correct location in
+                                                                            the selected region.
+                                                                        </li>
+                                                                        <li>
+                                                                            The first frame of videos saved in formats
+                                                                            other than H.264 format is corrupted.
+                                                                        </li>
+                                                                        <li>
+                                                                            Very rare crashes of the video system,
+                                                                            causing the camera to lock up on the
+                                                                            playback/save window; MTBF seems to be
+                                                                            somewhere in the 2-5k recordings at present.
+                                                                        </li>
+                                                                        <li>
+                                                                            Gated Burst record mode only: Live display
+                                                                            does not appear to be buffered correctly
+                                                                            when the trigger signal is inactive.
+                                                                        </li>
+                                                                        <li>
+                                                                            Speckles in image when recording below 60fps
+                                                                        </li>
+                                                                        <li>
+                                                                            Black cal makes the image look very dark at
+                                                                            low framerates when recording below about
+                                                                            45fps
+                                                                        </li>
+                                                                        <li>
+                                                                            Saved videos will have a date modified of 7
+                                                                            or 8 hours earlier than what is set on the
+                                                                            clock in the Util menu.
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                        data-dismiss="modal">
+                                                        Close
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--End Sub 0 Previous Button Mod-->
+
                                 <!--Start Sub 1 Previous Button Mod-->
                                 <div class="d-flex justify-content-around align-items-center w-100 ">
                                     <a class="btn-mod-previous d-flex"
@@ -1689,73 +2177,7 @@
     </section>
     <!--End Chronos 1.4 Section 1-->
 
-    <!--Start Chronos 2.1 Section 1-->
-    <section id="chronos-hd" class="pill-section-1 row justify-content-center align-items-center scroll-start">
-        <!--Start Pill Content 1-->
-        <div class="pill-content-1 col-md-3 col-12">
-            <div class="d-flex flex-md-column flex-row justify-content-around align-items-center h-100">
-                <picture>
-                    <source type="image/webp" srcset="/Images/Chronos_2.1.webp">
-                    <source type="image/heic" srcset="/Images/Chronos_2.1.heic">
-                    <img class="image-1" src="/Images/Chronos_2.1.png" alt="Chronos 2.1-HD Camera" />
-                </picture>
 
-                <h3 class="text-uppercase ">Chronos 2.1
-                    <Strong>HD</Strong>
-                </h3>
-            </div>
-        </div>
-        <!--End Pill Content 1-->
-
-        <!--Start Pill Content 2-->
-        <div class="pill-content-2 col-md-9 col-12">
-            <div class="row justify-content-center ">
-                <!--Start Pill Sub Content 1-->
-                <div class="width-adjust col-md-4 col-12 p-0">
-                    <h4 class="text-uppercase text-center">Latest Software</h4>
-                    <div class="d-flex flex-column align-items-start w-100 p-3">
-                        <p class="text-2_1">More Documentation To Follow...</p>
-                    </div>
-                    <!--End Pill Sub Content 1-->
-                </div>
-            </div>
-            <div class="row justify-content-center ">
-                <!--Start Pill Sub Content 2-->
-                <div class="width-adjust col-md-4 col-12 p-0 ">
-                    <h4 class="text-uppercase text-center ">Documents</h4>
-                    <div class="d-flex flex-column align-items-center p-3 ">
-                        <!--Button Mod-->
-                        <div class="d-flex justify-content-between align-items-center w-100 ">
-                            <a class="btn-mod-current d-flex w-100 "
-                                href="Documents/Chronos_2.1_Doc/FM-ENGR-50002-Chronos-2.1-HD-Datasheet-Rev3.pdf"
-                                target="_blank ">
-                                <div class="font-mod d-flex justify-content-center ">
-                                    <i class="icon-mod-2 fa fa-file-pdf-o align-self-center "></i>
-                                </div>
-                                <p class="align-self-center text-center ">
-                                    Chronos 2.1 Data Sheet
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <!--End Pill Sub Content 2-->
-
-                <!--Start Pill Sub Content 3-->
-                <div class=" width-adjust col-md-4 col-12 p-0">
-                    <h4 class="text-uppercase text-center ">Trouble Shooting</h4>
-                    <div class="d-flex flex-column align-items-center p-3">
-                        <p class="text-2_1">More Documentation To Follow...</p>
-                    </div>
-                </div>
-                <!--End Pill Sub Content 3-->
-            </div>
-        </div>
-        <!--End Pill Content 2-->
-
-        <!--End Pill row 1-->
-    </section>
-    <!--End Chronos 2.1 Section 1-->
 
     <!--Start Modal Prompt-->
     <div class="master-shipping-modal">
@@ -1768,7 +2190,7 @@
                             <div class="my-3">
                                 <p>
                                     <i>
-                                        Note: Kron Tech is not respoisble for shipping delays with other couriers.
+                                        Note: Kron Tech is not responsible for shipping delays with other couriers.
                                     </i>
                                 </p>
                                 <p>

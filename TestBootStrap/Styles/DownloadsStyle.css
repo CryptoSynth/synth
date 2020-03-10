@@ -23,6 +23,10 @@ html {
     box-shadow: none !important;
 }
 
+.top-border {
+    border-top: none;
+}
+
 
 /*------------------------------------------------------
     Background Colors
@@ -57,7 +61,7 @@ html {
 
 .pill-section-1 .col-md-3 {
     border-right: none;
-    border-bottom: 3px solid black;
+    border-bottom: 1.5px solid white;
 }
 
 .pill-section-1 .image-1 {
@@ -96,11 +100,6 @@ html {
     border: 2px solid white;
     overflow: hidden;
 }
-
-.pill-section-1 .text-2_1 {
-    color: white;
-}
-
 
 /*------------------------------------------------------
     Button Mod Current
@@ -242,6 +241,14 @@ html {
     padding: 0rem 1.2rem;
 }
 
+.pill-content-2 .card-body p {
+    color: black !important;
+}
+
+.pill-content-2 .card-body a {
+    color: #1e73be !important;
+}
+
 .pill-content-2 .card-header {
     margin: 0;
     padding: 0;
@@ -262,6 +269,12 @@ html {
 
 .pill-content-2 .card .btn:hover {
     color: white;
+}
+
+.pill-section-1 .modal p {
+    color: white;
+    text-align: justify;
+    padding: 0px 10px ;
 }
 
 .pill-section-1 ol {
@@ -316,11 +329,15 @@ Extra (xl) large devices (large desktops, 1200px and up)
         scroll-snap-align: start;
     }
 
+    .top-border {
+        border-top: 1.5px solid white;
+    }
+
     /*------------------------------------------------------
     Pill Box Section 1
 --------------------------------------------------------*/
     .pill-section-1 .col-md-3 {
-        border-right: 3px solid black;
+        border-right: 1.5px solid white;
         border-bottom: none;
         height: 100vh;
     }
