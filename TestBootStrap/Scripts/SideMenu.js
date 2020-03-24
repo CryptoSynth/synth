@@ -1,5 +1,5 @@
-$(document).ready(function() {
-    $("#dismiss, .overlay").on("click", function() {
+$(document).ready(function () {
+    $("#dismiss, .overlay").on("click", function () {
         // hide sidebar
         $("#sidebar").removeClass("active");
 
@@ -10,7 +10,7 @@ $(document).ready(function() {
         $(".hamburger").removeClass("is-active");
     });
 
-    $(".hamburger").on("click", function() {
+    $(".hamburger").on("click", function () {
         $(".hamburger").toggleClass("is-active");
 
         // open sidebar
@@ -22,70 +22,84 @@ $(document).ready(function() {
     });
 
     //on hover display text in overlay
-    $("#home").mouseover(function() {
+    $("#home").mouseover(function () {
         $("#title-hover").text($("#home-title").text());
     });
-    $("#home").mouseout(function() {
+    $("#home").mouseout(function () {
         $("#title-hover").text("");
     });
-    $("#about-us").mouseover(function() {
+    $("#about-us").mouseover(function () {
         $("#title-hover").text($("#aboutus-title").text());
     });
-    $("#about-us").mouseout(function() {
+    $("#about-us").mouseout(function () {
         $("#title-hover").text("");
     });
-    $("#chronos-1").mouseover(function() {
+    $("#chronos-1").mouseover(function () {
         $("#title-hover").text($("#chronos-1-title").text());
     });
-    $("#chronos-1").mouseout(function() {
+    $("#chronos-1").mouseout(function () {
         $("#title-hover").text("");
     });
-    $("#chronos-2").mouseover(function() {
+    $("#chronos-2").mouseover(function () {
         $("#title-hover").text($("#chronos-2-title").text());
     });
-    $("#chronos-2").mouseout(function() {
+    $("#chronos-2").mouseout(function () {
         $("#title-hover").text("");
     });
-    $("#accessories").mouseover(function() {
+    $("#accessories").mouseover(function () {
         $("#title-hover").text($("#accessories-title").text());
     });
-    $("#accessories").mouseout(function() {
+    $("#accessories").mouseout(function () {
         $("#title-hover").text("");
     });
-    $("#tutorials").mouseover(function() {
+    $("#tutorials").mouseover(function () {
         $("#title-hover").text($("#tutorials-title").text());
     });
-    $("#tutorials").mouseout(function() {
+    $("#tutorials").mouseout(function () {
         $("#title-hover").text("");
     });
-    $("#downloads").mouseover(function() {
+    $("#downloads").mouseover(function () {
         $("#title-hover").text($("#downloads-title").text());
     });
-    $("#downloads").mouseout(function() {
+    $("#downloads").mouseout(function () {
         $("#title-hover").text("");
     });
-    $("#chrome").mouseover(function() {
+    $("#chrome").mouseover(function () {
         $("#title-hover").text($("#chrome-title").text());
     });
-    $("#chrome").mouseout(function() {
+    $("#chrome").mouseout(function () {
         $("#title-hover").text("");
     });
-    $("#resources").mouseover(function() {
+    $("#resources").mouseover(function () {
         $("#title-hover").text($("#resources-title").text());
     });
-    $("#resources").mouseout(function() {
+    $("#resources").mouseout(function () {
         $("#title-hover").text("");
     });
-    $("#contact-us").mouseover(function() {
+    $("#contact-us").mouseover(function () {
         $("#title-hover").text($("#contact-us-title").text());
     });
-    $("#contact-us").mouseout(function() {
+    $("#contact-us").mouseout(function () {
         $("#title-hover").text("");
     });
-    $("#quote").mouseover(function() {
+    $("#quote").mouseover(function () {
         $("#title-hover").text($("#quote-title").text());
     });
-    $("#quote").mouseout(function() {
+    $("#quote").mouseout(function () {
+        $("#title-hover").text("");
+    });
+
+    $("#career").mouseover(function () {
+        $("#title-hover").text($("#career-title").text());
+    });
+    $("#career").mouseout(function () {
+        $("#title-hover").text("");
+    });
+
+    $("#shipping").mouseover(function () {
+        $("#title-hover").text($("#shipping-title").text());
+    });
+    $("#shipping").mouseout(function () {
         $("#title-hover").text("");
     });
 });

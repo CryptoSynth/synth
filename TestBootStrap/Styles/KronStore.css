@@ -6,158 +6,187 @@
 
 body,
 html {
-    font-family: "Noto Sans SC", sans-serif !important;
-    background-color: #1e73be;
+  font-family: "Noto Sans SC", sans-serif !important;
+  background-color: #1e73be;
 }
 
 *:focus {
-    outline: none !important;
-    box-shadow: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
-
 
 /* ---------------------------------------------------
     Product Page: Category\Sub-Category Page Layout
 ----------------------------------------------------- */
 
 .store {
-    margin-top: 3rem;
-    overflow-x: hidden !important;
+  margin-top: 5rem;
+  overflow-x: hidden !important;
 }
 
 .store a {
-    color: white !important;
+  color: black !important;
 }
 
-.ec-size .ec-store .ec-text-muted{
-    color: white !important;
+.ec-size .ec-store .ec-text-muted {
+  color: black !important;
 }
 
-.ec-size .ec-store .grid-product__title-inner {
-    color: white !important;
+html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-link {
+  color: red !important;
 }
 
-.ec-size .ec-store .grid-product__price .grid-product__price-amount {
-    color: white !important;
+html#ecwid_html body#ecwid_body div.ecwid-Checkout-BreadCrumbs-link-visited {
+  color: white !important;
 }
 
+html#ecwid_html body#ecwid_body div.ecwid-Checkout-BreadCrumbs-point-visited {
+  border-color: white !important;
+}
+
+html#ecwid_html
+  body#ecwid_body
+  div.ecwid-Checkout-BreadCrumbs-point-visited::after {
+  background-color: white !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-Checkout-BreadCrumbs-section-visited {
+  background-color: white !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-Checkout-BreadCrumbs-link-current {
+  color: gold !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-Checkout-BreadCrumbs-point-current {
+  border-color: gold !important;
+}
+
+html#ecwid_html
+  body#ecwid_body
+  div.ecwid-Checkout-BreadCrumbs-point-current::after {
+  background-color: gold !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-Checkout-BreadCrumbs-section {
+  background-color: white !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-Checkout-BreadCrumbs-link {
+  color: white !important;
+}
+
+html#ecwid_html body#ecwid_body div.ecwid-Checkout-blockTitle {
+  color: black !important;
+}
+
+.gwt-HTML {
+  color: black !important;
+}
 
 /*Main Store Background Color*/
 
 div.ecwid-productBrowser {
-    background-color: transparent !important;
-    color: black!important;
+  background-color: transparent !important;
+  color: black !important;
 }
 
-
 /*Sub Store Background Color*/
-
 
 /* ---------------------------------------------------
     Product Page: Sidebar Menu
 ----------------------------------------------------- */
 
 .ec-store .product-details__sidebar {
-    margin-top: 5rem !important;
+  margin-top: 5rem !important;
 }
-
 
 /*Sidebar title*/
 
 .ec-store .product-details__product-title {
-    font-size: 2rem !important;
-    color: black !important;
-    margin: 0.5rem !important;
-    text-align: center !important;
+  font-size: 2rem !important;
+  color: black !important;
+  margin: 0.5rem !important;
+  text-align: center !important;
 }
-
 
 /*Sidebar breadcrumbs*/
 
 .ec-store .product-details .ec-breadcrumbs {
-    color: black !important;
-    margin: 0rem !important;
-    padding: 0.5rem !important;
-    text-align: center !important;
+  color: black !important;
+  margin: 0rem !important;
+  padding: 0.5rem !important;
+  text-align: center !important;
 }
 
 .ec-store label {
-    color: black !important;
+  color: black !important;
 }
-
 
 /*Sidebar Price*/
 
 .ec-store .product-details__product-price:last-child {
-    font-size: 2rem !important;
-    color: black !important;
-    margin: 0rem !important;
-    padding: 0rem !important;
-    text-align: center !important;
+  font-size: 2rem !important;
+  color: black !important;
+  margin: 0rem !important;
+  padding: 0rem !important;
+  text-align: center !important;
 }
-
 
 /*Sidebar Stock*/
 
 .ec-store .ec-header-h6 {
-    font-size: 1rem !important;
-    color: black !important;
-    margin: 0.5rem !important;
-    text-align: center !important;
-    padding: 0rem !important;
+  font-size: 1rem !important;
+  color: black !important;
+  margin: 0.5rem !important;
+  text-align: center !important;
+  padding: 0rem !important;
 }
-
 
 /*Sidebar Qty & Btn*/
 
 .ec-store .product-details-module__content--indented {
-    align-items: center !important;
-    text-align: center !important;
-    justify-content: center !important;
-    display: flex !important;
-    flex-direction: column !important;
-    width: 100% !important;
+  align-items: center !important;
+  text-align: center !important;
+  justify-content: center !important;
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
 }
-
 
 /*Sidebar Qty*/
 
 .ec-store .details-product-purchase__qty {
-    margin: 0.5rem !important;
+  margin: 0.5rem !important;
 }
-
 
 /*Sidebar Btn*/
 
 .ec-store .details-product-purchase__controls {
-    width: 100% !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-self: center !important;
-    margin: 0.5rem !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-self: center !important;
+  margin: 0.5rem !important;
 }
-
 
 /*Sidebar breadcrumbs Description*/
 
 .ec-store .product-details__product-description p:last-child {
-    color: black !important;
+  color: black !important;
 }
-
 
 /* ---------------------------------------------------
     Cart Page
 ----------------------------------------------------- */
 
 .ec-store .ec-cart {
-    background-color: white !important;
-    color: black !important;
-    padding: 1rem !important;
-    border-radius: 20px !important;
-    margin-top: 20rem !important;
+  background-color: white !important;
+  color: black !important;
+  padding: 1rem !important;
+  border-radius: 20px !important;
 }
-
 
 /*============ BOOTSTRAP BREAK POINTS:
 
@@ -179,16 +208,16 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (max-width: 425px) {
-    .store {
-        margin-top: 3rem !important;
-    }
-    .ec-store .product-details__sidebar {
-        margin-top: 0rem !important;
-    }
-    .ec-store .ec-cart {
-        margin-top: 1rem !important;
-    }
-    .ec-store .product-details--layout-sidebar-right .product-details__gallery {
-        margin-top: 1rem !important;
-    }
+  .store {
+    margin-top: 3rem !important;
+  }
+  .ec-store .product-details__sidebar {
+    margin-top: 0rem !important;
+  }
+  .ec-store .ec-cart {
+    margin-top: 1rem !important;
+  }
+  .ec-store .product-details--layout-sidebar-right .product-details__gallery {
+    margin-top: 1rem !important;
+  }
 }

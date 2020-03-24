@@ -211,10 +211,21 @@ html {
 ----------------------------------------------------- */
 
 .feature .info-btn {
-  width: 65%;
-  letter-spacing: 0.3rem;
   color: white;
-  border: 2px solid white;
+  font-size: 4vh;
+}
+
+.feature .info-btn:hover {
+  color: black;
+}
+
+.feature .buy-btn {
+  color: white;
+  font-size: 4vh;
+}
+
+.feature .buy-btn:hover {
+  color: black;
 }
 
 /* ---------------------------------------------------
@@ -338,7 +349,6 @@ html {
   bottom: 4%;
 }
 
-
 .order .poster-img {
   width: 100%;
   padding-left: 3rem;
@@ -364,7 +374,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (min-width: 768px) {
-
   /* ---------------------------------------------------
     Landing Page
 ----------------------------------------------------- */

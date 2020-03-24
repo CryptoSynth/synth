@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+SC&display=swap");
+
+/*------------------------------------------------------
+    Html/Body Section
+--------------------------------------------------------*/
+
+body,
+html {
+  font-family: "Noto Sans SC", sans-serif !important;
+  -ms-scroll-snap: y mandatory;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  background-color: lightblue;
+}
+
+.scroll-start {
+  scroll-snap-align: start;
+}
+
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.mission-state p a {
+  color: blue;
+}
+
+/* ---------------------------------------------------
+    Career Section
+----------------------------------------------------- */
+.mission-state {
+  height: 100vh;
+}
+
+.mission-state p {
+  color: black;
+  font-size: 2.5vh;
+}
+
+.mission-state .fpga-btn {
+  color: white;
+  background-color: blue;
+  border-radius: 10px;
+}
+
+.mission-state .fpga-btn:hover {
+  color: blue;
+  background-color: white;
+}
+
+hr {
+  background-color: black;
+  padding: 1.5px 0px;
+}
+
+@media (max-width: 786px) {
+  .mission-state p {
+    font-size: 2vh;
+    padding: 0rem 2rem;
+  }
+
+  hr {
+    padding: 0.8px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .mission-state p {
+    font-size: 1.7vh;
+  }
+}

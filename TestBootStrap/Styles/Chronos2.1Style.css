@@ -212,10 +212,21 @@ html {
 ----------------------------------------------------- */
 
 .feature .info-btn {
-  width: 65%;
-  letter-spacing: 0.3rem;
   color: white;
-  border: 2px solid white;
+  font-size: 4vh;
+}
+
+.feature .info-btn:hover {
+  color: black;
+}
+
+.feature .buy-btn {
+  color: white;
+  font-size: 4vh;
+}
+
+.feature .buy-btn:hover {
+  color: black;
 }
 
 /* ---------------------------------------------------
@@ -301,7 +312,6 @@ html {
 .order .pre {
   font-size: 6vw;
   z-index: 2;
-  text-shadow: 2px 1.5px 2px rgba(0, 0, 0, 0.5);
   font-weight: bolder;
   border: 4px solid white;
   border-radius: 200px;
@@ -311,8 +321,9 @@ html {
 }
 
 .order .pre:hover {
+  color: darkgray !important;
+  border: 0px solid white;
   background-color: white;
-  color: #1e73be !important;
 }
 
 /*============ BOOTSTRAP BREAK POINTS:
@@ -335,7 +346,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (min-width: 768px) {
-
   /* ---------------------------------------------------
     Landing Page
 ----------------------------------------------------- */
@@ -462,7 +472,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
   }
 
   .order .pre {
-    font-size: 9vw;
-    text-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5);
+    font-size: 4vw;
   }
 }

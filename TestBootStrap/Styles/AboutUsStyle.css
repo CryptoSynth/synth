@@ -6,248 +6,263 @@
 
 body,
 html {
-    font-family: "Noto Sans SC", sans-serif !important;
-    -ms-scroll-snap: y mandatory;
-    scroll-snap-type: y mandatory;
-    scroll-behavior: smooth;
-    transition: background-color 0.5s ease-in;
+  font-family: "Noto Sans SC", sans-serif !important;
+  -ms-scroll-snap: y mandatory;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  transition: background-color 0.5s ease-in;
 }
 
 .scroll-start {
-    scroll-snap-align: start;
+  scroll-snap-align: start;
 }
 
 *:focus {
-    outline: none !important;
-    box-shadow: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
-
 
 /* ---------------------------------------------------
     Video About-Us
 ----------------------------------------------------- */
 
 .vid-about {
-    height: 100vh;
-    padding: 5rem 0rem 0rem 0rem;
+  height: 100vh;
+  padding: 5rem 0rem 0rem 0rem;
 }
 
 .vid-about .white-frame {
-    border: 5px solid black;
-    width: 80%;
-    height: 80%;
-    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.3);
+  border: 5px solid black;
+  width: 80%;
+  height: 80%;
+  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.3);
 }
 
 .vid-about .about-us {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .vid-about i {
-    font-size: 2rem;
-    color: black;
-    padding: 1rem;
-    text-shadow: 0px 0px 5px rgb(0, 0, 0, 0.7);
+  font-size: 2rem;
+  color: black;
+  padding: 1rem;
+  text-shadow: 0px 0px 5px rgb(0, 0, 0, 0.7);
 }
 
 .vid-about .title {
-    margin-top: 4rem;
-    color: white;
-    padding: 1rem 0rem;
-    letter-spacing: 0.3rem;
+  margin-top: 4rem;
+  color: white;
+  padding: 1rem 0rem;
+  letter-spacing: 0.3rem;
 }
 
+/* ---------------------------------------------------
+    Mission Statement Section
+----------------------------------------------------- */
+.mission-state {
+  height: 100vh;
+  width: 100%;
+  background-color: lightskyblue;
+}
+
+.mission-state p {
+  padding: 1rem;
+  font-size: 3vh;
+  color: black;
+}
+
+.mission-state .title {
+  text-decoration: underline;
+  font-size: 8vh;
+  color: black;
+}
 
 /* ---------------------------------------------------
     Ceo Section
 ----------------------------------------------------- */
 
 .ceo {
-    height: 100vh;
-    padding: 0rem 15rem;
-    background-color: #1e73be;
+  height: 100vh;
+  padding: 0rem 15rem;
+  background-color: #1e73be;
 }
 
 .ceo .ceo-card {
-    background-color: rgba(0, 0, 0, .2);
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
-    color: black;
-    overflow: hidden;
-    z-index: 1;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .ceo .ceo-card .img {
-    padding: 0rem;
+  padding: 0rem;
 }
 
 .ceo .ceo-card img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .ceo .ceo-title {
-    color: black;
-    padding: 0.5rem 1rem;
-    font-size: 4vh;
-    margin: 0rem 0rem 2rem 0rem;
-    border: 2px solid black;
-    border-radius: 10px;
-    z-index: 1;
-    text-align: center;
-    width: 50%;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-size: 4vh;
+  margin: 0rem 0rem 2rem 0rem;
+  border: 2px solid white;
+  border-radius: 10px;
+  z-index: 1;
+  text-align: center;
+  width: 50%;
 }
 
 .ceo .ceo-card .bio {
-    font-size: 2vh;
-    padding: 1rem !important;
-    line-height: 2rem;
-    text-align: justify;
+  font-size: 2vh;
+  padding: 1rem !important;
+  line-height: 2rem;
+  text-align: justify;
 }
-
 
 /* ---------------------------------------------------
     Card Structure
 ----------------------------------------------------- */
 
 .staff-about .card-mod {
-    height: 100vh;
-    height: 580px;
-    margin: 1rem 1rem;
-    padding: 2rem;
+  height: 100vh;
+  height: 580px;
+  margin: 1rem 1rem;
+  padding: 2rem;
 }
 
 .staff-about .main-card {
-    margin: auto;
-    width: 100%;
-    height: 100%;
+  margin: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .staff-about .card-top {
-    width: 400px;
-    height: 400px;
-    overflow: hidden;
-    border-radius: 100%;
-    margin: 0rem 0rem 1rem 0rem;
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
-    display: flex;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 100%;
+  margin: 0rem 0rem 1rem 0rem;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+  display: flex;
 }
 
 .staff-about .card-bottom {
-    font-size: 1rem;
-    text-align: justify;
-    color: white;
-    margin: 0rem;
-    width: 100%;
-    background-color: black;
-    border-radius: 20px;
-    font-size: 1rem;
+  font-size: 1rem;
+  text-align: justify;
+  color: white;
+  margin: 0rem;
+  width: 100%;
+  background-color: black;
+  border-radius: 20px;
+  font-size: 1rem;
 }
-
 
 /* ---------------------------------------------------
     Staff Section Sizing
 ----------------------------------------------------- */
 
 .staff-about {
-    height: 100vh;
+  height: 100vh;
 }
 
 .staff-about .card-l {
-    height: 100vh;
-    margin: 0;
-    z-index: 2;
+  height: 100vh;
+  margin: 0;
+  z-index: 2;
 }
 
 .staff-about .img-format {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .staff-about .title-section {
-    text-transform: uppercase;
-    color: black;
-    font-size: 7vw;
-    z-index: 1;
-    padding-top: 2rem;
+  text-transform: uppercase;
+  color: black;
+  font-size: 7vw;
+  z-index: 1;
+  padding-top: 2rem;
 }
 
 .staff-about .name-title {
-    font-size: 0.8rem;
-    margin: 0.5rem 0rem 0.5rem 1.5rem;
-    padding: 0.5rem 0.5rem;
-    color: white;
-    font-weight: bolder;
-    text-align: center;
+  font-size: 0.8rem;
+  margin: 0.5rem 0rem 0.5rem 1.5rem;
+  padding: 0.5rem 0.5rem;
+  color: white;
+  font-weight: bolder;
+  text-align: center;
 }
 
 .staff-about .job-title {
-    font-size: 0.8rem;
-    margin: 0.5rem;
-    padding: 0.5rem 0rem;
-    text-align: center;
-    color: white;
-    font-weight: bolder;
+  font-size: 0.8rem;
+  margin: 0.5rem;
+  padding: 0.5rem 0rem;
+  text-align: center;
+  color: white;
+  font-weight: bolder;
 }
 
 .staff-about i {
-    font-size: 1.5rem;
-    margin: 0.5rem 1.5rem 0.5rem 0rem;
-    transition: all 0.3s ease-in-out;
+  font-size: 1.5rem;
+  margin: 0.5rem 1.5rem 0.5rem 0rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .staff-about i:hover {
-    transform: scale(1.5);
-    cursor: pointer;
+  transform: scale(1.5);
+  cursor: pointer;
 }
 
 .staff-about p {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .staff-about .card-bottom a {
-    text-decoration: none;
-    color: lightskyblue;
+  text-decoration: none;
+  color: lightskyblue;
 }
-
 
 /* ---------------------------------------------------
     Thank You Customer Sizing
 ----------------------------------------------------- */
 
 .thank-you .main-title {
-    color: black;
-    font-size: 9vh;
-    text-transform: uppercase;
-    border-bottom: 2px solid black;
+  color: black;
+  font-size: 9vh;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
 }
 
 .thank-you .sub-title {
-    color: black;
-    font-size: 4vh;
-    text-align: justify;
-    padding: 2rem;
-    line-height: 10vh;
+  color: black;
+  font-size: 4vh;
+  text-align: justify;
+  padding: 2rem;
+  line-height: 10vh;
 }
 
 .thank-you .sub-title a {
-    color: gold;
+  color: gold;
 }
 
 .thank-you .thanks-btn {
-    border-radius: 20px;
-    background-color: black;
-    color: white;
-    width: 20vw;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  width: 20vw;
 }
 
 .thank-you .thanks-btn:hover {
-    background-color: white;
-    color: black;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
 }
-
 
 /*============ BOOTSTRAP BREAK POINTS:
 
@@ -269,212 +284,222 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (max-width: 426px) {
-
-    /* ---------------------------------------------------
+  /* ---------------------------------------------------
     Video About-Us
 ----------------------------------------------------- */
-    .vid-about .white-frame {
-        border: 1.5px solid white;
-        margin: 0rem 0.2rem;
-        width: auto;
-        height: 50%;
-        box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.3);
-    }
+  .vid-about .white-frame {
+    border: 1.5px solid white;
+    margin: 0rem 0.2rem;
+    width: auto;
+    height: 50%;
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.3);
+  }
 
-    .vid-about .about-us {
-        width: 100%;
-        object-fit: cover;
-    }
+  .vid-about .about-us {
+    width: 100%;
+    object-fit: cover;
+  }
 
-    /* ---------------------------------------------------
+  /* ---------------------------------------------------
+    Mission Statement Section
+----------------------------------------------------- */
+
+  .mission-state p {
+    padding: 1rem;
+    font-size: 2.5vh;
+  }
+
+  .mission-state .title {
+    text-decoration: underline;
+    font-size: 5vh;
+  }
+  /* ---------------------------------------------------
     Ceo Section
 ----------------------------------------------------- */
-    .ceo {
-        padding: 0rem 2rem;
-    }
+  .ceo {
+    padding: 0rem 2rem;
+  }
 
-    .row {
-        height: 100%;
-    }
+  .row {
+    height: 100%;
+  }
 
-    .ceo .ceo-card .bio {
-        font-size: 1.5vh;
-        margin: 0 !important;
-        padding-top: 0rem;
-        height: 100%;
-        line-height: 1rem;
-        padding: 1rem !important;
-    }
+  .ceo .ceo-card .bio {
+    font-size: 1.5vh;
+    margin: 0 !important;
+    padding-top: 0rem;
+    height: 100%;
+    line-height: 1rem;
+    padding: 1rem !important;
+  }
 
-    .ceo .ceo-title {
-        font-size: 3vh;
-        padding: 0.5rem 1rem;
-        margin: 0.5rem 0rem;
-        width: 100%;
-        text-align: center;
-    }
+  .ceo .ceo-title {
+    font-size: 3vh;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0rem;
+    width: 100%;
+    text-align: center;
+  }
 
-    /* ---------------------------------------------------
+  /* ---------------------------------------------------
     Staff Section
 ----------------------------------------------------- */
-    .staff-about {
-        height: unset;
-    }
+  .staff-about {
+    height: unset;
+  }
 
-    .staff-about .card-top {
-        width: 250px;
-        height: 250px;
-    }
+  .staff-about .card-top {
+    width: 250px;
+    height: 250px;
+  }
 
-    .staff-about .card-mod {
-        margin: 0rem;
-        padding: .2rem;
-    }
+  .staff-about .card-mod {
+    margin: 0rem;
+    padding: 0.2rem;
+  }
 
-    .staff-about p {
-        font-size: 1.5vh;
-    }
+  .staff-about p {
+    font-size: 1.5vh;
+  }
 
-    .staff-about .title-section {
-        padding: 0.5rem 1.5rem;
-        font-size: 7vw;
-        margin-top: 30vh;
-    }
+  .staff-about .title-section {
+    padding: 0.5rem 1.5rem;
+    font-size: 7vw;
+    margin-top: 30vh;
+  }
 
-    .staff-about .card-bottom {
-        width: 80%;
-    }
+  .staff-about .card-bottom {
+    width: 80%;
+  }
 
-    /* ---------------------------------------------------
+  /* ---------------------------------------------------
     Thank You Section
 ----------------------------------------------------- */
 
-    .thank-you .main-title {
-        font-size: 9vh;
-    }
+  .thank-you .main-title {
+    font-size: 9vh;
+  }
 
-    .thank-you .sub-title {
-        font-size: 2.5vh;
-        padding: 1rem;
-        line-height: 4vh;
-    }
+  .thank-you .sub-title {
+    font-size: 2.5vh;
+    padding: 1rem;
+    line-height: 4vh;
+  }
 
-    .thank-you .thanks-btn {
-        width: 70%;
-    }
+  .thank-you .thanks-btn {
+    width: 70%;
+  }
 }
-
 
 /* ---------------------------------------------------
     Wave Settings
 ----------------------------------------------------- */
 
 .wave-fill-hidden-2 {
-    stroke: none;
-    fill: white;
-    opacity: 0;
-    transition: ease-out 0.5s;
+  stroke: none;
+  fill: white;
+  opacity: 0;
+  transition: ease-out 0.5s;
 }
 
 .wave-fill-seen-2 {
-    opacity: 1;
-    fill: white;
-    transition: ease-in 0.5s;
+  opacity: 1;
+  fill: white;
+  transition: ease-in 0.5s;
 }
 
 #wave-path-2 {
-    z-index: 0;
+  z-index: 0;
 }
 
 .wave-fill-hidden-3 {
-    stroke: none;
-    fill: white;
-    opacity: 0;
-    transition: ease-out 0.5s;
+  stroke: none;
+  fill: white;
+  opacity: 0;
+  transition: ease-out 0.5s;
 }
 
 .wave-fill-seen-3 {
-    opacity: 1;
-    fill: white;
-    transition: ease-in 0.5s;
+  opacity: 1;
+  fill: white;
+  transition: ease-in 0.5s;
 }
 
 #wave-path-3 {
-    z-index: 0;
+  z-index: 0;
 }
 
 .wave-fill-hidden-4 {
-    stroke: none;
-    fill: white;
-    opacity: 0;
-    transition: ease-out 0.5s;
+  stroke: none;
+  fill: white;
+  opacity: 0;
+  transition: ease-out 0.5s;
 }
 
 .wave-fill-seen-4 {
-    opacity: 1;
-    fill: white;
-    transition: ease-in 0.5s;
+  opacity: 1;
+  fill: white;
+  transition: ease-in 0.5s;
 }
 
 #wave-path-4 {
-    z-index: 0;
+  z-index: 0;
 }
 
 .wave-fill-hidden-5 {
-    stroke: none;
-    fill: white;
-    opacity: 0;
-    transition: ease-out 0.5s;
+  stroke: none;
+  fill: white;
+  opacity: 0;
+  transition: ease-out 0.5s;
 }
 
 .wave-fill-seen-5 {
-    opacity: 1;
-    fill: white;
-    transition: ease-in 0.5s;
+  opacity: 1;
+  fill: white;
+  transition: ease-in 0.5s;
 }
 
 #wave-path-5 {
-    z-index: 0;
+  z-index: 0;
 }
 
 .wave-fill-hidden-6 {
-    stroke: none;
-    fill: white;
-    opacity: 0;
-    transition: ease-out 0.5s;
+  stroke: none;
+  fill: white;
+  opacity: 0;
+  transition: ease-out 0.5s;
 }
 
 .wave-fill-seen-6 {
-    opacity: 1;
-    fill: white;
-    transition: ease-in 0.5s;
+  opacity: 1;
+  fill: white;
+  transition: ease-in 0.5s;
 }
 
 #wave-path-6 {
-    z-index: 0;
+  z-index: 0;
 }
-
 
 /* ---------------------------------------------------
     Section Color Settings
 ----------------------------------------------------- */
 
 .color-engineer {
-    background-color: #1e73be;
+  background-color: #1e73be;
 }
 
 .color-operations {
-    background-color: #1e73be;
+  background-color: #1e73be;
 }
 
 .color-production {
-    background-color: #1e73be;
+  background-color: #1e73be;
 }
 
 .color-supply {
-    background-color: #1e73be;
+  background-color: #1e73be;
 }
 
 .color-sales {
-    background-color: #1e73be;
+  background-color: #1e73be;
 }
