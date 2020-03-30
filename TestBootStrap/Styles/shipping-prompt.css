@@ -6,11 +6,11 @@
 
 body,
 html {
-    font-family: "Noto Sans SC", sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
 /* ---------------------------------------------------
@@ -18,9 +18,9 @@ p {
 ----------------------------------------------------- */
 
 .master-shipping-modal .modal-content {
-    background-color: #111;
-    color: #1e73be;
-    border: 1px solid white;
+  background-color: #111;
+  color: #f7f7f7;
+  border: 1px solid white;
 }
 
 /* ---------------------------------------------------
@@ -28,16 +28,16 @@ p {
 ----------------------------------------------------- */
 
 #download-doc {
-    background-color: rgb(28, 60, 245);
-    border-radius: 20px;
-    border: 2px solid white;
-    color: white !important;
+  background-color: rgb(28, 60, 245);
+  border-radius: 20px;
+  border: 2px solid white;
+  color: white !important;
 }
 
 #download-doc:hover {
-    background-color: white;
-    color: rgb(28, 60, 245) !important;
-    border: 2px solid rgb(28, 60, 245);
+  background-color: white;
+  color: rgb(28, 60, 245) !important;
+  border: 2px solid rgb(28, 60, 245);
 }
 
 /*===============================================================
@@ -46,95 +46,99 @@ p {
 
 .master-shipping-modal .modal-footer i,
 .master-shipping-modal .modal-body-2 i {
-    font-size: 1rem;
-    color: red;
+  font-size: 1rem;
+  color: red;
 }
 
 .master-shipping-modal .modal-footer p,
 .master-shipping-modal .modal-body-2 p {
-    margin: 0;
-    text-align: center;
+  margin: 0;
+  text-align: center;
 }
 
 .master-shipping-modal .modal-footer a,
 .master-shipping-modal .modal-body-2 a {
-    color: white !important;
-    padding: .15rem .8rem;
-    background-color: #1e73be;
-    border: 2px solid white;
-    border-radius: 5px;
+  color: black !important;
+  padding: 0.15rem 0.8rem;
+  background-color: #f7f7f7;
+  border: 2px solid white;
+  border-radius: 5px;
 }
 
 .master-shipping-modal .modal-footer a:hover {
-    background-color: white;
-    color: #1e73be !important;
-    border: 2px solid #1e73be;
+  background-color: white;
+  color: black !important;
+  border: 2px solid #f7f7f7;
 }
 
 .master-shipping-modal .modal-footer .btn-secondary {
-    color: white;
-    background-color: rgb(108, 117, 125);
-    border-radius: 10px;
-    padding: .15rem 2rem;
+  color: white;
+  background-color: rgb(108, 117, 125);
+  border-radius: 10px;
+  padding: 0.15rem 2rem;
 }
 
 .master-shipping-modal .modal-footer .btn-secondary:hover {
-    border: 2px solid white;
+  border: 2px solid white;
 }
-
 
 /*===============================================================
   Modal-Content Style (Shipping-Policy)
 =================================================================*/
 
 .master-shipping-modal .modal-policy {
-    color: white;
+  color: white;
 }
 
 .master-shipping-modal .modal-header h3 {
-    color: #1e73be !important;
-    margin: 0;
+  color: #f7f7f7 !important;
+  margin: 0;
 }
 
 .master-shipping-modal .modal-body .card-header h3 {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .master-shipping-modal .modal-body .card-header {
-    padding: 0;
-    margin: 0;
-    background-color: #1e73be;
-    color: #1e73be;
+  padding: 0;
+  margin: 0;
+  background-color: #f7f7f7;
+  color: #f7f7f7;
 }
 
 .master-shipping-modal .card {
-    border: 1px solid #1e73be;
-    margin: .5rem;
+  border: 1px solid #f7f7f7;
+  margin: 0.5rem;
 }
 
 .master-shipping-modal .card .btn {
-    color: black;
-    background-color: #1e73be;
+  color: black;
+  background-color: #f7f7f7;
 }
 
 .master-shipping-modal .card .btn:hover {
-    color: white;
+  color: darkgrey;
 }
 
 .master-shipping-modal .card .card-body {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
 }
 
 #shipping-collapse-9 strong {
-    color: red;
+  color: red;
 }
 
 .master-shipping-modal a {
-    color: #1e73be !important;
+  color: steelblue;
+  text-decoration: underline;
 }
 
+.master-shipping-modal a:hover {
+  color: darkgray !important;
+  text-decoration: none;
+}
 
 /*============ BOOTSTRAP BREAK POINTS:
 
@@ -156,49 +160,48 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (max-width: 768px) {
-
-    /* ---------------------------------------------------
+  /* ---------------------------------------------------
     Modal-Body Content Style (Yes)
 ----------------------------------------------------- */
-    #download-doc {
-        font-size: .7rem;
-    }
+  #download-doc {
+    font-size: 0.7rem;
+  }
 
-    /*===============================================================
+  /*===============================================================
   Modal-Footer Content Style
 =================================================================*/
-    .master-shipping-modal .modal-footer i {
-        font-size: 0.7rem;
-    }
+  .master-shipping-modal .modal-footer i {
+    font-size: 0.7rem;
+  }
 
-    .master-shipping-modal .modal-footer a {
-        font-size: 0.8rem;
-    }
+  .master-shipping-modal .modal-footer a {
+    font-size: 0.8rem;
+  }
 
-    .master-shipping-modal .modal-footer .btn-secondary {
-        font-size: .8rem;
-    }
+  .master-shipping-modal .modal-footer .btn-secondary {
+    font-size: 0.8rem;
+  }
 
-    /*===============================================================
+  /*===============================================================
   Modal-Footer Content Style
 =================================================================*/
-    .master-shipping-modal .modal-footer i {
-        font-size: .5rem;
-    }
+  .master-shipping-modal .modal-footer i {
+    font-size: 0.5rem;
+  }
 
-    /*===============================================================
+  /*===============================================================
   Modal-Content Style (Shipping-Policy)
 =================================================================*/
-    .master-shipping-modal .modal-policy {
-        font-size: .8rem;
-        text-align: justify;
-    }
+  .master-shipping-modal .modal-policy {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
 
-    .master-shipping-modal .card .btn {
-        font-size: .8rem;
-    }
+  .master-shipping-modal .card .btn {
+    font-size: 0.8rem;
+  }
 
-    .master-shipping-modal .card .card-body {
-        font-size: .8rem;
-    }
+  .master-shipping-modal .card .card-body {
+    font-size: 0.8rem;
+  }
 }

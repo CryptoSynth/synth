@@ -6,8 +6,8 @@
 
 body,
 html {
-    font-family: "Noto Sans SC", sans-serif;
-    background-color: #111;
+  font-family: "Noto Sans SC", sans-serif;
+  background-color: #111;
 }
 
 /* ---------------------------------------------------
@@ -15,59 +15,57 @@ html {
 ----------------------------------------------------- */
 
 .mobile-vid {
-    height: 100vh;
-    z-index: 0;
+  height: 100vh;
+  z-index: 0;
 }
 
 .mobile-vid .white-frame {
-    border: 2px solid white;
-    height: 15rem;
-    width: unset;
-    margin: 0rem 0.5rem;
+  border: 2px solid white;
+  height: 15rem;
+  width: unset;
+  margin: 0rem 0.5rem;
 }
 
 .mobile-vid .vid-1 {
-    object-fit: cover;
-    width: 100%;
+  object-fit: cover;
+  width: 100%;
 }
 
 .img-resize {
-    height: 3rem;
-    margin-left: 1rem;
-    object-fit: contain;
-    transform: rotate(45deg);
+  height: 3rem;
+  margin-left: 1rem;
+  object-fit: contain;
+  transform: rotate(45deg);
 }
-
 
 /* ---------------------------------------------------
     Footer
 ----------------------------------------------------- */
 
 .foot .btn {
-    background-color: white;
-    color: black;
-    width: 100%;
-    font-weight: bold;
-    overflow: hidden;
-    border: 0;
+  background-color: white;
+  color: black;
+  width: 100%;
+  font-weight: bold;
+  overflow: hidden;
+  border: 0;
 }
 
 .foot h5 {
-    color: white !important;
-    font-size: 1rem;
+  color: white !important;
+  font-size: 1rem;
 }
 
 .foot .price-tag {
-    font-size: 2rem !important;
-    color: #1e73be;
+  font-size: 2rem !important;
+  color: #f7f7f7;
 }
 
 .foot .hd-desc {
-    font-size: 1rem !important;
-    color: gold;
-    text-transform: none;
+  font-size: 1rem !important;
+  color: gold;
+  text-transform: none;
 }
-
 
 /*============ BOOTSTRAP BREAK POINTS:
 
@@ -89,32 +87,31 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (min-width: 768px) {
-
-    /* ---------------------------------------------------
+  /* ---------------------------------------------------
     Mobile-video
 ----------------------------------------------------- */
-    .mobile-vid .white-frame {
-        border: 0px solid white;
-        height: 100%;
-        width: 100%;
-    }
+  .mobile-vid .white-frame {
+    border: 0px solid white;
+    height: 100%;
+    width: 100%;
+  }
 
-    .mobile-vid .vid-1 {
-        object-fit: cover;
-        width: 100%;
-    }
+  .mobile-vid .vid-1 {
+    object-fit: cover;
+    width: 100%;
+  }
 
-    .img-resize {
-        height: 15vh;
-        margin-right: 4rem;
-    }
+  .img-resize {
+    height: 15vh;
+    margin-right: 4rem;
+  }
 
-    /* ---------------------------------------------------
+  /* ---------------------------------------------------
     Footer
 ----------------------------------------------------- */
-    .foot .btn {
-        background-color: white;
-        color: black;
-        width: 50%;
-    }
+  .foot .btn {
+    background-color: white;
+    color: black;
+    width: 50%;
+  }
 }

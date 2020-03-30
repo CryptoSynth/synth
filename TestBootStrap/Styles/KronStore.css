@@ -7,7 +7,7 @@
 body,
 html {
   font-family: "Noto Sans SC", sans-serif !important;
-  background-color: #1e73be;
+  background-color: #f7f7f7;
 }
 
 *:focus {
@@ -33,7 +33,7 @@ html {
 }
 
 html#ecwid_html body#ecwid_body .ec-size .ec-store .ec-link {
-  color: red !important;
+  color: black !important;
 }
 
 html#ecwid_html body#ecwid_body div.ecwid-Checkout-BreadCrumbs-link-visited {
@@ -55,17 +55,17 @@ html#ecwid_html body#ecwid_body div.ecwid-Checkout-BreadCrumbs-section-visited {
 }
 
 html#ecwid_html body#ecwid_body div.ecwid-Checkout-BreadCrumbs-link-current {
-  color: gold !important;
+  color: black !important;
 }
 
 html#ecwid_html body#ecwid_body div.ecwid-Checkout-BreadCrumbs-point-current {
-  border-color: gold !important;
+  border-color: black !important;
 }
 
 html#ecwid_html
   body#ecwid_body
   div.ecwid-Checkout-BreadCrumbs-point-current::after {
-  background-color: gold !important;
+  background-color: black !important;
 }
 
 html#ecwid_html body#ecwid_body div.ecwid-Checkout-BreadCrumbs-section {

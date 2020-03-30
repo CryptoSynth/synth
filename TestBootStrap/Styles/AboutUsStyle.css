@@ -23,59 +23,19 @@ html {
 }
 
 /* ---------------------------------------------------
-    Video About-Us
------------------------------------------------------ */
-
-.vid-about {
-  height: 100vh;
-  padding: 5rem 0rem 0rem 0rem;
-}
-
-.vid-about .white-frame {
-  border: 5px solid black;
-  width: 80%;
-  height: 80%;
-  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.3);
-}
-
-.vid-about .about-us {
-  width: 100%;
-  object-fit: cover;
-}
-
-.vid-about i {
-  font-size: 2rem;
-  color: black;
-  padding: 1rem;
-  text-shadow: 0px 0px 5px rgb(0, 0, 0, 0.7);
-}
-
-.vid-about .title {
-  margin-top: 4rem;
-  color: white;
-  padding: 1rem 0rem;
-  letter-spacing: 0.3rem;
-}
-
-/* ---------------------------------------------------
     Mission Statement Section
 ----------------------------------------------------- */
 .mission-state {
   height: 100vh;
   width: 100%;
-  background-color: lightskyblue;
+  background-color: #111;
 }
 
-.mission-state p {
-  padding: 1rem;
-  font-size: 3vh;
-  color: black;
-}
-
-.mission-state .title {
-  text-decoration: underline;
-  font-size: 8vh;
-  color: black;
+.mission-state .mission-img {
+  object-fit: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
 }
 
 /* ---------------------------------------------------
@@ -85,14 +45,14 @@ html {
 .ceo {
   height: 100vh;
   padding: 0rem 15rem;
-  background-color: #1e73be;
+  background-color: darkgray;
 }
 
 .ceo .ceo-card {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
-  color: white;
+  color: black;
   overflow: hidden;
   z-index: 1;
 }
@@ -107,11 +67,11 @@ html {
 }
 
 .ceo .ceo-title {
-  color: white;
+  color: black;
   padding: 0.5rem 1rem;
   font-size: 4vh;
   margin: 0rem 0rem 2rem 0rem;
-  border: 2px solid white;
+  border: 2px solid black;
   border-radius: 10px;
   z-index: 1;
   text-align: center;
@@ -224,8 +184,12 @@ html {
 }
 
 .staff-about .card-bottom a {
+  text-decoration: underline;
+  color: steelblue;
+}
+
+.staff-about .card-bottom a:hover {
   text-decoration: none;
-  color: lightskyblue;
 }
 
 /* ---------------------------------------------------
@@ -248,20 +212,25 @@ html {
 }
 
 .thank-you .sub-title a {
-  color: gold;
+  color: steelblue;
+  text-decoration: underline;
+}
+
+.thank-you .sub-title a:hover {
+  text-decoration: none;
 }
 
 .thank-you .thanks-btn {
-  border-radius: 20px;
-  background-color: black;
-  color: white;
+  border-radius: 10px;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
   width: 20vw;
 }
 
 .thank-you .thanks-btn:hover {
-  background-color: white;
-  color: black;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);
+  background-color: black;
+  color: white;
 }
 
 /*============ BOOTSTRAP BREAK POINTS:
@@ -285,24 +254,20 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 @media (max-width: 426px) {
   /* ---------------------------------------------------
-    Video About-Us
------------------------------------------------------ */
-  .vid-about .white-frame {
-    border: 1.5px solid white;
-    margin: 0rem 0.2rem;
-    width: auto;
-    height: 50%;
-    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.3);
-  }
-
-  .vid-about .about-us {
-    width: 100%;
-    object-fit: cover;
-  }
-
-  /* ---------------------------------------------------
     Mission Statement Section
 ----------------------------------------------------- */
+  body,
+  html {
+    font-family: "Noto Sans SC", sans-serif !important;
+    -ms-scroll-snap: y none;
+    scroll-snap-type: y none;
+    scroll-behavior: smooth;
+    transition: background-color 0.5s ease-in;
+  }
+
+  .scroll-start {
+    scroll-snap-align: unset;
+  }
 
   .mission-state p {
     padding: 1rem;
@@ -397,14 +362,14 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 .wave-fill-hidden-2 {
   stroke: none;
-  fill: white;
+  fill: darkgray;
   opacity: 0;
   transition: ease-out 0.5s;
 }
 
 .wave-fill-seen-2 {
   opacity: 1;
-  fill: white;
+  fill: darkgray;
   transition: ease-in 0.5s;
 }
 
@@ -414,14 +379,14 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 .wave-fill-hidden-3 {
   stroke: none;
-  fill: white;
+  fill: darkgray;
   opacity: 0;
   transition: ease-out 0.5s;
 }
 
 .wave-fill-seen-3 {
   opacity: 1;
-  fill: white;
+  fill: darkgray;
   transition: ease-in 0.5s;
 }
 
@@ -431,14 +396,14 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 .wave-fill-hidden-4 {
   stroke: none;
-  fill: white;
+  fill: darkgray;
   opacity: 0;
   transition: ease-out 0.5s;
 }
 
 .wave-fill-seen-4 {
   opacity: 1;
-  fill: white;
+  fill: darkgray;
   transition: ease-in 0.5s;
 }
 
@@ -448,14 +413,14 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 .wave-fill-hidden-5 {
   stroke: none;
-  fill: white;
+  fill: darkgray;
   opacity: 0;
   transition: ease-out 0.5s;
 }
 
 .wave-fill-seen-5 {
   opacity: 1;
-  fill: white;
+  fill: darkgray;
   transition: ease-in 0.5s;
 }
 
@@ -465,14 +430,14 @@ Extra (xl) large devices (large desktops, 1200px and up)
 
 .wave-fill-hidden-6 {
   stroke: none;
-  fill: white;
+  fill: darkgray;
   opacity: 0;
   transition: ease-out 0.5s;
 }
 
 .wave-fill-seen-6 {
   opacity: 1;
-  fill: white;
+  fill: darkgray;
   transition: ease-in 0.5s;
 }
 
@@ -485,21 +450,21 @@ Extra (xl) large devices (large desktops, 1200px and up)
 ----------------------------------------------------- */
 
 .color-engineer {
-  background-color: #1e73be;
+  background-color: #f7f7f7;
 }
 
 .color-operations {
-  background-color: #1e73be;
+  background-color: #f7f7f7;
 }
 
 .color-production {
-  background-color: #1e73be;
+  background-color: #f7f7f7;
 }
 
 .color-supply {
-  background-color: #1e73be;
+  background-color: #f7f7f7;
 }
 
 .color-sales {
-  background-color: #1e73be;
+  background-color: #f7f7f7;
 }

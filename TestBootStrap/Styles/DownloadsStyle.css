@@ -6,99 +6,94 @@
 
 body,
 html {
-    font-family: "Noto Sans SC", sans-serif;
-    -ms-scroll-snap-type: mandatory;
-    scroll-snap-type: mandatory;
-    -ms-scroll-snap: y mandatory;
-    scroll-snap-type: y mandatory;
-    height: 100vh;
+  font-family: "Noto Sans SC", sans-serif;
+  -ms-scroll-snap: y unset;
+  scroll-snap-type: y unset;
+  height: 100vh;
 }
 
 .scroll-start {
-    scroll-snap-align: unset;
+  scroll-snap-align: unset;
 }
 
 *:focus {
-    outline: none !important;
-    box-shadow: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .top-border {
-    border-top: none;
+  border-top: none;
 }
-
 
 /*------------------------------------------------------
     Background Colors
 --------------------------------------------------------*/
 
 #chronos {
-    background: linear-gradient(to right, #1e73be, #111);
-    border-bottom: 1.5px solid black;
+  background: lightgray;
+  border-bottom: 1.5px solid black;
 }
 
 #chronos-hd {
-    background: linear-gradient(to right, #1e73be, #111);
-    border-top: 1.5px solid black;
+  background: lightgray;
+  border-top: 1.5px solid black;
 }
 
 #chronos .col-md-3 {
-    background-color: #111;
+  background-color: #111;
 }
 
 #chronos-hd .col-md-3 {
-    background-color: #111;
+  background-color: #111;
 }
 
 #chronos-hd strong {
-    color: #1e73be;
+  color: #f7f7f7;
 }
-
 
 /*------------------------------------------------------
     Pill Box Content 1
 --------------------------------------------------------*/
 
 .pill-section-1 .col-md-3 {
-    border-right: none;
-    border-bottom: 1.5px solid white;
+  border-right: none;
+  border-bottom: 1.5px solid white;
 }
 
 .pill-section-1 .image-1 {
-    width: 50%;
+  width: 50%;
 }
 
 .pill-section-1 h3 {
-    border: 2px solid white;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    color: white;
+  border: 2px solid white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: white;
 }
 
 .pill-section-1 .pill-content-1 h3 {
-    font-size: 4vw;
+  font-size: 4vw;
 }
-
 
 /*------------------------------------------------------
     Pill Box Content 2
 --------------------------------------------------------*/
 
 .pill-section-1 .pill-content-2 h4 {
-    background-color: white;
-    margin-top: 1rem;
-    color: black;
-    font-size: 4vw;
-    width: 100%;
-    margin: 0;
-    padding: 1rem 0rem;
+  background-color: white;
+  margin-top: 1rem;
+  color: black;
+  font-size: 4vw;
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0rem;
 }
 
 .pill-section-1 .width-adjust {
-    margin: 1rem 1rem;
-    border-radius: 20px;
-    border: 2px solid white;
-    overflow: hidden;
+  margin: 1rem 1rem;
+  border-radius: 20px;
+  border: 2px solid white;
+  overflow: hidden;
 }
 
 /*------------------------------------------------------
@@ -106,204 +101,202 @@ html {
 --------------------------------------------------------*/
 
 .pill-section-1 .btn-mod-current {
-    border-radius: 100px;
-    border: 2px solid white;
-    background-color: white;
-    overflow: hidden;
-    margin: 0.5rem 0rem;
-    color: #111;
+  border-radius: 100px;
+  border: 2px solid white;
+  background-color: white;
+  overflow: hidden;
+  margin: 0.5rem 0rem;
+  color: #111;
 }
 
 .pill-section-1 .btn-mod-current:hover {
-    background-color: #111;
-    color: white;
+  background-color: #111;
+  color: white;
 }
 
 .pill-section-1 p {
-    font-size: 3vw;
-    padding: 5px 10px 5px 0px;
-    margin: 0 auto;
+  font-size: 3vw;
+  padding: 5px 10px 5px 0px;
+  margin: 0 auto;
 }
-
 
 /*------------------------------------------------------
     Button Icon Color
 --------------------------------------------------------*/
 
 .pill-section-1 .icon-mod-1 {
-    color: #111;
+  color: #111;
 }
 
 .pill-section-1 .icon-mod-2 {
-    color: #111;
+  color: #111;
 }
 
 .pill-section-1 .icon-mod-3 {
-    color: #111;
+  color: #111;
 }
 
 .pill-section-1 .font-mod {
-    background-color: white;
-    width: 40px;
+  background-color: white;
+  width: 40px;
 }
 
 .pill-section-1 .icon-mod-special {
-    color: red;
+  color: red;
 }
-
 
 /*------------------------------------------------------
     Button Info Icon
 --------------------------------------------------------*/
 
 .pill-section-1 .icon-mod-info {
-    border: 2px solid white;
-    background-color: white;
-    border-radius: 100%;
-    padding: 5px 10px;
-    margin: auto;
-    font-size: 15px;
-    color: black;
+  border: 2px solid white;
+  background-color: white;
+  border-radius: 100%;
+  padding: 5px 10px;
+  margin: auto;
+  font-size: 15px;
+  color: black;
 }
 
 .pill-section-1 .icon-mod-info:hover {
-    border: 2px solid #111;
-    background-color: white;
-    color: #111;
-    cursor: pointer;
+  border: 2px solid #111;
+  background-color: white;
+  color: #111;
+  cursor: pointer;
 }
-
 
 /*------------------------------------------------------
     Button-previous-dropdown
 --------------------------------------------------------*/
 
 .pill-section-1 .btn-previous-dropdown {
-    border-radius: 100px;
-    border: 2px solid white;
-    background-color: white;
-    overflow: hidden;
-    margin: 0.5rem 0rem;
-    color: #111;
+  border-radius: 100px;
+  border: 2px solid white;
+  background-color: white;
+  overflow: hidden;
+  margin: 0.5rem 0rem;
+  color: #111;
 }
 
 .pill-section-1 .btn-previous-dropdown:hover {
-    background-color: #111;
-    color: white;
+  background-color: #111;
+  color: white;
 }
-
 
 /*------------------------------------------------------
     Button-mod-previous
 --------------------------------------------------------*/
 
 .pill-section-1 .btn-mod-previous {
-    border-radius: 100px;
-    border: 2px solid white;
-    background-color: white;
-    overflow: hidden;
-    margin: 0.5rem 0rem;
-    color: #111;
+  border-radius: 100px;
+  border: 2px solid white;
+  background-color: white;
+  overflow: hidden;
+  margin: 0.5rem 0rem;
+  color: #111;
 }
 
 .pill-section-1 .btn-mod-previous:hover {
-    background-color: black;
-    color: white;
+  background-color: black;
+  color: white;
 }
-
 
 /*------------------------------------------------------
     Modal Info Section
 --------------------------------------------------------*/
 .pill-content-2 .modal {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 .pill-content-2 .modal-content {
-    background-color: #111;
+  background-color: #111;
 }
 
-
 .pill-content-2 .modal-header h3 {
-    border: 0;
-    color: #1e73be;
-    padding: 0;
-    margin: 0;
+  border: 0;
+  color: #f7f7f7;
+  padding: 0;
+  margin: 0;
 }
 
 .pill-content-2 .card {
-    margin: .5rem;
-    padding: 0;
-    border: 1px solid #1e73be;
+  margin: 0.5rem;
+  padding: 0;
+  border: 1px solid #f7f7f7;
 }
 
 .pill-content-2 .card-body {
-    padding: 0rem 1.2rem;
+  padding: 0rem 1.2rem;
 }
 
 .pill-content-2 .card-body p {
-    color: black !important;
+  color: black !important;
 }
 
 .pill-content-2 .card-body a {
-    color: #1e73be !important;
+  color: steelblue !important;
+  text-decoration: underline;
+}
+
+.pill-content-2 .card-body a:hover {
+  text-decoration: none;
 }
 
 .pill-content-2 .card-header {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .pill-content-2 .card-header h3 {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    border-radius: 0;
-    background-color: #1e73be;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background-color: #f7f7f7;
 }
 
 .pill-content-2 .card .btn {
-    color: black;
-    font-size: 5vw;
+  color: black;
+  font-size: 5vw;
 }
 
 .pill-content-2 .card .btn:hover {
-    color: white;
+  color: darkgrey;
 }
 
 .pill-section-1 .modal p {
-    color: white;
-    text-align: justify;
-    padding: 0px 10px ;
+  color: white;
+  text-align: justify;
+  padding: 0px 10px;
 }
 
 .pill-section-1 ol {
-    padding: 0rem 1rem;
-    color: #1e73be;
-    margin: 0;
+  padding: 0rem 1rem;
+  color: #f7f7f7;
+  margin: 0;
 }
 
 .pill-section-1 ul {
-    padding: 0rem;
+  padding: 0rem;
 }
 
 .pill-section-1 li {
-    font-size: 3vw;
-    text-align: justify;
-    padding: 0.3rem;
+  font-size: 3vw;
+  text-align: justify;
+  padding: 0.3rem;
 }
 
 .pill-content-2 .modal-footer .btn-secondary {
-    color: white;
-    background-color: rgb(108, 117, 125);
-    border-radius: 10px;
-    padding: .15rem 2rem;
+  color: white;
+  background-color: rgb(108, 117, 125);
+  border-radius: 10px;
+  padding: 0.15rem 2rem;
 }
 
 .pill-content-2 .modal-footer .btn-secondary:hover {
-    border: 2px solid white;
+  border: 2px solid white;
 }
-
 
 /*============ BOOTSTRAP BREAK POINTS:
 
@@ -325,62 +318,66 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (min-width: 768px) {
-    .scroll-start {
-        scroll-snap-align: start;
-    }
+  body,
+  html {
+    -ms-scroll-snap: y mandatory;
+    scroll-snap-type: y mandatory;
+  }
+  .scroll-start {
+    scroll-snap-align: start;
+  }
 
-    .top-border {
-        border-top: 1.5px solid white;
-    }
+  .top-border {
+    border-top: 1.5px solid white;
+  }
 
-    /*------------------------------------------------------
+  /*------------------------------------------------------
     Pill Box Section 1
 --------------------------------------------------------*/
-    .pill-section-1 .col-md-3 {
-        border-right: 1.5px solid white;
-        border-bottom: none;
-        height: 100vh;
-    }
+  .pill-section-1 .col-md-3 {
+    border-right: 1.5px solid white;
+    border-bottom: none;
+    height: 100vh;
+  }
 
-    /*------------------------------------------------------
+  /*------------------------------------------------------
     Pill Box Content 1
 --------------------------------------------------------*/
-    .pill-section-1 .pill-content-1 h3 {
-        font-size: 2vw;
-    }
+  .pill-section-1 .pill-content-1 h3 {
+    font-size: 2vw;
+  }
 
-    .pill-section-1 .image-1 {
-        width: 100%;
-    }
+  .pill-section-1 .image-1 {
+    width: 100%;
+  }
 
-    /*------------------------------------------------------
+  /*------------------------------------------------------
     Pill Box Content 2
 --------------------------------------------------------*/
-    .pill-section-1 .pill-content-2 h4 {
-        font-size: 1.5vw;
-    }
+  .pill-section-1 .pill-content-2 h4 {
+    font-size: 1.5vw;
+  }
 
-    .pill-section-1 p {
-        font-size: 1vw;
-    }
+  .pill-section-1 p {
+    font-size: 1vw;
+  }
 
-    /*------------------------------------------------------
+  /*------------------------------------------------------
     Modal Info Section
 --------------------------------------------------------*/
-    .pill-content-2 .card-body {
-        padding: 0rem 2rem;
-    }
+  .pill-content-2 .card-body {
+    padding: 0rem 2rem;
+  }
 
-    .pill-content-2 .card .btn {
-        font-size: 1vw;
-    }
+  .pill-content-2 .card .btn {
+    font-size: 1vw;
+  }
 
+  .pill-section-1 ol {
+    padding: 0rem 2.5rem;
+  }
 
-    .pill-section-1 ol {
-        padding: 0rem 2.5rem;
-    }
-
-    .pill-section-1 li {
-        font-size: 1vw;
-    }
+  .pill-section-1 li {
+    font-size: 1vw;
+  }
 }

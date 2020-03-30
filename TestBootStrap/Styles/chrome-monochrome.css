@@ -29,7 +29,7 @@ html {
 .comparison {
   height: 100vh;
   padding: 2rem 1rem 2rem 1rem;
-  background: linear-gradient(to right, #1e73be, #111);
+  background: #111;
 }
 
 .comparison .backsplash {
@@ -99,7 +99,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (max-width: 768px) {
-
   body,
   html {
     height: unset;

@@ -7,15 +7,15 @@
 body,
 html {
   font-family: "Noto Sans SC", sans-serif;
-  -ms-scroll-snap: y mandatory;
-  scroll-snap-type: y mandatory;
+  -ms-scroll-snap: y none;
+  scroll-snap-type: y none;
   scroll-behavior: smooth;
   background-repeat: no-repeat;
   height: 100%;
 }
 
 .scroll-start {
-  scroll-snap-align: start;
+  scroll-snap-align: unset;
 }
 
 /* ---------------------------------------------------
@@ -41,7 +41,7 @@ html {
 
 .landingpage .scroll-down {
   text-decoration: none;
-  color: #1e73be !important;
+  color: #f7f7f7 !important;
   font-size: 3vh;
   font-weight: bolder;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
@@ -53,7 +53,7 @@ html {
 
 .feature {
   height: 100vh;
-  background: linear-gradient(to right, #1e73be, #111);
+  background: #111;
 }
 
 .feature .image-section {
@@ -175,10 +175,7 @@ html {
 
 .feature .table-style .font-size {
   font-size: 6vw;
-  background-color: #1e73be;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  text-decoration: underline;
 }
 
 .feature .table-style th {
@@ -216,7 +213,7 @@ html {
 }
 
 .feature .info-btn:hover {
-  color: black;
+  color: lightgrey;
 }
 
 .feature .buy-btn {
@@ -225,7 +222,7 @@ html {
 }
 
 .feature .buy-btn:hover {
-  color: black;
+  color: lightgrey;
 }
 
 /* ---------------------------------------------------
@@ -268,7 +265,7 @@ html {
 
 .feature .main-modal-table .btn {
   border: none;
-  color: #1e73be;
+  color: #f7f7f7;
 }
 
 /* ---------------------------------------------------
@@ -374,6 +371,15 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (min-width: 768px) {
+  body,
+  html {
+    -ms-scroll-snap: y mandatory;
+    scroll-snap-type: y mandatory;
+  }
+
+  .scroll-start {
+    scroll-snap-align: start;
+  }
   /* ---------------------------------------------------
     Landing Page
 ----------------------------------------------------- */

@@ -10,7 +10,7 @@ html {
   -ms-scroll-snap: y mandatory;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
-  background-color: lightblue;
+  background-color: #f7f7f7;
 }
 
 .scroll-start {
@@ -23,7 +23,12 @@ html {
 }
 
 .mission-state p a {
-  color: blue;
+  color: steelblue;
+  text-decoration: underline;
+}
+
+.mission-state p a:hover {
+  text-decoration: none;
 }
 
 /* ---------------------------------------------------
@@ -39,14 +44,15 @@ html {
 }
 
 .mission-state .fpga-btn {
-  color: white;
-  background-color: blue;
+  color: black;
+  background-color: white;
+  border: 1px solid black;
   border-radius: 10px;
 }
 
 .mission-state .fpga-btn:hover {
-  color: blue;
-  background-color: white;
+  background-color: black;
+  color: white;
 }
 
 hr {

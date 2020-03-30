@@ -2,97 +2,104 @@
 
 body,
 html {
-    font-family: "Noto Sans SC", sans-serif;
-    height: 100%;
+  font-family: "Noto Sans SC", sans-serif;
+  height: 100%;
+}
+
+.contact-us a {
+  text-decoration: underline;
+  color: steelblue;
+}
+.contact-us a:hover {
+  text-decoration: none;
+  color: white;
 }
 
 .contact-us {
-    height: 100vh;
+  height: 100vh;
 }
 
 .contact-us .footer {
-    padding: 1rem;
-    background-color: black;
-    color: white;
+  padding: 1rem;
+  background-color: black;
+  color: white;
 }
 
 .contact-us i {
-    font-size: 3vh;
-    color: #1e73be !important;
+  font-size: 3vh;
+  color: #f7f7f7 !important;
 }
 
 .contact-us p {
-    font-size: 2vh;
+  font-size: 2vh;
 }
 
 .contact-us .b-r {
-    border-right: 2px solid white;
+  border-right: 2px solid white;
 }
 
 .contact-us .b-l {
-    border-left: 2px solid white;
+  border-left: 2px solid white;
 }
 
 .contact-us .footer-location {
-    padding: 0.5rem 0rem;
+  padding: 0.5rem 0rem;
 }
 
 .contact-us .footer-location i {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .contact-us .footer-location .padding-address {
-    padding-left: 4rem !important;
+  padding-left: 4rem !important;
 }
 
 .contact-us .footer-location .address {
-    background-color: #1e73be;
-    border-radius: 10px;
-    color: black;
-    padding: .2rem 1rem;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  color: black;
+  padding: 0.2rem 1rem;
 }
 
 .contact-us .red {
-    color: red !important;
+  color: red !important;
 }
 
 .contact-us .footer-location .buisness-hour {
-    padding: .5rem 0rem;
-    font-size: .8rem;
+  padding: 0.5rem 0rem;
+  font-size: 0.8rem;
 }
 
 .contact-us h5 {
-    text-decoration: underline;
-    padding: 0.5rem 0rem;
-    color: #1e73be;
+  padding: 0.5rem 0rem;
+  color: #f7f7f7;
 }
 
 .contact-us .footer-phone {
-    padding: 0.5rem 0rem;
+  padding: 0.5rem 0rem;
 }
 
 .contact-us .footer-email {
-    padding: 0.5rem 0rem;
+  padding: 0.5rem 0rem;
 }
 
 .contact-us .email-pad {
-    padding: 0rem 3rem;
+  padding: 0rem 3rem;
 }
 
 .contact-us .email-title {
-    font-size: .8rem;
-    text-transform: uppercase;
-    color: #1e73be;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #f7f7f7;
 }
 
 .contact-us p {
-    margin: 0;
+  margin: 0;
 }
 
 .contact-us .email-list p:hover {
-    color: #1e73be;
+  color: #f7f7f7;
 }
-
 
 /*============ BOOTSTRAP BREAK POINTS:
 
@@ -114,64 +121,63 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (max-width: 768px) {
-
-    /* ---------------------------------------------------
+  /* ---------------------------------------------------
     Contact Us Style
 ----------------------------------------------------- */
-    .contact-us .footer {
-        padding: 0rem 0rem;
-    }
+  .contact-us .footer {
+    padding: 0rem 0rem;
+  }
 
-    .contact-us .footer-location {
-        padding: 0.7rem 1rem;
-        justify-content: space-around !important;
-    }
+  .contact-us .footer-location {
+    padding: 0.7rem 1rem;
+    justify-content: space-around !important;
+  }
 
-    .contact-us .buisness-hour {
-        padding: .5rem 1rem;
-    }
+  .contact-us .buisness-hour {
+    padding: 0.5rem 1rem;
+  }
 
-    .contact-us h5 {
-        padding: 0rem 1rem;
-        font-size: .8rem;
-    }
+  .contact-us h5 {
+    padding: 0rem 1rem;
+    font-size: 0.8rem;
+  }
 
-    .contact-us .footer-phone {
-        padding: 0.7rem 1rem;
-        justify-content: space-around !important;
-    }
+  .contact-us .footer-phone {
+    padding: 0.7rem 1rem;
+    justify-content: space-around !important;
+  }
 
-    .contact-us .footer-email {
-        padding: .5rem .5rem;
-        justify-content: space-around !important;
-    }
+  .contact-us .footer-email {
+    padding: 0.5rem 0.5rem;
+    justify-content: space-around !important;
+  }
 
-    .contact-us .email-title {
-        font-size: .6rem;
-    }
+  .contact-us .email-title {
+    font-size: 0.6rem;
+  }
 
-    .contact-us i {
-        font-size: 2.5vh;
-        padding: 0rem !important;
-    }
+  .contact-us i {
+    font-size: 2.5vh;
+    padding: 0rem !important;
+  }
 
-    .contact-us p {
-        font-size: 1.5vh;
-    }
+  .contact-us p {
+    font-size: 1.5vh;
+  }
 
-    .contact-us a {
-        font-size: 1.5vh;
-    }
+  .contact-us a {
+    font-size: 1.5vh;
+  }
 
-    .contact-us .b-r {
-        border-right: 0px;
-        border-top: 1px solid white;
-        margin: 0rem 1rem;
-    }
+  .contact-us .b-r {
+    border-right: 0px;
+    border-top: 1px solid white;
+    margin: 0rem 1rem;
+  }
 
-    .contact-us .b-l {
-        border-left: 0px;
-        border-top: 1px solid white;
-        margin: 0rem 1rem;
-    }
+  .contact-us .b-l {
+    border-left: 0px;
+    border-top: 1px solid white;
+    margin: 0rem 1rem;
+  }
 }
