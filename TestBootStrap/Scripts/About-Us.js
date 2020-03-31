@@ -111,7 +111,4 @@ $(document).ready(function () {
     $("#sal-toggle-1").on("click", function () {
         $("#sal-img-1").slideToggle(0, "linear");
     });
-    $("#sal-toggle-2").on("click", function () {
-        $("#sal-img-2").slideToggle(0, "linear");
-    });
 });

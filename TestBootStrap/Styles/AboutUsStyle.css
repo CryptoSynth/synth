@@ -63,7 +63,7 @@ html {
   object-fit: contain;
   background-repeat: no-repeat;
   height: 100vh;
-  width: 100%;
+  width: 50%;
 }
 
 /* ---------------------------------------------------
@@ -312,27 +312,8 @@ Extra (xl) large devices (large desktops, 1200px and up)
     top: 60%;
   }
 
-  body,
-  html {
-    font-family: "Noto Sans SC", sans-serif !important;
-    -ms-scroll-snap: y none;
-    scroll-snap-type: y none;
-    scroll-behavior: smooth;
-    transition: background-color 0.5s ease-in;
-  }
-
-  .scroll-start {
-    scroll-snap-align: unset;
-  }
-
-  .mission-state p {
-    padding: 1rem;
-    font-size: 2.5vh;
-  }
-
-  .mission-state .title {
-    text-decoration: underline;
-    font-size: 5vh;
+  .mission-state .mission-img {
+    width: 100%;
   }
   /* ---------------------------------------------------
     Ceo Section

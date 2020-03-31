@@ -132,17 +132,17 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
 =============*/
-body,
-html {
-  -ms-scroll-snap: y unset;
-  scroll-snap-type: y unset;
-}
-
-.scroll-start {
-  scroll-snap-align: none;
-}
 
 @media (max-width: 768px) {
+  body,
+  html {
+    -ms-scroll-snap: y unset;
+    scroll-snap-type: y unset;
+  }
+
+  .scroll-start {
+    scroll-snap-align: none;
+  }
   .main-body .title-section {
     font-size: 3vh;
     margin: 0.5rem !important;
