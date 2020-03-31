@@ -1,6 +1,6 @@
 $(document).ready(function () {
     $(".card-l").slick({
-        arrows: false,
+        arrows: true,
         centerMode: true,
         centerPadding: "400px",
         infinite: true,
@@ -11,10 +11,10 @@ $(document).ready(function () {
             breakpoint: 1025,
             settings: {
                 centerMode: true,
-                arrows: false,
+                arrows: true,
                 infinite: true,
-                centerPadding: "60px",
-                slidesToShow: 2,
+                centerPadding: "0px",
+                slidesToShow: 1,
                 focusOnSelect: true
             }
         },
@@ -22,9 +22,9 @@ $(document).ready(function () {
             breakpoint: 769,
             settings: {
                 centerMode: true,
-                arrows: false,
+                arrows: true,
                 infinite: true,
-                centerPadding: "20px",
+                centerPadding: "0px",
                 slidesToShow: 1,
                 focusOnSelect: true
             }
@@ -33,9 +33,9 @@ $(document).ready(function () {
             breakpoint: 426,
             settings: {
                 centerMode: true,
-                arrows: false,
+                arrows: true,
                 infinite: true,
-                centerPadding: "20px",
+                centerPadding: "0px",
                 slidesToShow: 1,
                 focusOnSelect: true
             }
@@ -44,9 +44,9 @@ $(document).ready(function () {
             breakpoint: 376,
             settings: {
                 centerMode: true,
-                arrows: false,
+                arrows: true,
                 infinite: true,
-                centerPadding: "20px",
+                centerPadding: "0px",
                 slidesToShow: 1,
                 focusOnSelect: true
             }

@@ -22,6 +22,34 @@ html {
   box-shadow: none !important;
 }
 
+.slick-arrow.slick-next:before {
+  color: black;
+  font-size: 3rem;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-arrow.slick-next {
+  right: 21.5%;
+  top: 12%;
+  z-index: 10;
+}
+
+.slick-arrow.slick-prev:before {
+  color: black;
+  font-size: 3rem;
+  opacity: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-arrow.slick-prev {
+  left: 20%;
+  z-index: 10;
+  top: 12%;
+}
+
 /* ---------------------------------------------------
     Mission Statement Section
 ----------------------------------------------------- */
@@ -251,11 +279,39 @@ Extra (xl) large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
 
 =============*/
+@media (max-width: 786px) {
+  /* ---------------------------------------------------
+    Mission Statement Section
+----------------------------------------------------- */
+  .slick-arrow.slick-next {
+    right: 9%;
+    top: 60%;
+    z-index: 10;
+  }
+
+  .slick-arrow.slick-prev {
+    left: 0%;
+    z-index: 10;
+    top: 60%;
+  }
+}
 
 @media (max-width: 426px) {
   /* ---------------------------------------------------
     Mission Statement Section
 ----------------------------------------------------- */
+  .slick-arrow.slick-next {
+    right: 9%;
+    top: 60%;
+    z-index: 10;
+  }
+
+  .slick-arrow.slick-prev {
+    left: 0%;
+    z-index: 10;
+    top: 60%;
+  }
+
   body,
   html {
     font-family: "Noto Sans SC", sans-serif !important;
