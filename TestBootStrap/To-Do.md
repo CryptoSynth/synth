@@ -2,7 +2,7 @@
 ----
 
 ## Thomas To-Do:
- 
+
 ## Leo To-Do:
 ### Desktop Fixes:
 - competitor color and monochrome color?

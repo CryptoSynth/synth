@@ -7,15 +7,15 @@
 body,
 html {
   font-family: "Noto Sans SC", sans-serif;
-  -ms-scroll-snap: y none;
-  scroll-snap-type: y none;
+  -ms-scroll-snap: y mandatory;
+  scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
   background-repeat: no-repeat;
   height: 100%;
 }
 
 .scroll-start {
-  scroll-snap-align: unset;
+  scroll-snap-align: start;
 }
 
 /* ---------------------------------------------------
@@ -371,15 +371,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (min-width: 768px) {
-  body,
-  html {
-    -ms-scroll-snap: y mandatory;
-    scroll-snap-type: y mandatory;
-  }
-
-  .scroll-start {
-    scroll-snap-align: start;
-  }
   /* ---------------------------------------------------
     Landing Page
 ----------------------------------------------------- */

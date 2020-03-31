@@ -7,13 +7,13 @@
 body,
 html {
   font-family: "Noto Sans SC", sans-serif;
-  -ms-scroll-snap: y unset;
-  scroll-snap-type: y unset;
+  -ms-scroll-snap: y mandatory;
+  scroll-snap-type: y mandatory;
   height: 100vh;
 }
 
 .scroll-start {
-  scroll-snap-align: unset;
+  scroll-snap-align: start;
 }
 
 *:focus {
@@ -318,19 +318,6 @@ Extra (xl) large devices (large desktops, 1200px and up)
 =============*/
 
 @media (min-width: 768px) {
-  body,
-  html {
-    -ms-scroll-snap: y mandatory;
-    scroll-snap-type: y mandatory;
-  }
-  .scroll-start {
-    scroll-snap-align: start;
-  }
-
-  .top-border {
-    border-top: 1.5px solid white;
-  }
-
   /*------------------------------------------------------
     Pill Box Section 1
 --------------------------------------------------------*/
